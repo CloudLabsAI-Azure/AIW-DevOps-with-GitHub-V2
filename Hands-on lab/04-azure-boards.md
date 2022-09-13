@@ -20,13 +20,13 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
 4. Select the lab files repository `mcw-continuous-delivery-lab-files` which you created earlier and click on **Install & Authorize**.
 
-   ![](media/2dg52.png)
+   ![](media/2dg53.png)
     
    >**Note**: If you see the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account, follow the below steps.
    
    - Scroll to the top of the Azure Boards Marketplace page and select **grant this app access to your GitHub account**.
    
-   ![](media/2dg52.png)
+   ![](media/2dg53.png)
    
    - Select the lab files repository `mcw-continuous-delivery-lab-files` which you created earlier and click on **Install & Authorize**.
 

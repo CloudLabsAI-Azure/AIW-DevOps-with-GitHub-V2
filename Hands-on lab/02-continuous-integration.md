@@ -234,7 +234,7 @@ Now that we have Docker images working locally, we can build automation in GitHu
 
    ![](media/2dg47.png)
 
-   ![](media/2dg48.png)
+   ![](media/2dg49.png)
    
 ### Task 7: Editing the GitHub Workflow File using Codespace
 

@@ -90,7 +90,7 @@ We can automate our project tracking with the Azure Board integration for GitHub
     }
     ```
     
-   Copy the complete JSON output to your clipboard.
+    Copy the complete JSON output to your clipboard.
    
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
@@ -117,10 +117,10 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
    ![](media/2dg61.png)
    
-1. Click on **Start commit** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(4)***.
+1. Click on **Start commit** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(5)***.
 
    - Provide `workitem ID Updated` ***(2)*** as title. Make sure provide the same **Workitem ID** which was created in earlier step in Azure DevOps.
-   - Select **Create a new branch for this commit and start a pull request** ***(#)***  and name new branch as **deploy webapp** ***(4)***.
+   - Select **Create a new branch for this commit and start a pull request** ***(3)***  and name new branch as **deploy webapp** ***(4)***.
 
    ![](media/2dg62.png)
    

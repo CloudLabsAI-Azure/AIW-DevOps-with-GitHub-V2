@@ -230,6 +230,12 @@ Now that we have Docker images working locally, we can build automation in GitHu
 
    ![](media/2dg27.png)
    
+1. The GitHub Action is now running and will automatically build and push the container to the GitHub registry.
+
+   ![Summary of running Docker workflow executing in GitHub Actions tab of repository.](media/action1.png "GitHub Actions")
+
+   ![Detail of running Docker workflow.](media/hol-ex1-task4-step10-2.png "GitHub Action Detail")
+   
 ### Task 7: Editing the GitHub Workflow File using Codespace
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.

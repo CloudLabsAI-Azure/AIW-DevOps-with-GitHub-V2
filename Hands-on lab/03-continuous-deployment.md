@@ -1,4 +1,4 @@
-## Exercise 2: Continuous Delivery / Continuous Deployment
+## Exercise 3: Continuous Delivery / Continuous Deployment
 
 Duration: 40 minutes
 

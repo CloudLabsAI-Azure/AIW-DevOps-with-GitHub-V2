@@ -12,31 +12,25 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
     ![The Azure Boards Integration App on GitHub Marketplace that will provide a link between Azure DevOps Boards and GitHub issues.](media/hol-ex1-task1-step1.png "Azure Boards Integration App on GitHub Marketplace")
 
-2. Scroll to the bottom of the page and select `Install it for Free`.
+1. Scroll to the bottom of the page and select `Install it for Free`.
 
-   ![The GitHub Application Authorization page.](media/image11.png "GitHub Application Authorization")
+   ![](media/2dg50.png)
+   
+1. On the next page, select **Complete order and begin installation**.
 
-3. On the next page, select **Complete order and begin installation**.
+4. Select the lab files repository `mcw-continuous-delivery-lab-files` which you created earlier and click on **Install & Authorize**.
 
-4. Select the lab files repository `mcw-continuous-delivery-lab-files` which you created earlier.
-
-   ![The GitHub Application Authorization page.](media/hol-ex1-task1-step4-1.png "GitHub Application Authorization")
+   ![](media/2dg52.png)
     
    >**Note**: If you see the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account, follow the below steps.
    
-   - In the upper-right corner of your GitHub page, click your profile photo, then click **Settings** and in the left sidebar click **Application** under **Integrations**.
+   - Scroll to the top of the Azure Boards Marketplace page and select **grant this app access to your GitHub account**.
    
-   ![The GitHub Profile page.](media/BholT5S4WA-1.png "GitHub Application Authorization")
+   ![](media/2dg52.png)
    
-   ![The GitHub Application page.](media/BholT5S4WA-2.png "GitHub Application Authorization")   
-   
-   - In the Applications tab, select **Configure** next to **Azure Boards** under Installed GitHub Apps.
+   - Select the lab files repository `mcw-continuous-delivery-lab-files` which you created earlier and click on **Install & Authorize**.
 
-     ![The GitHub Application Configure.](media/azure-boards-configure.png "GitHub Application Authorization Configure")
-     
-   - Scroll down to **Repository access** in **Azure Boards** pane, then **Check** the **Only select repositories**. From the **Select repositories** drop-down search for **mcw-continuous-delivery-lab-files** and select the repositiory. Click on **Save**.
-
-     ![The GitHub Application select repositories.](media/select-repo-azure-boards.png "GitHub Application select repositories")
+   ![](media/2dg52.png)
     
 5. Select the **aiw-devops** Azure DevOps organization and select the Fabrikam project then click on **Continue**
 

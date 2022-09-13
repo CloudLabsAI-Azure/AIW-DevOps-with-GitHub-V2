@@ -136,7 +136,7 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
    ![](media/2dg64.png)
    
-1.  Navigate back to GitHub browser tab and select **Pull requests** tab.
+1. Navigate back to GitHub browser tab and select **Pull requests** tab.
 
    ![](media/2dg66.png)
    

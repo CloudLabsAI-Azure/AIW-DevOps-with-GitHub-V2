@@ -26,11 +26,11 @@ We can automate our project tracking with the Azure Board integration for GitHub
    
    - Scroll to the top of the Azure Boards Marketplace page and select **grant this app access to your GitHub account**.
    
-   ![](media/2dg53.png)
+   ![](media/2dg51.png)
    
    - Select the lab files repository `mcw-continuous-delivery-lab-files` which you created earlier and click on **Install & Authorize**.
 
-   ![](media/2dg52.png)
+   ![](media/2dg53.png)
     
 5. Select the **aiw-devops** Azure DevOps organization and select the Fabrikam project then click on **Continue**
 

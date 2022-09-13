@@ -1,5 +1,5 @@
 
-# Exercise 1: Continuous Integration
+# Exercise 2: Continuous Integration
 
 Duration: 90 minutes
 

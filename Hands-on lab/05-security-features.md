@@ -116,6 +116,7 @@ Code scanning is a feature that you use to analyze the code in a GitHub reposito
       ![](media/secad4.png)
       
    1. In the description box include the following:
+       
        Impact
       _What kind of vulnerability is it? Who is impacted?_
 

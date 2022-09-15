@@ -158,6 +158,10 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
    ![](media/2dg71.png)
    
-1. Click on **+ New Test Plan**
+1. From thw Test plans tab, click on **+ New Test Plan**
+
+   ![](media/2dg72.png)
+   
+1.    
    
    

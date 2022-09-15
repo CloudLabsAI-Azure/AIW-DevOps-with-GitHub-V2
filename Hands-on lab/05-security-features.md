@@ -1,4 +1,4 @@
-# Exercise 5: Explore GitHub advance security features 
+# Exercise 3: Explore GitHub advance security features 
 
 Duration 60 minutes
 
@@ -21,21 +21,21 @@ Code scanning is a feature that you use to analyze the code in a GitHub reposito
    **Note:** If the repository visibility is private, go to the settings of the repository and change the visibility to public.
    
 1. Go to seetings tab of the repository, then under security tab select code security and analysis.
+   Click on Setup button of the code scanning. 
 
-
-   ![](media/codesc1.png)
+   ![](media/adse11.png)
    
 
-1. Then you will reach into Codescanning pane under security tab, click on configure codeQL alerts.
+1. By reaching into Codescanning pane under security tab, click on configure codeQL alerts.
 
 
-   ![](media/codesc2.png)
+   ![](media/adse12.png)
    
   
 1. It will generate a workflow codeql-analysis.yml. Review the yml file, you can find how many languages supported by codeQL and click on Start Commit, then click on      commit new file
   
   
-   ![](media/codesc4.png)
+   ![](media/adse13.png)
   
   
   
@@ -43,25 +43,25 @@ Code scanning is a feature that you use to analyze the code in a GitHub reposito
   
   1. Under Actions tab you can see the workflow committed successfully.
     
-      ![](media/codesc5.png)
+      ![](media/adse14.png)
   
   
 1. Go to Codescanning under security tab you can see code scanning alerts enabled. Click on View alerts
    
    
-    ![](media/codesc6.png)
+    ![](media/adse15.png)
     
     
  1. Click on the Missing rate Limiting alert and find on which line the alert showing, it will be on 73 line of the App.js file.
 
 
-    ![](media/codesc7.png)
+    ![](media/adse16.png)
     
-    You can see App.js file having the issue of Missing rate Limiting under Content-web folder
+    Under security tab you can see the Missing rate Limiting in App.js file under Content-web folder
     
-    ![](media/codesc8.png)
+    ![](media/adse17.png)
     
-  1. Open App.js file from the content folder and Add the following code after the 6th line of App.js file
+  1. Open App.js file from the content-web folder and Add the following code after the 6th line of App.js file
   
      ```pwsh
        // set up rate limiter: maximum of five requests per minute
@@ -75,7 +75,7 @@ Code scanning is a feature that you use to analyze the code in a GitHub reposito
       
       After adding the code it will looks like this
       
-      ![](media/codesc9.png)
+      ![](media/adse18.png)
       
   1. Add the following code before the alert line which would be 79 starts with app.get('*', (req, res) => {
    
@@ -86,15 +86,15 @@ Code scanning is a feature that you use to analyze the code in a GitHub reposito
     
    1. After adding the code it will looks like this
         
-      ![](media/codesc10.png)
+      ![](media/adse19.png)
       
- 1. After adding the entire code commit the file. It will successfully commit.
+ 1. After adding the entire code go down and  click commit the file. It will successfully commit.
  
-    ![](media/codesc11.png)
+    ![](media/adse21.png)
   
   1. Go to codescanning under security tab, you can see the missing rate limit cleared.
   
-      ![](media/codesc12.png)
+      ![](media/adse22.png)
 
       
  ## Task 4: Repository security advisories  
@@ -105,7 +105,7 @@ Code scanning is a feature that you use to analyze the code in a GitHub reposito
  
      Go to Security tab and then select advisories and then select New draft security advisory option.
      
-     ![](media/secad.png)
+     ![](media/adse23.png)
      
   1. In the affected Product section Select the ecosystem as composer, provide the package name as **mcw-continuous-delivery-lab-files/content-web/app.js**, provide     affected version as <1.2 and patched version as 1.2 and provide severity as high
   
@@ -116,41 +116,41 @@ Code scanning is a feature that you use to analyze the code in a GitHub reposito
       ![](media/secad4.png)
       
    1. In the description box include the following:
-       ### Impact
+       Impact
       _What kind of vulnerability is it? Who is impacted?_
 
       HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command or interacting with a      database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
 
-    ### Patches
-    _Has the problem been patched? What versions should users upgrade to?_
+       Patches
+      _Has the problem been patched? What versions should users upgrade to?_
 
-    It is patched and rectified the error. Please use 1.2 version
+      It is patched and rectified the error. Please use 1.2 version
 
 
-    ### Workarounds
-    _Is there a way for users to fix or remediate the vulnerability without upgrading?_
+       Workarounds
+      _ Is there a way for users to fix or remediate the vulnerability without upgrading?_
 
-    // set up rate limiter: maximum of five requests per minute
-    var RateLimit = require('express-rate-limit');
-    var limiter = new RateLimit({
-     windowMs: 1*60*1000, // 1 minute
-      max: 5
-      });
+      // set up rate limiter: maximum of five requests per minute
+      var RateLimit = require('express-rate-limit');
+      var limiter = new RateLimit({
+       windowMs: 1*60*1000, // 1 minute
+        max: 5
+        });
 
-    // apply rate limiter to all requests
-    app.use(limiter);
+       // apply rate limiter to all requests
+       app.use(limiter);
 
-    Added the above code in app.js
+       Added the above code in app.js
 
-    ### References
-    _Are there any links users can visit to find out more?_
+       References
+      _Are there any links users can visit to find out more?_
 
-    https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md
-    https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
+      https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md
+      https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
     
- 1. After filled the description box fill the Credit section with current user name. Then click on Create draft security advisory.
+  1. After filled the description box fill the Credit section with current user name. Then click on Create draft security advisory.
  
-    ![](media/secad7.png)
+     ![](media/adse24.png)
     
  1. Once created the security advisory go to start a temporary private fork, it is used to collaborate on a patch for this advisory.
 

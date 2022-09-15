@@ -72,7 +72,7 @@ We can automate our project tracking with the Azure Board integration for GitHub
    
  1. Go to Environment details click on **Service principle Credentials** copy **Application id(clientId)** , **clientSecret(secretkey)** , **subscriptionId** and **tenantId** 
     
-    ![spcreds](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps/main/Assets/sp-creds-auth.png)
+   ![](media/2dg91.png)
     
     Replace the values that you copied in the below Json.
     ```pwsh

@@ -10,15 +10,11 @@ Once the Fabrikamk Medical Conferences developer workflow has been deployed, we 
 What is codescanning? 
 Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown in GitHub.
 
-1. Make sure your repository is public
-
-   **Note:** If the repository visibility is private, go to the settings of the repository and change the visibility to public.
+**Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
    
-1. Go to seetings tab of the repository, then under security tab select code security and analysis.
-   Click on Setup button of the code scanning. 
+1. Go to seetings tab of the repository, then under security tab select code security and analysis. Click on Setup button of the code scanning. 
 
-   ![](media/adse11.png)
-   
+   ![](media/adse11.png)  
 
 1. By reaching into Codescanning pane under security tab, click on configure codeQL alerts.
 

@@ -168,7 +168,75 @@ We can automate our project tracking with the Azure Board integration for GitHub
    - Area Path: **fabrikam-<inject key="DeploymentID" enableCopy="false" />** ***(2)**
    - Iteration: Leave it to **deafault** ***(3)***
    
-   ![](media/2dg72.png)   
-
+   ![](media/2dg73.png)   
    
+1. From fabrikam-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** ***(1)*** button, hover over **New Suite** ***(2)***, and select **Static suite** ***(3)***.
+
+   ![](media/2dg74.png)   
+
+1. Create a new suite as **TestSuite-<inject key="DeploymentID" enableCopy="false" />**.
+
+   ![](media/2dg75.png)  
+   
+1. From thw Test plans tab, click on **New Test case**.
+
+   ![](media/2dg76.png)    
+   
+1. In the New Test Case pop up, provide the following details and click on **Save & Close** ***(8)***
+
+   - Name: **Validate the web app** ***(1)***
+   - Steps:
+     - 1. Actions: **Access the Contoso web app** ***(2)*** Expected result: **Succeeded** ***(3)***          
+     - 2. Actions: **Access Speakers page** ***(4)*** Expected result: **Succeeded** ***(5)***  
+     - 3. Actions: **Access Sessions page** ***(6)*** Expected result: **Succeeded** ***(7)***
+
+   ![](media/2dg77.png) 
+
+1. From thw Test plans tab, navigate to **Execute** ***(1)*** tab, select the **validate the web app** ***(2)*** test point and click on **Run for web app** ***(3)***.
+
+   ![](media/2dg78.png)
+   
+1. A web-based runner will be opened. Maunal testing of the web app can perfomed. Keep this page open, we'll will use the runner in upcoming steps.
+
+   ![](media/2dg79.png)
+   
+1. On the Azure portal search for **Resource groups** in the search bar ***(1)*** and select **Resource groups** ***(2)*** from the suggestions. 
+
+   ![](media/2dg80.png)   
+   
+1. In the resource group page, Select the **fabrikam-<inject key="DeploymentID" enableCopy="false" />** resource group fromthe list.
+
+   ![](media/2dg81.png)  
+   
+1. Select the App service from the name, **fabrikam-web-<inject key="DeploymentID" enableCopy="false" />** from the list of resources. 
+
+   ![](media/2dg82.png)
+   
+1. From the Overview page, access the web app using the **URL**.
+
+   ![](media/2dg83.png)    
+
+1. Verify the availability of the web app, speakers page, and sessions page. Simulatanously using the runner page, perform the mark the steps accordingly and click on **Save & close** ***(1)***.
+
+   ![](media/2dg84.png)
+   
+   ![](media/2dg85.png)   
+   
+1. From the execute tab, Verify the **outcome** of the manual testing. Outcome will be in passed state if the web app worked as expected and vice versa.
+
+   ![](media/2dg86.png)
+   
+1. Navigate to **chart** ***(1)***, click on **+ New** ***(2)*** and select **+ New test case chart** ***(3)***.
+
+   ![](media/2dg87.png)
+   
+1. In the Configure chart pop up, select **Bar** ***(1)*** as chart type, **Activated By** ***(2)*** for Group by optiom, and click on **OK** ***(3)***.
+
+   ![](media/2dg88.png)              
+   
+1. You'll be able to visualize the chart. You can explore more by making changes in the chart, by running multiple test cycles.
+
+   ![](media/2dg89.png)      
+
+1. Click on the **Next** button present in the bottom-right corner of this lab guide.
    

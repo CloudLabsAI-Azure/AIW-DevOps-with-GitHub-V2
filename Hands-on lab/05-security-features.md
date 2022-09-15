@@ -118,17 +118,21 @@ Code scanning is a feature that you use to analyze the code in a GitHub reposito
    1. In the description box include the following:
        
        Impact
+       
       _What kind of vulnerability is it? Who is impacted?_
 
       HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command or interacting with a      database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
+      
 
        Patches
+       
       _Has the problem been patched? What versions should users upgrade to?_
 
       It is patched and rectified the error. Please use 1.2 version
 
 
        Workarounds
+       
       _ Is there a way for users to fix or remediate the vulnerability without upgrading?_
 
       // set up rate limiter: maximum of five requests per minute
@@ -144,6 +148,7 @@ Code scanning is a feature that you use to analyze the code in a GitHub reposito
        Added the above code in app.js
 
        References
+       
       _Are there any links users can visit to find out more?_
 
       https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md

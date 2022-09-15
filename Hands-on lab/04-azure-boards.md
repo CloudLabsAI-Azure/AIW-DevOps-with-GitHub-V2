@@ -152,4 +152,12 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
    ![](media/2dg69.png)
    
+## Task 3: Configure Azure Test plan
+
+1. From Azure DevOps tab, select **Test plans** from the side blade.
+
+   ![](media/2dg71.png)
+   
+1. Click on **+ New Test Plan**
+   
    

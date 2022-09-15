@@ -165,7 +165,7 @@ We can automate our project tracking with the Azure Board integration for GitHub
 1. In New Test Plan tab, provide the following details and click on **Create** ***(4)***.
 
    - Name: **TestPlan-<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Area Path: **fabrikam-<inject key="DeploymentID" enableCopy="false" />** ***(2)**
+   - Area Path: **fabrikam-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
    - Iteration: Leave it to **deafault** ***(3)***
    
    ![](media/2dg73.png)   
@@ -216,7 +216,7 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
    ![](media/2dg83.png)    
 
-1. Verify the availability of the web app, speakers page, and sessions page. Simulatanously using the runner page, perform the mark the steps accordingly and click on **Save & close** ***(1)***.
+1. Verify the availability of the web app, speakers page, and sessions page. Simulatanously using the runner page, perform the testing by marking the steps according to availability of the web pages and click on **Save & close** ***(1)***.
 
    ![](media/2dg84.png)
    

@@ -70,7 +70,7 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
    ![](media/2dg58.png)
    
- 1. Go to Environment details click on **Service principle Credentials** copy **Application id(clientId)** , **clientSecret(secretkey)** , **subscriptionId** and **tenantId** 
+ 1. Go to Environment details click on **Service principle Credentials** copy **Application Id(Client Id)** , **Secret Key(Client Secret)** , **Subscription Id** and **Tenant Id**. 
     
     ![](media/2dg91.png)
     

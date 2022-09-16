@@ -1,9 +1,11 @@
 
 # Exercise 2: Continuous Integration
 
-Duration: 90 minutes
+In this exercise, you are going to set up the local infrastructure using Docker containers. There are three images you will be working with: fabrikam-init, fabrikam-api, and fabrikam-web. you will also build automation in GitHub for updating and republishing our Docker images when the code changes.
 
 ### Task 1: Access the lab files.
+
+In this task, you'll access and explore code repository of the web app using Visual Studio Code. Visual Studio Code is a cross-platform, lightweight but powerful source code editor.
 
 1. From the VM desktop, double click on the **Visual Studio Code** desktop icon to open the application.
 
@@ -26,6 +28,8 @@ Duration: 90 minutes
    ![](media/2dg30.png)
 
 ### Task 2: Start the Docker application.
+
+In this task, you'll initiate the docker application to host your application locally. Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications
 
 1. Minimize the browser and open the **Docker application** from the LabVM desktop. You may find that docker is stopping abruptly, try starting it multiple times to fix it.
 
@@ -60,6 +64,8 @@ Duration: 90 minutes
    ![](media/d12.png)
 
 ### Task 3: Set up Local Infrastructure
+
+In this task, You will set up the local infrastructure using Docker containers. You'll be wokring with three docker images:fabrikam-init, fabrikam-api, and fabrikam-web.
 
 11. Now you are going to set up the local infrastructure using Docker containers. There are three images you will be working with:
 
@@ -104,6 +110,8 @@ Duration: 90 minutes
 1. Leave this terminal in running and open a new terminal.
    
 ### Task 4: Create the Project Repo
+
+In this task, you'll access the GitHub exterprise account and create a new repository to store the infrastructure.
 
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
@@ -172,6 +180,8 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    
 ### Task 5: Create GitHub Personal Access Token
 
+In this task, you'll create personal access token which will be used in workflows to access GitHub. 
+
 1. Navigate back to the browser tab in which **GitHub**. In the upper-right corner of your GitHub page, click your profile photo, then click **Settings** ***(1)*** and in the left sidebar click **Developer settings** ***(2)***.
 
    ![Permissions GH](media/2dg18.png "Contoso conference site")
@@ -204,8 +214,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      
 ### Task 6: Build Automation with GitHub Registry
 
-Now that we have Docker images working locally, we can build automation in GitHub for updating and republishing our Docker images when the code changes. In this task, we will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
- 
+In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
  
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 

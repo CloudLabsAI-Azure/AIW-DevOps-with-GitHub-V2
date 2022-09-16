@@ -87,13 +87,14 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - Patched version: **1.2** ***(4)***
    - Severity: **High** ***(5)***
   
-   ![](media/secad1.png)
+   ![](media/2dg105.png)
      
-1. In the Common Weakness Enumerator Section, provide the following the details and Create **draft security advisory** ***(4)***
+1. In the Common Weakness Enumerator Section, provide the following the details and Create **draft security advisory** ***(5)***
 
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(1)***
-   - Title: **Improper Access Control in mcw-continuous-delivery-lab-files/content-web/app.js** ***(2)***
-   - Description: **Add** ***(3)*** the below mentioned details.
+   - CVE identifier: **Request CVE ID later** ***(2)***
+   - Title: **Improper Access Control in mcw-continuous-delivery-lab-files/content-web/app.js** ***(3)***
+   - Description: **Add** ***(4)*** the below mentioned details.
 
    ```
    Impact
@@ -128,7 +129,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
    ```
     
-   ![](media/2dg106.png)
+   ![](media/2dg108.png)
    
  1. Once thw security advisory is created, click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 

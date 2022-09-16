@@ -186,6 +186,7 @@ In this task, you'll will use Dependabot to track the versions of the packages w
                                                             # you set up your lab files repository
    git pull
    ```
+   
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.  
     
 

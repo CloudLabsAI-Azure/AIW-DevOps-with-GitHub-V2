@@ -1,8 +1,10 @@
 ## Exercise 4: Azure Boards and Test plans
 
+In this exercise, you'll explore about Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provides rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
+
 ### Task 1: Connect Azure Board with GitHub
 
-We can automate our project tracking with the Azure Board integration for GitHub. In this task, you will connect your Azure DevOps project's board to your GitHub repository.
+In this task, you will connect your Azure DevOps project's board to your GitHub repository using Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore about work items. 
 
 1. In your browser open GitHub Marketplace by navigating to the below URL:
 
@@ -60,7 +62,9 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
    ![A work item with a linked GitHub commit illustrating the link between Azure DevOps Boards and GitHub issues.](media/hol-ex1-task1-step10-1.png "Work Item with a Linked GitHub Commit")
    
-### Task 2: Link GitHub Pull requests to Boards items   
+### Task 2: Link GitHub Pull requests to Boards items
+
+In this task, you'll make changes in GitHub and link a PR to Azure boards using syntax and montior the work item.
 
 1. In Azure Boards tab, Click on **New Item** ***(1)***, provide **Deploy WebApp** as description and create a new work item.
 
@@ -119,7 +123,7 @@ We can automate our project tracking with the Azure Board integration for GitHub
    
 1. Click on **Start commit** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(5)***.
 
-   - Provide `workitem ID Updated` ***(2)*** as title. Make sure provide the same **Workitem ID** which was created in earlier step in Azure DevOps.
+   - Provide `workitem ID Updated` ***(2)*** as title. Make sure provide the same **Work item ID** which was created in earlier step in Azure DevOps.
    - Select **Create a new branch for this commit and start a pull request** ***(3)***  and name new branch as **deploy webapp** ***(4)***.
 
    ![](media/2dg62.png)
@@ -128,7 +132,7 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
    ![](media/2dg65.png)
    
-1. Navigate to **Azure Boards**. Open the **workitem** ***(1)*** created in earlier step.
+1. Navigate to **Azure Boards**. Open the **work item** ***(1)*** created in earlier step.
 
    ![](media/2dg63.png)
 
@@ -148,11 +152,13 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
    ![](media/2dg68.png)
    
-1. Navigate back Azure Boards tab and notice that the **workitem** has been marked as **done**.
+1. Navigate back Azure Boards tab and notice that the **work item** has been marked as **done**.
 
    ![](media/2dg69.png)
    
 ## Task 3: Configure Azure Test plan
+
+In this task, you'll set-up Azure test plan and perform manual testing for the application.
 
 1. From Azure DevOps tab, select **Test plans** from the side blade.
 
@@ -240,3 +246,4 @@ We can automate our project tracking with the Azure Board integration for GitHub
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
    
+

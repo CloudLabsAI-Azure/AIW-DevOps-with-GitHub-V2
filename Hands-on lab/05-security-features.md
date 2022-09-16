@@ -1,4 +1,4 @@
-# Exercise 3: Explore GitHub advance security features 
+# Exercise 5: Explore GitHub advance security features 
 
 In this exercise, you'll explore GitHub Enterprise features which is GitHub advance security features. You'll configure and explore about Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.  
 

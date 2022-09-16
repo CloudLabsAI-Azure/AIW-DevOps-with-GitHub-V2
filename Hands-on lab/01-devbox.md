@@ -1,6 +1,11 @@
-# Exercise 1: Dev Box
+# Exercise 1: Implement Dev Box
+
+Microsoft Dev Box is a service which provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
+In the exercise, you'll configure a dev box environment and access the dev box and explore its features.
 
 ## Task 1: Create Dev box definition
+
+In this task, you'll creata a Dev box definition. Dev box definitions define the image and SKU (compute + storage) that will be used in creation of the dev boxes.
 
 1. In Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
 
@@ -31,6 +36,8 @@
 >**Note:** Wait for the deployment to complete before proceeding with the lab.
   
 ## Task 2: Create Network connection
+
+In this task, you'll configure network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
 
 1. Navigate back to *Microsoft dev box* and then on the left hand side blade, click on **Network Connections** **(1)**, and then click on **Create network connection** **(2)**.
 
@@ -66,6 +73,8 @@
     
 ## Task 3: Create dev box pool
 
+In this task, you'll create a Dev pool using previously configured network connection and Dev Box definitions. A dev box pool is a collection of dev boxes that you manage together. 
+
 1. Return to Microsoft dev box, and click on **Projects** **(1)** then click on the **devbox-project** **(2)**.
 
   ![](media/ex101.png)
@@ -86,6 +95,8 @@
   
 ## Task 4: Giving user access over Dev box
 
+In this task, you'll explore about access control and provide access to Dev Box user using built-in DevCenter Dev Box User role.
+
 1. Return to Microsoft dev box, and click on **Projects** **(1)** then click on the **devbox-project** **(2)**.
 
   ![](media/ex101.png)
@@ -103,6 +114,8 @@
   ![](media/e123.png)
   
 ## Task 4: Launching Dev box
+
+In this task, you'll access a Dev Box and explore it's features.
 
 1. On a new browser tab, visit ```https://devbox.microsoft.com/```.
 

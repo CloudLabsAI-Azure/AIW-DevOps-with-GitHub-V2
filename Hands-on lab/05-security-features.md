@@ -1,156 +1,138 @@
 # Exercise 3: Explore GitHub advance security features 
 
-Duration 60 minutes
-
-Once the Fabrikamk Medical Conferences developer workflow has been deployed, we can apply the github advance security features.
-
-
 ## Task 1: Enabling Codescanning and CodeQL alerts 
 
-What is codescanning? 
-Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown in GitHub.
+In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown in GitHub.
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
    
-1. Go to seetings tab of the repository, then under security tab select code security and analysis. Click on Setup button of the code scanning. 
+1. Select the **setings** ***(1)*** tab from thr GitHub browser tab. Click on **code security and analysis** ***(2)*** under security side blade and then Click on **Set up**  ***(3)*** to enable code scanning. 
 
-   ![](media/adse11.png)  
+   ![](media/2dg92.png)  
 
-1. By reaching into Codescanning pane under security tab, click on configure codeQL alerts.
+1. Naivigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)*** from the side blade and click on **Configure CodeQL alerts** ***(3)***.
 
+   ![](media/2dg93.png)  
 
-   ![](media/adse12.png)
+1. A workflow **codeql-analysis.yml** ***(1)***. Review the yaml file, select **Start Commit** ***(2)*** and click on **commit new file** ***(3)***.
+  
+   ![](media/2dg94.png) 
+  
+1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
+    
+   ![](media/2dg95.png) 
+  
+1. Navigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)*** and click on **View alerts** ***(3)***.
    
-  
-1. It will generate a workflow codeql-analysis.yml. Review the yml file, you can find how many languages supported by codeQL and click on Start Commit, then click on      commit new file
-  
-  
-   ![](media/adse13.png)
-  
-  
-  
-      **Note** For most projects, this workflow file will not need changing; you simply need to commit it to your repository. You may wish to alter this file to             override the set of languages analyzed or to provide custom queries or build logic.
-  
-  1. Under Actions tab you can see the workflow committed successfully.
+   ![](media/2dg96.png)
     
-      ![](media/adse14.png)
-  
-  
-1. Go to Codescanning under security tab you can see code scanning alerts enabled. Click on View alerts
-   
-   
-    ![](media/adse15.png)
-    
-    
- 1. Click on the Missing rate Limiting alert and find on which line the alert showing, it will be on 73 line of the App.js file.
+1. Click on the **Missing rate Limiting** alert. The alert will be for 73 line in App.js file.
 
-
-    ![](media/adse16.png)
+   ![](media/2dg97.png)
     
-    Under security tab you can see the Missing rate Limiting in App.js file under Content-web folder
+1. You'll find the Missing rate Limiting in App.js file under Content-web folder.
     
-    ![](media/adse17.png)
+   ![](media/2dg98.png)
     
-  1. Open App.js file from the content-web folder and Add the following code after the 6th line of App.js file
+1. Navigate to **Code** ***(1)***, go to **mcw-continuous-delivery-lab-files/content-web**  ***(2)*** folder and edit the **app.js** file. Add the following the **content** ***(3)*** from line 7.
   
-     ```pwsh
-       // set up rate limiter: maximum of five requests per minute
+   ```pwsh
+     // set up rate limiter: maximum of five requests per minute
         var RateLimit = require('express-rate-limit');
-       var limiter = new RateLimit({
+        var limiter = new RateLimit({
         windowMs: 1*60*1000, // 1 minute
         max: 5
         });
-      ```
-         
-      
-      After adding the code it will looks like this
-      
-      ![](media/adse18.png)
-      
-  1. Add the following code before the alert line which would be 79 starts with app.get('*', (req, res) => {
+   ```
    
-      ```pwsh
-        // apply rate limiter to all requests
-        app.use(limiter);
-      ```
-    
-   1. After adding the code it will looks like this
-        
-      ![](media/adse19.png)
+   After adding the code it will looks like this
       
- 1. After adding the entire code go down and  click commit the file. It will successfully commit.
+   ![](media/2dg99.png)
+      
+1. In the same app.js file, Add the following content in the line 79 just before the `app.get('*', (req, res) =>{` line. 
+   
+   ```pwsh
+      // apply rate limiter to all requests
+      app.use(limiter);
+   ```
+    
+   ![](media/2dg100.png)
+      
+1. After adding the code, scroll down and  click on **Commit changes**. 
  
-    ![](media/adse21.png)
+   ![](media/2dg101.png)
+   
+1. Navigate to **Actions** tab, review the **update app.js** workflow.
+
+   ![](media/2dg102.png)
   
-  1. Go to codescanning under security tab, you can see the missing rate limit cleared.
+1. Navigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)***. You'll be able visualise that the **Missing rate Limiting** alert has been resolved.
+   
+   ![](media/2dg103.png)
+    
+## Task 2: Repository security advisories  
+ 
+In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
+ 
+1. Naivigate to **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade and click on **New draft security advisory** ***(3)***.
+
+   ![](media/2dg104.png)  
+
+     
+1. In the Open a draft security advisory tab, provide the following the details.
+     
+   - Ecosystem: **composer** ***(1)***
+   - Package name: **mcw-continuous-delivery-lab-files/content-web/app.js** ***(2)***
+   - Affected version: **<1.2** ***(3)***
+   - Patched version: **1.2** ***(4)***
+   - Severity: **High** ***(5)***
   
-      ![](media/adse22.png)
-
-      
- ## Task 2: Repository security advisories  
- 
- You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory. Anyone with admin permissions to a repository also has admin permissions to all security advisories in that repository. People with admin permissions to a security advisory can add collaborators, and collaborators have write permissions to the security advisory.
- 
- 1. Create Security Repository advisories
- 
-     Go to Security tab and then select advisories and then select New draft security advisory option.
+   ![](media/secad1.png)
      
-     ![](media/adse23.png)
-     
-  1. In the affected Product section Select the ecosystem as composer, provide the package name as **mcw-continuous-delivery-lab-files/content-web/app.js**, provide     affected version as <1.2 and patched version as 1.2 and provide severity as high
-  
-      ![](media/secad1.png)
-     
-   1. In the Common Weakness Enumerator Section provide CWE-284 which stands Improper Access Control havinig Missing Rate Limiting, provide the title if its not generated automatically as **Improper Access Control in mcw-continuous-delivery-lab-files/content-web/app.js**
+1. In the Common Weakness Enumerator Section, provide the following the details and Create **draft security advisory** ***(4)***
+
+   - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(1)***
+   - Title: **Improper Access Control in mcw-continuous-delivery-lab-files/content-web/app.js** ***(2)***
+   - Description: **Add** ***(3)*** the below mentioned details.
+
+   ```
+   Impact
+   What kind of vulnerability is it? Who is impacted?
+
+   HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command or interacting with a        database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker      can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
+
+   Patches
+   Has the problem been patched? What versions should users upgrade to?
+
+   It is patched and rectified the error. Please use 1.2 version
+
+   Workarounds
+   Is there a way for users to fix or remediate the vulnerability without upgrading?
+
+   // set up rate limiter: maximum of five requests per minute
+   var RateLimit = require('express-rate-limit');
+   var limiter = new RateLimit({
+   windowMs: 1601000, // 1 minute
+   max: 5
+   });
+
+   // apply rate limiter to all requests
+   app.use(limiter);
+
+   Added the above code in app.js
+
+   References
+   Are there any links users can visit to find out more?
+
+   https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md
+   https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
+   ```
     
-      ![](media/secad4.png)
-      
-   1. In the description box include the following:
-       
-       Impact
-       
-      _What kind of vulnerability is it? Who is impacted?_
+   ![](media/2dg106.png)
+   
+ 1. Once thw security advisory is created, click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
-      HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command or interacting with a      database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
-      
-
-       Patches
-       
-      _Has the problem been patched? What versions should users upgrade to?_
-
-      It is patched and rectified the error. Please use 1.2 version
-
-
-       Workarounds
-       
-      _ Is there a way for users to fix or remediate the vulnerability without upgrading?_
-
-      // set up rate limiter: maximum of five requests per minute
-      var RateLimit = require('express-rate-limit');
-      var limiter = new RateLimit({
-       windowMs: 1*60*1000, // 1 minute
-        max: 5
-        });
-
-       // apply rate limiter to all requests
-       app.use(limiter);
-
-       Added the above code in app.js
-
-       References
-       
-      _Are there any links users can visit to find out more?_
-
-      https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md
-      https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
-    
-  1. After filled the description box fill the Credit section with current user name. Then click on Create draft security advisory.
- 
-     ![](media/adse24.png)
-    
- 1. Once created the security advisory go to start a temporary private fork, it is used to collaborate on a patch for this advisory.
-
-    ![](media/secad8.png)
+    ![](media/2dg107.png)
   
  1. After having the temporary fork you can request for a CVE, it is used for GitHub reviews published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 

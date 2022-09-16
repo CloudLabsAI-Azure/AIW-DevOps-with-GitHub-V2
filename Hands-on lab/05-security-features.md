@@ -139,7 +139,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
   
  1. After having the temporary fork you can request for a CVE, it is used for GitHub reviews published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
-**Note**: This process may take up to 3 working days. Please do not close the security repository.
+    **Note**: This process may take up to 3 working days. Please do not close the security repository.
  
 ### Task 4: Using Dependabot
 

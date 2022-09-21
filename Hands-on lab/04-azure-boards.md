@@ -176,7 +176,7 @@ In this task, you'll set-up Azure test plan and perform manual testing for the a
    
 1. From fabrikam-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** ***(1)*** button, hover over **New Suite** ***(2)***, and select **Static suite** ***(3)***.
 
-   ![](media/2dg74.png)   
+   ![](media/2dg109.png)   
 
 1. Create a new suite as **TestSuite-<inject key="DeploymentID" enableCopy="false" />**.
 

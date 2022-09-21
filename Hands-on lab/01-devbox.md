@@ -1,13 +1,13 @@
 # Exercise 1: Implement Dev Box
 
-Microsoft Dev Box is a service which provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
+Microsoft Dev Box is a service that provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
 In the exercise, you'll configure a dev box environment and access the dev box and explore its features.
 
 ## Task 1: Create Dev box definition
 
-In this task, you'll creata a Dev box definition. Dev box definitions define the image and SKU (compute + storage) that will be used in creation of the dev boxes.
+In this task, you'll create a Dev box definition. Dev box definitions define the image and SKU (compute + storage) that will be used in the creation of the dev boxes.
 
-1. In Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
+1. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
 
   ![](media/e101.png)
   
@@ -29,7 +29,7 @@ In this task, you'll creata a Dev box definition. Dev box definitions define the
 
   ![](media/e112.png)
   
-1. Once the definition is created, In Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
+1. Once the definition is created, In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
 
   ![](media/e101.png)
   
@@ -37,13 +37,13 @@ In this task, you'll creata a Dev box definition. Dev box definitions define the
   
 ## Task 2: Create Network connection
 
-In this task, you'll configure network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
+In this task, you'll configure the network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
 
-1. Navigate back to *Microsoft dev box* and then on the left hand side blade, click on **Network Connections** **(1)**, and then click on **Create network connection** **(2)**.
+1. Navigate back to *Microsoft dev box* and then on the left-hand side blade, click on **Network Connections** **(1)**, and then click on **Create network connection** **(2)**.
 
   ![](media/e113.png)
   
-1. Now under *Create a network connection* window, enter the following details and click on **Review and Create**.
+1. Now under the *Create a network connection* window, enter the following details and click on **Review and Create**.
 
   - Domain join type: **Azure active directory join**
   - ResourceGroup: **devbox-rg**
@@ -63,7 +63,7 @@ In this task, you'll configure network connection using Dev Center. Network conn
 
   ![](media/e109.png)
 
-1. Now under left hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
+1. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 
   ![](media/e117.png)
   
@@ -115,7 +115,7 @@ In this task, you'll explore about access control and provide access to Dev Box 
   
 ## Task 4: Launching Dev box
 
-In this task, you'll access a Dev Box and explore it's features.
+In this task, you'll access a Dev Box and explore its features.
 
 1. On a new browser tab, visit ```https://devbox.microsoft.com/```.
 

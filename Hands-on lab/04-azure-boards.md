@@ -1,10 +1,10 @@
 ## Exercise 4: Azure Boards and Test plans
 
-In this exercise, you'll explore about Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provides rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
+In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provides rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
 
 ### Task 1: Connect Azure Board with GitHub
 
-In this task, you will connect your Azure DevOps project's board to your GitHub repository using Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore about work items. 
+In this task, you will connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items. 
 
 1. In your browser open GitHub Marketplace by navigating to the below URL:
 
@@ -14,7 +14,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
     ![The Azure Boards Integration App on GitHub Marketplace that will provide a link between Azure DevOps Boards and GitHub issues.](media/hol-ex1-task1-step1.png "Azure Boards Integration App on GitHub Marketplace")
 
-1. Scroll to the bottom of the page and select `Install it for Free`.
+1. Scroll to the bottom of the page and select `Install it for Free.`
 
    ![](media/2dg50.png)
    
@@ -64,9 +64,9 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    
 ### Task 2: Link GitHub Pull requests to Boards items
 
-In this task, you'll make changes in GitHub and link a PR to Azure boards using syntax and montior the work item.
+In this task, you'll make changes in GitHub and link a PR to Azure boards using syntax and monitor the work item.
 
-1. In Azure Boards tab, Click on **New Item** ***(1)***, provide **Deploy WebApp** as description and create a new work item.
+1. In the Azure Boards tab, click on **New Item** ***(1)***, provide **Deploy WebApp** as a description and create a new work item.
 
    ![](media/2dg57.png)
    
@@ -115,13 +115,13 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/2dg60.png)
    
-1. Copy the code from `https://raw.githubusercontent.com/CloudLabs-MCW/MCW-Continuous-delivery-in-Azure-DevOps/microsoft-devops-with-github-v2/Hands-on%20lab/docker-flow.yml` ***(1)*** link and paste it in the end of the file. Make sure there are no identation errors.
+1. Copy the code from `https://raw.githubusercontent.com/CloudLabs-MCW/MCW-Continuous-delivery-in-Azure-DevOps/microsoft-devops-with-github-v2/Hands-on%20lab/docker-flow.yml` ***(1)*** link and paste it in the end of the file. Make sure there are no indentation errors.
 
    ![](media/2dg61.png)
    
 1. Click on **Start commit** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(5)***.
 
-   - Provide `workitem ID Updated` ***(2)*** as title. Make sure provide the same **Work item ID** which was created in earlier step in Azure DevOps.
+   - Provide `workitem ID Updated` ***(2)*** as title. Make sure to provide the same **Work item ID** which was created in the earlier step in Azure DevOps.
    - Select **Create a new branch for this commit and start a pull request** ***(3)***  and name new branch as **deploy webapp** ***(4)***.
 
    ![](media/2dg62.png)
@@ -146,7 +146,7 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/2dg67.png)
    
-1. Update the desciption as **fixed AB#{workitemID} updated** and select **confirm merge**.
+1. Update the description as **fixed AB#{workitemID} updated** and select **confirm merge**.
 
    ![](media/2dg68.png)
    
@@ -156,17 +156,17 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
    
 ## Task 3: Configure Azure Test plan
 
-In this task, you'll set-up Azure test plan and perform manual testing for the application.
+In this task, you'll set up an Azure test plan and perform manual testing for the application.
 
-1. From Azure DevOps tab, select **Test plans** from the side blade.
+1. From the Azure DevOps tab, select **Test plans** from the side blade.
 
    ![](media/2dg71.png)
    
-1. From thw Test plans tab, click on **+ New Test Plan**
+1. From the Test plans tab, click on **+ New Test Plan**
 
    ![](media/2dg72.png)
    
-1. In New Test Plan tab, provide the following details and click on **Create** ***(4)***.
+1. In the New Test Plan tab, provide the following details and click on **Create** ***(4)***.
 
    - Name: **TestPlan-<inject key="DeploymentID" enableCopy="false" />** ***(1)***
    - Area Path: **fabrikam-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
@@ -182,11 +182,11 @@ In this task, you'll set-up Azure test plan and perform manual testing for the a
 
    ![](media/2dg75.png)  
    
-1. From thw Test plans tab, click on **New Test case**.
+1. From the Test plans tab, click on **New Test case**.
 
    ![](media/2dg76.png)    
    
-1. In the New Test Case pop up, provide the following details and click on **Save & Close** ***(8)***
+1. In the New Test Case pop-up, provide the following details and click on **Save & Close** ***(8)***
 
    - Name: **Validate the web app** ***(1)***
    - Steps:
@@ -196,11 +196,11 @@ In this task, you'll set-up Azure test plan and perform manual testing for the a
 
    ![](media/2dg77.png) 
 
-1. From thw Test plans tab, navigate to **Execute** ***(1)*** tab, select the **validate the web app** ***(2)*** test point and click on **Run for web app** ***(3)***.
+1. From the Test plans tab, navigate to **Execute** ***(1)*** tab, select the **validate the web app** ***(2)*** test point and click on **Run for web app** ***(3)***.
 
    ![](media/2dg78.png)
    
-1. A web-based runner will be opened. Maunal testing of the web app can perfomed. Keep this page open, we'll will use the runner in upcoming steps.
+1. A web-based runner will be opened. Manual testing of the web app can performed. Keep this page open, we will use the runner in upcoming steps.
 
    ![](media/2dg79.png)
    
@@ -208,7 +208,7 @@ In this task, you'll set-up Azure test plan and perform manual testing for the a
 
    ![](media/2dg80.png)   
    
-1. In the resource group page, Select the **fabrikam-<inject key="DeploymentID" enableCopy="false" />** resource group fromthe list.
+1. In the resource group page, Select the **fabrikam-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](media/2dg81.png)  
    
@@ -220,13 +220,13 @@ In this task, you'll set-up Azure test plan and perform manual testing for the a
 
    ![](media/2dg83.png)    
 
-1. Verify the availability of the web app, speakers page, and sessions page. Simulatanously using the runner page, perform the testing by marking the steps according to availability of the web pages and click on **Save & close** ***(1)***.
+1. Verify the availability of the web app, speakers page, and sessions page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
 
    ![](media/2dg84.png)
    
    ![](media/2dg85.png)   
    
-1. From the execute tab, Verify the **outcome** of the manual testing. Outcome will be in passed state if the web app worked as expected and vice versa.
+1. From the execute tab, Verify the **outcome** of the manual testing. The Outcome will be in a passed state if the web app worked as expected and vice versa.
 
    ![](media/2dg86.png)
    
@@ -234,11 +234,11 @@ In this task, you'll set-up Azure test plan and perform manual testing for the a
 
    ![](media/2dg87.png)
    
-1. In the Configure chart pop up, select **Bar** ***(1)*** as chart type, **Activated By** ***(2)*** for Group by optiom, and click on **OK** ***(3)***.
+1. In the Configure chart pop up, select **Bar** ***(1)*** as chart type, **Activated By** ***(2)*** for Group by option, and click on **OK** ***(3)***.
 
    ![](media/2dg88.png)              
    
-1. You'll be able to visualize the chart. You can explore more by making changes in the chart, by running multiple test cycles.
+1. You'll be able to visualize the chart. You can explore more by making changes in the chart, and by running multiple test cycles.
 
    ![](media/2dg89.png)      
 

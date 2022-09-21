@@ -32,7 +32,7 @@
   
 ## Task 2: Create Network connection
 
-1. Navigate back to *Microsoft dev box* and then on the left hand side blade, click on **Network Connections** **(1)**, and then click on **Create network connection** **(2)**.
+1. Navigate back to *Microsoft dev box* and then on the left hand side blade, click on **Network Connections** **(1)**, and then click on **+ Create** **(2)**.
 
   ![](media/e113.png)
   
@@ -62,7 +62,7 @@
   
 6. Now under *Add network connection*, click on **Add**.
 
-    ![](media/e118.png)
+  ![](media/e118.png)
     
 ## Task 3: Create dev box pool
 
@@ -101,8 +101,9 @@
 4. Under Members, click on **+ Select members** **(1)**, then search and select the ODL user **(2)**, and then click on **Select** **(3)** followed by **Review + assign** **(4)**.
 
   ![](media/e123.png)
+
   
-## Task 4: Launching Dev box
+## Task 5: Launching Dev box
 
 1. On a new browser tab, visit ```https://devbox.microsoft.com/```.
 
@@ -110,4 +111,22 @@
 
   ![](media/e124.png)
 
+3. On **Your Dev box** page, click on the drop down button **(1)** and click on **Open in browser** **(2)**.
 
+  ![](media/e125.png)
+
+4. In Session settings, click on **Connect**.
+
+  ![](media/e126.png)
+
+5. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
+
+  - Username:
+  - Password:
+
+  ![](media/e127.png)
+
+6. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
+
+  ![](media/e128.png)
+  

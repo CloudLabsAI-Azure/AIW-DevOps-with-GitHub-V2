@@ -192,9 +192,9 @@ In this task, you'll create personal access token which will be used in workflow
    
 1. Select the scopes or permissions you would like to grant this token
 
-   - **Note**: Enter this value in the note field, **<inject key="DeploymentID" enableCopy="false" />-token**
+   - **Note**: Enter this value in the note field, **<inject key="DeploymentID" enableCopy="false" />-token** ***(1)***
     
-   - **Select scopes**:
+   - **Select scopes** ***(2)***:
 
      * repo - Full control of private repositories
      * workflow - Update GitHub Action workflows

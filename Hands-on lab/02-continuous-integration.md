@@ -5,9 +5,9 @@ In this exercise, you are going to set up the local infrastructure using Docker 
 
 ### Task 1: Access the lab files.
 
-In this task, you'll access and explore code repository of the web app using Visual Studio Code. Visual Studio Code is a cross-platform, lightweight but powerful source code editor.
+In this task, you'll access and explore the code repository of the web app using Visual Studio Code. Visual Studio Code is a cross-platform, lightweight but powerful source code editor.
 
-1. From the VM desktop, double click on the **Visual Studio Code** desktop icon to open the application.
+1. From the VM desktop, double-click on the **Visual Studio Code** desktop icon to open the application.
 
    ![](media/2dg4.png "New Repository Creation Form")
    
@@ -19,11 +19,11 @@ In this task, you'll access and explore code repository of the web app using Vis
 
    ![](media/2dg12.png)
     
-1. You may receive a prompt that: Do you trust the authors of the files in this folder? select the **checkbox** **(1)** the box and click on **Yes, I trust the authors** **(2)**.
+1. You may receive a prompt: Do you trust the authors of the files in this folder? select the **checkbox** **(1)** the box and click on **Yes, I trust the authors** **(2)**.
 
    ![](media/2dg13.png)
    
-1. You'll be to see the lab files in Visual Studio code, explore the code files.
+1. You'll be to see the lab files in Visual Studio code and explore the code files.
 
    ![](media/2dg30.png)
 
@@ -35,13 +35,13 @@ In this task, you'll initiate the docker application to host your application lo
 
    ![](media/d4.png)
   
-   >**Note**: If you get a warning pop up saying **Windows 17762 deprecated**. Please click on **OK**. Docker application might take a few seconds to open, please wait till the application opens.
+   >**Note**: If you get a warning pop-up saying **Windows 17762 deprecated**. Please click on **OK**. The Docker application might take a few seconds to open, please wait till the application opens.
    
 1. Click on **Start**.
 
    ![](media/d7.png)
 
-1. Skip the tutorial pop up by clicking on **Skip tutorial** situated in the bottom-left corner of the application.
+1. Skip the tutorial pop-up by clicking on **Skip tutorial** situated in the bottom-left corner of the application.
 
    ![](media/d8.png)
    
@@ -51,7 +51,7 @@ In this task, you'll initiate the docker application to host your application lo
    
    >**Note**: If the Docker application is taking more than 10 mins to start. Please follow the steps from the `https://github.com/CloudLabs-MCW/MCW-Continuous-delivery-in-Azure-DevOps/blob/microsoft-devops-with-github-v2/Hands-on%20lab/docker-install.md` link and start the Docker again.
    
-1. Open Visual Studio Code application which was accessed in previous task. Select **Terminal** ***(1)*** and click on **New Terminal** ***(2)*** to open the terminal. It will open a new PowerShell session which you'll be using throughout the lab.
+1. Open the Visual Studio Code application which was accessed in the previous task. Select **Terminal** ***(1)*** and click on **New Terminal** ***(2)*** to open the terminal. It will open a new PowerShell session which you'll be using throughout the lab.
 
    ![](media/2dg31.png "New Repository Creation Form")
    
@@ -77,7 +77,7 @@ In this task, You will set up the local infrastructure using Docker containers. 
   
   >**Note**: You should replace three instances of `<yourgithubaccount>` - one instance in `docker-compose.init.yml` and two instances in `docker-compose.yml`.
    
-1. Open Visual Studio Code application. From the Explorer, open the `docker-compose-init.yml` ***(1)***  and replace `<yourgithubaccount>` ***(2)*** value in line no. 6 with your GitHub username. After updating save the file using CTRL+S.
+1. Openthe Visual Studio Code application. From the Explorer, open the `docker-compose-init.yml` ***(1)***  and replace `<yourgithubaccount>` ***(2)*** value in line no. 6 with your GitHub username. After updating save the file using CTRL+S.
    
    ![](media/2dg14.png)
    
@@ -87,7 +87,7 @@ In this task, You will set up the local infrastructure using Docker containers. 
 
    ![](media/2dg15.png)
    
-1. Open a **New Terminal** in the Visual Studio Code by selecting **Terminal (1)** then on **New Terminal (2)**.
+1. Open a **New Terminal** in the Visual Studio Code by selecting **Terminal (1)** and then on **New Terminal (2)**.
 
    ![](media/2dg5.png "New Repository Creation Form")
     
@@ -111,7 +111,7 @@ In this task, You will set up the local infrastructure using Docker containers. 
    
 ### Task 4: Create the Project Repo
 
-In this task, you'll access the GitHub exterprise account and create a new repository to store the infrastructure.
+In this task, you'll access the GitHub enterprise account and create a new repository to store the infrastructure.
 
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
@@ -119,7 +119,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
     > **Note** : You have to use your own GitHub account. If you don't have a GitHub account then navigate to the following link ```https://github.com/join``` and create one.
     
-1. In the upper-right corner, expand the user **drop down menu** ***(1)*** and select **Your repositories** ***(2)***.
+1. In the upper-right corner, expand the user **drop-down menu** ***(1)*** and select **Your repositories** ***(2)***.
 
    ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
 
@@ -137,15 +137,15 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](media/2dg3.png "Quick setup screen")
    
-1. Navigate back to the **Visual Studio Code** application in which terminal is already open. In terminal, Click on the **drop down** button and select **PowerShell** to open a fresh PowerShell terminal tab
+1. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab
 
    ![](media/2dg8.png)
 
-   >**Note**: From the terminal, you can switch between the multiple mutliple terminal tabs which is one of the handy features of VS Code.
+   >**Note**: From the terminal, you can switch between the multiple terminal tabs which is one of the handy features of VS Code.
 
    ![](media/2dg9.png)
 
-1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which git uses for commits. Make sure to replace your email and username.
+1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. Make sure to replace your email and username.
    
      ```pwsh
      cd C:\Workspaces\lab\mcw-continuous-delivery-lab-files
@@ -168,11 +168,11 @@ In this task, you will create an account in [GitHub](https://github.com) and use
       git push -u origin main
       ```
       
-    - After running the above commands, you will be prompted with a pop-up window to sign in to the GitHub. Select **Sign in with your Browser** on the **Connect to GitHub** pop-up window.
+    - After running the above commands, you will be prompted with a pop-up window to sign in to GitHub. Select **Sign in with your Browser** on the **Connect to GitHub** pop-up window.
 
        ![](media/siginwithbrowser.png)
      
-   - If you are re-directed to the Git Credential Manager page, sign in to the GitHub using your personal GitHub account credentials.
+   - If you are re-directed to the Git Credential Manager page, sign in to GitHub using your personal GitHub account credentials.
 
        ![](media/gitcred.png)
        
@@ -249,14 +249,14 @@ In this exercise, you will build automation in GitHub for updating and republish
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
 
-1. From the GitHub browser tab, follow the steps given below and click on **Create  codespace on main** ***(3)***.
+1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 
    - click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
    ![](media/2dg32.png)
    
-1. You'll be redirected to a new codespace tab in browser. Please wait untill the codespace is configured.
+1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
    ![](media/2dg33.png)
    
@@ -268,7 +268,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/2dg35.png)
    
-1. Using terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
+1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
    ```pwsh
    git add .
@@ -279,7 +279,7 @@ The last task automated building and updating only one of the Docker images. In 
     
    > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
-1. Navigate back to GitHub browser, select the **Actions** ***(1)*** tab and review the **workflow** ***(2)*** created automatically for the changes made. 
+1. Navigate back to the GitHub browser, select the **Actions** ***(1)*** tab and review the **workflow** ***(2)*** created automatically for the changes made. 
 
    ![](media/2dg37.png)
 
@@ -291,7 +291,7 @@ The last task automated building and updating only one of the Docker images. In 
    
    ![](media/2dg38.png) 
    
-1. Using terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
+1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
    ![](media/2dg39.png) 
    
@@ -315,7 +315,7 @@ The last task automated building and updating only one of the Docker images. In 
    
    ![](media/2dg42.png)
    
-1. Using terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
+1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
    ```pwsh
    git add .

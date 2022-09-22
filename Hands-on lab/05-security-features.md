@@ -1,18 +1,18 @@
 # Exercise 5: Explore GitHub advance security features 
 
-In this exercise, you'll explore GitHub Enterprise features which is GitHub advance security features. You'll configure and explore about Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.  
+In this exercise, you'll explore GitHub Enterprise features which is GitHub advance security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.  
 
 ## Task 1: Enabling Code scanning and CodeQL alerts 
 
-In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown in GitHub.
+In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
 
-**Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
+**Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to the public.
    
-1. Select the **setings** ***(1)*** tab from thr GitHub browser tab. Click on **code security and analysis** ***(2)*** under security side blade and then Click on **Set up**  ***(3)*** to enable code scanning. 
+1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under security side blade and then Click on **Set up**  ***(3)*** to enable code scanning. 
 
    ![](media/2dg92.png)  
 
-1. Naivigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)*** from the side blade and click on **Configure CodeQL alerts** ***(3)***.
+1. Navigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)*** from the side blade and click on **Configure CodeQL alerts** ***(3)***.
 
    ![](media/2dg93.png)  
 
@@ -47,11 +47,11 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
         });
    ```
    
-   After adding the code it will looks like this
+   After adding the code it will look like this
       
    ![](media/2dg99.png)
       
-1. In the same app.js file, Add the following content in the line 79 just before the `app.get('*', (req, res) =>{` line. 
+1. In the same app.js file, Add the following content in line 79 just before the `app.get('*', (req, res) =>{` line. 
    
    ```pwsh
       // apply rate limiter to all requests
@@ -60,7 +60,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
     
    ![](media/2dg100.png)
       
-1. After adding the code, scroll down and  click on **Commit changes**. 
+1. After adding the code, scroll down and click on **Commit changes**. 
  
    ![](media/2dg101.png)
    
@@ -68,7 +68,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/2dg102.png)
   
-1. Navigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)***. You'll be able visualise that the **Missing rate Limiting** alert has been resolved.
+1. Navigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)***. You'll be able visualize that the **Missing rate Limiting** alert has been resolved.
    
    ![](media/2dg103.png)
     
@@ -76,12 +76,12 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
  
 In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
  
-1. Naivigate to **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade and click on **New draft security advisory** ***(3)***.
+1. Navigate to **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade and click on **New draft security advisory** ***(3)***.
 
    ![](media/2dg104.png)  
 
      
-1. In the Open a draft security advisory tab, provide the following the details.
+1. In the Open a draft security advisory tab, provide the following details.
      
    - Ecosystem: **composer** ***(1)***
    - Package name: **mcw-continuous-delivery-lab-files/content-web/app.js** ***(2)***
@@ -91,7 +91,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
   
    ![](media/2dg105.png)
      
-1. In the Common Weakness Enumerator Section, provide the following the details and Create **draft security advisory** ***(5)***
+1. In the Common Weakness Enumerator Section, provide the following details and Create **draft security advisory** ***(5)***
 
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
@@ -133,17 +133,17 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
     
    ![](media/2dg108.png)
    
- 1. Once thw security advisory is created, click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
+ 1. Once the security advisory is created, click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
     ![](media/2dg107.png)
   
- 1. After having the temporary fork you can request for a CVE, it is used for GitHub reviews published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
+ 1. After having the temporary fork you can request a CVE, it is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
     **Note**: This process may take up to 3 working days. Please do not close the security repository.
  
 ### Task 4: Using Dependabot
 
-In this task, you'll will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
+In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
 1. In your lab files GitHub repository, navigate to the `Security` tab. Select the `Enable Dependabot alerts` button.
 
@@ -177,7 +177,7 @@ In this task, you'll will use Dependabot to track the versions of the packages w
 
    ![The Pull Request Merge Button in the Pull Request detail.](media/hol-ex1-task2-step6-2.png "Pull Request Merge Button")
     
-   >**Note**: In case if you see any errors with merge request. Retry step 4 to step 6 by selecting any other`handlebars` Dependabot alert.
+   >**Note**: In case you see any errors with merge request. Retry step 4 to step 6 by selecting any other `handlebars` Dependabot alert.
 
 1. Pull the latest changes from your GitHub repository to your local GitHub folder.
 

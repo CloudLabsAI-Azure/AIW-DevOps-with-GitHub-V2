@@ -39,6 +39,20 @@ In this task you'll create **Azure Load Testing** instance and run a test using 
 
      ![](media/Ex6-T1-S7.png)
 
-8.  
+8. On your lab-vm navigate to **test.jmx** file and open using **Visual Studio Code**. In line 33 replace **Enter_your_end_point_URL** with the URL of **fabmedical-web-<inject key="DeploymentID" enableCopy="false" />**.
+  
+     > **Note**: Your end point URL should look similar to this **fabmedical-web-<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net**.
+  
+     ![](media/Ex6-T1-S8.png)
        
-       
+9. Next on the **Test plan** tab click on the file icon **(1)** and select **test.jmx (3)** file and select **Upload (3)**.
+    
+     ![](media/Ex6-T1-S9.1.png)
+
+10. Once the file has been uploaded click on **Review + create**.
+
+     ![](media/Ex6-T1-S10.png)
+
+11. When the test has completed executing you will be able to view **Client-side metrics**, as shown in the image. Please Observe the given metrics 
+
+     ![](media/Ex6-T1-S11.png)

@@ -53,6 +53,6 @@ In this task you'll create **Azure Load Testing** instance and run a test using 
 
      ![](media/Ex6-T1-S10.png)
 
-11. When the test has completed executing you will be able to view **Client-side metrics**, as shown in the image. Please Observe the given metrics 
+11. Once the test run is completed you will be able to see **Client-side metrics**. Explore the given metrics output.
 
      ![](media/Ex6-T1-S11.png)

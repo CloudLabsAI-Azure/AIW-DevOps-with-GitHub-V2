@@ -119,4 +119,26 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
   
        ![](media/Ex6-T2-S11.png)
   
-  12. 
+  12. Navigate back to the **CosmosDB** instance and select **Access control (IAM)**, click on **+ Add** select **Add role assignment**. 
+  
+       ![](media/Ex6-T2-S12.png)
+  
+  13. In the **Add role assignment page** under **Role** tab  select **Owner** and select **Next**.
+  
+       ![](media/Ex6-T2-S13.png)
+  
+  14. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
+   
+      ![](media/Ex6-T2-S14.png)
+  
+  15. Click on **Review + assign**. 
+   
+      ![](media/Ex6-T2-S15.png)
+      
+  16. On the Azure portal navigate back to the Chaos experiment you created **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
+  
+      ![](media/Ex6-T2-S16.png)
+ 
+ 17. Select **Ok** for **Start this experiment pop-up**.
+
+       ![](media/Ex6-T2-S17.png)

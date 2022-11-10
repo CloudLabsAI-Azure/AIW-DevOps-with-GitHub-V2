@@ -56,3 +56,21 @@ In this task you'll create **Azure Load Testing** instance and run a test using 
 11. Once the test run is completed you will be able to see **Client-side metrics**. Explore the given metrics output.
 
      ![](media/Ex6-T1-S11.png)
+     
+## Task 2: Explore Chaos Studio
+
+In this task you will add **Targets** and create an **Expirement** on **Azure Chaos Studio** to check the resilience of the web appliccation that we created by adding  real faults and observe how our applications respond to real-world disruptions.
+
+1. Navigate to Azure portal, on **Search resources, services, and docs** search and select **Azure Chaos Studio**.
+      
+      ![](media/Ex6-T2-S1.png)
+
+2. In the **Azure Chaos Studio** select **Targets** on the left menu.
+
+      ![](media/Ex6-T2-S2.png)
+      
+ 3. Select **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />** resource group from the drop-down.
+ 
+       ![](media/Ex6-T2-S3.png)
+     
+ 4. 

@@ -73,4 +73,8 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  
        ![](media/Ex6-T2-S3.png)
      
- 4. 
+ 4. Click on the **fabmedical-cdb-<inject key="DeploymentID" enableCopy="false" />** **Cosmos DB** instance and form the drop-down for **Enable Targets** choose **Enable service-direct targets (All resources)**.
+
+     ![](media/Ex6-T2-S4.png)
+     
+ 5. Once the target is enabled, select **Expirements** on the left and click create.

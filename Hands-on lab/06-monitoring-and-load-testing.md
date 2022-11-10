@@ -77,4 +77,46 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
 
      ![](media/Ex6-T2-S4.png)
      
- 5. Once the target is enabled, select **Expirements** on the left and click create.
+ 5. Once the target is enabled, select **Expirements** on the left and click **+Create**.
+ 
+     ![](media/Ex6-T2-S5.1.png)
+ 
+ 6. On **Create an experiment** page under **Basics** tab provide the following values and select **Next:Experiment designer>**.
+ 
+    - Subscription: Your Azure subscription for this lab from the drop-down
+    - Resource Group: fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />
+    - Name: fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" />
+    - Region: Leave default
+ 
+     ![](media/Ex6-T2-S6.2.png)
+ 
+ 7. On the **Experiment designer** page select **+ Add action** and choose **Add fault**.
+
+      ![](media/Ex6-T2-S7.1.png)
+ 
+ 8. On the **Add fault** page, select the following and select Next: **Target resources**.
+   
+     - Faults: CosmosDB Failover
+     - Duration (minutes): 5
+     - Read region: Select the region 
+     
+      ![](media/Ex6-T2-S8.png)
+       
+    > **Note:** The **Read region** is available in the overview page of the **CosmoDB** instance. 
+        
+       ![](media/Note-1.png)
+       
+ 
+  9. On the  **Target resources** select the **CosmoDB** instance and **Add**.
+  
+       ![](media/Ex6-T2-S9.1.png)
+  
+  10. Click on **Review + create**.
+  
+        ![](media/Ex6-T2-S10.png)
+   
+  11. On the **Review + create** click on **Create**.
+  
+       ![](media/Ex6-T2-S11.png)
+  
+  12. 

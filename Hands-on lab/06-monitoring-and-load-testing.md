@@ -86,12 +86,12 @@ In this task you'll create **Azure Load Testing** instance and run a test using 
    
     ![](media/Ex6-T1-S2.png)
       
-3.  On the **Creat a load testing resource** screen provide the following values and click **Review + create**.
+3.  On the **Creat a load testing resource** screen provide the following values and click on **Review + create (5)**.
 
-    - Subscription(1): Your Azure subscription for this lab from the drop-down
-    - Resource Group(2): fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />
-    - Name: fabmedical_LT_<inject key="DeploymentID" enableCopy="false" />
-    - Region: Leave default
+    - Subscription(1): select the default subscription **(1)**
+    - Resource Group(2): **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" /> (2)**
+    - Name: **fabmedical_LT_<inject key="DeploymentID" enableCopy="false" /> (3)** 
+    - Region: Leave it to default **(4)**
     
      ![](media/Ex6-T1-S3.1.png)
  

@@ -61,8 +61,11 @@ In this task you'll create **Azure Load Testing** instance and run a test using 
 
 In this task you will add **Targets** and create an **Expirement** on **Azure Chaos Studio** to check the resilience of the web appliccation that we created by adding  real faults and observe how our applications respond to real-world disruptions.
 
-1.  On the Azure portal navigate to the **CosmoDB** instance **fabmedical-cdb-<inject key="DeploymentID" enableCopy="false" />**, on the overview page note down the second **Read region** we will require this the further steps. 
-        
+1.  On the Azure portal navigate to the **CosmoDB** instance **fabmedical-cdb-<inject key="DeploymentID" enableCopy="false" />**, on the overview page note down the second **Read Locations** we will require this the further steps. 
+  
+    > **Note:** Notice there are two regions present in both **Read Locations** and **Write Locations** the primary region is where the resource is deployed and running, and the secondary region is the backup region. When performing the Chaos experiment, we will observe that the cosmos DB instance will run undisturbed despite adding fault. This is because the primary region is being replaced by the secondary or the backup region.
+     
+      
      ![](media/Note-1.1.png)
 
 2.  On **Search resources, services, and docs** search and select **Azure Chaos Studio**.
@@ -102,14 +105,11 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
    
      - Faults: CosmosDB Failover (1)
      - Duration (minutes): 5 (2)
-     - Read region: Select the **Read region** you noted down in **Step-1** (3)
+     - Read region: Select the **Read Locations** you noted down in **Step-1** (3)
      
       ![](media/Ex6-T2-S8.1.png)
        
-    > **Note:** The **Read region** is available in the overview page of the **CosmoDB** instance. 
-        
-       ![](media/Note-1.png)
-       
+      
  
   9. On the  **Target resources** select the **CosmoDB** instance and **Add**.
   
@@ -154,4 +154,9 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  19. On the **Details** preview page select **Action** and view the complete detail of the run on **Fault details** under **Successful targets**.
  
         ![](media/Ex6-T2-S19.png)
- 20. 
+
+ 20. Navigate to **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />** resource group and open application insights **fabmedicalai-<inject key="DeploymentID" enableCopy="false" />**. On the app insights overview page click on **Availability tile**.
+ 
+ 
+ 
+ 21. Observe the availability of the application, after adding the **CosmosDB Failover**.

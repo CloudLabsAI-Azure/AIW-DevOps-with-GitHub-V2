@@ -2,7 +2,88 @@
 
 Azure Load Testing Preview is a fully managed load-testing service that enables you to generate high-scale load. The service simulates traffic for your applications, regardless of where they're hosted. Developers, testers, and quality assurance (QA) engineers can use it to optimize application performance, scalability, or capacity.
 
-## Task 1: Set up Load Testing
+### Task 1: Set up Application Insights
+
+1. Open the `deploy-appinsights.ps1` PowerShell script in the `C:\Workspaces\lab\mcw-continuous-delivery-lab-files\infrastructure` folder of your lab files GitHub repository and replace studentprefix value with **<inject key="Deploymentid" />** on the first line.
+
+    ```pwsh
+    $studentsuffix = "Your 3 letter abbreviation here"                                  # <-- Modify this
+    $resourcegroupName = "fabmedical-rg-" + $studentsuffix
+    $location1 = "westeurope"
+    $appInsights = "fabmedicalai-" + $studentsuffix
+    ```
+
+2. Navigate back to the PowerShell terminal on visual studio and run the below mentioned command:
+
+     ```
+     cd C:\Workspaces\lab\mcw-continuous-delivery-lab-files\infrastructure
+    ./deploy-appinsights.ps1
+    ```
+    
+3. Now save the `AI Instrumentation Key` specified in the output - we will need it for a later step.
+
+    ```bash
+    The installed extension 'application-insights' is in preview.
+    AI Instrumentation Key="55cade0c-197e-4489-961c-51e2e6423ea2"
+    ```
+
+4. Navigate to the `./content-web` folder in your GitHub lab files repository by running the below mentioned command.
+
+   ```
+   cd ..
+   cd .\content-web
+   ```
+   
+5. Now execute the following command to install JavaScript support for Application Insights via NPM to the web application frontend.
+
+    ```bash
+    npm install applicationinsights --save
+    ```
+
+6. Modify the file `./content-web/app.js` to reflect the following to add and configure Application Insights for the web application frontend in the local folder.
+
+    ```js
+    const express = require('express');
+    const http = require('http');
+    const path = require('path');
+    const request = require('request');
+
+    const app = express();
+
+    const appInsights = require("applicationinsights");         // <-- Add these lines here
+    appInsights.setup("55cade0c-197e-4489-961c-51e2e6423ea2");  // <-- Make sure AI Inst. Key matches
+    appInsights.start();                                        // <-- key from step 2.
+
+    app.use(express.static(path.join(__dirname, 'dist/content-web')));
+    const contentApiUrl = process.env.CONTENT_API_URL || "http://localhost:3001";
+
+    ...
+    ```
+
+7. Add and commit changes to your GitHub lab-files repository. From the root of the repository, execute the following:
+
+    ```pwsh
+    git add .
+    git commit -m "Added Application Insights"
+    git push
+    ```
+
+8. Wait for the GitHub Actions for your lab files repository to complete before executing the next step.
+
+     ![](media/update8.png) 
+
+9. Redeploy the web application by running the below commands:
+
+    ```
+    cd C:\Workspaces\lab\mcw-continuous-delivery-lab-files\infrastructure
+    ./deploy-webapp.ps1
+    ```
+    
+10. Visit the deployed website and check Application Insights in the Azure Portal to see instrumentation data.
+
+    >**Note:** It can take upto 24 hours to get the data and logs loaded in Azure Application Insights. You can skip this step and proceed with the next tasks.
+
+## Task 2: Set up Load Testing
 
 In this task you'll create **Azure Load Testing** instance and run a test using Jmeter file.
 
@@ -57,7 +138,7 @@ In this task you'll create **Azure Load Testing** instance and run a test using 
 
      ![](media/Ex6-T1-S11.png)
      
-## Task 2: Explore Chaos Studio
+## Task 3: Explore Chaos Studio
 
 In this task you will add **Targets** and create an **Expirement** on **Azure Chaos Studio** to check the resilience of the web appliccation that we created by adding  real faults and observe how our applications respond to real-world disruptions.
 

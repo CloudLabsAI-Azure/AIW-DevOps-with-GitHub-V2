@@ -20,7 +20,7 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
     ./deploy-appinsights.ps1
     ```
     
-3. Now save the `AI Instrumentation Key` specified in the output - we will need it for a later step.
+3. Now save the `AI Instrumentation Key` specified in the output we will need it for a later step.
 
     ```bash
     The installed extension 'application-insights' is in preview.
@@ -204,7 +204,7 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
   
        ![](media/Ex6-T2-S11.png)
   
-  12. Navigate back to the **CosmosDB** instance and select **Access control (IAM)**, click on **+ Add** select **Add role assignment**. 
+  12. Navigate back to the **CosmosDB** instance and select **Access control (IAM)**, click on **+ Add** and select **Add role assignment**. 
   
        ![](media/Ex6-T2-S12.png)
   
@@ -224,7 +224,7 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
   
       ![](media/Ex6-T2-S16.1.png)
  
- 17. Select **Ok** for **Start this experiment pop-up**.
+ 17. Select **Ok** for **Start this experiment** pop-up.
 
        ![](media/Ex6-T2-S17.png)
        

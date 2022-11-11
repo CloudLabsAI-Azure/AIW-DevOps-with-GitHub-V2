@@ -4,7 +4,7 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
 ### Task 1: Set up Application Insights
 
-1. Open the `deploy-appinsights.ps1` PowerShell script in the `C:\Workspaces\lab\mcw-continuous-delivery-lab-files\infrastructure` folder of your lab files GitHub repository and replace studentprefix value with **<inject key="Deploymentid" />** on the first line.
+1. Open the `deploy-appinsights.ps1` PowerShell script present in the `C:\Workspaces\lab\mcw-continuous-delivery-lab-files\infrastructure` folder and replace studentprefix value with **<inject key="Deploymentid" />** on the first line.
 
     ```pwsh
     $studentsuffix = "Your 3 letter abbreviation here"                                  # <-- Modify this
@@ -13,54 +13,43 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
     $appInsights = "fabmedicalai-" + $studentsuffix
     ```
 
-2. Navigate back to the PowerShell terminal on visual studio and run the below mentioned command:
+1. Navigate back to the PowerShell terminal on visual studio and run the below mentioned command:
 
      ```
      cd C:\Workspaces\lab\mcw-continuous-delivery-lab-files\infrastructure
     ./deploy-appinsights.ps1
     ```
     
-3. Now save the `AI Instrumentation Key` specified in the output we will need it for a later step.
+1. Now the Azure Application insights is created and `AI Instrumentation Key` specified in the output.
 
     ```bash
     The installed extension 'application-insights' is in preview.
     AI Instrumentation Key="55cade0c-197e-4489-961c-51e2e6423ea2"
     ```
 
-4. Navigate to the `./content-web` folder in your GitHub lab files repository by running the below mentioned command.
+1. Using PowerShell navigate to the `./content-web` folder in your GitHub lab files repository by running the below-mentioned command.
 
    ```
    cd ..
    cd .\content-web
+   
    ```
    
-5. Now execute the following command to install JavaScript support for Application Insights via NPM to the web application frontend.
+1. Now using PowerShell, execute the following command to install JavaScript support for Application Insights via NPM to the web application frontend.
 
     ```bash
     npm install applicationinsights --save
     ```
 
-6. Modify the file `./content-web/app.js` to reflect the following to add and configure Application Insights for the web application frontend in the local folder.
+1. In this step we'll updating the `app.js` file by adding and configuring Application Insights for the web application frontend in the local folder. Please run the command mentioned below.
+   
+    `Copy-Item -Path C:\Workspaces\lab\mcw-continuous-delivery-lab-files\keyscript.txt -Destination C:\Workspaces\lab\mcw-continuous-delivery-lab-files\content-web\app.js -PassThru`
+    
+    `$instrumentationKey` = $(az monitor app-insights component create --app fabmedicalai-<inject key="DeploymentID" enableCopy="false" /> --location westeurope --kind web --resource-group fabmedical-rg-<inject key="DeploymentID" enableCopy="false" /> --application-type web --retention-time 120 --query instrumentationKey)
+    
+    `(Get-Content -Path "C:\Workspaces\lab\mcw-continuous-delivery-lab-files\content-web\app.js") | ForEach-Object {$_ -Replace "UPDATE AI Instrumentation Key", $instrumentationKey} | Set-Content -Path "C:\Workspaces\lab\mcw-continuous-delivery-lab-files\content-web\app.js"`
 
-    ```js
-    const express = require('express');
-    const http = require('http');
-    const path = require('path');
-    const request = require('request');
-
-    const app = express();
-
-    const appInsights = require("applicationinsights");         // <-- Add these lines here
-    appInsights.setup("55cade0c-197e-4489-961c-51e2e6423ea2");  // <-- Make sure AI Inst. Key matches
-    appInsights.start();                                        // <-- key from step 2.
-
-    app.use(express.static(path.join(__dirname, 'dist/content-web')));
-    const contentApiUrl = process.env.CONTENT_API_URL || "http://localhost:3001";
-
-    ...
-    ```
-
-7. Add and commit changes to your GitHub lab-files repository. From the root of the repository, execute the following:
+1. Add and commit changes to your GitHub lab-files repository. From the root of the repository, execute the following:
 
     ```pwsh
     git add .
@@ -68,20 +57,22 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
     git push
     ```
 
-8. Wait for the GitHub Actions for your lab files repository to complete before executing the next step.
+1. Wait for the GitHub Actions for your lab files repository to complete before executing the next step.
 
-     ![](media/update8.png) 
+      ![](media/update8.png "Azure Boards")
 
-9. Redeploy the web application by running the below commands:
+1. Redeploy the web application by running the below commands:
 
     ```
     cd C:\Workspaces\lab\mcw-continuous-delivery-lab-files\infrastructure
     ./deploy-webapp.ps1
     ```
     
-10. Visit the deployed website and check Application Insights in the Azure Portal to see instrumentation data.
+1. Visit the deployed website and check Application Insights in the Azure Portal to see instrumentation data.
 
-    >**Note:** It can take upto 24 hours to get the data and logs loaded in Azure Application Insights. You can skip this step and proceed with the next tasks.
+   >**Note**: It can take upto 24 hours to get the data and logs loaded in Azure Application Insights. You can skip this step and proceed with the next tasks.
+
+   ![The Azure Web Application Overview detail in Azure Portal.](media/hol-ex2-task2-step5-1.png "Azure Web Application Overview")
 
 ## Task 2: Set up Load Testing
 

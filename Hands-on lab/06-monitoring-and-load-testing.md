@@ -146,3 +146,12 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  17. Select **Ok** for **Start this experiment pop-up**.
 
        ![](media/Ex6-T2-S17.png)
+       
+ 18. Once the experiment status is **Success** click on **Details** to view the run preview.
+ 
+      ![](media/Ex6-T2-S18.png)
+ 
+ 19. On the **Details** preview page select **Action** and view the complete detail of the run on **Fault details** under **Successful targets**.
+ 
+        ![](media/Ex6-T2-S19.png)
+ 20. 

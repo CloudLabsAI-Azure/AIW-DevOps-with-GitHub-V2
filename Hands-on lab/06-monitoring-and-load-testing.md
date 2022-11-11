@@ -61,7 +61,11 @@ In this task you'll create **Azure Load Testing** instance and run a test using 
 
 In this task you will add **Targets** and create an **Expirement** on **Azure Chaos Studio** to check the resilience of the web appliccation that we created by adding  real faults and observe how our applications respond to real-world disruptions.
 
-1. Navigate to Azure portal, on **Search resources, services, and docs** search and select **Azure Chaos Studio**.
+1.  On the Azure portal navigate to the **CosmoDB** instance **fabmedical-cdb-<inject key="DeploymentID" enableCopy="false" />**, on the overview page note down the second **Read region** we will require this the further steps. 
+        
+     ![](media/Note-1.1.png)
+
+2.  On **Search resources, services, and docs** search and select **Azure Chaos Studio**.
       
       ![](media/Ex6-T2-S1.png)
 
@@ -81,26 +85,26 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  
      ![](media/Ex6-T2-S5.1.png)
  
- 6. On **Create an experiment** page under **Basics** tab provide the following values and select **Next:Experiment designer>**.
+ 6. On **Create an experiment** page under **Basics** tab provide the following values and select **Next:Experiment designer>** (4).
  
     - Subscription: Your Azure subscription for this lab from the drop-down
-    - Resource Group: fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />
-    - Name: fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" />
-    - Region: Leave default
+    - Resource Group: fabmedical-rg-<inject key="DeploymentID" enableCopy="false" /> (1)
+    - Name: fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (2)
+    - Region: Leave default (3)
  
-     ![](media/Ex6-T2-S6.2.png)
+     ![](media/Ex6-T2-S6.3.png)
  
  7. On the **Experiment designer** page select **+ Add action** and choose **Add fault**.
 
       ![](media/Ex6-T2-S7.1.png)
  
- 8. On the **Add fault** page, select the following and select Next: **Target resources**.
+ 8. On the **Add fault** page, select the following and select **Next:Target resources>** (4).
    
-     - Faults: CosmosDB Failover
-     - Duration (minutes): 5
-     - Read region: Select the region 
+     - Faults: CosmosDB Failover (1)
+     - Duration (minutes): 5 (2)
+     - Read region: Select the **Read region** you noted down in **Step-1** (3)
      
-      ![](media/Ex6-T2-S8.png)
+      ![](media/Ex6-T2-S8.1.png)
        
     > **Note:** The **Read region** is available in the overview page of the **CosmoDB** instance. 
         
@@ -129,15 +133,15 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
   
   14. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
    
-      ![](media/Ex6-T2-S14.png)
+      ![](media/Ex6-T2-S14.1.png)
   
   15. Click on **Review + assign**. 
    
-      ![](media/Ex6-T2-S15.png)
+      ![](media/Ex6-T2-S15.1.png)
       
   16. On the Azure portal navigate back to the Chaos experiment you created **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
   
-      ![](media/Ex6-T2-S16.png)
+      ![](media/Ex6-T2-S16.1.png)
  
  17. Select **Ok** for **Start this experiment pop-up**.
 

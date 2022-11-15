@@ -77,7 +77,7 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
 In this task, you'll create Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal search for **Azure Load Testing (1)** and then click on it from the search results (2).
+1. In the Azure Portal search for **Azure Load Testing (1)** and then click on it from the search results **(2)**.
 
     ![](media/Ex6-T1-S1.1.png)
 
@@ -85,18 +85,18 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
    
     ![](media/Ex6-T1-S2.png)
       
-3.  On the **Creat a load testing resource** screen provide the following values and click on **Review + create (5)**.
+3.  On the **Create a load testing resource** screen, provide the following values and click on **Review + create (5)**.
 
-    - Subscription(1): select the default subscription **(1)**
-    - Resource Group(2): **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" /> (2)**
+    - Subscription: select the default subscription **(1)**
+    - Resource Group: **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" /> (2)**
     - Name: **fabmedical_LT_<inject key="DeploymentID" enableCopy="false" /> (3)** 
     - Region: Leave it to default **(4)**
     
-     ![](media/Ex6-T1-S3.2.png)
+     ![](media/Ex6-T1-S3.3.png)
  
 4. Review the deatils you provided, once the validation is successful, click on **Create**.
        
-     ![](media/Ex6-T1-S4.png)
+     ![](media/Ex6-T1-S4.1.png)
 
 5.  Click on **Go to resource** on **Your deployment is completed** page.
 
@@ -108,21 +108,21 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
 7.  On the **Create test** page, under basic tab provide the **Test name** as `Demo-test` **(1)** and for **Test discription** enter `Demo Load Testing` **(2)**, then click **Next:Test plan >** **(3)**.
 
-     ![](media/Ex6-T1-S7.1.png)
+     ![](media/Ex6-T1-S7.2.png)
 
 8. On your lab-vm open **Visual Studio Code** and navigate to the **test.jmx** file. Replace **Enter_your_end_point_URL** with**fabmedical-web-<inject key="DeploymentID" enableCopy="false" />** in line 33.
   
      > **Note**:  Your endpoint URL should look similar to this: **fabmedical-web-<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net**.
  
-     ![](media/Ex6-T1-S8.png)
+     ![](media/Ex6-T1-S8.1.png)
        
 9. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **test.jmx (3)** file, and select **Upload (3)**.
     
-     ![](media/Ex6-T1-S9.2.png)
+     ![](media/Ex6-T1-S9.3.png)
 
 10. Once the file has completed uploading **(1)**, click on **Review + create (2)**.
 
-     ![](media/Ex6-T1-S10.1.png)
+     ![](media/Ex6-T1-S10.2.png)
 
 11. Once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
@@ -138,9 +138,9 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
            
      ![](media/Note-1.2.png)
 
- 2.   In the Azure Portal search for **Azure Chaos Studio** and then click on it from the search results.
+ 2.   In the Azure Portal search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
    
-      ![](media/Ex6-T2-S1.png)
+      ![](media/Ex6-T2-S1.1.png)
 
  3. In the **Azure Chaos Studio**, select **Targets** on the left menu.
 
@@ -152,11 +152,11 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
      
  5. Click on the **fabmedical-cdb-<inject key="DeploymentID" enableCopy="false" />** **Cosmos DB** instance and form the drop-down for **Enable Targets (1)** choose **Enable service-direct targets (All resources) (2)**.
 
-     ![](media/Ex6-T2-S4.2.png)
+     ![](media/Ex6-T2-S4.3.png)
      
  6. Once the target is enabled, select **Expirements** on the left and click **+Create**.
  
-     ![](media/Ex6-T2-S5.2.png)
+     ![](media/Ex6-T2-S5.3.png)
  
  7. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next:Experiment designer>** **(5)**.
 
@@ -165,11 +165,11 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
     - Name: fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> **(3)**
     - Region: Leave it to default **(4)**
  
-     ![](media/Ex6-T2-S6.4.png)
+     ![](media/Ex6-T2-S6.5.png)
  
  8. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
-      ![](media/Ex6-T2-S7.2.png)
+      ![](media/Ex6-T2-S7.3.png)
  
  9. On the **Add fault** page, select the following and select **Next:Target resources>** **(4)**.
    
@@ -177,11 +177,11 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
      - Duration (minutes): 5 **(2)**
      - Read region: Select the **Read Locations** you noted down in **Step-1** **(3)**
      
-      ![](media/Ex6-T2-S8.2.png)
+      ![](media/Ex6-T2-S8.3.png)
      
  10. On the  **Target resources** select the **CosmoDB** instance and **Add**.
   
-       ![](media/Ex6-T2-S9.2.png)
+       ![](media/Ex6-T2-S9.3.png)
   
  11. Click on **Review + create**.
   
@@ -193,15 +193,15 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
   
  13. Navigate back to the **CosmosDB** instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
   
-       ![](media/Ex6-T2-S12.1.png)
+       ![](media/Ex6-T2-S12.2.png)
   
  14. In the **Add role assignment page** under **Role** tab  select **Owner (1)** and select **Next (2)**.
   
-       ![](media/Ex6-T2-S13.1.png)
+       ![](media/Ex6-T2-S13.2.png)
   
  15. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
    
-      ![](media/Ex6-T2-S14.1.png)
+      ![](media/Ex6-T2-S14.2.png)
   
  16. Click on **Review + assign**. 
    
@@ -213,7 +213,7 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  
  18. Select **Ok** for **Start this experiment** pop-up.
 
-       ![](media/Ex6-T2-S17.png)
+       ![](media/Ex6-T2-S17.1.png)
        
  19. Once the experiment status is **Success** click on **Details** to view the run preview.
  

@@ -138,9 +138,9 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
            
      ![](media/Note-1.2.png)
 
- 2.   In the Azure Portal search for **Azure Chaos Studio** and then click on it from the search results.
+ 2.   In the Azure Portal search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
    
-      ![](media/Ex6-T2-S1.png)
+      ![](media/Ex6-T2-S1.1.png)
 
  3. In the **Azure Chaos Studio**, select **Targets** on the left menu.
 

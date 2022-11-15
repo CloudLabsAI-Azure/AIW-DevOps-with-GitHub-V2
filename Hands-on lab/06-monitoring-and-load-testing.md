@@ -96,7 +96,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
  
 4. Review the deatils you provided, once the validation is successful, click on **Create**.
        
-     ![](media/Ex6-T1-S4.png)
+     ![](media/Ex6-T1-S4.1.png)
 
 5.  Click on **Go to resource** on **Your deployment is completed** page.
 
@@ -108,13 +108,13 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
 7.  On the **Create test** page, under basic tab provide the **Test name** as `Demo-test` **(1)** and for **Test discription** enter `Demo Load Testing` **(2)**, then click **Next:Test plan >** **(3)**.
 
-     ![](media/Ex6-T1-S7.1.png)
+     ![](media/Ex6-T1-S7.2.png)
 
 8. On your lab-vm open **Visual Studio Code** and navigate to the **test.jmx** file. Replace **Enter_your_end_point_URL** with**fabmedical-web-<inject key="DeploymentID" enableCopy="false" />** in line 33.
   
      > **Note**:  Your endpoint URL should look similar to this: **fabmedical-web-<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net**.
  
-     ![](media/Ex6-T1-S8.png)
+     ![](media/Ex6-T1-S8.1.png)
        
 9. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **test.jmx (3)** file, and select **Upload (3)**.
     
@@ -169,7 +169,7 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  
  8. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
-      ![](media/Ex6-T2-S7.2.png)
+      ![](media/Ex6-T2-S7.3.png)
  
  9. On the **Add fault** page, select the following and select **Next:Target resources>** **(4)**.
    

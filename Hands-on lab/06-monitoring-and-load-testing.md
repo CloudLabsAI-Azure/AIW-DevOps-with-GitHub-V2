@@ -71,15 +71,15 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
    >**Note**: It can take up to 24 hours to get the data and logs loaded in Azure Application Insights. You can skip this step and proceed with the next tasks.
 
-   ![The Azure Web Application Overview detail in Azure Portal.](media/hol-ex2-task2-step5-1.png "Azure Web Application Overview")
+   ![The Azure Web Application Overview detail in Azure Portal.](media/hol-ex2-task2-step5-1.1.png "Azure Web Application Overview")
 
 ## Task 2: Set up Load Testing
 
 In this task, you'll create Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal search for **Azure Load Testing** and then click on it from the search results.
+1. In the Azure Portal search for **Azure Load Testing (1)** and then click on it from the search results (2).
 
-    ![](media/Ex6-T1-S1.png)
+    ![](media/Ex6-T1-S1.1.png)
 
 2. On the **Azure Load Testing** page click on **+ Create**.
    
@@ -92,7 +92,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
     - Name: **fabmedical_LT_<inject key="DeploymentID" enableCopy="false" /> (3)** 
     - Region: Leave it to default **(4)**
     
-     ![](media/Ex6-T1-S3.1.png)
+     ![](media/Ex6-T1-S3.2.png)
  
 4. Review the deatils you provided, once the validation is successful, click on **Create**.
        
@@ -120,9 +120,9 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
     
      ![](media/Ex6-T1-S9.1.png)
 
-10. Once the file has been uploaded, click on **Review + create**.
+10. Once the file has completed uploading **(1)**, click on **Review + create (2)**.
 
-     ![](media/Ex6-T1-S10.png)
+     ![](media/Ex6-T1-S10.1.png)
 
 11. Once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
@@ -136,7 +136,7 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  
     > **Note:** Notice there are two regions present in both **Read Locations** and **Write Locations** the primary region is where the resource is deployed and running, and the secondary region is the backup region. When performing the Chaos experiment, we will observe that the Cosmos DB instance will run undisturbed despite adding a fault. This is because the primary region is being replaced by the secondary or the backup region.
            
-     ![](media/Note-1.1.png)
+     ![](media/Note-1.2.png)
 
  2.   In the Azure Portal search for **Azure Chaos Studio** and then click on it from the search results.
    
@@ -150,38 +150,38 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  
        ![](media/Ex6-T2-S3.png)
      
- 5. Click on the **fabmedical-cdb-<inject key="DeploymentID" enableCopy="false" />** **Cosmos DB** instance and form the drop-down for **Enable Targets** choose **Enable service-direct targets (All resources)**.
+ 5. Click on the **fabmedical-cdb-<inject key="DeploymentID" enableCopy="false" />** **Cosmos DB** instance and form the drop-down for **Enable Targets (1)** choose **Enable service-direct targets (All resources) (2)**.
 
-     ![](media/Ex6-T2-S4.png)
+     ![](media/Ex6-T2-S4.2.png)
      
  6. Once the target is enabled, select **Expirements** on the left and click **+Create**.
  
-     ![](media/Ex6-T2-S5.1.png)
+     ![](media/Ex6-T2-S5.2.png)
  
- 7. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next:Experiment designer>** **(4)**.
+ 7. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next:Experiment designer>** **(5)**.
 
-    - Subscription: select the default subscription
-    - Resource Group: fabmedical-rg-<inject key="DeploymentID" enableCopy="false" /> **(1)**
-    - Name: fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> **(2)**
-    - Region: Leave it to default **(3)**
+    - Subscription: select the default subscription **(1)**
+    - Resource Group: fabmedical-rg-<inject key="DeploymentID" enableCopy="false" /> **(2)**
+    - Name: fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> **(3)**
+    - Region: Leave it to default **(4)**
  
-     ![](media/Ex6-T2-S6.3.png)
+     ![](media/Ex6-T2-S6.4.png)
  
  8. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
-      ![](media/Ex6-T2-S7.1.png)
+      ![](media/Ex6-T2-S7.2.png)
  
- 9. On the **Add fault** page, select the following and select **Next:Target resources>** (4).
+ 9. On the **Add fault** page, select the following and select **Next:Target resources>** **(4)**.
    
      - Faults: CosmosDB Failover **(1)**
      - Duration (minutes): 5 **(2)**
-     - Read region: Select the **Read Locations** you noted down in **Step-1** (3)
+     - Read region: Select the **Read Locations** you noted down in **Step-1** **(3)**
      
-      ![](media/Ex6-T2-S8.1.png)
+      ![](media/Ex6-T2-S8.2.png)
      
  10. On the  **Target resources** select the **CosmoDB** instance and **Add**.
   
-       ![](media/Ex6-T2-S9.1.png)
+       ![](media/Ex6-T2-S9.2.png)
   
  11. Click on **Review + create**.
   
@@ -191,13 +191,13 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
   
        ![](media/Ex6-T2-S11.png)
   
- 13. Navigate back to the **CosmosDB** instance and select **Access control (IAM)**, click on **+ Add** and select **Add role assignment**. 
+ 13. Navigate back to the **CosmosDB** instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
   
-       ![](media/Ex6-T2-S12.png)
+       ![](media/Ex6-T2-S12.1.png)
   
- 14. In the **Add role assignment page** under **Role** tab  select **Owner** and select **Next**.
+ 14. In the **Add role assignment page** under **Role** tab  select **Owner (1)** and select **Next (2)**.
   
-       ![](media/Ex6-T2-S13.png)
+       ![](media/Ex6-T2-S13.1.png)
   
  15. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
    
@@ -219,9 +219,9 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  
       ![](media/Ex6-T2-S18.png)
  
- 20. On the **Details** preview page select **Action** and view the complete detail of the run on **Fault details** under **Successful targets**.
+ 20. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
  
-        ![](media/Ex6-T2-S19.png)
+        ![](media/Ex6-T2-S19.1.png)
 
  21. Navigate to **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />** resource group and open application insights **fabmedicalai-<inject key="DeploymentID" enableCopy="false" />**. On the app insights overview page click on **Availability tile**.
  

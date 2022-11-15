@@ -104,11 +104,11 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
 6.  On the left hand side pane, select **Tests (1)** and click on **+ Create (2)** and select **Upload a JMeter script (3)**.
 
-     ![](media/Ex6-T1-S6.1.png)
+     ![](media/Ex6-T1-S6.2.png)
 
 7.  On the **Create test** page, under basic tab provide the **Test name** as `Demo-test` **(1)** and for **Test discription** enter `Demo Load Testing` **(2)**, then click **Next:Test plan >** **(3)**.
 
-     ![](media/Ex6-T1-S7.png)
+     ![](media/Ex6-T1-S7.1.png)
 
 8. On your lab-vm open **Visual Studio Code** and navigate to the **test.jmx** file. Replace **Enter_your_end_point_URL** with**fabmedical-web-<inject key="DeploymentID" enableCopy="false" />** in line 33.
   
@@ -118,7 +118,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
        
 9. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **test.jmx (3)** file, and select **Upload (3)**.
     
-     ![](media/Ex6-T1-S9.1.png)
+     ![](media/Ex6-T1-S9.2.png)
 
 10. Once the file has completed uploading **(1)**, click on **Review + create (2)**.
 

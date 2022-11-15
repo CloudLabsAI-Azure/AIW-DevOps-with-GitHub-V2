@@ -181,7 +181,7 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
      
  10. On the  **Target resources** select the **CosmoDB** instance and **Add**.
   
-       ![](media/Ex6-T2-S9.2.png)
+       ![](media/Ex6-T2-S9.3.png)
   
  11. Click on **Review + create**.
   

@@ -303,44 +303,32 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn18.png)  
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-1. Select the **Actions** ***(1)*** tab in your GitHub repository, scroll down and find the **Publish Docker Container** ***(2)*** workflow under the **Continuous Integration Workflows** and select **Configure** ***(3)***. This will create a file named `docker-publish.yml`.
+1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **tailwind-traders-webiste** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
-   ![](media/2dg26.png)
+   ![](media/2dgn22.png)
    
-1. Copy the code from `https://raw.githubusercontent.com/CloudLabs-MCW/MCW-Continuous-delivery-in-Azure-DevOps/microsoft-devops-with-github-v2/Hands-on%20lab/docker-flow.yml` ***(1)*** link. Select **Start commit** ***(2)***. Be sure that **Commit directly to the `main` branch** is selected. Finally, select **Commit new file** ***(3)***.
+1. Navigate back to Actions tab and select the **tailwind-traders-website** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application. This workflow   
 
-   ![](media/2dg27.png)
+   ![](media/2dgn23.png)
    
-1. The GitHub Action is now running and will automatically build and push the container to the GitHub registry.
-
-   ![](media/2dg47.png)
-
-   ![](media/2dg49.png)
+   ![](media/2dgn24.png)  
    
+1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
+
+   ![](media/2dgn9.png) 
+   
+1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+
+   ![](media/2dgn10.png)   
+   
+1. Select **tailwind-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+
+    ![](media/2dgn24.png)   
+   
+1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Tailwind Traders app has been hosted successfully.
+
+    ![](media/2dgn25.png)  
+    
 ### Task 7: Editing the GitHub Workflow File using Codespace
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.

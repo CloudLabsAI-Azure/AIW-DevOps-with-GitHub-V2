@@ -17,7 +17,7 @@ In this task, you'll access and explore the code repository of the web app using
 
 1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\mcw-continuous-delivery-lab-files` to open your local GitHub repository and click on **Select Folder**.
 
-   ![](media/2dg12.png)
+   ![](media/2dgn1.png)
     
 1. You may receive a prompt: Do you trust the authors of the files in this folder? select the **checkbox** **(1)** the box and click on **Yes, I trust the authors** **(2)**.
 
@@ -25,7 +25,7 @@ In this task, you'll access and explore the code repository of the web app using
    
 1. You'll be to see the lab files in Visual Studio code and explore the code files.
 
-   ![](media/2dg30.png)
+   ![](media/2dgn2.png)
 
 ### Task 2: Start the Docker application.
 
@@ -129,7 +129,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. On the **Create a new repository** screen, name the repository ```mcw-continuous-delivery-lab-files``` ***(1)***, select **Private** ***(2)*** and click on **Create repository** ***(3)***  button.
 
-   ![The `New Repository` creation form in GitHub.](media/2dg2.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/2dgn3.png "New Repository Creation Form")
    
    >**Note**: Please make sure the delete the Repo and create a new one. 
 
@@ -153,7 +153,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      git config --global user.name "Your UserName"
      ```
      
-   ![](media/2dg6.png "New Repository Creation Form")
+   ![](media/2dgn5.png "New Repository Creation Form")
      
     - Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch `main` in the lab files repository created in Step 1. Make sure to replace `<your_github_repository-url>` with the value you copied in step 5.
 
@@ -212,24 +212,69 @@ In this task, you'll create personal access token which will be used in workflow
 
    ![](media/2dg22.png)
      
-### Task 6: Build Automation with GitHub Registry
+### Task 6: Build and push using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
  
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
-   ![](media/2dg23.png)
+   ![](media/2dgn4.png)
    
 1. Under **Security**, expand **Secrets** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository secret** ***(3)*** button.
 
    ![](media/2dg24.png)
    
+1. Go to Environment details, Click on **Service principle Credentials** and copy the **Application Id (Client Id)** , **client Secret** , **subscription Id** and **tenant Id**.
+
+   ![](media/2dgn6.png)
+   
+   - Replace the values that you copied in below Json. You will be using in this step.
+   
+   ```json
+   {
+      "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+      "clientSecret": "client-secret",
+      "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+      "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
+   }
+   ```
+   
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **CR_PAT** ***(1)***
-   - **Value** : Enter the **GitHub Personal Access Token** ***(2)*** you created in the Before the Hands-On Lab instructions.
+   - **Name** : Enter **TAILWINDTRADERS_TESTING_SERVICEPRINCIPAL** ***(1)***
+   - **Value** : Paste the service principal details in json format ***(2)***
    
-   ![](media/2dg29.png)
+   ![](media/2dgn7.png)
+   
+1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+
+   - **Name** : Enter **TAILWINDTRADERS_TESTING_SERVICEPRINCIPAL** ***(1)***
+   - **Value** : Paste the service principal details in json format ***(2)***
+   
+   ![](media/2dgn7.png)   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
    
 1. Select the **Actions** ***(1)*** tab in your GitHub repository, scroll down and find the **Publish Docker Container** ***(2)*** workflow under the **Continuous Integration Workflows** and select **Configure** ***(3)***. This will create a file named `docker-publish.yml`.
 

@@ -246,12 +246,22 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn7.png)
    
-1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **TAILWINDTRADERS_TESTING_SERVICEPRINCIPAL** ***(1)***
-   - **Value** : Paste the service principal details in json format ***(2)***
+   - **Name** : Enter **TAILWINDTRADERS_ACR_PASSWORD** ***(1)***
+   - **Value** : **<inject key="Acr Password" />** ***(2)***
    
-   ![](media/2dgn7.png)   
+   ![](media/2dgn8.png) 
+   
+1. Azure Portal Dashboard, click on Resource groups from the Navigate panel to see the resource groups.
+   
+1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+
+   - **Name** : Enter **TAILWINDTRADERS_PRODUCTSDB_CONNECTION_STRING** ***(1)***
+   - **Value** : **<inject key="Acr Password" />** ***(2)***
+   
+   ![](media/2dgn8.png) 
+   
    
    
    

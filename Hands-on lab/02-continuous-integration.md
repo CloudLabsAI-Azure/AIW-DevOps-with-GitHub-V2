@@ -215,6 +215,22 @@ In this task, you'll create personal access token which will be used in workflow
 ### Task 6: Build and push using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
+
+1. From Azure Portal Dashboard, click on Resource groups from the Navigate panel to see the resource groups.
+
+   ![](media/2dgn9.png) 
+   
+1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+
+   ![](media/2dgn10.png) 
+   
+1. Select **productsdb** SQL database from the list of resources.
+
+   ![](media/2dgn11.png) 
+   
+1. Under Settings side blade, select **Connection strings** ***(1)*** and copy the **ADO.NET (SQL authentication)** ***(2)*** connection string from ADO.NET tab. 
+
+   ![](media/2dgn12.png)  
  
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
@@ -223,6 +239,13 @@ In this exercise, you will build automation in GitHub for updating and republish
 1. Under **Security**, expand **Secrets** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository secret** ***(3)*** button.
 
    ![](media/2dg24.png)
+    
+1.  under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+
+   - **Name** : Enter **TAILWINDTRADERS_PRODUCTSDB_CONNECTION_STRING** ***(1)***
+   - **Value** : **<inject key="Acr Password" />** ***(2)***
+   
+   ![](media/2dgn13.png)    
    
 1. Go to Environment details, Click on **Service principle Credentials** and copy the **Application Id (Client Id)** , **client Secret** , **subscription Id** and **tenant Id**.
 
@@ -253,14 +276,32 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn8.png) 
    
-1. Azure Portal Dashboard, click on Resource groups from the Navigate panel to see the resource groups.
-   
-1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **TAILWINDTRADERS_PRODUCTSDB_CONNECTION_STRING** ***(1)***
-   - **Value** : **<inject key="Acr Password" />** ***(2)***
+   - **Name** : Enter **TAILWINDTRADERS_SUFFIX** ***(1)***
+   - **Value** : **Tailwind-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
    
-   ![](media/2dgn8.png) 
+   ![](media/2dgn14.png)
+   
+1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **tailwindd-traders-carts** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
+
+   ![](media/2dgn15.png)
+   
+1. Navigate back to Actions tab and select the **tailwind-traders-carts** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
+
+   ![](media/2dgn20.png)
+   
+   ![](media/2dgn19.png)   
+
+1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **tailwind-traders-products** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
+
+   ![](media/2dgn16.png)
+   
+1. Navigate back to Actions tab and select the **tailwind-traders-products** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application. This workflow   
+
+   ![](media/2dgn17.png)
+   
+   ![](media/2dgn18.png)  
    
    
    

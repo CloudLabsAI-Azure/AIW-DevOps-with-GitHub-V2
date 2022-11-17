@@ -1,5 +1,5 @@
 
-# Exercise 2: Continuous Integration
+# Exercise 2: Continuous Integration and Continous Deployment
 
 In this exercise, you are going to set up the local infrastructure using Docker containers. There are three images you will be working with: fabrikam-init, fabrikam-api, and fabrikam-web. you will also build automation in GitHub for updating and republishing our Docker images when the code changes.
 

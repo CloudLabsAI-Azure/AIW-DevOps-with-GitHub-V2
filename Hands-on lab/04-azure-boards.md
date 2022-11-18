@@ -111,9 +111,9 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/2dg59.png)
    
-1. Select the **Code** ***(1)*** tab in your GitHub repository,  Navigate to **mcw-continuous-delivery-lab-files/.github/workflows/** ***(2)*** and select **docker-publish.yml** ***(3)*** file.
+1. Select the **Code** ***(1)*** tab in your GitHub repository, navigate to **aiw-devops-with-github-lab-files/.github/workflows/** ***(2)*** and select **contoso-traders-carts-api.yml** ***(3)*** file.
 
-   ![](media/2dg60.png)
+   ![](media/ex4-kc-workflows.png)
    
 1. Copy the code from `https://raw.githubusercontent.com/CloudLabs-MCW/MCW-Continuous-delivery-in-Azure-DevOps/microsoft-devops-with-github-v2/Hands-on%20lab/docker-flow.yml` ***(1)*** link and paste it in the end of the file. Make sure there are no indentation errors.
 

@@ -205,25 +205,25 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/ex4-view-webapp.png)
    
-1. On the Azure portal search for **Resource groups** in the search bar ***(1)*** and select **Resource groups** ***(2)*** from the suggestions. 
+1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
 
-   ![](media/2dg80.png)   
+   ![](media/2dgn9.png) 
    
-1. In the resource group page, Select the **fabrikam-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dg81.png)  
+   ![](media/2dgn10.png)   
    
-1. Select the App service from the name, **fabrikam-web-<inject key="DeploymentID" enableCopy="false" />** from the list of resources. 
+1. Select **tailwind-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
-   ![](media/2dg82.png)
+    ![](media/2dgn24.png)   
    
-1. From the Overview page, access the web app using the **URL**.
+1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Tailwind Traders app has been hosted successfully.
 
-   ![](media/2dg83.png)    
+    ![](media/2dgn26.png)  
 
-1. Verify the availability of the web app, speakers page, and sessions page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
+1. Verify the availability of the web app, Laptops page, Controllers page, and Desktops page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
 
-   ![](media/2dg84.png)
+   ![](media/2dgn28.png)
    
    ![](media/ex4-save&close.png)   
    

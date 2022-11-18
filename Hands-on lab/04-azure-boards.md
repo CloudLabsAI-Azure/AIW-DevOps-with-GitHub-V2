@@ -219,7 +219,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    
 1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Tailwind Traders app has been hosted successfully.
 
-    ![](media/2dgn26.png)  
+    ![](media/2dgn29.png)  
 
 1. Verify the availability of the web app, Laptops page, Controllers page, and Desktops page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
 

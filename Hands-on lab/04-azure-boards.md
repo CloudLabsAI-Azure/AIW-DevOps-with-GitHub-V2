@@ -20,9 +20,9 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    
 1. On the next page, select **Complete order and begin installation**.
 
-1. Select the lab files repository `mcw-continuous-delivery-lab-files` which you created earlier and click on **Install & Authorize**.
+1. Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
 
-   ![](media/2dg53.png)
+   ![](media/ex4-kc-install&auth.png)
     
    >**Note**: If you see the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account, follow the below steps.
    
@@ -30,9 +30,9 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    
    ![](media/2dg51.png)
    
-   - Select the lab files repository `mcw-continuous-delivery-lab-files` which you created earlier and click on **Install & Authorize**.
+   - Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
 
-   ![](media/2dg53.png)
+   ![](media/ex4-kc-install&auth.png)
     
 1. Select the **aiw-devops** Azure DevOps organization and select the Fabrikam project then click on **Continue**
 
@@ -52,15 +52,15 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
 1. In GitHub, browse to the `Pull Requests` tab of the lab files repository created in [Task 1 of the Before the HOL Instructions] and open the pull request that was created in the onboarding tutorial for the Azure Boards Integration App. Note the `AB#1` annotation in the pull request comments - this annotation signals to Azure DevOps that this pull request comment should be linked to Issue #1 in Azure Boards.
 
-   ![Pull request detail in GitHub created by onboarding tutorial in previous steps.](media/hol-ex1-task1-step8-1.png "Pull Request detail")
+   ![Pull request detail in GitHub created by onboarding tutorial in previous steps.](media/ex4-kc-merge.png "Pull Request detail")
 
 1. Select the `Files changed` tab within the pull request detail and observe the change to the README.md associated with this pull request. After reviewing the changes, go back to the `Conversation` tab and select the `Merge pull request` button and confirm the following prompt to merge the pull request into the `main` branch.
 
-   ![The file changes associated with the pull request.](media/hol-ex1-task1-step9-1.png "Pull Request Files Changed tab")
+   ![The file changes associated with the pull request.](media/ex4-kc-reviewchanges.png "Pull Request Files Changed tab")
 
 1. In Azure DevOps Boards, find the work item and observe that the issue has been moved to the `Done` column on completion of the pull request.
 
-   ![A work item with a linked GitHub commit illustrating the link between Azure DevOps Boards and GitHub issues.](media/hol-ex1-task1-step10-1.png "Work Item with a Linked GitHub Commit")
+   ![A work item with a linked GitHub commit illustrating the link between Azure DevOps Boards and GitHub issues.](media/ex4-kc-devops-todo.png "Work Item with a Linked GitHub Commit")
    
 ### Task 2: Link GitHub Pull requests to Boards items
 
@@ -68,11 +68,11 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
 1. In the Azure Boards tab, click on **New Item** ***(1)***, provide **Deploy WebApp** as a description and create a new work item.
 
-   ![](media/2dg57.png)
+   ![](media/ex4-kc-todonew.png)
    
 1. After creating a work item, Please note down the Work item ID which will be used in the further steps.
 
-   ![](media/2dg58.png)
+   ![](media/ex4-kc-todo-new1.png)
    
  1. Go to Environment details click on **Service principle Credentials** copy **Application Id(Client Id)** , **Secret Key(Client Secret)** , **Subscription Id** and **Tenant Id**. 
     
@@ -98,7 +98,7 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
    
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
-   ![](media/2dg23.png)
+   ![](media/ex4-kc-githubrepo-settings.png)
    
 1. Under **Security**, expand **Secrets** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository** ***(3)*** secret` button.
 

@@ -338,7 +338,7 @@ The last task automated building and updating only one of the Docker images. In 
    - click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
-   ![](media/2dg32.png)
+   ![](media/ex2-kc-codespace.png)
    
 1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 

@@ -115,44 +115,44 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/ex4-kc-workflows.png)
    
-1. Copy the code from `https://raw.githubusercontent.com/CloudLabs-MCW/MCW-Continuous-delivery-in-Azure-DevOps/microsoft-devops-with-github-v2/Hands-on%20lab/docker-flow.yml` ***(1)*** link and paste it in the end of the file. Make sure there are no indentation errors.
+1. Copy `#test azure boards` code and paste it in line number 1 of the file. Make sure there are no indentation errors.
 
-   ![](media/2dg61.png)
+   ![](media/ex4-edit-yml.png)
    
 1. Click on **Start commit** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(5)***.
 
    - Provide `workitem ID Updated` ***(2)*** as title. Make sure to provide the same **Work item ID** which was created in the earlier step in Azure DevOps.
-   - Select **Create a new branch for this commit and start a pull request** ***(3)***  and name new branch as **deploy webapp** ***(4)***.
+   - Select **Create a new branch for this commit and start a pull request** ***(3)***  and name new branch as **update carts** ***(4)***.
 
-   ![](media/2dg62.png)
+   ![](media/ex4-start-commit.png)
    
 1. On Open a pull request tab, Click on **Create pull request** 
 
-   ![](media/2dg65.png)
+   ![](media/ex4-create-pr.png)
    
 1. Navigate to **Azure Boards**. Open the **work item** ***(1)*** created in earlier step.
 
-   ![](media/2dg63.png)
+   ![](media/ex4-open-wi.png)
 
 1. Observe that the **Pull request** has been linked to the workitem.
 
-   ![](media/2dg64.png)
+   ![](media/ex4-observe-pr.png)
    
 1. Navigate back to GitHub browser tab and select **Pull requests** tab.
 
-   ![](media/2dg66.png)
+   ![](media/ex4-github-pr.png)
    
-1. Open the PR created from **deploy-webapp** branch and select **Merge pull request**.
+1. Open the PR created from **updated carts** branch and select **Merge pull request**.
 
-   ![](media/2dg67.png)
+   ![](media/ex4-mergepr.png)
    
 1. Update the description as **fixed AB#{workitemID} updated** and select **confirm merge**.
 
-   ![](media/2dg68.png)
+   ![](media/ex4-confirm-merge.png)
    
 1. Navigate back Azure Boards tab and notice that the **work item** has been marked as **done**.
 
-   ![](media/2dg69.png)
+   ![](media/ex4-back-azureboards.png)
    
 ## Task 3: Configure Azure Test plan
 

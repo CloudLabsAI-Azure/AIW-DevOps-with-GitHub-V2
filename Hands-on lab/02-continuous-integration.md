@@ -240,12 +240,12 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dg24.png)
     
-1.  under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **TAILWINDTRADERS_PRODUCTSDB_CONNECTION_STRING** ***(1)***
+   - **Name** : Enter **CONTOSOTRADERS_PRODUCTSDB_CONNECTION_STRING** ***(1)***
    - **Value** : **<inject key="Acr Password" />** ***(2)***
    
-   ![](media/2dgn13.png)    
+   ![](media/kc-secret-cs.png)    
    
 1. Go to Environment details, Click on **Service principle Credentials** and copy the **Application Id (Client Id)** , **client Secret** , **subscription Id** and **tenant Id**.
 
@@ -264,54 +264,54 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **TAILWINDTRADERS_TESTING_SERVICEPRINCIPAL** ***(1)***
+   - **Name** : Enter **CONTOSOTRADERS_TESTING_SERVICEPRINCIPAL** ***(1)***
    - **Value** : Paste the service principal details in json format ***(2)***
    
-   ![](media/2dgn7.png)
+   ![](media/kc-secret-sp.png)
    
 1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **TAILWINDTRADERS_ACR_PASSWORD** ***(1)***
+   - **Name** : Enter **CONTOSOTRADERS_ACR_PASSWORD** ***(1)***
    - **Value** : **<inject key="Acr Password" />** ***(2)***
    
-   ![](media/2dgn8.png) 
+   ![](media/kc-secret-pat.png) 
    
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **TAILWINDTRADERS_SUFFIX** ***(1)***
-   - **Value** : **Tailwind-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
+   - **Name** : Enter **CONTOSOTRADERS_SUFFIX** ***(1)***
+   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** ***(2)***
    
-   ![](media/2dgn14.png)
+   ![](media/kc-secret-did.png)
    
-1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **tailwindd-traders-carts** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
+1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-carts-api** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
-   ![](media/2dgn15.png)
+   ![](media/kc-carts-api.png)
    
-1. Navigate back to Actions tab and select the **tailwind-traders-carts** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
+1. Navigate back to Actions tab and select the **contoso-traders-carts-api** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
 
-   ![](media/2dgn20.png)
+   ![](media/kc-carts-api-success.png)
    
-   ![](media/2dgn19.png)   
+   ![](media/kc-carts-api-build.png)   
 
-1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **tailwind-traders-products** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
+1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-products-api** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
-   ![](media/2dgn16.png)
+   ![](media/kc-products-api.png)
    
-1. Navigate back to Actions tab and select the **tailwind-traders-products** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application. This workflow   
+1. Navigate back to Actions tab and select the **contoso-traders-products-api** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application. This workflow   
 
    ![](media/2dgn17.png)
    
    ![](media/2dgn18.png)  
    
-1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **tailwind-traders-webiste** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
+1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-ui** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
-   ![](media/2dgn22.png)
+   ![](media/kc-traders-ui.png)
    
-1. Navigate back to Actions tab and select the **tailwind-traders-website** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application. This workflow   
+1. Navigate back to Actions tab and select the **contoso-traders-ui** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application. This workflow   
 
-   ![](media/2dgn23.png)
+   ![](media/kc-traders-ui-success.png)
    
-   ![](media/2dgn24.png)  
+   ![](media/kc-traders-ui-build.png)  
    
 1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
 

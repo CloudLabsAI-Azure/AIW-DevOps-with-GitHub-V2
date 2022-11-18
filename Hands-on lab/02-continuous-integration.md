@@ -299,9 +299,9 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Navigate back to Actions tab and select the **contoso-traders-products-api** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application. This workflow   
 
-   ![](media/2dgn17.png)
+   ![](media/kc-products-api-success.png)
    
-   ![](media/2dgn18.png)  
+   ![](media/kc-products-api-build.png)  
    
 1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-ui** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 

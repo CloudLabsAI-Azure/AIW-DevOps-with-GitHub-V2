@@ -186,15 +186,16 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dg76.png)    
    
-1. In the New Test Case pop-up, provide the following details and click on **Save & Close** ***(8)***
+1. In the New Test Case pop-up, provide the following details and click on **Save & Close** ***(10)***
 
    - Name: **Validate the web app** ***(1)***
    - Steps:
-     - 1. Actions: **Access the Contoso web app** ***(2)*** Expected result: **Succeeded** ***(3)***          
-     - 2. Actions: **Access Speakers page** ***(4)*** Expected result: **Succeeded** ***(5)***  
-     - 3. Actions: **Access Sessions page** ***(6)*** Expected result: **Succeeded** ***(7)***
+     - 1. Actions: **Access the Contoso Traders app** ***(2)*** Expected result: **Succeeded** ***(3)***          
+     - 2. Actions: **Access the Laptop page** ***(4)*** Expected result: **Succeeded** ***(5)***  
+     - 3. Actions: **Access the Controllers page** ***(6)*** Expected result: **Succeeded** ***(7)***
+     - 4. Actions: **Access the Desktop page** ***(8)*** Expected result: **Succeeded** ***(9)***
 
-   ![](media/2dg77.png) 
+   ![](media/ex4-validate-webapp.png) 
 
 1. From the Test plans tab, navigate to **Execute** ***(1)*** tab, select the **validate the web app** ***(2)*** test point and click on **Run for web app** ***(3)***.
 
@@ -224,11 +225,11 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dg84.png)
    
-   ![](media/2dg85.png)   
+   ![](media/ex4-save&close.png)   
    
 1. From the execute tab, Verify the **outcome** of the manual testing. The Outcome will be in a passed state if the web app worked as expected and vice versa.
 
-   ![](media/2dg86.png)
+   ![](media/ex4-testsuite.png)
    
 1. Navigate to **chart** ***(1)***, click on **+ New** ***(2)*** and select **+ New test case chart** ***(3)***.
 
@@ -240,7 +241,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    
 1. You'll be able to visualize the chart. You can explore more by making changes in the chart, and by running multiple test cycles.
 
-   ![](media/2dg89.png)      
+   ![](media/ex4-testsuite1.png)      
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
    

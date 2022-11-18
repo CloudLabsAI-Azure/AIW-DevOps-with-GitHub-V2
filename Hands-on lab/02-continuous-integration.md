@@ -327,6 +327,8 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Tailwind Traders app has been hosted successfully.
 
+    ![](media/2dgn29.png) 
+    
     ![](media/2dgn26.png)  
     
 ### Task 7: Editing the GitHub Workflow File using Codespace

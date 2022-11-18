@@ -203,7 +203,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    
 1. A web-based runner will be opened. Manual testing of the web app can performed. Keep this page open, we will use the runner in upcoming steps.
 
-   ![](media/2dg79.png)
+   ![](media/ex4-view-webapp.png)
    
 1. On the Azure portal search for **Resource groups** in the search bar ***(1)*** and select **Resource groups** ***(2)*** from the suggestions. 
 

@@ -12,21 +12,25 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/2dg92.png)  
 
-1. Navigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)*** from the side blade and click on **Configure CodeQL alerts** ***(3)***.
+1. Navigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)*** from the side blade and click on **Configure scanning tool** ***(3)***.
 
-   ![](media/2dg93.png)  
+   ![](media/ex5-code-scanning.png)
+   
+1. In Choose a workflow pane, under categories select **Security** **(1)** and click on **Configure** **(2)** for creating a CodeQL Analysis workflow.
 
-1. A workflow **codeql-analysis.yml** ***(1)***. Review the yaml file, select **Start Commit** ***(2)*** and click on **commit new file** ***(3)***.
+   ![](media/ex5-codeql-analysis.png)     
+
+1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Start Commit** ***(2)***, then select **Commit directly to the main barnch** ***(3)*** and click on **Commit new file** ***(4)***.
   
-   ![](media/2dg94.png) 
+   ![](media/ex5-codeql-commit.png) 
   
 1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
     
-   ![](media/2dg95.png) 
+   ![](media/ex5-codeql-actions.png) 
   
-1. Navigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)*** and click on **View alerts** ***(3)***.
+1. Navigate to **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
    
-   ![](media/2dg96.png)
+   ![](media/ex5-codescanning-viewalerts.png)
     
 1. Click on the **Missing rate Limiting** alert. The alert will be for 73 line in App.js file.
 

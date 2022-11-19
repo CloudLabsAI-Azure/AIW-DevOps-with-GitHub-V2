@@ -166,23 +166,23 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![GitHub Dependabot alerts in the Security tab.](media/ex5-t3-dependabot.png "GitHub Dependabot alerts")
 
-1. Sort the Dependabot alerts by `Package name`. Locate the `handlebars` vulnerability by typing `handlebars` in the search box under the `Package` dropdown menu.
+1. Sort the Dependabot alerts by `Package name`. Under the **Package** ***(1)*** dropdown menu, search for **node-forge** ***(2)*** by typing in the search box and select **node-forge** ***(3)*** vulnerability.
 
-   ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](media/hol-ex1-task2-step4-1.png "`handlebars` Dependabot alert")
+   ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](media/ex5-t3-node-forge.png "`handlebars` Dependabot alert")
 
-1. Select any of the `handlebars` Dependabot alert entries to see the alert detail. After reviewing the alert, select `Create Dependabot security update` and wait a few moments for GitHub to create the security update.
+1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. After reviewing the alert, select **Review security update**.
 
-   ![The `handlebars` Dependabot alert detail.](media/hol-ex1-task2-step5-1.png "Dependabot alert detail")
+   ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
 
-   ![The Dependabot security update message observed when creating a Dependabot security update.](media/hol-ex1-task2-step5-2.png "Dependabot security update message")
+1. Navigate to **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)*** and merge it to your main branch.
 
-1. In the `Pull Requests` tab, find the Dependabot security patch pull request and merge it to your main branch.
+   ![List of Pull Requests.](media/ex5-t3-open-nfpr.png "Pull Requests")
+   
+1. Click on **Merge pull request** and followed by click on **Confirm merge**. 
 
-   ![List of Pull Requests.](media/hol-ex1-task2-step6-1.png "Pull Requests")
-
-   ![The Pull Request Merge Button in the Pull Request detail.](media/hol-ex1-task2-step6-2.png "Pull Request Merge Button")
+   ![The Pull Request Merge Button in the Pull Request detail.](media/ex5-t3-merge-pr.png "Pull Request Merge Button")
     
-   >**Note**: In case you see any errors with merge request. Retry step 4 to step 6 by selecting any other `handlebars` Dependabot alert.
+   >**Note**: In case you see any errors with merge request. Retry step 4 to step 6 by selecting any other Dependabot alert.
 
 1. Pull the latest changes from your GitHub repository to your local GitHub folder.
 

@@ -242,10 +242,10 @@ In this exercise, you will build automation in GitHub for updating and republish
     
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **CONTOSOTRADERS_PRODUCTSDB_CONNECTION_STRING** ***(1)***
+   - **Name** : Enter **SQL_PASSWORD** ***(1)***
    - **Value** : **<inject key="Acr Password" />** ***(2)***
    
-   ![](media/kc-secret-cs.png)    
+   ![](media/2dgn34.png)    
    
 1. Go to Environment details, Click on **Service principle Credentials** and copy the **Application Id (Client Id)** , **client Secret** , **subscription Id** and **tenant Id**.
 
@@ -264,54 +264,34 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **CONTOSOTRADERS_TESTING_SERVICEPRINCIPAL** ***(1)***
+   - **Name** : Enter **SERVICEPRINCIPAL** ***(1)***
    - **Value** : Paste the service principal details in json format ***(2)***
    
-   ![](media/kc-secret-sp.png)
+   ![](media/2dgn36.png)
    
 1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **CONTOSOTRADERS_ACR_PASSWORD** ***(1)***
+   - **Name** : Enter **ACR_PASSWORD** ***(1)***
    - **Value** : **<inject key="Acr Password" />** ***(2)***
    
-   ![](media/kc-secret-pat.png) 
+   ![](media/2dgn35.png) 
    
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **CONTOSOTRADERS_SUFFIX** ***(1)***
+   - **Name** : Enter **ENVIRONMENT** ***(1)***
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** ***(2)***
    
-   ![](media/kc-secret-did.png)
+   ![](media/2dgn33.png)
    
-1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-carts-api** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
+1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
-   ![](media/kc-carts-api.png)
+   ![](media/2dgn37.png)
    
-1. Navigate back to Actions tab and select the **contoso-traders-carts-api** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
+1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
 
-   ![](media/kc-carts-api-success.png)
+   ![](media/2dgn42.png)
    
-   ![](media/kc-carts-api-build.png)   
-
-1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-products-api** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
-
-   ![](media/kc-products-api.png)
-   
-1. Navigate back to Actions tab and select the **contoso-traders-products-api** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application. This workflow   
-
-   ![](media/kc-products-api-success.png)
-   
-   ![](media/kc-products-api-build.png)  
-   
-1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-ui** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
-
-   ![](media/kc-traders-ui.png)
-   
-1. Navigate back to Actions tab and select the **contoso-traders-ui** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application. This workflow   
-
-   ![](media/kc-traders-ui-success.png)
-   
-   ![](media/kc-traders-ui-build.png)  
+   ![](media/2dgn38.png)     
    
 1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
 
@@ -346,74 +326,32 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/2dg33.png)
    
-1. From the explorer side blade, select **docker-publish.yml** ***(1)*** file and copy all the content of the file ***(2)***.
+1. From the explorer side blade, navigate to **.github/workflows** and select **docker-publish.yml** ***(1)*** file.
 
    ![](media/2dg34.png)
    
 1. From the explorer side blade, navigate to **.github.workflows** ***(1)*** directory and replace the content of **docker-publish.yml** ***(2)*** file with the code copied in last step. After updating the file, press CTRL+S to save the file. 
 
-   ![](media/2dg35.png)
+   ![](media/2ndg36.png)
+   
+1. Remove the commands from line 7 to 14 from the workflow file. In line 6 update the branch name to **master** from **main**.
+
+  ![](media/2ndg40.png)
    
 1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
    ```pwsh
    git add .
-   git commit -m "Updating workflow to update Docker images only when there are changes"
+   git commit -m "Updating app deployment"
    git push
    ```
-   ![](media/2dg36.png)
+   ![](media/2dgn43.png)
     
    > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
 1. Navigate back to the GitHub browser, select the **Actions** ***(1)*** tab and review the **workflow** ***(2)*** created automatically for the changes made. 
 
-   ![](media/2dg37.png)
-
-1. Navigate back to codespace browser tab, select **content-api** ***(1)*** folder and open the **DockerFile** ***(2)***. Add the following comment to the top of `Dockerfile` ***(3)***. After updating the file, press CTRL+S to save the file. 
-
-   ```yaml
-   # Testing
-   ```
-   
-   ![](media/2dg38.png) 
-   
-1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
-
-   ![](media/2dg39.png) 
-   
-1. Navigate back to GitHub browser, select the **Actions** ***(1)*** tab and review the **workflow** ***(2)***. The workflow will run the "Update the API Docker image" job and skip the other 2 "Update the ... Docker image" jobs.
-
-   ![](media/2dg40.png) 
-   
-1. Navigate back to codespace browser tab, select **content-api** ***(1)*** folder and open the **DockerFile** ***(2)***. Add the following comment to the top of `Dockerfile` ***(3)***. After updating the file, press CTRL+S to save the file. 
-
-   ```yaml
-   # Testing
-   ```
-   
-   ![](media/2dg41.png) 
-   
-1. Navigate back to codespace browser tab, select **content-init** ***(1)*** folder and open the **DockerFile** ***(2)***. Add the following comment to the top of `Dockerfile` ***(3)***. After updating the file, press CTRL+S to save the file. 
-
-   ```yaml
-   # Testing
-   ```
-   
-   ![](media/2dg42.png)
-   
-1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
-
-   ```pwsh
-   git add .
-   git commit -m "Updating Web and Init content"
-   git push
-   ```
-   
-   ![](media/2dg43.png)
-   
-1. Navigate back to GitHub browser, select the **Actions** ***(1)*** tab and review the **workflow** ***(2)***. The workflow will run the "Update the Web Docker image" and "Update the Init Docker image" jobs. It will skip the "Update the API Docker image" job.
-
-   ![](media/2dg44.png) 
+   ![](media/2dg41.png)
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
    

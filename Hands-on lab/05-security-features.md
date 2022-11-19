@@ -82,26 +82,14 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
  
 1. Navigate to **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade and click on **New draft security advisory** ***(3)***.
 
-   ![](media/2dg104.png)  
+   ![](media/ex5-t2-advisories.png)  
+     
+1. In the Open a draft security advisory tab, under Advisory Details section provide the following details.
 
-     
-1. In the Open a draft security advisory tab, provide the following details.
-     
-   - Ecosystem: **composer** ***(1)***
-   - Package name: **mcw-continuous-delivery-lab-files/content-web/app.js** ***(2)***
-   - Affected version: **<1.2** ***(3)***
-   - Patched version: **1.2** ***(4)***
-   - Severity: **High** ***(5)***
-  
-   ![](media/2dg105.png)
-     
-1. In the Common Weakness Enumerator Section, provide the following details and Create **draft security advisory** ***(5)***
-
-   - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(1)***
+   - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
-   - Title: **Improper Access Control in mcw-continuous-delivery-lab-files/content-web/app.js** ***(3)***
-   - Description: **Add** ***(4)*** the below mentioned details.
-
+   - Description: **Add** ***(3)*** the below mentioned details in the description section.
+   
    ```
    Impact
    What kind of vulnerability is it? Who is impacted?
@@ -135,17 +123,30 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
    ```
     
-   ![](media/2dg108.png)
+   ![](media/ex5-t2-securityadvisor1.png)
    
- 1. Once the security advisory is created, click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
+1. In the Affected products section, provide the following details and click on **Create draft security advisory** ***(7)***   
+ 
+   - Ecosystem: **composer** ***(1)***
+   - Package name: **aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(2)***
+   - Affected version: **<1.2** ***(3)***
+   - Patched version: **1.2** ***(4)***
+   - Severity: **High** ***(5)***
+   - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
+  
+   ![](media/ex5-t2-securityadvisor2.png)
+   
+ 1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
-    ![](media/2dg107.png)
+    ![](media/ex5-t2-securityadvisor3.png)
+    
+    ![](media/ex5-t2-securityadvisor4.png)
   
  1. After having the temporary fork you can request a CVE, it is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
     **Note**: This process may take up to 3 working days. Please do not close the security repository.
  
-### Task 4: Using Dependabot
+### Task 3: Using Dependabot
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 

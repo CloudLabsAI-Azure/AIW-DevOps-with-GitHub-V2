@@ -332,11 +332,11 @@ The last task automated building and updating only one of the Docker images. In 
    
 1. From the explorer side blade, navigate to **.github.workflows** ***(1)*** directory and replace the content of **docker-publish.yml** ***(2)*** file with the code copied in last step. After updating the file, press CTRL+S to save the file. 
 
-   ![](media/2ndg36.png)
+   ![](media/2dgn36.png)
    
 1. Remove the commands from line 7 to 14 from the workflow file. In line 6 update the branch name to **master** from **main**.
 
-  ![](media/2ndg40.png)
+  ![](media/2dgn40.png)
    
 1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
@@ -351,7 +351,7 @@ The last task automated building and updating only one of the Docker images. In 
 
 1. Navigate back to the GitHub browser, select the **Actions** ***(1)*** tab and review the **workflow** ***(2)*** created automatically for the changes made. 
 
-   ![](media/2dg41.png)
+   ![](media/2dgn41.png)
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
    

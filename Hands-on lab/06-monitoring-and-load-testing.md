@@ -76,9 +76,15 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
 In this task, you'll create Azure Load Testing instance and run a test using a JMeter file.
 
+1. In the Azure Portal, navigate to **Tailwind-<inject key="Deploymentid" />** resource group and select the **Container App** resource with the name  **tailwind-traders-carts<inject key="Deploymentid" />**.
+
+1. From the Overview of **tailwind-traders-carts<inject key="Deploymentid" />** **(1)** Container App, copy the **Application Url** **(2)** and paste it in notepad for later usage in the task.
+
+   ![](media/ex6-t2-copyappurl.png)
+
 1. In the Azure Portal, navigate to **Tailwind-<inject key="Deploymentid" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **tailwind-traders-loadtest<inject key="Deploymentid" />** **(2)**.
 
-    ![](media/ex6-open-loadtest.png)
+   ![](media/ex6-open-loadtest.png)
 
 1. On the left hand side pane, select **Tests (1)** and click on **+ Create (2)** and select **Upload a JMeter script (3)**.
 
@@ -92,17 +98,21 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
    ![](media/ex6-t2-cartsjmx-open.png)
 
-1. In line number 68, replace **${Domain}** with **Application Url** of Container App which you have copied in the previous step. 
+1. In line number 68, replace **${Domain}** with **Application Url** of Container App which you have copied in the previous step and Save it. 
  
    ![](media/ex6-t2-cartsjmx.png)
        
-1. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **test.jmx (3)** file, and select **Upload (3)**.
+1. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **tailwind-traders-carts.jmx **(2)** file from your lab-vm `C:\Workspaces\lab\aiw-devops-with-github-lab-files\tests\loadtests` and select **Upload (3)**.
     
-   ![](media/Ex6-T1-S9.3.png)
+   ![](media/ex6-t2-jmxupload.png)
 
 1. Once the file has completed uploading **(1)**, click on **Review + create (2)**.
 
-   ![](media/Ex6-T1-S10.2.png)
+   ![](media/ex6-t2-create-test.png)
+   
+1. Once the validation passed, click on **Create**.
+
+   ![](media/ex6-t2-create-test2.png)  
 
 1. Once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 

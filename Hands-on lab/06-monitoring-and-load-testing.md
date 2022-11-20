@@ -8,7 +8,7 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
    ![](media/ex6-t1-openai.png)
    
-1. From the Overview of **tailwind-traders-ai<inject key="Deploymentid" />** Application Insights resource, you can set the **Show data for last** as per your requirment of monitoring insights.
+1. From the Overview of **tailwind-traders-ai<inject key="Deploymentid" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
 
    ![](media/ex6-t1-set-showdata.png)
    
@@ -46,11 +46,11 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
    ![](media/ex6-t2-loadtest-create.png)
 
-1. On the **Create test** page, under basic tab provide the **Test name** as `Demo-test` **(1)** and for **Test discription** enter `Demo Load Testing` **(2)**, then click **Next:Test plan >** **(3)**.
+1. On the **Create test** page, under basic tab provide the **Test name** as `Demo-test` **(1)** and for **Test description** enter `Demo Load Testing` **(2)**, then click **Next: Test plan >** **(3)**.
 
    ![](media/Ex6-T1-S7.2.png)
 
-1. On your lab-vm open **File Explorer** and navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files\tests\loadtests` **(1)**. Right click on the file named **tailwind-traders-carts.jmx** **(2)** and click on **Open with Code** **(3)**.
+1. On your Lab-VM open **File Explorer** and navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files\tests\loadtests` **(1)**. Right click on the file named **tailwind-traders-carts.jmx** **(2)** and click on **Open with Code** **(3)**.
 
    ![](media/ex6-t2-cartsjmx-open.png)
 
@@ -58,7 +58,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
  
    ![](media/ex6-t2-cartsjmx.png)
        
-1. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **tailwind-traders-carts.jmx **(2)** file from your lab-vm `C:\Workspaces\lab\aiw-devops-with-github-lab-files\tests\loadtests` and select **Upload (3)**.
+1. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **tailwind-traders-carts.jmx **(2)** file from your Lab-VM `C:\Workspaces\lab\aiw-devops-with-github-lab-files\tests\loadtests` and select **Upload (3)**.
     
    ![](media/ex6-t2-jmxupload.png)
 
@@ -76,7 +76,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
      
 ## Task 3: Explore Chaos Studio
 
-In this task you will add **Targets** and create an **Expirement** on **Azure Chaos Studio** to check the resilience of the web appliccation that we created by adding  real faults and observe how our applications respond to real-world disruptions.
+In this task you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding  real faults and observe how our applications respond to real-world disruptions.
 
 1. In the Azure Portal search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
    
@@ -90,15 +90,15 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  
    ![](media/2dgn59.png)
      
-1. Click on the **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** **Kubeernetes service** instance and form the drop-down for **Enable Targets (1)** choose **Enable service-direct targets (All resources) (2)**.
+1. Click on the **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** **Kubernetes service** instance and form the drop-down for **Enable Targets (1)** choose **Enable service-direct targets (All resources) (2)**.
 
    ![](media/2dgn60.png)
      
-1. Once the target is enabled, select **Expirements** on the left and click **+Create**.
+1. Once the target is enabled, select **Experiments** on the left and click **+Create**.
  
    ![](media/Ex6-T2-S5.3.png)
  
-1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next:Experiment designer>** **(5)**.
+1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Experiment designer >** **(5)**.
 
     - Subscription: select the default subscription **(1)**
     - Resource Group: **Tailwind-<inject key="DeploymentID" enableCopy="false" />** **(2)**
@@ -111,7 +111,7 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
 
    ![](media/Ex6-T2-S7.3.png)
  
-1. On the **Add fault** page, select the following and select **Next:Target resources>** **(4)**.
+1. On the **Add fault** page, select the following and select **Next: Target resources>** **(4)**.
    
    - Faults: **AKS Chaos Mesh Pods Chaos** **(1)**
    - Duration (minutes): **5** **(2)**
@@ -119,7 +119,7 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
      
    ![](media/2dgn61.png)
      
-1. On the  **Target resources** select the **CosmoDB** instance and **Add**.
+1. On the **Target resources** select the **CosmosDB** instance and **Add**.
   
    ![](media/2dgn62.png)
   
@@ -163,7 +163,6 @@ In this task you will add **Targets** and create an **Expirement** on **Azure Ch
  
    ![](media/Ex6-T2-S19.1.png)
 
-1. Navigate to **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />** resource group and open application insights **fabmedicalai-<inject key="DeploymentID" enableCopy="false" />**. On the app insights overview page click on **Availability tile**.
- 
+1. Navigate to **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />** resource group and open application insights **fabmedicalai-<inject key="DeploymentID" enableCopy="false" />**. On the app insights overview page click on **Availability tile**. 
  
 1. Observe the availability of the application, after adding the **CosmosDB Failover**.

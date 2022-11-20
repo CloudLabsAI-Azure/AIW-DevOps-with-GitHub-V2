@@ -18,10 +18,6 @@
       "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/main/Hands-on%20lab/02-continuous-integration.md",
       "Order": 4
     },
-     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/main/Hands-on%20lab/03-continuous-deployment.md",
-      "Order": 5
-    },
     {
       "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/main/Hands-on%20lab/04-azure-boards.md",
       "Order": 6

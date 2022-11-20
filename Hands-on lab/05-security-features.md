@@ -153,5 +153,12 @@ In this task, you will use Dependabot to track the versions of the packages we u
    ```
    
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.  
+
+## Summary 
+
+In this exercise, you explored and configured different GitHub Advance Security features.
+
+
+
     
 

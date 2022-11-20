@@ -1,5 +1,5 @@
 
-# Exercise 2: Continuous Integration and Continous Deployment
+# Exercise 2: Continuous Integration and Continuous Deployment
 
 In this exercise, you are going to set up the local infrastructure using Docker containers. There are three images you will be working with: fabrikam-init, fabrikam-api, and fabrikam-web. you will also build automation in GitHub for updating and republishing our Docker images when the code changes.
 
@@ -29,13 +29,13 @@ In this task, you'll access and explore the code repository of the web app using
 
 ### Task 3: Set up Local Infrastructure
 
-In this task, You will set up the local infrastructure using Dotnet . You'll be wokring with three docker images:fabrikam-init, fabrikam-api, and fabrikam-web.
+In this task, You will set up the local infrastructure using Dotnet . You'll be working with three docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
    
 1. Open a **New Terminal** in the Visual Studio Code by selecting **Terminal (1)** and then on **New Terminal (2)**.
 
    ![](media/2dgn44.png "New Repository Creation Form")
    
-1. Click on the **drop-down** ***(1)*** button next to powershell aand select **Command Prompt** from the list. A new command Prompt terminal will be opened.   
+1. Click on the **drop-down** ***(1)*** button next to PowerShell and select **Command Prompt** from the list. A new command Prompt terminal will be opened.   
 
    ![](media/2dgn45.png)
    
@@ -81,7 +81,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 
    ![](media/2dgn51.png)     
    
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl+C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
   
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Api.Carts
@@ -111,7 +111,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 
    ![](media/2dgn57.png)     
 
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl+C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
   
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Ui.Website
@@ -127,7 +127,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
   
    ![](media/2dgn55.png) 
    
-   >**Note**: Please wait untill the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time.
+   >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time.
    
 1. Run the below mentioned command to run ui of the application. This will automatically open a browser tab where you'll see the complete application running
 
@@ -155,7 +155,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The GitHub Find a repository search criteria is shown with the New button selected.](https://github.com/anushabc/MCW-Continuous-delivery-in-Azure-DevOps/blob/prod/Hands-on%20lab/media/image05.png?raw=true "New repository button")
 
-1. On the **Create a new repository** screen, name the repository ```mcw-continuous-delivery-lab-files``` ***(1)***, select **Private** ***(2)*** and click on **Create repository** ***(3)***  button.
+1. On the **Create a new repository** screen, name the repository ```aiw-devops-with-github-lab-files``` ***(1)***, select **Private** ***(2)*** and click on **Create repository** ***(3)***  button.
 
    ![The `New Repository` creation form in GitHub.](media/2dgn3.png "New Repository Creation Form")
    

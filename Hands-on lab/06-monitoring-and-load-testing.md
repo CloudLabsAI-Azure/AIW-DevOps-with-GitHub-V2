@@ -78,98 +78,92 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
 In this task you will add **Targets** and create an **Expirement** on **Azure Chaos Studio** to check the resilience of the web appliccation that we created by adding  real faults and observe how our applications respond to real-world disruptions.
 
-1. Navigate to the **CosmoDB** instance **fabmedical-cdb-<inject key="DeploymentID" enableCopy="false" />** in the Azure portal, on the overview page, take note of the second list of **Read Locations** we will require this the further steps. 
- 
-   > **Note:** Notice there are two regions present in both **Read Locations** and **Write Locations** the primary region is where the resource is deployed and running, and the secondary region is the backup region. When performing the Chaos experiment, we will observe that the Cosmos DB instance will run undisturbed despite adding a fault. This is because the primary region is being replaced by the secondary or the backup region.
-           
-   ![](media/Note-1.2.png)
-
-2. In the Azure Portal search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
+1. In the Azure Portal search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
    
    ![](media/Ex6-T2-S1.1.png)
 
-3. In the **Azure Chaos Studio**, select **Targets** on the left menu.
+1. In the **Azure Chaos Studio**, select **Targets** on the left menu.
 
    ![](media/Ex6-T2-S2.png)
       
-4. From the drop-down menu, select **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />** resource group.
+1. From the drop-down menu, select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group.
  
-   ![](media/Ex6-T2-S3.png)
+   ![](media/2dgn59.png)
      
-5. Click on the **fabmedical-cdb-<inject key="DeploymentID" enableCopy="false" />** **Cosmos DB** instance and form the drop-down for **Enable Targets (1)** choose **Enable service-direct targets (All resources) (2)**.
+1. Click on the **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** **Kubeernetes service** instance and form the drop-down for **Enable Targets (1)** choose **Enable service-direct targets (All resources) (2)**.
 
-   ![](media/Ex6-T2-S4.3.png)
+   ![](media/2dgn60.png)
      
-6. Once the target is enabled, select **Expirements** on the left and click **+Create**.
+1. Once the target is enabled, select **Expirements** on the left and click **+Create**.
  
    ![](media/Ex6-T2-S5.3.png)
  
-7. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next:Experiment designer>** **(5)**.
+1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next:Experiment designer>** **(5)**.
 
     - Subscription: select the default subscription **(1)**
-    - Resource Group: fabmedical-rg-<inject key="DeploymentID" enableCopy="false" /> **(2)**
-    - Name: fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> **(3)**
+    - Resource Group: **Tailwind-<inject key="DeploymentID" enableCopy="false" />** **(2)**
+    - Name: **Tailwind-<inject key="DeploymentID" enableCopy="false" />** **(3)**
     - Region: Leave it to default **(4)**
  
-    ![](media/Ex6-T2-S6.5.png)
+    ![](media/2dgn58.png)
  
-8. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
+1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
    ![](media/Ex6-T2-S7.3.png)
  
-9. On the **Add fault** page, select the following and select **Next:Target resources>** **(4)**.
+1. On the **Add fault** page, select the following and select **Next:Target resources>** **(4)**.
    
-    - Faults: CosmosDB Failover **(1)**
-    - Duration (minutes): 5 **(2)**
-    - Read region: Select the **Read Locations** you noted down in **Step-1** **(3)**
+   - Faults: **AKS Chaos Mesh Pods Chaos** **(1)**
+   - Duration (minutes): **5** **(2)**
+   - jsonSpec: Leave it to default **(3)**
      
-    ![](media/Ex6-T2-S8.3.png)
+   ![](media/2dgn61.png)
      
-10. On the  **Target resources** select the **CosmoDB** instance and **Add**.
+1. On the  **Target resources** select the **CosmoDB** instance and **Add**.
   
-    ![](media/Ex6-T2-S9.3.png)
+   ![](media/2dgn62.png)
   
-11. Click on **Review + create**.
+1. Click on **Review + create**.
   
-    ![](media/Ex6-T2-S10.png)
+   ![](media/2dgn63.png)
    
-12. On the **Review + create** click on **Create**.
+1. On the **Review + create** click on **Create**.
   
-    ![](media/Ex6-T2-S11.png)
+   ![](media/2dgn64.png)
   
-13. Navigate back to the **CosmosDB** instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
+1. Navigate back to the **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
   
-    ![](media/Ex6-T2-S12.2.png)
+   ![](media/2dgn65.png)
   
-14. In the **Add role assignment page** under **Role** tab  select **Owner (1)** and select **Next (2)**.
+1. In the **Add role assignment page** under **Role** tab  select **Owner (1)** and select **Next (2)**.
   
-    ![](media/Ex6-T2-S13.2.png)
+   ![](media/2dgn66.png)
   
-15. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
+1. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
    
-    ![](media/Ex6-T2-S14.2.png)
+   ![](media/2dgn67.png)
   
-16. Click on **Review + assign**. 
+1. Click on **Review + assign**. 
    
-    ![](media/Ex6-T2-S15.1.png)
+   ![](media/2dgn68.png)
       
-17. On the Azure portal navigate back to the Chaos experiment you created **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
+1. On the Azure portal navigate back to the Chaos experiment you created **Tailwind-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
   
-    ![](media/Ex6-T2-S16.1.png)
+   ![](media/2dgn69.png)
  
-18. Select **Ok** for **Start this experiment** pop-up.
+1. Select **Ok** for **Start this experiment** pop-up.
 
     ![](media/Ex6-T2-S17.1.png)
        
-19. Once the experiment status is **Success** click on **Details** to view the run preview.
+1. Once the experiment status is **Success** click on **Details** to view the run preview.
  
-    ![](media/Ex6-T2-S18.png)
+   ![](media/Ex6-T2-S18.png)
  
-20. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
+1. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
  
-    ![](media/Ex6-T2-S19.1.png)
+   ![](media/Ex6-T2-S19.1.png)
 
-21. Navigate to **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />** resource group and open application insights **fabmedicalai-<inject key="DeploymentID" enableCopy="false" />**. On the app insights overview page click on **Availability tile**.
+1. Navigate to **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />** resource group and open application insights **fabmedicalai-<inject key="DeploymentID" enableCopy="false" />**. On the app insights overview page click on **Availability tile**.
  
  
-22. Observe the availability of the application, after adding the **CosmosDB Failover**.
+1. Observe the availability of the application, after adding the **CosmosDB Failover**.

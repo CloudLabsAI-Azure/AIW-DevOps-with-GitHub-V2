@@ -340,5 +340,9 @@ The last task automated building and updating only one of the Docker images. In 
    ![](media/2dgn41.png)
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
+
+## Summary
+
+In this exercise, you hosted the application locally, deployed the application to Azure using GitHub Actions, and explored Codespace.
    
    

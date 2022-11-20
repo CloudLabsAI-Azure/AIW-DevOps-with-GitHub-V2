@@ -1,4 +1,4 @@
-## Exercise 6: Monitoring and Load Testing (Optional)
+## Exercise 5: Monitoring and Load Testing (Optional)
 
 In this exercise, we will add monitoring and logging to gain insight on the application's usage in the cloud. Then create Azure load testing, which is a fully managed load-testing service that enables you to generate high-scale loads. The service simulates traffic for your applications, regardless of where they're hosted. Developers, testers, and quality assurance (QA) engineers can use it to optimise application performance, scalability, or capacity. We will also explore Azure Chaos Studio, which helps you measure, understand, and improve your cloud application and service resilience.
 ### Task 1: Set up Application Insights

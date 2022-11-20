@@ -4,7 +4,7 @@ In this exercise, you'll explore GitHub Enterprise features which is GitHub adva
 
 ## Task 1: Enabling Code scanning and CodeQL alerts 
 
-In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
+In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyse the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to the public.
    
@@ -20,7 +20,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/ex5-codeql-analysis.png)     
 
-1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Start Commit** ***(2)***, then select **Commit directly to the main barnch** ***(3)*** and click on **Commit new file** ***(4)***.
+1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Start Commit** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit new file** ***(4)***.
   
    ![](media/ex5-codeql-commit.png) 
   
@@ -31,50 +31,10 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 1. Navigate to **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
    
    ![](media/ex5-codescanning-viewalerts.png)
-    
-1. Click on the **Missing rate Limiting** alert. The alert will be for 73 line in App.js file.
-
-   ![](media/2dg97.png)
-    
-1. You'll find the Missing rate Limiting in App.js file under Content-web folder.
-    
-   ![](media/2dg98.png)
-    
-1. Navigate to **Code** ***(1)***, go to **mcw-continuous-delivery-lab-files/content-web**  ***(2)*** folder and edit the **app.js** file. Add the following the **content** ***(3)*** from line 7.
   
-   ```pwsh
-     // set up rate limiter: maximum of five requests per minute
-        var RateLimit = require('express-rate-limit');
-        var limiter = new RateLimit({
-        windowMs: 1*60*1000, // 1 minute
-        max: 5
-        });
-   ```
+1. You will be navigated to **Code scanning** section. You'll be able visualize that the **No code scanning alerts here!**.
    
-   After adding the code it will look like this
-      
-   ![](media/2dg99.png)
-      
-1. In the same app.js file, Add the following content in line 79 just before the `app.get('*', (req, res) =>{` line. 
-   
-   ```pwsh
-      // apply rate limiter to all requests
-      app.use(limiter);
-   ```
-    
-   ![](media/2dg100.png)
-      
-1. After adding the code, scroll down and click on **Commit changes**. 
- 
-   ![](media/2dg101.png)
-   
-1. Navigate to **Actions** tab, review the **update app.js** workflow.
-
-   ![](media/2dg102.png)
-  
-1. Navigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)***. You'll be able visualize that the **Missing rate Limiting** alert has been resolved.
-   
-   ![](media/2dg103.png)
+   ![](media/ex5-codeql-noalerts.png)
     
 ## Task 2: Repository security advisories  
  

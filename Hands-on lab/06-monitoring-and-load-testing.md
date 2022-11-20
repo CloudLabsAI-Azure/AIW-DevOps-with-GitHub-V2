@@ -161,9 +161,9 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
  
 1. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
  
-   ![](media/Ex6-T2-S19.1.png)
+   ![](media/2dgn73.png)
 
-1. Navigate to **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />** resource group and open application insights **fabmedicalai-<inject key="DeploymentID" enableCopy="false" />**. On the app insights overview page click on **Availability tile**. 
+1. Navigate to **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group and open application insights **tailwind-traders-ai<inject key="DeploymentID" enableCopy="false" />**. On the app insights overview page click on **Availability tile**. 
  
 1. Observe the availability of the application, after adding the **CosmosDB Failover**.
 

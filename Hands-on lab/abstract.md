@@ -1,5 +1,5 @@
 
-## Abstract and learning objectives 
+# Abstract and learning objectives 
 
 In this hands-on lab, you will learn how to implement a solution with a combination of ARM templates and Azure DevOps to enable continuous delivery with several Azure PaaS services.
 

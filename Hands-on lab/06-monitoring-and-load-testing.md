@@ -166,3 +166,10 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 1. Navigate to **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" />** resource group and open application insights **fabmedicalai-<inject key="DeploymentID" enableCopy="false" />**. On the app insights overview page click on **Availability tile**. 
  
 1. Observe the availability of the application, after adding the **CosmosDB Failover**.
+
+## Summary
+
+In this exercise, you explored monitoring using Application Insights. You also configured Load testing and Chaos experiments for the application.
+
+
+

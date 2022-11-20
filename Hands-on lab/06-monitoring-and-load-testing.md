@@ -76,56 +76,37 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
 In this task, you'll create Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal search for **Azure Load Testing (1)** and then click on it from the search results **(2)**.
+1. In the Azure Portal, navigate to **Tailwind-<inject key="Deploymentid" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **tailwind-traders-loadtest<inject key="Deploymentid" />** **(2)**.
 
-    ![](media/Ex6-T1-S1.1.png)
+    ![](media/ex6-open-loadtest.png)
 
-2. On the **Azure Load Testing** page click on **+ Create**.
-   
-    ![](media/Ex6-T1-S2.png)
-      
-3.  On the **Create a load testing resource** screen, provide the following values and click on **Review + create (5)**.
+1. On the left hand side pane, select **Tests (1)** and click on **+ Create (2)** and select **Upload a JMeter script (3)**.
 
-    - Subscription: select the default subscription **(1)**
-    - Resource Group: **fabmedical-rg-<inject key="DeploymentID" enableCopy="false" /> (2)**
-    - Name: **fabmedical_LT_<inject key="DeploymentID" enableCopy="false" /> (3)** 
-    - Region: Leave it to default **(4)**
-    
-     ![](media/Ex6-T1-S3.3.png)
- 
-4. Review the deatils you provided, once the validation is successful, click on **Create**.
-       
-     ![](media/Ex6-T1-S4.1.png)
+   ![](media/ex6-t2-loadtest-create.png)
 
-5.  Click on **Go to resource** on **Your deployment is completed** page.
+1. On the **Create test** page, under basic tab provide the **Test name** as `Demo-test` **(1)** and for **Test discription** enter `Demo Load Testing` **(2)**, then click **Next:Test plan >** **(3)**.
 
-     ![](media/Ex6-T1-S5.png)
+   ![](media/Ex6-T1-S7.2.png)
 
-6.  On the left hand side pane, select **Tests (1)** and click on **+ Create (2)** and select **Upload a JMeter script (3)**.
+1. 
 
-     ![](media/Ex6-T1-S6.2.png)
-
-7.  On the **Create test** page, under basic tab provide the **Test name** as `Demo-test` **(1)** and for **Test discription** enter `Demo Load Testing` **(2)**, then click **Next:Test plan >** **(3)**.
-
-     ![](media/Ex6-T1-S7.2.png)
-
-8. On your lab-vm open **Visual Studio Code** and navigate to the **test.jmx** file. Replace **Enter_your_end_point_URL** with**fabmedical-web-<inject key="DeploymentID" enableCopy="false" />** in line 33.
+1. On your lab-vm open **Visual Studio Code** and navigate to the **test.jmx** file. Replace **Enter_your_end_point_URL** with**fabmedical-web-<inject key="DeploymentID" enableCopy="false" />** in line 33.
   
-     > **Note**:  Your endpoint URL should look similar to this: **fabmedical-web-<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net**.
+   > **Note**:  Your endpoint URL should look similar to this: **fabmedical-web-<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net**.
  
-     ![](media/Ex6-T1-S8.1.png)
+   ![](media/Ex6-T1-S8.1.png)
        
-9. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **test.jmx (3)** file, and select **Upload (3)**.
+1. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **test.jmx (3)** file, and select **Upload (3)**.
     
-     ![](media/Ex6-T1-S9.3.png)
+   ![](media/Ex6-T1-S9.3.png)
 
-10. Once the file has completed uploading **(1)**, click on **Review + create (2)**.
+1. Once the file has completed uploading **(1)**, click on **Review + create (2)**.
 
-     ![](media/Ex6-T1-S10.2.png)
+   ![](media/Ex6-T1-S10.2.png)
 
-11. Once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
+1. Once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
-     ![](media/Ex6-T1-S11.png)
+   ![](media/Ex6-T1-S11.png)
      
 ## Task 3: Explore Chaos Studio
 

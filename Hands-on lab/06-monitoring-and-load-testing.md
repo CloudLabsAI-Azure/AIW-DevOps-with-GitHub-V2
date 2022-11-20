@@ -1,77 +1,33 @@
 ## Exercise 5: Monitoring and Load Testing (Optional)
 
 In this exercise, we will add monitoring and logging to gain insight on the application's usage in the cloud. Then create Azure load testing, which is a fully managed load-testing service that enables you to generate high-scale loads. The service simulates traffic for your applications, regardless of where they're hosted. Developers, testers, and quality assurance (QA) engineers can use it to optimise application performance, scalability, or capacity. We will also explore Azure Chaos Studio, which helps you measure, understand, and improve your cloud application and service resilience.
-### Task 1: Set up Application Insights
 
-1. Open the `deploy-appinsights.ps1` PowerShell script present in the `C:\Workspaces\lab\aiw-devops-with-github-lab-files\infrastructure` folder and replace studentprefix value with **<inject key="Deploymentid" />** on the first line.
+### Task 1: Monitoring using Application Insights
 
-    ```pwsh
-    $studentsuffix = "Your 3 letter abbreviation here"                                  # <-- Modify this
-    $resourcegroupName = "fabmedical-rg-" + $studentsuffix
-    $location1 = "westeurope"
-    $appInsights = "fabmedicalai-" + $studentsuffix
-    ```
+1. In the Azure Portal, navigate to **Tailwind-<inject key="Deploymentid" />** **(1)** resource group and select the **Application Insights** resource with the name  **tailwind-traders-ai<inject key="Deploymentid" />** **(2)**.
 
-2. Navigate back to the PowerShell terminal on Visual Studio and run the below-mentioned command:
-
-   ```
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\infrastructure
-   ./deploy-appinsights.ps1
-   ```
-    
-3. Now the Azure Application insights is created and `AI Instrumentation Key` specified in the output.
-
-   ```bash
-   The installed extension 'application-insights' is in preview.
-   AI Instrumentation Key="55cade0c-197e-4489-961c-51e2e6423ea2"
-   ```
-
-4. Using PowerShell navigate to the `./content-web` folder in your GitHub lab files repository by running the below-mentioned command.
-
-   ```
-   cd ..
-   cd .\content-web
-   ```
+   ![](media/ex6-t1-openai.png)
    
-5. Now using PowerShell, execute the following command to install JavaScript support for Application Insights via NPM to the web application frontend.
+1. From the Overview of **tailwind-traders-ai<inject key="Deploymentid" />** Application Insights resource, you can set the **Show data for last** as per your requirment of monitoring insights.
 
-   ```bash
-   npm install applicationinsights --save
-   ```
-
-6. In this step we'll updating the `app.js` file by adding and configuring Application Insights for the web application frontend in the local folder. Please run the command mentioned below.
+   ![](media/ex6-t1-set-showdata.png)
    
-    `Copy-Item -Path C:\Workspaces\lab\mcw-continuous-delivery-lab-files\keyscript.txt -Destination C:\Workspaces\lab\mcw-continuous-delivery-lab-files\content-web\app.js -PassThru`
-    
-    `$instrumentationKey` = $(az monitor app-insights component create --app fabmedicalai-<inject key="DeploymentID" enableCopy="false" /> --location westeurope --kind web --resource-group fabmedical-rg-<inject key="DeploymentID" enableCopy="false" /> --application-type web --retention-time 120 --query instrumentationKey)
-    
-    `(Get-Content -Path "C:\Workspaces\lab\mcw-continuous-delivery-lab-files\content-web\app.js") | ForEach-Object {$_ -Replace "UPDATE AI Instrumentation Key", $instrumentationKey} | Set-Content -Path "C:\Workspaces\lab\mcw-continuous-delivery-lab-files\content-web\app.js"`
+1. In the first graph, you can see the number of failed requests for the Application access.
 
-7. Add and commit changes to your GitHub lab-files repository. From the root of the repository, execute the following:
+   ![](media/ex6-t1-failedrequests.png)
+   
+1. In the next graph, you can see the average server response time.
 
-    ```pwsh
-    git add .
-    git commit -m "Added Application Insights"
-    git push
-    ```
+   ![](media/ex6-t1-server-response-time.png)
+   
+1. In the next graph, you can see the number of server requests.
 
-8. Wait for the GitHub Actions for your lab files repository to complete before executing the next step.
+   ![](media/ex6-t1-server-requests.png)
+   
+1. In the last graph, you can see the average availability.
 
-      ![](media/update8.png "Azure Boards")
-
-9. Redeploy the web application by running the below commands:
-
-    ```
-    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\infrastructure
-    ./deploy-webapp.ps1
-    ```
-    
-10. Visit the deployed website and check Application Insights in the Azure Portal to see instrumentation data.
-
-    >**Note**: It can take up to 24 hours to get the data and logs loaded in Azure Application Insights. You can skip this step and proceed with the next tasks.
-
-    ![The Azure Web Application Overview detail in Azure Portal.](media/hol-ex2-task2-step5-1.1.png "Azure Web Application Overview")
-
+   ![](media/ex6-t1-availability.png)  
+   
 ## Task 2: Set up Load Testing
 
 In this task, you'll create Azure Load Testing instance and run a test using a JMeter file.

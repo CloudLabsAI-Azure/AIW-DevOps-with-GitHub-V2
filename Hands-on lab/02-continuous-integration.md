@@ -103,6 +103,14 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
    >**Note**: Please wait for 2 - 3 minutes for build to complete.
 
+1. Keep the terminal running. Open a new browser tab and try accessing the application using localhost port. You'll be able to see the output similar to screenshot mentioned below.
+
+   ```pwsh
+   https://localhost:62400/swagger
+   ```  
+
+   ![](media/2dgn57.png)     
+
 1. Navigate back to **VS Code** and stop the terminal by typing **ctrl+C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
   
    ```pwsh

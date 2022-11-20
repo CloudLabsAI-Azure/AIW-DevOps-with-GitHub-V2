@@ -27,87 +27,107 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dgn2.png)
 
-### Task 2: Start the Docker application.
-
-In this task, you'll initiate the docker application to host your application locally. Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications
-
-1. Minimize the browser and open the **Docker application** from the LabVM desktop. You may find that docker is stopping abruptly, try starting it multiple times to fix it.
-
-   ![](media/d4.png)
-  
-   >**Note**: If you get a warning pop-up saying **Windows 17762 deprecated**. Please click on **OK**. The Docker application might take a few seconds to open, please wait till the application opens.
-   
-1. Click on **Start**.
-
-   ![](media/d7.png)
-
-1. Skip the tutorial pop-up by clicking on **Skip tutorial** situated in the bottom-left corner of the application.
-
-   ![](media/d8.png)
-   
-1. **Copy** the command from the docker application page and **save it** in a notepad for future use.
-
-   ![](media/2dg7.png)
-   
-   >**Note**: If the Docker application is taking more than 10 mins to start. Please follow the steps from the `https://github.com/CloudLabs-MCW/MCW-Continuous-delivery-in-Azure-DevOps/blob/microsoft-devops-with-github-v2/Hands-on%20lab/docker-install.md` link and start the Docker again.
-   
-1. Open the Visual Studio Code application which was accessed in the previous task. Select **Terminal** ***(1)*** and click on **New Terminal** ***(2)*** to open the terminal. It will open a new PowerShell session which you'll be using throughout the lab.
-
-   ![](media/2dg31.png "New Repository Creation Form")
-   
-1. Paste the **docker run** command which you had copied earlier and wait till the execution completes.
-
-   ![](media/2dg10.png)
-   
-1. After the execution completes, open the **Docker application**. You should be able to see a container in a running state. This confirms the running of the Docker application.
-
-   ![](media/d12.png)
-
 ### Task 3: Set up Local Infrastructure
 
-In this task, You will set up the local infrastructure using Docker containers. You'll be wokring with three docker images:fabrikam-init, fabrikam-api, and fabrikam-web.
-
-11. Now you are going to set up the local infrastructure using Docker containers. There are three images you will be working with:
-
-  - `fabrikam-init`
-  - `fabrikam-api`
-  - `fabrikam-web`
-
-  You will need to make some edits to files before running these locally. In this task, you will confirm that the Docker infrastructure works locally.
-  
-  >**Note**: You should replace three instances of `<yourgithubaccount>` - one instance in `docker-compose.init.yml` and two instances in `docker-compose.yml`.
-   
-1. Openthe Visual Studio Code application. From the Explorer, open the `docker-compose-init.yml` ***(1)***  and replace `<yourgithubaccount>` ***(2)*** value in line no. 6 with your GitHub username. After updating save the file using CTRL+S.
-   
-   ![](media/2dg14.png)
-   
-   >**Note**: The `<yourgithubaccount>` value must be in **lowercase**, if your GitHub account user name is in uppercase letters please change it to lowercase in Github. [Github Username Change](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-user-account-settings/changing-your-github-username)
-    
-1. From the Explorer, open the `docker-compose.yml`(1) and replace `<yourgithubaccount>` value in line no. 4 and 9 with your GitHub account name. After updating save the file using CTRL+S.    
-
-   ![](media/2dg15.png)
+In this task, You will set up the local infrastructure using Dotnet . You'll be wokring with three docker images:fabrikam-init, fabrikam-api, and fabrikam-web.
    
 1. Open a **New Terminal** in the Visual Studio Code by selecting **Terminal (1)** and then on **New Terminal (2)**.
 
-   ![](media/2dg5.png "New Repository Creation Form")
-    
-   >**Note**: These commands execution may take around 10-15 minutes to complete.
-
-   Run the following commands in the terminal to build and run the docker-compose YAML files edited in the previous steps.
-    
-   ```pwsh
-   cd C:\Workspaces\lab\mcw-continuous-delivery-lab-files
-   docker-compose -f .\docker-compose.yml -f .\local.docker-compose.yml -f .\docker-compose.init.yml build
-   docker-compose -f .\docker-compose.yml -f .\local.docker-compose.yml -f .\docker-compose.init.yml up
-   ```
-    
-   ![](media/2dg16.png "New Repository Creation Form")
+   ![](media/2dgn44.png "New Repository Creation Form")
    
-1. Verify that you can browse to `http://localhost:3000` in a browser and arrive at the Fabrikam conference website.
+1. Click on the **drop-down** ***(1)*** button next to powershell aand select **Command Prompt** from the list. A new command Prompt terminal will be opened.   
 
-   ![Fabrikam Medical's Contoso conference site.](media/2dg17.png "Contoso conference site")
-    
-1. Leave this terminal in running and open a new terminal.
+   ![](media/2dgn45.png)
+   
+1. Go to Environment details, Click on **Service principal Details** and copy the **Application Id(Client Id)**, **client Secret**, and **tenant Id**.   
+   
+   ![](media/2dgn46.png)
+   
+1. update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the mentioned below. Run it in the terminal.
+
+   ```pwsh
+   az login --service-principal -u <clientId> -p <clientSecret> --tenant <tenantId>
+   ```
+
+   ![](media/2dgn47.png)
+   
+1. Run the below mentioned command to navigate to `TailwindTraders.Api.Products` folder.
+
+   ```pwsh
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\TailwindTraders-master\src\TailwindTraders.Api.Products
+   ```
+   
+   ![](media/2dgn48.png)   
+   
+1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<inject key="DeploymentID" enableCopy="false" />.vault.azure.net/"` command to set secret path.
+
+   ![](media/2dgn49.png)
+   
+1. Run the below mentioned command to build and host the carts locally.
+
+   ```pwsh
+   dotnet build && dotnet run
+   ```  
+
+   ![](media/2dgn50.png) 
+   
+   >**Note**: Please wait for 2 - 3 minutes for build to complete.
+   
+1. Keep the terminal running. Open a new browser tab and try accessing the application using localhost port. You'll be able to see the output similar to screenshot mentioned below.
+
+   ```pwsh
+   https://localhost:62300/swagger
+   ```  
+
+   ![](media/2dgn51.png)     
+   
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl+C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
+  
+   ```pwsh
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Api.Carts
+   ```
+  
+   ![](media/2dgn52.png)     
+   
+1. Run `dotnet user-secrets set "KeyVaultEndpoint" "dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<inject key="DeploymentID" enableCopy="false" />.vault.azure.net/"` command to set secret path.
+
+   ![](media/2dgn53.png)
+   
+1. Run the below mentioned command to build and host the carts locally.
+
+   ```pwsh
+   dotnet build && dotnet run
+   ```    
+  
+   ![](media/2dgn50.png) 
+   
+   >**Note**: Please wait for 2 - 3 minutes for build to complete.
+
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl+C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
+  
+   ```pwsh
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Ui.Website
+   ```
+  
+   ![](media/2dgn54.png) 
+   
+1. Run the below mentioned command to install npm.
+
+   ```pwsh
+   npm install
+   ```    
+  
+   ![](media/2dgn55.png) 
+   
+   >**Note**: Please wait untill the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time.
+   
+1. Run the below mentioned command to run ui of the application. This will automatically open a browser tab where you'll see the complete application running
+
+   ```pwsh
+   npm run start
+   ```    
+  
+   ![](media/2dgn56.png) 
    
 ### Task 4: Create the Project Repo
 

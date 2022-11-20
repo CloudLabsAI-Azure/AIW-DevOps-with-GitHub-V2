@@ -123,4 +123,6 @@ In this task, you'll access a Dev Box and explore its features.
 
    ![](media/e124.png)
 
+## Summary
 
+In this exercise, you have created Dev box definition, Network connection and dev box pool in Microsoft Dev Box. Also you have accessed a Dev Box and explored its features.

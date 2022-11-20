@@ -244,5 +244,12 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    ![](media/ex4-testsuite1.png)      
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
+
+## Summary
+
+In this exercise, you explored features of Azure boards and configured Azure Test plans for the application.
+
+
+
    
 

@@ -88,13 +88,13 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
    ![](media/Ex6-T1-S7.2.png)
 
-1. 
+1. On your lab-vm open **File Explorer** and navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files\tests\loadtests` **(1)**. Right click on the file named **tailwind-traders-carts.jmx** **(2)** and click on **Open with Code** **(3)**.
 
-1. On your lab-vm open **Visual Studio Code** and navigate to the **test.jmx** file. Replace **Enter_your_end_point_URL** with**fabmedical-web-<inject key="DeploymentID" enableCopy="false" />** in line 33.
-  
-   > **Note**:  Your endpoint URL should look similar to this: **fabmedical-web-<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net**.
+   ![](media/ex6-t2-cartsjmx-open.png)
+
+1. In line number 68, replace **${Domain}** with **Application Url** of Container App which you have copied in the previous step. 
  
-   ![](media/Ex6-T1-S8.1.png)
+   ![](media/ex6-t2-cartsjmx.png)
        
 1. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **test.jmx (3)** file, and select **Upload (3)**.
     

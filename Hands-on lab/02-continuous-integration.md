@@ -1,7 +1,7 @@
 
 # Exercise 2: Continuous Integration and Continuous Deployment
 
-In this exercise, you are going to set up the local infrastructure using Docker containers. There are three images you will be working with: fabrikam-init, fabrikam-api, and fabrikam-web. you will also build automation in GitHub for updating and republishing our Docker images when the code changes.
+In this exercise, you are going to set up the local infrastructure using dotnet . There are three parts of the application you will be working with: carts, products, and ui. You will deploy the infrastructure to cloud using GitHub Actions. you will also build automation in GitHub for updating and republishing our workflows when the code changes.
 
 ### Task 1: Access the lab files.
 
@@ -137,7 +137,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
   
    ![](media/2dgn56.png) 
    
-### Task 4: Create the Project Repo
+### Task 2: Create the Project Repo
 
 In this task, you'll access the GitHub enterprise account and create a new repository to store the infrastructure.
 
@@ -167,21 +167,17 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    
 1. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab
 
-   ![](media/2dg8.png)
-
-   >**Note**: From the terminal, you can switch between the multiple terminal tabs which is one of the handy features of VS Code.
-
-   ![](media/2dg9.png)
+   ![](media/2dgn71.png) 
 
 1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. Make sure to replace your email and username.
    
      ```pwsh
-     cd C:\Workspaces\lab\mcw-continuous-delivery-lab-files
+     cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
      git config --global user.email "you@example.com"
      git config --global user.name "Your UserName"
      ```
      
-   ![](media/2dgn5.png "New Repository Creation Form")
+   ![](media/2dgn72.png) 
      
     - Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch `main` in the lab files repository created in Step 1. Make sure to replace `<your_github_repository-url>` with the value you copied in step 5.
 
@@ -205,42 +201,8 @@ In this task, you will create an account in [GitHub](https://github.com) and use
        ![](media/gitcred.png)
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
-   
-### Task 5: Create GitHub Personal Access Token
-
-In this task, you'll create personal access token which will be used in workflows to access GitHub. 
-
-1. Navigate back to the browser tab in which **GitHub**. In the upper-right corner of your GitHub page, click your profile photo, then click **Settings** ***(1)*** and in the left sidebar click **Developer settings** ***(2)***.
-
-   ![Permissions GH](media/2dg18.png "Contoso conference site")
-   
-1. In the left hand sidebar, click **Personal access tokens** ***(1)*** and select **Generate new token** ***(2)*** button on the right. Provide the GitHub password if prompted. 
-   
-   ![Permissions GH](media/2dg19.png "Contoso conference site")
-   
-1. Select the scopes or permissions you would like to grant this token
-
-   - **Note**: Enter this value in the note field, **<inject key="DeploymentID" enableCopy="false" />-token** ***(1)***
-    
-   - **Select scopes** ***(2)***:
-
-     * repo - Full control of private repositories
-     * workflow - Update GitHub Action workflows
-     * write:packages - Upload packages to GitHub Package Registry
-     * delete:packages - Delete packages from GitHub Package Registry
-     * read:org - Read org and team membership, read org projects
-  
-   ![Permissions GH](media/2dg28.png)
-   
-   - Click **Generate token**.
-
-     ![Permissions GH](media/2dg21.png)
      
-1. Click on the Copy icon to copy the token to your clipboard and save it on your notepad. For security reasons, after you navigate off the page, you will not be able to see the token again. **DO NOT COMMIT THIS TO YOUR REPO!**
-
-   ![](media/2dg22.png)
-     
-### Task 6: Build and push using GitHub Actions
+### Task 3: Build and push using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
 
@@ -339,7 +301,7 @@ In this exercise, you will build automation in GitHub for updating and republish
     
     ![](media/2dgn26.png)  
     
-### Task 7: Editing the GitHub Workflow File using Codespace
+### Task 4: Editing the GitHub Workflow File using Codespace
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
 

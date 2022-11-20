@@ -78,7 +78,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
 1. In the Azure Portal, navigate to **Tailwind-<inject key="Deploymentid" />** resource group and select the **Container App** resource with the name  **tailwind-traders-carts<inject key="Deploymentid" />**.
 
-1. From the Overview of **tailwind-traders-carts<inject key="Deploymentid" />** **(1)** Container App, copy the **Application Url** **(2)** and paste it in notepad for later usage in the task.
+1. From the Overview of **tailwind-traders-carts<inject key="Deploymentid" />** **(1)** Container App, copy the **Application Url** **(2)** and paste it in notepad for later use in the task.
 
    ![](media/ex6-t2-copyappurl.png)
 
@@ -98,7 +98,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
    ![](media/ex6-t2-cartsjmx-open.png)
 
-1. In line number 68, replace **${Domain}** with **Application Url** of Container App which you have copied in the previous step and Save it. 
+1. In line number 68, replace **${Domain}** with **Application Url** of Container App which you have copied earlier in the task step-2 and save the file. 
  
    ![](media/ex6-t2-cartsjmx.png)
        

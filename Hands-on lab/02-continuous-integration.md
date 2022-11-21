@@ -3,7 +3,7 @@
 
 In this exercise, you are going to set up the local infrastructure using dotnet . There are three parts of the application you will be working with: carts, products, and ui. You will deploy the infrastructure to cloud using GitHub Actions. you will also build automation in GitHub for updating and republishing our workflows when the code changes.
 
-### Task 1: Access the lab files.
+### Task 1: Access the lab files
 
 In this task, you'll access and explore the code repository of the web app using Visual Studio Code. Visual Studio Code is a cross-platform, lightweight but powerful source code editor.
 
@@ -39,9 +39,9 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 
    ![](media/2dgn45.png)
    
-1. Go to Environment details, Click on **Service principal Details** and copy the **Application Id(Client Id)**, **client Secret**, and **tenant Id**.   
+1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Application Id(Client Id)**, **Secret Key (Client Secret)**, and **Tenant Id (Directory ID)**.   
    
-   ![](media/2dgn46.png)
+   ![](media/ex2-t3-3.png)
    
 1. update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the mentioned below. Run it in the terminal.
 

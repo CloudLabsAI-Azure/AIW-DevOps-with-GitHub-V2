@@ -90,7 +90,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
  
    ![](media/2dgn59.png)
      
-1. Click on the **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** **Kubernetes service** instance and form the drop-down for **Enable Targets (1)** choose **Enable service-direct targets (All resources) (2)**.
+1. Click on the **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(1)** choose **Enable service-direct targets (All resources)** **(2)** and click on **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(3)**.
 
    ![](media/2dgn60.png)
      
@@ -105,7 +105,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
     - Name: **Tailwind-<inject key="DeploymentID" enableCopy="false" />** **(3)**
     - Region: Leave it to default **(4)**
  
-    ![](media/2dgn58.png)
+   ![](media/2dgn58.png)
  
 1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 

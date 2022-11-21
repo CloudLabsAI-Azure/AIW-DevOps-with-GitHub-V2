@@ -43,13 +43,13 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
    ![](media/e113.png)
   
-1. Now under the *Create a network connection* window, enter the following details and click on **Review and Create**.
+1. Now under the *Create a network connection* window, enter the following details and click on **Review and Create** **(6)**.
 
-   - Domain join type: **Azure active directory join**
-   - ResourceGroup: **devbox-rg**
-   - Name: **devbox-network**
-   - Virtual network: ****
-   - Subnet: ****
+   - Domain join type: **Azure active directory join** **(1)**
+   - ResourceGroup: **devbox-rg** **(2)**
+   - Name: **devbox-network** **(3)**
+   - Virtual network: **CAFsec-vnet (East US)** **(4)**
+   - Subnet: **default** **(5)**
 
    ![](media/e116.png)
 

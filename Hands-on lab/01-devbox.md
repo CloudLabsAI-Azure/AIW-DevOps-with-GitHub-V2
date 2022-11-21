@@ -59,7 +59,7 @@ In this task, you'll configure the network connection using Dev Center. Network 
   
    >**Note:** Wait for the deployment to complete before proceeding with the lab.
 
-1. Once the network connection is created, navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-[DID]** **(2)**.
+1. Once the network connection is created, navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/e109.png)
 
@@ -83,13 +83,13 @@ In this task, you'll create a Dev pool using previously configured network conne
 
    ![](media/ex102.png)
   
-1. Under *Create a dev box pool* window, enter the following details and click on **Create**.
+1. Under *Create a dev box pool* window, enter the following details and click on **Create** **(6)**.
 
-   - Name:**devbox-pool**
-   - Dev box definition: **devboxdef-01**
-   - Network Connection: **devbox-network**
-   - Dev box Creator Privileges: **Local Administrator**
-   - Licensing: Check the checkbox
+   - Name:**devbox-pool** **(1)**
+   - Dev box definition: **devboxdef-01** **(2)**
+   - Network Connection: **devbox-network** **(3)**
+   - Dev box Creator Privileges: **Local Administrator** **(4)**
+   - Licensing: Check the checkbox **(5)**
   
    ![](media/e119.png)
   
@@ -113,7 +113,7 @@ In this task, you'll explore about access control and provide access to Dev Box 
 
    ![](media/e123.png)
   
-## Task 4: Launching Dev box
+## Task 5: Launching Dev box
 
 In this task, you'll access a Dev Box and explore its features.
 

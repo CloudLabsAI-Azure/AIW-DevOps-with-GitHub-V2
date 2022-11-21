@@ -41,7 +41,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Application Id(Client Id)**, **Secret Key (Client Secret)**, and **Tenant Id (Directory ID)**.   
    
-   ![](media/ex2-t3-3.png)
+   ![](media/ex2-t2-3.png)
    
 1. update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the mentioned below. Run it in the terminal.
 
@@ -153,7 +153,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. Next to the search criteria, locate and select the **New** button.
 
-   ![The GitHub Find a repository search criteria is shown with the New button selected.](https://github.com/anushabc/MCW-Continuous-delivery-in-Azure-DevOps/blob/prod/Hands-on%20lab/media/image05.png?raw=true "New repository button")
+   ![The `New Repository` creation form in GitHub.](media/ex2-t3-3-git.png "New Repository Creation Form")
 
 1. On the **Create a new repository** screen, name the repository ```aiw-devops-with-github-lab-files``` ***(1)***, select **Private** ***(2)*** and click on **Create repository** ***(3)***  button.
 
@@ -163,11 +163,11 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository, and **save it** in a notepad for future use.
 
-   ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](media/2dg3.png "Quick setup screen")
+   ![](media/ex2-t3-5.png)
    
-1. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab
+1. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
 
-   ![](media/2dgn71.png) 
+   ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](media/2dg4.png "Quick setup screen")
 
 1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. Make sure to replace your email and username.
    
@@ -237,9 +237,9 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn34.png)    
    
-1. Go to Environment details, Click on **Service principle Credentials** and copy the **Application Id (Client Id)** , **client Secret** , **subscription Id** and **tenant Id**.
+1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
-   ![](media/2dgn6.png)
+   ![](media/ex2-t4-8.png)
    
    - Replace the values that you copied in below Json. You will be using in this step.
    
@@ -316,7 +316,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/2dg33.png)
    
-1. From the explorer side blade, navigate to **.github/workflows** and select **contoso-traders-app-deployment** ***(1)*** file.
+1. From the explorer side blade, navigate to **.github/workflows** **(1)** and select **contoso-traders-app-deployment** ***(2)*** file.
 
    ![](media/2dgn39.png)
    

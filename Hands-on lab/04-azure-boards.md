@@ -74,7 +74,7 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/ex4-kc-todo-new1.png)
    
- 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
+1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
    ![](media/ex2-t4-8.png)
     

@@ -48,7 +48,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
 1. Open the new Issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board Issue.
 
-   ![Linked GitHub items in an Azure DevOps issue in Boards.](media/hol-ex1-task1-step7-1.png "GitHub Pull Request and Comment")
+   ![Linked GitHub items in an Azure DevOps issue in Boards.](media/ex3-t1-8.png "GitHub Pull Request and Comment")
 
 1. In GitHub, browse to the `Pull Requests` tab of the lab files repository created in [Task 1 of the Before the HOL Instructions] and open the pull request that was created in the onboarding tutorial for the Azure Boards Integration App. Note the `AB#1` annotation in the pull request comments - this annotation signals to Azure DevOps that this pull request comment should be linked to Issue #1 in Azure Boards.
 
@@ -66,7 +66,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
 In this task, you'll make changes in GitHub and link a PR to Azure boards using syntax and monitor the work item.
 
-1. In the Azure Boards tab, click on **New Item** ***(1)***, provide **Deploy WebApp** as a description and create a new work item.
+1. In the Azure Boards tab, click on **New Item** ***(1)***, provide **Update carts** **(2)** as a description and create a new work item.
 
    ![](media/ex4-kc-todonew.png)
    
@@ -74,9 +74,9 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/ex4-kc-todo-new1.png)
    
- 1. Go to Environment details click on **Service principle Credentials** copy **Application Id(Client Id)** , **Secret Key(Client Secret)** , **Subscription Id** and **Tenant Id**. 
-    
-    ![](media/2dg91.png)
+ 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
+
+   ![](media/ex2-t4-8.png)
     
     Replace the values that you copied in the below Json.
     ```pwsh
@@ -248,8 +248,3 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 ## Summary
 
 In this exercise, you explored features of Azure boards and configured Azure Test plans for the application.
-
-
-
-   
-

@@ -15,7 +15,7 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dg11.png)
 
-1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\mcw-continuous-delivery-lab-files` to open your local GitHub repository and click on **Select Folder**.
+1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` to open your local GitHub repository and click on **Select Folder**.
 
    ![](media/2dgn1.png)
     
@@ -27,7 +27,7 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dgn2.png)
 
-### Task 3: Set up Local Infrastructure
+### Task 2: Set up Local Infrastructure
 
 In this task, You will set up the local infrastructure using Dotnet . You'll be working with three docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
    
@@ -35,7 +35,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 
    ![](media/2dgn44.png "New Repository Creation Form")
    
-1. Click on the **drop-down** ***(1)*** button next to PowerShell and select **Command Prompt** from the list. A new command Prompt terminal will be opened.   
+1. Click on the **drop-down** **(1)** button next to PowerShell and select **Command Prompt** **(2)**  from the list. A new command Prompt terminal will be opened.   
 
    ![](media/2dgn45.png)
    
@@ -137,7 +137,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
   
    ![](media/2dgn56.png) 
    
-### Task 2: Create the Project Repo
+### Task 3: Create the Project Repo
 
 In this task, you'll access the GitHub enterprise account and create a new repository to store the infrastructure.
 
@@ -159,7 +159,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/2dgn3.png "New Repository Creation Form")
    
-   >**Note**: Please make sure the delete the Repo and create a new one. 
+   >**Note**: Please make sure to delete the Repo and create a new one. 
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository, and **save it** in a notepad for future use.
 
@@ -202,7 +202,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
      
-### Task 3: Build and push using GitHub Actions
+### Task 4: Build and push using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
 
@@ -301,7 +301,7 @@ In this exercise, you will build automation in GitHub for updating and republish
     
     ![](media/2dgn26.png)  
     
-### Task 4: Editing the GitHub Workflow File using Codespace
+### Task 5: Editing the GitHub Workflow File using Codespace
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
 

@@ -9,11 +9,11 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
 1. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
 
-   ![](media/e101.png)
+   ![](media/ex1-t1-1.png)
   
-1. Now on the left hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-[DID]** **(2)**.
+1. Now on the left hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/e109.png)
+   ![](media/ex1-t1-2.png)
   
 1. On the left hand side pane, click on **Dev box definitions** **(1)**, and click on **+ Create** **(2)**.
 
@@ -29,9 +29,9 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
    ![](media/e112.png)
   
-1. Once the definition is created, In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
+1. Once the definition is created. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
 
-   ![](media/e101.png)
+   ![](media/ex1-t1-5.png)
   
    >**Note:** Wait for the deployment to complete before proceeding with the lab.
   
@@ -51,25 +51,25 @@ In this task, you'll configure the network connection using Dev Center. Network 
    - Virtual network: **CAFsec-vnet (East US)** **(4)**
    - Subnet: **default** **(5)**
 
-   ![](media/e116.png)
+   ![](media/ex1-t2-2.png)
 
 1. After deployment validation is passed, click on **Create**.
 
-   ![](media/e115.png)
+   ![](media/ex1-t2-3.png)
   
    >**Note:** Wait for the deployment to complete before proceeding with the lab.
 
 1. Once the network connection is created, navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/e109.png)
+   ![](media/ex1-t2-4.png)
 
 1. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 
    ![](media/e117.png)
   
-1. Now under *Add network connection*, click on **Add**.
+1. Now under *Add network connection*, select the **dev-network** for Network Connection from the drop-down and then click on **Add**.
 
-   ![](media/e118.png)
+   ![](media/ex1-t2-6.png)
     
 ## Task 3: Create dev box pool
 
@@ -91,7 +91,7 @@ In this task, you'll create a Dev pool using previously configured network conne
    - Dev box Creator Privileges: **Local Administrator** **(4)**
    - Licensing: Check the checkbox **(5)**
   
-   ![](media/e119.png)
+   ![](media/ex1-t3-3.png)
   
 ## Task 4: Giving user access over Dev box
 

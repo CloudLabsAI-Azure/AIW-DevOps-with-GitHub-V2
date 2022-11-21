@@ -94,7 +94,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/2dgn60.png)
      
-1. Once the target is enabled, select **Experiments** on the left and click **+Create**.
+1. Once the target is enabled, select **Experiments** **(1)** on the left and click **+ Create** **(2)**.
  
    ![](media/Ex6-T2-S5.3.png)
  
@@ -119,7 +119,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
      
    ![](media/2dgn61.png)
      
-1. On the **Target resources** select the **CosmosDB** instance and **Add**.
+1. On the **Target resources**, select the **aks** resource **(1)** and **Add** **(2)**.
   
    ![](media/2dgn62.png)
   
@@ -135,7 +135,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
   
    ![](media/2dgn65.png)
   
-1. In the **Add role assignment page** under **Role** tab  select **Owner (1)** and select **Next (2)**.
+1. In the **Add role assignment** page, under **Role** tab select **Owner (1)** and select **Next (2)**.
   
    ![](media/2dgn66.png)
   
@@ -149,7 +149,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
       
 1. On the Azure portal navigate back to the Chaos experiment you created **Tailwind-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
   
-   ![](media/2dgn69.png)
+   ![](media/ex5-t3-16-start.png)
  
 1. Select **Ok** for **Start this experiment** pop-up.
 
@@ -170,6 +170,3 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 ## Summary
 
 In this exercise, you explored monitoring using Application Insights. You also configured Load testing and Chaos experiments for the application.
-
-
-

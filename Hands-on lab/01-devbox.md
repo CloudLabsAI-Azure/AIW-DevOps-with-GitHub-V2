@@ -21,11 +21,11 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
   
 1. Now under Create dev box definition window, add the below details and then click on **Create** **(6)**.
 
-   - Name: **devboxdef-01**
-   - Image: **Windows 11 Enterprise + Microsoft 365 Apps 21H2**
-   - Image version: **Latest**
-   - Compute: **4vCPU, 16 GB RAM**
-   - Storage: **256 GB SSD**
+   - Name: **devboxdef-01** **(1)**
+   - Image: **Windows 11 Enterprise + Microsoft 365 Apps 21H2** **(2)**
+   - Image version: **Latest** **(3)**
+   - Compute: **4vCPU, 16 GB RAM** **(4)**
+   - Storage: **256 GB SSD** **(5)**
 
    ![](media/e112.png)
   

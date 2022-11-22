@@ -92,9 +92,9 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
  
    ![](media/2dgn59.png)
      
-1. Click on the **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(1)** choose **Enable service-direct targets (All resources)** **(2)** and click on **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(3)**.
+1. Click on the **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
 
-   ![](media/2dgn60.png)
+   ![](media/latest-ex5-t3-4.png)
      
 1. Once the target is enabled, select **Experiments** **(1)** on the left and click **+ Create** **(2)**.
  
@@ -104,7 +104,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
     - Subscription: select the default subscription **(1)**
     - Resource Group: **Tailwind-<inject key="DeploymentID" enableCopy="false" />** **(2)**
-    - Name: **Tailwind-<inject key="DeploymentID" enableCopy="false" />** **(3)**
+    - Name: **Tailwind-chaos-<inject key="DeploymentID" enableCopy="false" />** **(3)**
     - Region: Leave it to default **(4)**
  
    ![](media/2dgn58.png)
@@ -139,7 +139,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
   
 1. In the **Add role assignment** page, under **Role** tab select **Owner (1)** and select **Next (2)**.
   
-   ![](media/2dgn66.png)
+   ![](media/latest-ex5-t3-13.png)
   
 1. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
    

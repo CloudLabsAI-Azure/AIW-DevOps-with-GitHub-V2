@@ -61,7 +61,9 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
    ![](media/2dgn48.png)   
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<inject key="DeploymentID" enableCopy="false" />.vault.azure.net/"` command to set secret path.
+1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<SUFFIZ>.vault.azure.net/"` command to set secret path.
+
+   >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" enableCopy="false" />** before running the command.
 
    ![](media/2dgn49.png)
    
@@ -91,9 +93,11 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
   
    ![](media/2dgn52.png)     
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<inject key="DeploymentID" enableCopy="false" />.vault.azure.net/"` command to set secret path.
+1. Run `dotnet user-secrets set "KeyVaultEndpoint" `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<SUFFIX>.vault.azure.net/"` command to set secret path.
 
    ![](media/2dgn53.png)
+   
+   >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" enableCopy="false" />** before running the command.
    
 1. Run the below mentioned command to build and host the carts locally.
 

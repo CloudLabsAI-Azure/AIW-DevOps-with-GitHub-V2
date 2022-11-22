@@ -13,7 +13,7 @@ Websites for medical conferences are typically low-budget websites because the c
 
 ## Solution architecture
 
-![Solution architecture diagram illustrating the use of GitHub and Azure DevOps.](media/architecturediagram.png "Desired solution architecture")
+![](media/architecturediagram.jpg)
 
 ## References
  

@@ -239,7 +239,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
    - **Name** : Enter **SQL_PASSWORD** ***(1)***
-   - **Value** : **<inject key="Acr Password" />** ***(2)***
+   - **Value** : Paste the **ADO.NET (SQL authentication)** ***(2)*** which you copied in previous step.
    
    ![](media/2dgn34.png)    
    
@@ -279,8 +279,8 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **ACR_PASSWORD** ***(1)*** which you copied in previous step.
-   - **Value** : **<inject key="Acr Password" />** ***(2)***
+   - **Name** : Enter **ACR_PASSWORD** ***(1)***
+   - **Value** : Paste the **Password** ***(2)*** which you copied in previous step.
    
    ![](media/2dgn35.png) 
    

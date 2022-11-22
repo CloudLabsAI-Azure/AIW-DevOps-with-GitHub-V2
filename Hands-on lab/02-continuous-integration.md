@@ -161,9 +161,9 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/ex2-t3-3-git.png "New Repository Creation Form")
 
-1. On the **Create a new repository** screen, name the repository ```aiw-devops-with-github-lab-files``` ***(1)***, select **Private** ***(2)*** and click on **Create repository** ***(3)***  button.
+1. On the **Create a new repository** screen, name the repository ```aiw-devops-with-github-lab-files``` ***(1)***, select **Public** ***(2)*** and click on **Create repository** ***(3)***  button.
 
-   ![The `New Repository` creation form in GitHub.](media/2dgn3.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/2dgn91.png "New Repository Creation Form")
    
    >**Note**: Please make sure to delete the Repo and create a new one. 
 

@@ -151,7 +151,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. In a new browser tab open ```https://www.github.com```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the crentials. Use the same username and password to login into GitHub.
 
-   ![](media/2dgn89.png) 
+   ![](media/2dgn90.png) 
     
 1. In the upper-right corner, expand the user **drop-down menu** ***(1)*** and select **Your repositories** ***(2)***.
 

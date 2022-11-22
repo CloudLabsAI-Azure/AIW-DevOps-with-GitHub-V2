@@ -15,7 +15,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
   
 1. Now on the left hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/ex1-t1-2.png)
+   ![](media/2dgn82.png)
   
 1. On the left hand side pane, click on **Dev box definitions** **(1)**, and click on **+ Create** **(2)**.
 

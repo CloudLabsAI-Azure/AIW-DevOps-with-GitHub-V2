@@ -91,7 +91,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
   
    ![](media/2dgn52.png)     
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" "dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<inject key="DeploymentID" enableCopy="false" />.vault.azure.net/"` command to set secret path.
+1. Run `dotnet user-secrets set "KeyVaultEndpoint" `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<inject key="DeploymentID" enableCopy="false" />.vault.azure.net/"` command to set secret path.
 
    ![](media/2dgn53.png)
    

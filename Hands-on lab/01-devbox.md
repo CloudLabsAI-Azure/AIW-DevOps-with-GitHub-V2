@@ -74,7 +74,7 @@ In this task, you'll create a Dev pool using previously configured network conne
    - Dev box Creator Privileges: **Local Administrator** **(4)**
    - Licensing: Check the checkbox **(5)**
   
-   ![](media/2dgn77.png)
+   ![](media/latest-ex1-t3-3.png)
   
 ## Task 4: Giving user access over Dev box
 

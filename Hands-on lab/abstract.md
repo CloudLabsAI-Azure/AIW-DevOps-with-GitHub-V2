@@ -7,10 +7,8 @@ At the end of this workshop, you will be better able to implement solutions for 
 
 ## Overview
 
-Fabirkam Medical Conferences provide conference website services tailored to the medical community. Over ten years, they have built conference sites for a small conference organizer. Through word of mouth, Fabrikam Medical Conferences has become a well-known industry brand handling over 100 conferences per year and growing.
-
-Websites for medical conferences are typically low-budget websites because the conferences usually have between 100 to 1500 attendees. At the same time, the conference owners have significant customization and change demands that require turnaround on a dime to the live sites. These changes can impact various aspects of the system from UI through to the back end, including conference registration and payment terms.
-
+Tailwind Traders is an ecommerce website services tailored to the IT community. Over ten years, they have gained large number of users for a small company. Through word of mouth, Tailwind Traders has become a well-known industry brand handling over a million users per year and growing.
+ 
 ## Solution architecture
 
 ![](media/architecturediagram.jpg)

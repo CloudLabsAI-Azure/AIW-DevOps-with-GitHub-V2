@@ -44,7 +44,7 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
 1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/ex1-t2-4.png)
+   ![](media/2dgn85.png)
 
 1. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 

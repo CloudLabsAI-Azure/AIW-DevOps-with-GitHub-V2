@@ -279,7 +279,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-   - **Name** : Enter **ACR_PASSWORD** ***(1)***
+   - **Name** : Enter **ACR_PASSWORD** ***(1)*** which you copied in previous step.
    - **Value** : **<inject key="Acr Password" />** ***(2)***
    
    ![](media/2dgn35.png) 

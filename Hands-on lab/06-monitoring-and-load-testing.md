@@ -139,7 +139,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
   
 1. In the **Add role assignment** page, under **Role** tab select **Owner (1)** and select **Next (2)**.
   
-   ![](media/latest-ex5-t3-13.png)
+   ![](media/latest-ex5-t3-13new.png)
   
 1. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
    

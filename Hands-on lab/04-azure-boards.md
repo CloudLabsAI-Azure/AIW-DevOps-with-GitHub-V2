@@ -211,7 +211,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dgn9.png) 
    
-1. Select **contoso-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](media/2dgn134.png)   
    

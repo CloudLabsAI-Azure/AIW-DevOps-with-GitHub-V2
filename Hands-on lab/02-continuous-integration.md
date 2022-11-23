@@ -226,7 +226,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/upd-2dgn10.png) 
+   ![](media/upd-2dgn134.png) 
    
 1. Select **productsdb** SQL database from the list of resources.
 
@@ -279,7 +279,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/upd-2dgn10.png)    
+   ![](media/upd-2dgn135.png)    
    
 1. From **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group, select **contosotradersacr<inject key="DeploymentID" enableCopy="false" />** container registry from the list. Select **Access Keys** ***(1)*** from the side blade and copy the **password** ***(2)*** which you use in next step.
    
@@ -315,7 +315,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dgn126.png) 
+   ![](media/2dgn135.png) 
    
 1. Select **tailwind-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 

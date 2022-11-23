@@ -119,7 +119,7 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
    
 1. Copy `#test azure boards` code and paste it in line number 1 of the file. Make sure there are no indentation errors.
 
-   ![](media/ex4-edit-yml.png)
+   ![](media/2dgn136.png)
    
 1. Click on **Start commit** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(5)***.
 
@@ -213,15 +213,15 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    
 1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dgn10.png)   
+   ![](media/2dgn134.png)   
    
 1. Select **tailwind-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
-    ![](media/2dgn24.png)   
+   ![](media/2dgn127.png)   
    
 1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Tailwind Traders app has been hosted successfully.
 
-    ![](media/2dgn29.png)  
+   ![](media/2dgn128.png)   
 
 1. Verify the availability of the web app, Laptops page, Controllers page, and Desktops page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
 

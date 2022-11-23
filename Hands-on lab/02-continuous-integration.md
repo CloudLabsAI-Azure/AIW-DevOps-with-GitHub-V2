@@ -45,7 +45,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
    ![](media/ex2-t2-3.png)
    
-1. update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the mentioned below. Run it in the terminal.
+1. Update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the mentioned below. Run it in the terminal.
 
    ```pwsh
    az login --service-principal -u <clientId> -p <clientSecret> --tenant <tenantId>
@@ -53,19 +53,19 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 
    ![](media/2dgn47.png)
    
-1. Run the below mentioned command to navigate to `TailwindTraders.Api.Products` folder.
+1. Run the below mentioned command to navigate to `ContosoTraders.Api.Products` folder.
 
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Api.Products
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Api.Products
    ```
    
-   ![](media/2dgn48.png)   
+   ![](media/upd-2dgn48.png)   
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<SUFFIx>.vault.azure.net/"` command to set secret path.
+1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIx>.vault.azure.net/"` command to set secret path.
 
    >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
 
-   ![](media/2dgn49.png)
+   ![](media/upd-2dgn49.png)
    
 1. Run the below mentioned command to build and host the carts locally.
 
@@ -73,7 +73,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    dotnet build && dotnet run
    ```  
 
-   ![](media/2dgn50.png) 
+   ![](media/upd-2dgn50.png) 
    
    >**Note**: Please wait for 2 - 3 minutes for build to complete.
    
@@ -83,19 +83,27 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    https://localhost:62300/swagger
    ```  
 
-   ![](media/2dgn51.png)     
+   ![](media/upd-2dgn51.png)     
    
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
+   > **Note:** * If you are not able to access the application, click on **Advanced** under Your connection isn't private.
+
+   ![](media/localhost1.png) 
+   
+   * Then click on Continue to localhost(unsafe) to access the application.
+
+   ![](media/localhost2.png)   
+   
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `ContosoTraders.Api.Carts` folder. 
   
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Api.Carts
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Api.Carts
    ```
   
-   ![](media/2dgn52.png)     
+   ![](media/upd-2dgn52.png)     
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<SUFFIX>.vault.azure.net/"` command to set secret path.
+1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"` command to set secret path.
 
-   ![](media/2dgn53.png)
+   ![](media/upd-2dgn53.png)
    
    >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
    
@@ -105,7 +113,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    dotnet build && dotnet run
    ```    
   
-   ![](media/2dgn50.png) 
+   ![](media/upd-dotnet-build.png) 
    
    >**Note**: Please wait for 2 - 3 minutes for build to complete.
 
@@ -115,15 +123,15 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    https://localhost:62400/swagger
    ```  
 
-   ![](media/2dgn57.png)     
+   ![](media/upd-2dgn57.png)     
 
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `ContosoTraders.Ui.Website` folder. 
   
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Ui.Website
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Ui.Website
    ```
   
-   ![](media/2dgn54.png) 
+   ![](media/upd-2dgn54.png) 
    
 1. Run the below mentioned command to install npm.
 
@@ -131,7 +139,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    npm install
    ```    
   
-   ![](media/2dgn55.png) 
+   ![](media/upd-2dgn55.png) 
    
    >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time.
    
@@ -216,17 +224,17 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn9.png) 
    
-1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dgn10.png) 
+   ![](media/upd-2dgn10.png) 
    
 1. Select **productsdb** SQL database from the list of resources.
 
-   ![](media/2dgn11.png) 
+   ![](media/upd-2dgn11.png) 
    
 1. Under Settings side blade, select **Connection strings** ***(1)*** and copy the **ADO.NET (SQL authentication)** ***(2)*** connection string from ADO.NET tab. 
 
-   ![](media/2dgn12.png)  
+   ![](media/upd-2dgn12.png)  
  
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
@@ -241,7 +249,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    - **Name** : Enter **SQL_PASSWORD** ***(1)***
    - **Value** : Paste the **ADO.NET (SQL authentication)** ***(2)*** which you copied in previous step.
    
-   ![](media/2dgn34.png)    
+   ![](media/upd-2dgn34.png)    
    
 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
@@ -269,13 +277,13 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn9.png) 
    
-1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dgn10.png)    
+   ![](media/upd-2dgn10.png)    
    
-1. From **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group, select **tailwindtradersacr<inject key="DeploymentID" enableCopy="false" />** container registry from the list. Select **Access Keys** ***(1)*** from the side blade and copy the **password** ***(2)*** which you use in next step.
+1. From **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group, select **contosotradersacr<inject key="DeploymentID" enableCopy="false" />** container registry from the list. Select **Access Keys** ***(1)*** from the side blade and copy the **password** ***(2)*** which you use in next step.
    
-   ![](media/2dgn87.png)    
+   ![](media/upd-2dgn87.png)    
    
 1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 

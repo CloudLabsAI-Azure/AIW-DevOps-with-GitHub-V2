@@ -211,17 +211,17 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dgn9.png) 
    
-1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **contoso-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](media/2dgn134.png)   
    
-1. Select **tailwind-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+1. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
    ![](media/2dgn127.png)   
    
 1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Tailwind Traders app has been hosted successfully.
 
-   ![](media/2dgn128.png)   
+   ![](media/2dgn137.png)   
 
 1. Verify the availability of the web app, Laptops page, Controllers page, and Desktops page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
 

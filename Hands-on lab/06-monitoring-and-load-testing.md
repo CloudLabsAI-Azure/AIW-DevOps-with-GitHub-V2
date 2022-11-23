@@ -48,11 +48,11 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
    
 1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a quick test** ***(3)***.
 
-   ![](media/2dgn118.png)
+   ![](media/2dgn96.png)
 
 1. On the **Create test** page, under basic tab paste the **AKS Application URL** as Test URL ***(1)*** and  leave everything as default, then click **Next: Test plan >** ***(2)***.
 
-   ![](media/2dgn97.png)
+   ![](media/2dgn118.png)
 
 1. The test run will starting running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 

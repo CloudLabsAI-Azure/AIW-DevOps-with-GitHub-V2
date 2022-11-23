@@ -65,7 +65,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 
    >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
 
-   ![](media/2dgn49.png)
+   ![](media/upd-2dgn49.png)
    
 1. Run the below mentioned command to build and host the carts locally.
 
@@ -73,7 +73,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    dotnet build && dotnet run
    ```  
 
-   ![](media/2dgn50.png) 
+   ![](media/upd-2dgn50.png) 
    
    >**Note**: Please wait for 2 - 3 minutes for build to complete.
    
@@ -139,7 +139,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    npm install
    ```    
   
-   ![](media/2dgn55.png) 
+   ![](media/upd-2dgn55.png) 
    
    >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time.
    

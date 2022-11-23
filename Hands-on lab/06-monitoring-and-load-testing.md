@@ -44,11 +44,11 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
 1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
 
-   ![](media/2dgn95.png)
+   ![](media/2dgn117.png)
    
 1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a quick test** ***(3)***.
 
-   ![](media/2dgn96.png)
+   ![](media/2dgn118.png)
 
 1. On the **Create test** page, under basic tab paste the **AKS Application URL** as Test URL ***(1)*** and  leave everything as default, then click **Next: Test plan >** ***(2)***.
 
@@ -95,7 +95,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
     - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** ***(3)***
     - Region: Leave it to default ***(4)***
  
-   ![](media/2dgn102.png)
+   ![](media/2dgn119.png)
  
 1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
@@ -119,11 +119,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
    
 1. On the **Review + create** click on **Create**.
   
-   ![](media/2dgn64.png)
+   ![](media/2dgn120.png)
   
 1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
   
-   ![](media/2dgn113.png)
+   ![](media/2dgn121.png)
   
 1. In the **Add role assignment** page, under **Role** tab select **Owner (1)** and select **Next (2)**.
   

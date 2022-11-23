@@ -283,7 +283,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. From **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group, select **contosotradersacr<inject key="DeploymentID" enableCopy="false" />** container registry from the list. Select **Access Keys** ***(1)*** from the side blade and copy the **password** ***(2)*** which you use in next step.
    
-  ![](media/upd-2dgn87.png)    
+   ![](media/upd-2dgn87.png)    
    
 1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 

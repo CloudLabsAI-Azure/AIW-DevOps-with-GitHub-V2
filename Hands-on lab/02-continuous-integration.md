@@ -45,7 +45,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
    ![](media/ex2-t2-3.png)
    
-1. update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the mentioned below. Run it in the terminal.
+1. Update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the mentioned below. Run it in the terminal.
 
    ```pwsh
    az login --service-principal -u <clientId> -p <clientSecret> --tenant <tenantId>
@@ -53,15 +53,15 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 
    ![](media/2dgn47.png)
    
-1. Run the below mentioned command to navigate to `TailwindTraders.Api.Products` folder.
+1. Run the below mentioned command to navigate to `ContosoTraders.Api.Products` folder.
 
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Api.Products
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Api.Products
    ```
    
-   ![](media/2dgn48.png)   
+   ![](media/upd-2dgn48.png)   
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<SUFFIx>.vault.azure.net/"` command to set secret path.
+1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIx>.vault.azure.net/"` command to set secret path.
 
    >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
 
@@ -83,7 +83,15 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    https://localhost:62300/swagger
    ```  
 
-   ![](media/2dgn51.png)     
+   ![](media/upd-2dgn51.png)     
+   
+   > **Note:** * If you are not able to access the application, click on **Advanced** under Your connection isn't private.
+
+   ![](media/localhost1.png) 
+   
+   * Then click on Continue to localhost(unsafe) to access the application.
+
+   ![](media/localhost2.png)   
    
 1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
   

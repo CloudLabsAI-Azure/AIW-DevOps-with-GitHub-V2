@@ -213,11 +213,11 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    
 1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dgn134.png)   
+   ![](media/2dgn27.png)   
    
 1. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
-   ![](media/2dgn128.png)   
+   ![](media/2dgn138.png)   
    
 1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Tailwind Traders app has been hosted successfully.
 

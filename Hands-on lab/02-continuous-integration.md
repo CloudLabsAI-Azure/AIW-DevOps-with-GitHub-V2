@@ -93,17 +93,17 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 
    ![](media/localhost2.png)   
    
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `ContosoTraders.Api.Carts` folder. 
   
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Api.Carts
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Api.Carts
    ```
   
-   ![](media/2dgn52.png)     
+   ![](media/upd-2dgn52.png)     
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<SUFFIX>.vault.azure.net/"` command to set secret path.
+1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://tailwindtraderskv<SUFFIX>.vault.azure.net/"` command to set secret path.
 
-   ![](media/2dgn53.png)
+   ![](media/upd-2dgn53.png)
    
    >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
    
@@ -113,7 +113,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    dotnet build && dotnet run
    ```    
   
-   ![](media/2dgn50.png) 
+   ![](media/upd-dotnet-build.png) 
    
    >**Note**: Please wait for 2 - 3 minutes for build to complete.
 
@@ -123,15 +123,15 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    https://localhost:62400/swagger
    ```  
 
-   ![](media/2dgn57.png)     
+   ![](media/upd-2dgn57.png)     
 
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `TailwindTraders.Api.Carts` folder. 
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `ContosoTraders.Ui.Website` folder. 
   
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Ui.Website
    ```
   
-   ![](media/2dgn54.png) 
+   ![](media/upd-2dgn54.png) 
    
 1. Run the below mentioned command to install npm.
 

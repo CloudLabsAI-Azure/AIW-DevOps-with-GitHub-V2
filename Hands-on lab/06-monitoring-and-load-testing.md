@@ -34,47 +34,29 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
 In this task, you'll create Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal, navigate to **Tailwind-<inject key="Deploymentid" />** resource group and select the **Container App** resource with the name  **tailwind-traders-carts<inject key="Deploymentid" />**.
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** resource group and select the **Container App** resource with the name  **contoso-traders-carts<inject key="Deploymentid" />**.
 
-1. From the Overview of **tailwind-traders-carts<inject key="Deploymentid" />** **(1)** Container App, copy the **Application Url** **(2)** and paste it in notepad for later use in the task.
+   ![](media/2dgn93.png)
 
-   ![](media/ex6-t2-copyappurl.png)
+1. From the Overview of **contoso-traders-carts<inject key="Deploymentid" />** **(1)** Container App, copy the **Application Url** **(2)** and paste it in notepad for later use in the task.
 
-1. In the Azure Portal, navigate to **Tailwind-<inject key="Deploymentid" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **tailwind-traders-loadtest<inject key="Deploymentid" />** **(2)**.
+   ![](media/2dgn94.png)
 
-   ![](media/ex6-open-loadtest.png)
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
 
-1. On the left hand side pane, select **Tests (1)** and click on **+ Create (2)** and select **Upload a JMeter script (3)**.
-
-   ![](media/ex6-t2-loadtest-create.png)
-
-1. On the **Create test** page, under basic tab provide the **Test name** as `Demo-test` **(1)** and for **Test description** enter `Demo Load Testing` **(2)**, then click **Next: Test plan >** **(3)**.
-
-   ![](media/Ex6-T1-S7.2.png)
-
-1. On your Lab-VM open **File Explorer** and navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files\tests\loadtests` **(1)**. Right click on the file named **tailwind-traders-carts.jmx** **(2)** and click on **Open with Code** **(3)**.
-
-   ![](media/ex6-t2-cartsjmx-open.png)
-
-1. In line number 68, replace **${Domain}** with **Application Url** of Container App which you have copied earlier in the task step-2 and save the file. 
- 
-   ![](media/ex6-t2-cartsjmx.png)
-       
-1. Next, on the **Test plan** tab, click on the file icon **(1)**, select the **tailwind-traders-carts.jmx **(2)** file from your Lab-VM `C:\Workspaces\lab\aiw-devops-with-github-lab-files\tests\loadtests` and select **Upload (3)**.
-    
-   ![](media/ex6-t2-jmxupload.png)
-
-1. Once the file has completed uploading **(1)**, click on **Review + create (2)**.
-
-   ![](media/ex6-t2-create-test.png)
+   ![](media/2dgn95.png)
    
-1. Once the validation passed, click on **Create**.
+1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a quick test** ***(3)***.
 
-   ![](media/ex6-t2-create-test2.png)  
+   ![](media/2dgn96.png)
 
-1. Once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
+1. On the **Create test** page, under basic tab paste the **AKS Application URL** as Test URL ***(1)*** and  leave everything as default, then click **Next: Test plan >** ***(2)***.
 
-   ![](media/Ex6-T1-S11.png)
+   ![](media/2dgn97.png)
+
+1. The test run will starting running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
+
+   ![](media/2dgn111.png)
      
 ## Task 3: Explore Chaos Studio
 
@@ -88,26 +70,32 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/Ex6-T2-S2.png)
       
-1. From the drop-down menu, select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group.
+1. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group.
  
-   ![](media/2dgn59.png)
+   ![](media/2dgn98.png)
      
-1. Click on the **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
+1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
 
-   ![](media/latest-ex5-t3-4.png)
+   ![](media/2dgn99.png)
      
-1. Once the target is enabled, select **Experiments** **(1)** on the left and click **+ Create** **(2)**.
+1. Wait for the deployment to be completed.  
+
+1. In the Azure Portal search for **Azure Chaos Studio** ***(1)*** and then click on it from the search results ***(2)***.
+   
+   ![](media/Ex6-T2-S1.1.png)
+    
+1. Once the target is enabled, select **Experiments** ***(1)*** on the left and click **+ Create** ***(2)***.
  
    ![](media/Ex6-T2-S5.3.png)
  
-1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Experiment designer >** **(5)**.
+1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Experiment designer >** ***(5)***.
 
-    - Subscription: select the default subscription **(1)**
-    - Resource Group: **Tailwind-<inject key="DeploymentID" enableCopy="false" />** **(2)**
-    - Name: **Tailwind-chaos-<inject key="DeploymentID" enableCopy="false" />** **(3)**
-    - Region: Leave it to default **(4)**
+    - Subscription: select the default subscription ***(1)***
+    - Resource Group: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
+    - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** ***(3)***
+    - Region: Leave it to default ***(4)***
  
-   ![](media/2dgn58.png)
+   ![](media/2dgn102.png)
  
 1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
@@ -115,43 +103,43 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
  
 1. On the **Add fault** page, select the following and select **Next: Target resources>** **(4)**.
    
-   - Faults: **AKS Chaos Mesh Pods Chaos** **(1)**
-   - Duration (minutes): **5** **(2)**
-   - jsonSpec: Leave it to default **(3)**
+   - Faults: **AKS Chaos Mesh Pods Chaos** ***(1)***
+   - Duration (minutes): **5** ***(2)***
+   - jsonSpec: Leave it to default ***(3)***
      
    ![](media/2dgn61.png)
      
-1. On the **Target resources**, select the **aks** resource **(1)** and **Add** **(2)**.
+1. On the **Target resources**, select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** ***(1)*** resource and **Add** ***(2)***.
   
-   ![](media/2dgn62.png)
+   ![](media/2dgn112.png)
   
 1. Click on **Review + create**.
   
-   ![](media/2dgn63.png)
+   ![](media/2dgn104.png)
    
 1. On the **Review + create** click on **Create**.
   
    ![](media/2dgn64.png)
   
-1. Navigate back to the **tailwind-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
+1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
   
-   ![](media/2dgn65.png)
+   ![](media/2dgn113.png)
   
 1. In the **Add role assignment** page, under **Role** tab select **Owner (1)** and select **Next (2)**.
   
-   ![](media/latest-ex5-t3-13new.png)
+   ![](media/2dgn114.png)
   
 1. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
    
-   ![](media/2dgn67.png)
+   ![](media/2dgn115.png)
   
 1. Click on **Review + assign**. 
    
-   ![](media/2dgn68.png)
+   ![](media/2dgn116.png)
       
-1. On the Azure portal navigate back to the Chaos experiment you created **Tailwind-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
+1. On the Azure portal navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
   
-   ![](media/ex5-t3-16-start.png)
+   ![](media/2dgn108.png)
  
 1. Select **Ok** for **Start this experiment** pop-up.
 
@@ -159,15 +147,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
        
 1. Once the experiment status is **Success** click on **Details** to view the run preview.
  
-   ![](media/Ex6-T2-S18.png)
+   ![](media/2dgn109.png)
  
 1. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
  
-   ![](media/2dgn73.png)
-
-1. Navigate to **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group and open application insights **tailwind-traders-ai<inject key="DeploymentID" enableCopy="false" />**. On the app insights overview page click on **Availability tile**. 
- 
-1. Observe the availability of the application, after adding the **CosmosDB Failover**.
+   ![](media/2dgn110.png)
 
 ## Summary
 

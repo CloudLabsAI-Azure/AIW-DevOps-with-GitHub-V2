@@ -249,7 +249,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    - **Name** : Enter **SQL_PASSWORD** ***(1)***
    - **Value** : Paste the **ADO.NET (SQL authentication)** ***(2)*** which you copied in previous step.
    
-   ![](media/upd-2dgn34.png)    
+   ![](media/2dgn123.png)
    
 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
@@ -305,9 +305,9 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
 
-   ![](media/2dgn42.png)
+   ![](media/2dgn124.png)
    
-   ![](media/2dgn38.png)     
+   ![](media/2dgn125.png)   
    
 1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
 
@@ -315,17 +315,17 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dgn10.png)   
+   ![](media/2dgn126.png) 
    
 1. Select **tailwind-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
-    ![](media/2dgn24.png)   
+   ![](media/2dgn127.png) 
    
 1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Tailwind Traders app has been hosted successfully.
 
-    ![](media/2dgn29.png) 
+   ![](media/2dgn128.png) 
     
-    ![](media/2dgn26.png)  
+   ![](media/2dgn129.png) 
     
 ### Task 5: Editing the GitHub Workflow File using Codespace
 
@@ -344,11 +344,11 @@ The last task automated building and updating only one of the Docker images. In 
    
 1. From the explorer side blade, navigate to **.github/workflows** **(1)** and select **contoso-traders-app-deployment** ***(2)*** file.
 
-   ![](media/2dgn39.png)
+   ![](media/2dgn131.png) 
    
 1. Remove the commands from line 7 to 14 from the workflow file. In line 6 update the branch name to **master** from **main**.
 
-   ![](media/2dgn40.png)
+   ![](media/2dgn132.png) 
    
 1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
@@ -357,7 +357,7 @@ The last task automated building and updating only one of the Docker images. In 
    git commit -m "Updating app deployment"
    git push
    ```
-   ![](media/2dgn43.png)
+   ![](media/2dgn133.png) 
     
    > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 

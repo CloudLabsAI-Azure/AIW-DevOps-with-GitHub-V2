@@ -128,7 +128,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `ContosoTraders.Ui.Website` folder. 
   
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\TailwindTraders.Ui.Website
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Ui.Website
    ```
   
    ![](media/upd-2dgn54.png) 

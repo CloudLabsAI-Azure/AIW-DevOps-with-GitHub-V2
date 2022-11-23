@@ -224,17 +224,17 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn9.png) 
    
-1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dgn10.png) 
+   ![](media/upd-2dgn10.png) 
    
 1. Select **productsdb** SQL database from the list of resources.
 
-   ![](media/2dgn11.png) 
+   ![](media/upd-2dgn11.png) 
    
 1. Under Settings side blade, select **Connection strings** ***(1)*** and copy the **ADO.NET (SQL authentication)** ***(2)*** connection string from ADO.NET tab. 
 
-   ![](media/2dgn12.png)  
+   ![](media/upd-2dgn12.png)  
  
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
@@ -249,7 +249,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    - **Name** : Enter **SQL_PASSWORD** ***(1)***
    - **Value** : Paste the **ADO.NET (SQL authentication)** ***(2)*** which you copied in previous step.
    
-   ![](media/2dgn34.png)    
+   ![](media/upd-2dgn34.png)    
    
 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 

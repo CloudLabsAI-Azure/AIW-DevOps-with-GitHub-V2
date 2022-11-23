@@ -72,7 +72,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
       
 1. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group.
  
-   ![](media/2dgn98.png)
+   ![](media/2dgn122.png)
      
 1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
 

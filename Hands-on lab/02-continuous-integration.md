@@ -313,15 +313,15 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn9.png) 
    
-1. Select **Tailwind-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](media/2dgn135.png) 
    
-1. Select **tailwind-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+1. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
    ![](media/2dgn127.png) 
    
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Tailwind Traders app has been hosted successfully.
+1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Contoso Traders app has been hosted successfully.
 
    ![](media/2dgn128.png) 
     

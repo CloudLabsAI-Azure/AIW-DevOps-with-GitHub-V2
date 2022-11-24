@@ -44,7 +44,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
 1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
 
-   ![](media/2dgn117.png)
+   ![](media/upd-2dgn117.png)
    
 1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a quick test** ***(3)***.
 

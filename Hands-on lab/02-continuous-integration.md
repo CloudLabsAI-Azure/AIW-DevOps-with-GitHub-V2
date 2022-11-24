@@ -226,7 +226,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/upd-2dgn134.png) 
+   ![](media/2dgn135.png)  
    
 1. Select **productsdb** SQL database from the list of resources.
 

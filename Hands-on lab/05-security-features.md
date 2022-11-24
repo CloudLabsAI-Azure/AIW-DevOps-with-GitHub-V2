@@ -48,7 +48,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
      
 1. In the Open a draft security advisory tab, under Advisory Details section provide the following details.
 
-   - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
+   - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/ContosoTraders.Ui.Website/src/App.js** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
    - Description: **Add** ***(3)*** the below mentioned details in the description section.
    
@@ -85,22 +85,22 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
    ```
     
-   ![](media/ex5-t2-securityadvisor1.png)
+   ![](media/upd-ex5-t2-securityadvisor1.png)
    
 1. In the Affected products section, provide the following details and click on **Create draft security advisory** ***(7)***   
  
    - Ecosystem: **composer** ***(1)***
-   - Package name: **aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(2)***
+   - Package name: **aiw-devops-with-github-lab-files/src/ContosoTraders.Ui.Website/src/App.js** ***(2)***
    - Affected version: **<1.2** ***(3)***
    - Patched version: **1.2** ***(4)***
    - Severity: **High** ***(5)***
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
   
-   ![](media/ex5-t2-securityadvisor2.png)
+   ![](media/upd-ex5-t2-securityadvisor2.png)
    
  1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
-    ![](media/ex5-t2-securityadvisor3.png)
+    ![](media/upd-ex5-t2-securityadvisor3.png)
     
     ![](media/ex5-t2-securityadvisor4.png)
   
@@ -134,15 +134,15 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
 1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. After reviewing the alert, select **Review security update**.
 
-   ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
+   ![The `handlebars` Dependabot alert detail.](media/upd-ex5-t3-reviewsu.png "Dependabot alert detail")
 
 1. Navigate to **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)*** and merge it to your main branch.
 
-   ![List of Pull Requests.](media/ex5-t3-open-nfpr.png "Pull Requests")
+   ![List of Pull Requests.](media/upd-ex5-t3-open-nfpr.png "Pull Requests")
    
 1. Click on **Merge pull request** and followed by click on **Confirm merge**. 
 
-   ![The Pull Request Merge Button in the Pull Request detail.](media/ex5-t3-merge-pr.png "Pull Request Merge Button")
+   ![The Pull Request Merge Button in the Pull Request detail.](media/upd-ex5-t3-merge-pr.png "Pull Request Merge Button")
     
    >**Note**: In case you see any errors with merge request. Retry step 4 to step 6 by selecting any other Dependabot alert.
 

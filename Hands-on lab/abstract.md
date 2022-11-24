@@ -8,7 +8,7 @@ Over ten years, Contoso traders have gained large number of users for a small co
 
 They need your help to configure the robost, agile, tractable infrastructure and deploy a solution. You need to choose the right approach to set up and deploy the solution on Azure. However, you will be doing it in phases as the development and testing progress.
 
-# Lab Context 
+## Lab Context 
 
 In this hands-on lab, you will implement a on-premises to cloud infrastructure solution using GitHub to enable continuous delivery with several Azure PaaS services. You will learn how to use GitHub features like repositories, Codespace, GitHub workflows and actions. You will use GitHub advance security features to handle vulnerabilities and security issues. You will learn about integrating Azure DevOps components like Azure Boards with GitHub repository and Test plan to the application.
 

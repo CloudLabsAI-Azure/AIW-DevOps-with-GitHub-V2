@@ -115,11 +115,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
   
 1. Click on **Review + create**.
   
-   ![](media/2dgn104.png)
+   ![](media/upd-review.png)
    
 1. On the **Review + create** click on **Create**.
   
-   ![](media/2dgn120.png)
+   ![](media/2dgn104.png)
   
 1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
   

@@ -6,29 +6,29 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
 ### Task 1: Monitoring using Application Insights
 
-1. In the Azure Portal, navigate to **Tailwind-<inject key="Deploymentid" />** **(1)** resource group and select the **Application Insights** resource with the name  **tailwind-traders-ai<inject key="Deploymentid" />** **(2)**.
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" />** **(2)**.
 
-   ![](media/ex6-t1-openai.png)
+   ![](media/upd-ex6-t1-openai.png)
    
-1. From the Overview of **tailwind-traders-ai<inject key="Deploymentid" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
+1. From the Overview of **contoso-traders-ai<inject key="Deploymentid" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
 
-   ![](media/ex6-t1-set-showdata.png)
+   ![](media/upd-ex6-t1-set-showdata.png)
    
 1. In the first graph, you can see the number of failed requests for the Application access.
 
-   ![](media/ex6-t1-failedrequests.png)
+   ![](media/upd-ex6-t1-failedrequests.png)
    
 1. In the next graph, you can see the average server response time.
 
-   ![](media/ex6-t1-server-response-time.png)
+   ![](media/upd-ex6-t1-server-response-time.png)
    
 1. In the next graph, you can see the number of server requests.
 
-   ![](media/ex6-t1-server-requests.png)
+   ![](media/upd-ex6-t1-server-requests.png)
    
 1. In the last graph, you can see the average availability.
 
-   ![](media/ex6-t1-availability.png)  
+   ![](media/upd-ex6-t1-availability.png)  
    
 ## Task 2: Set up Load Testing
 

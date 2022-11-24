@@ -58,7 +58,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
 1. Select the `Files changed` tab within the pull request detail and observe the change to the README.md associated with this pull request. After reviewing the changes, go back to the `Conversation` tab and select the `Merge pull request` button and confirm the following prompt to merge the pull request into the `main` branch.
 
-   ![The file changes associated with the pull request.](media/ex4-kc-reviewchanges.png "Pull Request Files Changed tab")
+   ![The file changes associated with the pull request.](media/upd-ex4-kc-reviewchanges.png "Pull Request Files Changed tab")
 
 1. In Azure DevOps Boards, find the work item and observe that the issue has been moved to the `Done` column on completion of the pull request.
 

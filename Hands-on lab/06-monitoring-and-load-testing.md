@@ -6,29 +6,29 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
 ### Task 1: Monitoring using Application Insights
 
-1. In the Azure Portal, navigate to **Tailwind-<inject key="Deploymentid" />** **(1)** resource group and select the **Application Insights** resource with the name  **tailwind-traders-ai<inject key="Deploymentid" />** **(2)**.
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" />** **(2)**.
 
-   ![](media/ex6-t1-openai.png)
+   ![](media/upd-ex6-t1-openai.png)
    
-1. From the Overview of **tailwind-traders-ai<inject key="Deploymentid" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
+1. From the Overview of **contoso-traders-ai<inject key="Deploymentid" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
 
-   ![](media/ex6-t1-set-showdata.png)
+   ![](media/upd-ex6-t1-set-showdata.png)
    
 1. In the first graph, you can see the number of failed requests for the Application access.
 
-   ![](media/ex6-t1-failedrequests.png)
+   ![](media/upd-ex6-t1-failedrequests.png)
    
 1. In the next graph, you can see the average server response time.
 
-   ![](media/ex6-t1-server-response-time.png)
+   ![](media/upd-ex6-t1-server-response-time.png)
    
 1. In the next graph, you can see the number of server requests.
 
-   ![](media/ex6-t1-server-requests.png)
+   ![](media/upd-ex6-t1-server-requests.png)
    
 1. In the last graph, you can see the average availability.
 
-   ![](media/ex6-t1-availability.png)  
+   ![](media/upd-ex6-t1-availability.png)  
    
 ## Task 2: Set up Load Testing
 
@@ -44,7 +44,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
 1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
 
-   ![](media/2dgn117.png)
+   ![](media/upd-2dgn117.png)
    
 1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a quick test** ***(3)***.
 
@@ -115,11 +115,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
   
 1. Click on **Review + create**.
   
-   ![](media/2dgn104.png)
+   ![](media/upd-review.png)
    
 1. On the **Review + create** click on **Create**.
   
-   ![](media/2dgn120.png)
+   ![](media/2dgn104.png)
   
 1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
   

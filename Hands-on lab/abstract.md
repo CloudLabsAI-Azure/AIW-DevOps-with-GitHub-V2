@@ -16,7 +16,7 @@ At the end of this workshop, you will be better able to implement solutions for 
  
 ## Solution architecture
 
-![](media/architecturediagram.jpg)
+![](media/architecturediagram11.jpg)
 
 ## References
  

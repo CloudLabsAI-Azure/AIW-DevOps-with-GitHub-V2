@@ -11,7 +11,7 @@ Tailwind Traders is an ecommerce website services tailored to the IT community. 
  
 ## Solution architecture
 
-![](media/architecturediagram.jpg)
+![](media/architecturediagram11.jpg)
 
 ## References
  

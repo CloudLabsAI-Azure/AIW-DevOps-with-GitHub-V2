@@ -48,7 +48,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
      
 1. In the Open a draft security advisory tab, under Advisory Details section provide the following details.
 
-   - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/ContosoTraders.Ui.Website/src/App.js** ***(1)***
+   - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
    - Description: **Add** ***(3)*** the below mentioned details in the description section.
    
@@ -85,22 +85,22 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
    ```
     
-   ![](media/upd-ex5-t2-securityadvisor1.png)
+   ![](media/ex5-t2-securityadvisor1.png)
    
 1. In the Affected products section, provide the following details and click on **Create draft security advisory** ***(7)***   
  
    - Ecosystem: **composer** ***(1)***
-   - Package name: **aiw-devops-with-github-lab-files/src/ContosoTraders.Ui.Website/src/App.js** ***(2)***
+   - Package name: **aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(2)***
    - Affected version: **<1.2** ***(3)***
    - Patched version: **1.2** ***(4)***
    - Severity: **High** ***(5)***
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
   
-   ![](media/upd-ex5-t2-securityadvisor2.png)
+   ![](media/ex5-t2-securityadvisor2.png)
    
  1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
-    ![](media/upd-ex5-t2-securityadvisor3.png)
+    ![](media/ex5-t2-securityadvisor3.png)
     
     ![](media/ex5-t2-securityadvisor4.png)
   
@@ -134,15 +134,15 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
 1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. After reviewing the alert, select **Review security update**.
 
-   ![The `handlebars` Dependabot alert detail.](media/upd-ex5-t3-reviewsu.png "Dependabot alert detail")
+   ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
 
 1. Navigate to **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)*** and merge it to your main branch.
 
-   ![List of Pull Requests.](media/upd-ex5-t3-open-nfpr.png "Pull Requests")
+   ![List of Pull Requests.](media/ex5-t3-open-nfpr.png "Pull Requests")
    
 1. Click on **Merge pull request** and followed by click on **Confirm merge**. 
 
-   ![The Pull Request Merge Button in the Pull Request detail.](media/upd-ex5-t3-merge-pr.png "Pull Request Merge Button")
+   ![The Pull Request Merge Button in the Pull Request detail.](media/ex5-t3-merge-pr.png "Pull Request Merge Button")
     
    >**Note**: In case you see any errors with merge request. Retry step 4 to step 6 by selecting any other Dependabot alert.
 
@@ -153,6 +153,47 @@ In this task, you will use Dependabot to track the versions of the packages we u
                                                             # you set up your lab files repository
    git pull
    ```
+   
+## Task 5: Explore Secret Scanning (READ-ONLY)   
+
+In this task, you'll explore about how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets, to prevent fraudulent use of secrets that were committed accidentally.
+
+**Note**: This is a **READ-ONLY** task. Please do not perform the steps in the lab environment.
+
+1. From your GitHub repository, click on the **Settings** tab.
+
+   ![](media/2dg110.png)
+    
+1. Select **Code security (1)** from the sidebar and make sure **Secret scanning is enabled (2)**.
+
+   ![](media/2dg111.png)   
+    
+1. Navigate back to **Code (1)** and click on **src (2)** folder.
+
+   ![](media/2dg112.png)    
+   
+1. Click on **Add file** and select **create new file** option.
+
+   ![](media/2dg113.png)    
+   
+1. Add new file with name **build.docker-compose.yml (1)** name, add the code mentioned below **commit** the file. Here, you'll expose the **application ID** of a service principal.
+
+   ```
+   version: "3.4"
+   services:
+   api:
+      build: ./ContosoTraders.Ui.Website/
+      app id: 36540dcd-7bc3-4e16-90ca-4decb9ff8c36
+      app secret: i1R8Q~Hn8dHn86VlWE7xJtLR4FKTIcQBXcebqcv4
+   web:
+      build: ./ContosoTraders.Api.Products
+   ```
+   
+   ![](media/2dg114.png)   
+   
+1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that a alert is generated which is reffering to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how Secret scanning feature works and generates alerts to notify you.
+
+   ![](media/2dg115.png) 
    
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.  
 

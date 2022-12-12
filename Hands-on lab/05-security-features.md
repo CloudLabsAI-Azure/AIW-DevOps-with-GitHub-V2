@@ -154,6 +154,47 @@ In this task, you will use Dependabot to track the versions of the packages we u
    git pull
    ```
    
+## Task 5: Explore Secret Scanning (READ-ONLY)   
+
+In this task, you'll explore about how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets, to prevent fraudulent use of secrets that were committed accidentally.
+
+**Note**: This is a **READ-ONLY** task. Please do not perform the steps in the lab environment.
+
+1. From your GitHub repository, click on the **Settings** tab.
+
+   ![](media/2dg110.png)
+    
+1. Select **Code security (1)** from the sidebar and make sure **Secret scanning is enabled (2)**.
+
+   ![](media/2dg111.png)   
+    
+1. Navigate back to **Code (1)** and click on **src (2)** folder.
+
+   ![](media/2dg112.png)    
+   
+1. Click on **Add file** and select **create new file** option.
+
+   ![](media/2dg113.png)    
+   
+1. Add new file with name **build.docker-compose.yml (1)** name, add the code mentioned below **commit** the file. Here, you'll expose the **application ID** of a service principal.
+
+   ```
+   version: "3.4"
+   services:
+   api:
+      build: ./ContosoTraders.Ui.Website/
+      app id: 36540dcd-7bc3-4e16-90ca-4decb9ff8c36
+      app secret: i1R8Q~Hn8dHn86VlWE7xJtLR4FKTIcQBXcebqcv4
+   web:
+      build: ./ContosoTraders.Api.Products
+   ```
+   
+   ![](media/2dg114.png)   
+   
+1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that a alert is generated which is reffering to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how Secret scanning feature works and generates alerts to notify you.
+
+   ![](media/2dg115.png) 
+   
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.  
 
 ## Summary 

@@ -189,11 +189,11 @@ In this task, you'll explore about how secret scanning works and see how it gene
       build: ./ContosoTraders.Api.Products
    ```
    
-   ![](media/2dg114.png)   
+   ![](media/2dg115.png)   
    
 1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that a alert is generated which is reffering to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how Secret scanning feature works and generates alerts to notify you.
 
-   ![](media/2dg115.png) 
+   ![](media/2dg116.png) 
    
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.  
 

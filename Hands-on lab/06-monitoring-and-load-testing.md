@@ -57,6 +57,8 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 1. The test run will starting running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
    ![](media/2dgn111.png)
+   
+   **Note**: In case, the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with support` error. This is expected as sometimes the load on the application exceeds the defined throughput.
      
 ## Task 3: Explore Chaos Studio
 

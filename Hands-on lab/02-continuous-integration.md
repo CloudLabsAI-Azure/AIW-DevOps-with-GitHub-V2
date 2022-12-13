@@ -342,9 +342,9 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/2dg33.png)
    
-1. From the explorer side blade, navigate to **.github/workflows** **(1)** and select **contoso-traders-app-deployment** ***(2)*** file.
+1. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
-   ![](media/2dgn131.png) 
+   ![](media/contosoprovision.png) 
    
 1. Remove the commands from line 7 to 14 from the workflow file. In line 6 update the branch name to **master** from **main**.
 

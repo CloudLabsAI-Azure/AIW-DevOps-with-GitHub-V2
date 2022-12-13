@@ -36,9 +36,9 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/ex4-kc-install&auth.png)
     
-1. Select the **aiw-devops** Azure DevOps organization and select the Fabrikam project then click on **Continue**
+1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders (2)** project then click on **Continue (3)**
 
-   ![](media/2dg54.png)
+   ![](media/azuredevops.png)
 
 1. When the integration succeeds, you will be taken to the Azure DevOps Board. In the onboarding tutorial click on **Create** to create an initial Issue in the `To Do` Column.
 
@@ -48,7 +48,12 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![After completion of the onboarding tutorial. Two todo confirmation messages displayed.](media/image15.png "Get started and quick tip")
 
-1. Open the new Issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board Issue.
+1. Click on **View work item**.
+
+
+   ![](media/viewworkitem.png)
+   
+3. Open the new Issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board Issue.
 
    ![Linked GitHub items in an Azure DevOps issue in Boards.](media/ex3-t1-8.png "GitHub Pull Request and Comment")
 

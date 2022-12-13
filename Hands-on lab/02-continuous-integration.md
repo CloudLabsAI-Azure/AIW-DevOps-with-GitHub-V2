@@ -157,9 +157,13 @@ In this task, you'll access the GitHub enterprise account and create a new repos
 
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
-1. In a new browser tab open ```https://www.github.com```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the crentials. Use the same username and password to login into GitHub.
+1. In a new browser tab open ```https://www.github.com/login```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the crentials. Use the same username and password to login into GitHub.
 
    ![](media/2dgn90.png) 
+   
+1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` and enter your username and password. Copy the verification code and Paste code it in Device verification.
+
+   ![](media/2dgn154.png) 
     
 1. In the upper-right corner, expand the user **drop-down menu** ***(1)*** and select **Your repositories** ***(2)***.
 
@@ -250,6 +254,10 @@ In this exercise, you will build automation in GitHub for updating and republish
    - **Value** : Paste the **ADO.NET (SQL authentication)** ***(2)*** which you copied in previous step.
    
    ![](media/2dgn123.png)
+   
+   >**Note**: Replace `{your_password}` with Labvm Admin Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+   
+   ![](media/2dgn155.png)   
    
 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 

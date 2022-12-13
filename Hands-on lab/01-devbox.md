@@ -66,15 +66,16 @@ In this task, you'll create a Dev pool using previously configured network conne
 
    ![](media/2dgn76.png)
   
-1. Under *Create a dev box pool* window, enter the following details and click on **Create** **(6)**.
+1. Under *Create a dev box pool* window, enter the following details and click on **Create** **(7)**.
 
    - Name: **devbox-pool** **(1)**
    - Dev box definition: **devboxdef-01** **(2)**
    - Network Connection: **fabrikam-connection** **(3)**
    - Dev box Creator Privileges: **Local Administrator** **(4)**
-   - Licensing: Check the checkbox **(5)**
+   - Auto-stop: Select **No** button **(5)**
+   - Licensing: Check the checkbox **(6)**
   
-   ![](media/latest-ex1-t3-3.png)
+   ![](media/2dgn146.png)
   
 ## Task 4: Giving user access over Dev box
 

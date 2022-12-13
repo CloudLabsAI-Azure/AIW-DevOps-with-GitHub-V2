@@ -83,11 +83,11 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
    
 1. Select the **Code** ***(1)*** tab in your GitHub repository, navigate to **aiw-devops-with-github-lab-files/.github/workflows/** ***(2)*** and select **contoso-traders-carts-api.yml** ***(3)*** file.
 
-   ![](media/ex4-kc-workflows.png)
+   ![](media/2dgn140.png)
    
 1. Copy `#test azure boards` code and paste it in line number 1 of the file. Make sure there are no indentation errors.
 
-   ![](media/2dgn136.png)
+   ![](media/2dgn141.png)
    
 1. Click on **Start commit** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(5)***.
 
@@ -122,7 +122,7 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
    
 1. Navigate back Azure Boards tab and notice that the **work item** has been marked as **done**.
 
-   ![](media/ex4-back-azureboards.png)
+   ![](media/2dgn142.png)
    
 ## Task 3: Configure Azure Test plan
 
@@ -139,10 +139,10 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 1. In the New Test Plan tab, provide the following details and click on **Create** ***(4)***.
 
    - Name: **TestPlan-<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Area Path: **fabrikam-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
+   - Area Path: **contosotraders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
    - Iteration: Leave it to **deafault** ***(3)***
    
-   ![](media/2dg73.png)   
+   ![](media/2dgn144.png)   
    
 1. From fabrikam-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** ***(1)*** button, hover over **New Suite** ***(2)***, and select **Static suite** ***(3)***.
 

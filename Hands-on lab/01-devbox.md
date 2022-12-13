@@ -75,7 +75,7 @@ In this task, you'll create a Dev pool using previously configured network conne
    - Auto-stop: Select **No** button **(5)**
    - Licensing: Check the checkbox **(6)**
   
-   ![](media/2dgn146.png)
+   ![](media/2dgn153.png)
   
 ## Task 4: Giving user access over Dev box
 
@@ -110,6 +110,25 @@ In this task, you'll access a Dev Box and explore its features.
 1. The Devbox creation will take around 60 - 90 minutes time. You can move to next exercise and come back later to check on the devbox environment.
 
    ![](media/2dgn86.png)
+
+1. On **Your Dev box** page, click on the drop down button **(1)** and click on **Open in browser** **(2)**.
+
+   ![](media/2dgn147.png)
+
+1. In Session settings, click on **Connect**.
+
+   ![](media/2dgn149.png)
+
+1. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
+
+  - Username: <inject key="AzureAdUserEmail"></inject>
+  - Password: <inject key="AzureAdUserPassword"></inject>
+  
+   ![](media/2dgn150.png)
+
+1. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
+
+   ![](media/2dgn151.png)  
 
 ## Summary
 

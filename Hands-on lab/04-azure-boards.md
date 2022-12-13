@@ -48,7 +48,12 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![After completion of the onboarding tutorial. Two todo confirmation messages displayed.](media/image15.png "Get started and quick tip")
 
-1. Open the new Issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board Issue.
+1. Click on **View work item**.
+
+
+   ![](media/viewworkitem.png)
+   
+3. Open the new Issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board Issue.
 
    ![Linked GitHub items in an Azure DevOps issue in Boards.](media/ex3-t1-8.png "GitHub Pull Request and Comment")
 

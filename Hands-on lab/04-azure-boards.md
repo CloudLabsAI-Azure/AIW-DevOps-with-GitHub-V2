@@ -81,43 +81,6 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/ex4-kc-todo-new1.png)
    
-1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
-
-   ![](media/ex2-t4-8.png)
-    
-    Replace the values that you copied in the below Json.
-    ```pwsh
-    {
-        "clientId": "...",
-        "clientSecret": "...",
-        "subscriptionId": "...",
-        "tenantId": "...",
-        "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
-        "resourceManagerEndpointUrl": "https://management.azure.com/",
-        "activeDirectoryGraphResourceId": "https://graph.windows.net/",
-        "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
-        "galleryEndpointUrl": "https://gallery.azure.com/",
-        "managementEndpointUrl": "https://management.core.windows.net/"
-    }
-    ```
-    
-    Copy the complete JSON output to your clipboard.
-   
-1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
-
-   ![](media/ex4-kc-githubrepo-settings.png)
-   
-1. Under **Security**, expand **Secrets** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository** ***(3)*** secret` button.
-
-   ![](media/2dg24.png)
-
-1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
-
-   - **Name** : Enter **AZURE_CREDENTIALS** ***(1)***
-   - **Value** : Paste the **JSON output** ***(2)*** copied in the previous step.
-
-   ![](media/2dg59.png)
-   
 1. Select the **Code** ***(1)*** tab in your GitHub repository, navigate to **aiw-devops-with-github-lab-files/.github/workflows/** ***(2)*** and select **contoso-traders-carts-api.yml** ***(3)*** file.
 
    ![](media/ex4-kc-workflows.png)

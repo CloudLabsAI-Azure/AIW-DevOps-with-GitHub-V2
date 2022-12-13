@@ -41,7 +41,6 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
 In this task, you'll configure the network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
 
-
 1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/2dgn85.png)
@@ -124,7 +123,7 @@ In this task, you'll access a Dev Box and explore its features.
   - Username: <inject key="AzureAdUserEmail"></inject>
   - Password: <inject key="AzureAdUserPassword"></inject>
   
-   ![](media/2dgn150.png)
+  ![](media/2dgn150.png)
 
 1. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 

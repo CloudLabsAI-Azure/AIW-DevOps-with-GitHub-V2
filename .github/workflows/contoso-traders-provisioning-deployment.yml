@@ -20,7 +20,7 @@ env:
   ACR_NAME: contosotradersacr
   AKS_CLUSTER_NAME: contoso-traders-aks
   AKS_DNS_LABEL: contoso-traders-products
-  AKS_NODES_RESOURCE_GROUP_NAME: contoso-traders-aks-nodes-rg
+  AKS_NODES_RESOURCE_GROUP_NAME: contoso-traders-aks-nodes-rg-
   AKS_SECRET_NAME_ACR_PASSWORD: contoso-traders-acr-password
   AKS_SECRET_NAME_KV_ENDPOINT: contoso-traders-kv-endpoint
   AKS_SECRET_NAME_MI_CLIENTID: contoso-traders-mi-clientid
@@ -174,14 +174,14 @@ jobs:
       - name: set dns label on public ip
         uses: azure/CLI@v1
         with:
-          inlineScript: az network public-ip update --dns-name ${{ env.AKS_DNS_LABEL }}${{ secrets.ENVIRONMENT }} -g ${{ env.AKS_NODES_RESOURCE_GROUP_NAME }} -n $(az network public-ip list --query "[?starts_with(name,'kubernetes-') ].name" -o tsv -g ${{ env.AKS_NODES_RESOURCE_GROUP_NAME }})
+          inlineScript: az network public-ip update --dns-name ${{ env.AKS_DNS_LABEL }}${{ secrets.ENVIRONMENT }} -g ${{ env.AKS_NODES_RESOURCE_GROUP_NAME }}${{ secrets.ENVIRONMENT }} -n $(az network public-ip list --query "[?starts_with(name,'kubernetes-') ].name" -o tsv -g ${{ env.AKS_NODES_RESOURCE_GROUP_NAME }}${{ secrets.ENVIRONMENT }})
       # hack: extract the full fqdn / dns label of the aks app's public IP address
       - name: get aks-fqdn
         uses: azure/CLI@v1
         id: get-aks-fqdn
         with:
           # note: There should be a whitespace between ')' and ']'. More details: https://stackoverflow.com/a/59154958
-          inlineScript: echo "aksFqdn"="$(az network public-ip list --query "[?starts_with(name,'kubernetes-') ].dnsSettings.fqdn" -o tsv -g ${{ env.AKS_NODES_RESOURCE_GROUP_NAME }})" >> $GITHUB_OUTPUT
+          inlineScript: echo "aksFqdn"="$(az network public-ip list --query "[?starts_with(name,'kubernetes-') ].dnsSettings.fqdn" -o tsv -g ${{ env.AKS_NODES_RESOURCE_GROUP_NAME }}${{ secrets.ENVIRONMENT }})" >> $GITHUB_OUTPUT
       # install cert-manager
       - name: apply namespace manifest
         uses: Azure/k8s-deploy@v4

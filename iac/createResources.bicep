@@ -124,7 +124,7 @@ var portalDashboardName = '${prefixHyphenated}-dashboard${environment}'
 // aks cluster
 var aksClusterName = '${prefixHyphenated}-aks${environment}'
 var aksClusterDnsPrefix = '${prefixHyphenated}-aks${environment}'
-var aksClusterNodeResourceGroup = '${prefixHyphenated}-aks-nodes-rg'
+var aksClusterNodeResourceGroup = '${prefixHyphenated}-aks-nodes-rg-${environment}'
 
 // tags
 var resourceTags = {

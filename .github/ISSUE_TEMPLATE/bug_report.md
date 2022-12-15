@@ -1,17 +1,14 @@
 ---
 name: Bug report
 about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.  
-
-**HOL or Workshop Document**
-If it is a specific document, provide a the name.
-
-**Time Frame Needed**
-Specific event or activity that would benefit from fixing this bug
+A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
@@ -26,10 +23,16 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Environment  (please provide specifics if appropriate) :**
- - OS: [e.g. Wndows, Linux, iOS]
- - Browser [e.g. edge, chrome, safari and version
- - Device: [e.g. PC, iPhone6]
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
+
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
 
 **Additional context**
 Add any other context about the problem here.

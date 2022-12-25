@@ -13,7 +13,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
    ![](media/ex1-t1-1.png)
   
-1. Now on the left hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Now on the left navigation pane, select **Dev Centers** **(1)** under **Configure** panel and click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/2dgn83.png)
   
@@ -42,7 +42,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 In this task, you'll configure the network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
 
 
-1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Navigate back to the **Microsoft dev box**, then select **Dev centers** **(1)** under **Configure** panel. Click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/2dgn85.png)
 
@@ -68,11 +68,11 @@ In this task, you'll create a Dev pool using previously configured network conne
   
 1. Under *Create a dev box pool* window, enter the following details and click on **Create** **(6)**.
 
-   - Name: **devbox-pool** **(1)**
-   - Dev box definition: **devboxdef-01** **(2)**
-   - Network Connection: **fabrikam-connection** **(3)**
-   - Dev box Creator Privileges: **Local Administrator** **(4)**
-   - Licensing: Check the checkbox **(5)**
+   - Name: Enter **devbox-pool** **(1)**
+   - Dev box definition: Select **devboxdef-01** **(2)**.
+   - Network Connection: Select **fabrikam-connection** **(3)**.
+   - Dev box Creator Privileges: **Local Administrator** **(4)**.
+   - Licensing: Check the checkbox **(5)**.
   
    ![](media/latest-ex1-t3-3.png)
   
@@ -80,7 +80,7 @@ In this task, you'll create a Dev pool using previously configured network conne
 
 In this task, you'll explore about access control and provide access to Dev Box user using built-in DevCenter Dev Box User role.
 
-1. Return to Microsoft dev box, and click on **Projects** **(1)** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Return to Microsoft dev box, and click on **Projects** **(1)** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)** project.
 
    ![](media/2dgn75.png)
 
@@ -92,7 +92,7 @@ In this task, you'll explore about access control and provide access to Dev Box 
 
    ![](media/2dgn79.png)
   
-1. Under Members, click on **+ Select members** **(1)**, then search and select <inject key="AzureAdUserEmail"></inject> **(2)**, and then click on **Select** **(3)** followed by **Review + assign** **(4)**.
+1. Under Members, click on **+ Select members** **(1)**, then search and select **<inject key="AzureAdUserEmail"></inject>** **(2)**, and then click on **Select** **(3)** followed by **Review + assign** **(4)**.
 
    ![](media/2dgn80.png)
   

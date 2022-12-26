@@ -281,26 +281,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    - **Name** : Enter **SERVICEPRINCIPAL** ***(1)***
    - **Value** : Paste the service principal details in json format ***(2)***
    
-   ![](media/2dgn36.png)
-   
-1. From Azure Portal Dashboard, click on Resource groups from the Navigate panel to see the resource groups.
-
-   ![](media/2dgn9.png) 
-
-1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
-
-   ![](media/2dgn135.png)    
-
-1. From **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group, select **contosotradersacr<inject key="DeploymentID" enableCopy="false" />** container registry from the list. Select **Access Keys** ***(1)*** from the side blade and copy the **password** ***(2)*** which you use in next step.
-
-   ![](media/upd-2dgn87.png)    
-
-1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
-
-   - **Name** : Enter **ACR_PASSWORD** ***(1)***
-   - **Value** : Paste the **Password** ***(2)*** which you copied in previous step.
-
-   ![](media/2dgn35.png)    
+   ![](media/2dgn36.png)    
    
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
@@ -311,7 +292,38 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
-   ![](media/2dgn37.png)
+   ![](media/2dgn159.png)
+   
+1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
+
+   ![](media/2dgn124.png)
+   
+   ![](media/2dgn125.png)
+   
+   **Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
+   
+1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
+
+   - click on **Code** ***(1)***, 
+   - Select the **Codespace** ***(2)*** tab
+
+   ![](media/ex2-kc-codespace.png)
+   
+1. Run the below mentioned commands in the **Terminal**. You'll set node version to node 14.
+
+   ```pwsh
+   cd src
+   cd ContosoTraders.Ui.Website
+   nvm use 14
+   npm i
+   git add . 
+   git commit -m "updated node version"
+   git push.
+   ```
+   
+1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
+
+   ![](media/2dgn159.png)
    
 1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
 

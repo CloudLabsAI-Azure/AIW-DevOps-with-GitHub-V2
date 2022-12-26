@@ -154,7 +154,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
    git pull
    ```
    
-## Task 5: Explore Secret Scanning (READ-ONLY)   
+## Task 4: Explore Secret Scanning (READ-ONLY)   
 
 In this task, you'll explore about how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets, to prevent fraudulent use of secrets that were committed accidentally.
 

@@ -283,6 +283,25 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn36.png)
    
+1. From Azure Portal Dashboard, click on Resource groups from the Navigate panel to see the resource groups.
+
+   ![](media/2dgn9.png) 
+
+1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+
+   ![](media/2dgn135.png)    
+
+1. From **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group, select **contosotradersacr<inject key="DeploymentID" enableCopy="false" />** container registry from the list. Select **Access Keys** ***(1)*** from the side blade and copy the **password** ***(2)*** which you use in next step.
+
+   ![](media/upd-2dgn87.png)    
+
+1. Similarly, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+
+   - **Name** : Enter **ACR_PASSWORD** ***(1)***
+   - **Value** : Paste the **Password** ***(2)*** which you copied in previous step.
+
+   ![](media/2dgn35.png)    
+   
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
    - **Name** : Enter **ENVIRONMENT** ***(1)***

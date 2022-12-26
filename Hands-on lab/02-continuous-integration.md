@@ -185,11 +185,15 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/ex2-t3-5.png)
    
+1. From the GitHub username, note down the **Unique-ID** present in the Username. You'll use this value in upcoming steps.
+
+   ![](media/2dgn157.png) 
+   
 1. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
 
    ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](media/2dg4.png "Quick setup screen")
 
-1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. Make sure to replace your email and username.
+1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. Make sure to replace GitHub account email and username.
    
      ```pwsh
      cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
@@ -199,7 +203,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      
    ![](media/2dgn72.png) 
      
-    - Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch `main` in the lab files repository created in Step 1. Make sure to replace `<your_github_repository-url>` with the value you copied in step 5.
+    - Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch `main` in the lab files repository created in Step 1. Make sure to replace `<your_github_repository-url>` with the value you copied in step 6 and **Unique-ID** in step 7
 
       > **Note**: The URI of the lab files GitHub repository created in Step 1 will differ from that in the example below.
 
@@ -208,17 +212,13 @@ In this task, you will create an account in [GitHub](https://github.com) and use
       git add .
       git commit -m "Initial commit"
       git branch -M main
-      git remote add origin <your_github_repository-url>
-      git push -u origin main
+      git remote add origin<Unique-ID> <your_github_repository-url>
+      git push -u origin<Unique-ID> main
       ```
-      
-    - After running the above commands, you will be prompted with a pop-up window to sign in to GitHub. Select **Sign in with your Browser** on the **Connect to GitHub** pop-up window.
-
-       ![](media/siginwithbrowser.png)
      
-   - If you are re-directed to the Git Credential Manager page, sign in to GitHub using your personal GitHub account credentials.
+   - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access
 
-       ![](media/gitcred.png)
+       ![](media/2dgn158.png)
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
      

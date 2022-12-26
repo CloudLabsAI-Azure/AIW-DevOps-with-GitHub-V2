@@ -81,13 +81,13 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/ex4-kc-todo-new1.png)
    
-1. Select the **Code** ***(1)*** tab in your GitHub repository, navigate to **aiw-devops-with-github-lab-files/.github/workflows/** ***(2)*** and select **contoso-traders-carts-api.yml** ***(3)*** file.
+1. Select the **Code** ***(1)*** tab in your GitHub repository, navigate to **aiw-devops-with-github-lab-files/.github/workflows/** ***(2)*** and select **contoso-traders-provisioning-deployment.yml** ***(3)*** file.
 
    ![](media/2dgn140.png)
    
 1. Copy `#test azure boards` code and paste it in line number 1 of the file. Make sure there are no indentation errors.
 
-   ![](media/2dgn141.png)
+   ![](media/2dgn166.png)
    
 1. Click on **Start commit** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(5)***.
 
@@ -193,7 +193,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
 1. Verify the availability of the web app, Laptops page, Controllers page, and Desktops page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
 
-   ![](media/2dgn28.png)
+   ![](media/2dgn167.png)
    
    ![](media/ex4-save&close.png)   
    

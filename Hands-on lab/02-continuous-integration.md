@@ -133,7 +133,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
   
    ![](media/2dgn55.png) 
    
-   >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time.
+   >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. Incase if the execution is stuck, Please use **ctrl + C** to stop the execution and retry step again.
    
 1. Run the below mentioned command to run ui of the application. This will automatically open a browser tab where you'll see the complete application running
 
@@ -141,7 +141,9 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    npm run start
    ```    
   
-   ![](media/2dgn56.png) 
+   ![](media/2dgn156.png)
+   
+   >**Note**: It can take 5 - 10 minutes when you execute the command for the first time. You can continue with the next task and check on this step later.
    
 ### Task 3: Create the Project Repo
 

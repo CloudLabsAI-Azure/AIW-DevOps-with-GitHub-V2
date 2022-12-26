@@ -163,7 +163,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/2dgn90.png) 
    
-1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` and enter your username and password. Copy the verification code and Paste code it in Device verification.
+1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 
    ![](media/2dgn154.png) 
     

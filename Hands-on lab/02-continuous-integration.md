@@ -298,7 +298,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn124.png)
    
-   ![](media/2dgn125.png)
+   ![](media/2dgn165.png)
    
    **Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
    
@@ -321,15 +321,11 @@ In this exercise, you will build automation in GitHub for updating and republish
    git push.
    ```
    
-1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
+1. From your GitHub repository, select **Actions** ***(1)*** tab. You'll see an Action named **Updated node version** ***(2)*** executing. Please wait untill the execution completes
 
-   ![](media/2dgn159.png)
+   ![](media/2dgn160.png)
    
-1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
-
-   ![](media/2dgn124.png)
-   
-   ![](media/2dgn125.png)   
+   ![](media/2dgn161.png)      
    
 1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
 
@@ -347,7 +343,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn128.png) 
     
-   ![](media/2dgn129.png) 
+   ![](media/2dgn162.png) 
     
 ### Task 5: Editing the GitHub Workflow File using Codespace
 
@@ -360,6 +356,8 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/ex2-kc-codespace.png)
    
+   >**Note**: Incase if you had created codespace in previous task. Click on **+** button to create new codespace.
+   
 1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
    ![](media/2dg33.png)
@@ -368,9 +366,9 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/contosoprovision.png) 
    
-1. Remove the commands from line 7 to 14 from the workflow file. In line 6 update the branch name to **master** from **main**.
+1. Remove the commands from line 7 to 14 from the workflow file.
 
-   ![](media/2dgn132.png) 
+   ![](media/2dgn163.png) 
    
 1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
@@ -385,7 +383,7 @@ The last task automated building and updating only one of the Docker images. In 
 
 1. Navigate back to the GitHub browser, select the **Actions** ***(1)*** tab and review the **workflow** ***(2)*** created automatically for the changes made. 
 
-   ![](media/2dgn41.png)
+   ![](media/2dgn164.png)
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
 

@@ -38,7 +38,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
    ![](media/2dgn93.png)
 
-1. From the Overview of **contoso-traders-carts<inject key="Deploymentid" />** **(1)** Container App, copy the **Application Url** **(2)** and paste it in notepad for later use in the task.
+1. From the Overview of **contoso-traders-carts<inject key="Deploymentid" />** **(1)** Container App, copy the **Application Url** **(2)** and paste it in the notepad for later use in the task.
 
    ![](media/2dgn94.png)
 

@@ -6,7 +6,7 @@ In this exercise, you'll explore GitHub Enterprise features which is GitHub adva
 
 ## Task 1: Enabling Code scanning and CodeQL alerts 
 
-In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyse the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
+In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to the public.
    
@@ -191,7 +191,7 @@ In this task, you'll explore about how secret scanning works and see how it gene
    
    ![](media/2dg115.png)   
    
-1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that a alert is generated which is reffering to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how Secret scanning feature works and generates alerts to notify you.
+1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated reffering to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how Secret scanning feature works and generates alerts to notify you.
 
    ![](media/2dg116.png) 
    

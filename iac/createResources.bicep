@@ -98,9 +98,6 @@ var cdnImagesEndpointName = '${prefixHyphenated}-images${environment}'
 var cdnUiEndpointName = '${prefixHyphenated}-ui${environment}'
 var cdnUi2EndpointName = '${prefixHyphenated}-ui2${environment}'
 
-// redis cache
-var redisCacheName = '${prefixHyphenated}-cache${environment}'
-
 // azure container registry
 var acrName = '${prefix}acr${environment}'
 // var acrCartsApiRepositoryName = '${prefix}apicarts' // @TODO: unused, probably remove later
@@ -1044,23 +1041,6 @@ resource cdnprofile_ui2endpoint 'Microsoft.Cdn/profiles/endpoints@2022-05-01-pre
         }
       }
     ]
-  }
-}
-
-//
-// redis cache
-//
-
-resource rediscache 'Microsoft.Cache/redis@2022-06-01' = {
-  name: redisCacheName
-  location: resourceLocation
-  tags: resourceTags
-  properties: {
-    sku: {
-      capacity: 0
-      family: 'C'
-      name: 'Basic'
-    }
   }
 }
 

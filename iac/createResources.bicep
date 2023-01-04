@@ -53,12 +53,6 @@ var cartsDbAcctName = '${prefixHyphenated}-carts${environment}'
 var cartsDbName = 'cartsdb'
 var cartsDbStocksContainerName = 'carts'
 
-// app service plan (products api)
-var productsApiAppSvcPlanName = '${prefixHyphenated}-products${environment}'
-var productsApiAppSvcName = '${prefixHyphenated}-products${environment}'
-var productsApiSettingNameKeyVaultEndpoint = 'KeyVaultEndpoint'
-var productsApiSettingNameManagedIdentityClientId = 'ManagedIdentityClientId'
-
 // sql azure (products db)
 var productsDbServerName = '${prefixHyphenated}-products${environment}'
 var productsDbName = 'productsdb'
@@ -398,53 +392,6 @@ resource cartsdba 'Microsoft.DocumentDB/databaseAccounts@2022-02-15-preview' = {
 //
 // products api
 //
-
-// app service plan (linux)
-resource productsapiappsvcplan 'Microsoft.Web/serverfarms@2022-03-01' = {
-  name: productsApiAppSvcPlanName
-  location: resourceLocation
-  tags: resourceTags
-  sku: {
-    name: 'B1'
-  }
-  properties: {
-    reserved: true
-  }
-  kind: 'linux'
-}
-
-// app service
-resource productsapiappsvc 'Microsoft.Web/sites@2022-03-01' = {
-  name: productsApiAppSvcName
-  location: resourceLocation
-  tags: resourceTags
-  identity: {
-    type: 'UserAssigned'
-    userAssignedIdentities: {
-      '${userassignedmiforkvaccess.id}': {
-      }
-    }
-  }
-  properties: {
-    clientAffinityEnabled: false
-    httpsOnly: true
-    serverFarmId: productsapiappsvcplan.id
-    siteConfig: {
-      linuxFxVersion: 'DOTNETCORE|6.0'
-      alwaysOn: true
-      appSettings: [
-        {
-          name: productsApiSettingNameKeyVaultEndpoint
-          value: kv.properties.vaultUri
-        }
-        {
-          name: productsApiSettingNameManagedIdentityClientId
-          value: userassignedmiforkvaccess.properties.clientId
-        }
-      ]
-    }
-  }
-}
 
 //
 // products db

@@ -197,7 +197,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    
    ![](media/ex4-save&close.png)   
    
-1. From the execute tab, Verify the **outcome** of the manual testing. The Outcome will be in a passed state if the web app worked as expected and vice versa.
+1. From the execute tab, Verify the **outcome** of the manual testing. The outcome will be in a passed state if the web app worked as expected and vice versa.
 
    ![](media/ex4-testsuite.png)
    
@@ -217,4 +217,4 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
 ## Summary
 
-In this exercise, you explored features of Azure boards and configured Azure Test plans for the application.
+In this exercise, you explored the features of Azure boards and configured Azure Test plans for the application.

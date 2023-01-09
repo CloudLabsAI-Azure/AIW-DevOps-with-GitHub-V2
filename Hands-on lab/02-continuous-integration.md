@@ -141,7 +141,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
   
    ![](media/upd-2dgn55.png) 
    
-   >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. Incase if the execution is stuck, Please use **ctrl + C** to stop the execution and retry step again.
+   >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. Incase the execution is stuck, Please use **ctrl + C** to stop the execution and retry step again.
    
 1. Run the below mentioned command to run ui of the application. This will automatically open a browser tab where you'll see the complete application running
 
@@ -179,7 +179,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/2dgn91.png "New Repository Creation Form")
    
-   >**Note**: Please make sure to delete the Repo and create a new one. 
+   >**Note**: Please make sure you delete the Repo and create a new one. 
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository, and **save it** in a notepad for future use.
 
@@ -265,7 +265,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/ex2-t4-8.png)
    
-   - Replace the values that you copied in below Json. You will be using in this step.
+   - Replace the values that you copied in below Json. You will be using them in this step.
    
    ```json
    {
@@ -356,7 +356,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/ex2-kc-codespace.png)
    
-   >**Note**: Incase if you had created codespace in previous task. Click on **+** button to create new codespace.
+   >**Note**: Incase you had created codespace in previous task. Click on **+** button to create new codespace.
    
 1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 

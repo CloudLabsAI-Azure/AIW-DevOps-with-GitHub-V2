@@ -1,4 +1,4 @@
-# Instructions to run Contoso Traders locally. 
+# Instructions to run Contoso Traders locally
 
 ## Setting up ContosoTraders Infrastructure
 
@@ -7,7 +7,6 @@
 3. Git clone this repository to your machine.
 4. Create the `SERVICEPRINCIPAL`, `ENVIRONMENT`, and `SQL_PASSWORD` github secrets ([instructions here](./App-Deployment-Guide)).
 5. Next, run the `contoso-traders-provisioning-deployment` github workflow. You can do this by going to the github repo's `Actions` tab, selecting the workflow, and clicking on the `Run workflow` button. This will both provision the infrastructure on Azure as well as deploy the applications (APIs, UI) to the infrastructure.
-
 
 ## Running ContosoTraders Locally
 
@@ -29,9 +28,9 @@
    * Run `dotnet build && dotnet run`. This will start the web API on `https://localhost:62400/swagger`.
    * Note that your browser may show you a warning about insecure connection which you can safely ignore.
 6. Run the UI locally:
-   * You'll have to manually update this source code file to point to the locally running APIs above: `src\ContosoTraders.Ui.Website\src\services\configService.js`
-     * line #09: `const APIUrl = 'https://localhost:62300/v1';`
-     * line #10: `const APIUrlShoppingCart = 'https://localhost:62400/v1';`
+   * You'll have to manually update this source code file to point to the locally running APIs above: `src\ContosoTraders.Ui.Website\.env`
+     * line #01: `const APIUrl = 'https://localhost:62300/v1';`
+     * line #02: `const APIUrlShoppingCart = 'https://localhost:62400/v1';`
    * Open a cmd window and navigate to the `src/ContosoTraders.Ui.Website` folder.
    * Run `npm install`.
    * Run `npm run start`. This will start the UI on `http://localhost:3000`.

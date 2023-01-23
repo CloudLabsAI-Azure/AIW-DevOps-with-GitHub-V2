@@ -76,27 +76,7 @@ In this task, you'll create a Dev pool using previously configured network conne
   
    ![](media/2dgn153.png)
   
-## Task 4: Giving user access over Dev box
-
-In this task, you'll explore about access control and provide access to Dev Box user using built-in DevCenter Dev Box User role.
-
-1. Return to Microsoft dev box, and click on **Projects** **(1)** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
-
-   ![](media/2dgn75.png)
-
-1. On the left hand side pane click on **Access control** **(1)** then click on **+ Add** **(2)** and select **Add role assignment** **(3)** from the drop down.
-
-   ![](media/2dgn78.png)
-
-1. Under Role, select **DevCenter Dev box User** **(1)**, and then click on **Next** **(2)**.
-
-   ![](media/2dgn79.png)
-  
-1. Under Members, click on **+ Select members** **(1)**, then search and select <inject key="AzureAdUserEmail"></inject> **(2)**, and then click on **Select** **(3)** followed by **Review + assign** **(4)**.
-
-   ![](media/2dgn80.png)
-  
-## Task 5: Launching Dev box
+## Task 4: Launching Dev box
 
 In this task, you'll access a Dev Box and explore its features.
 

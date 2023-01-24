@@ -246,9 +246,9 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn4.png)
    
-1. Under **Security**, expand **Secrets** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository secret** ***(3)*** button.
+1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository secret** ***(3)*** button.
 
-   ![](media/2dg24.png)
+   ![](media/Ex2-task4-step6.png)
     
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 

@@ -28,6 +28,20 @@ In this task, you'll access and explore the code repository of the web app using
 1. You'll be to see the lab files in Visual Studio code and explore the code files.
 
    ![](media/2dgn2.png)
+   
+1. From the explorer side blade, navigate to **src (1)** > **ContosoTraders.Ui.Website (2)** and select **.env (3)** file.
+
+   ![](media/EX2-task1-step6.png)
+
+1. Replace the first two lines with the following lines and save the file with **ctrl + s**
+
+      ```pwsh
+      REACT_APP_APIUrl = 'https://{{PRODUCTS_API_ENDPOINT}}/v1'
+      REACT_APP_APIUrlShoppingCart = 'https://{{CARTS_API_ENDPOINT}}/v1'
+      ```
+      
+     ![](media/EX2-task1-step7.png) 
+      
 
 ### Task 2: Set up Local Infrastructure
 

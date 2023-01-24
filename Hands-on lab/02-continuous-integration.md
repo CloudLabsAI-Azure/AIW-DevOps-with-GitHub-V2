@@ -29,20 +29,6 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dgn2.png)
    
-1. From the explorer side blade, navigate to **src (1)** > **ContosoTraders.Ui.Website (2)** and select **.env (3)** file.
-
-   ![](media/EX2-task1-step6.png)
-
-1. Replace the first two lines with the following lines and save the file with **ctrl + s**
-
-      ```pwsh
-      REACT_APP_APIUrl = 'https://{{PRODUCTS_API_ENDPOINT}}/v1'
-      REACT_APP_APIUrlShoppingCart = 'https://{{CARTS_API_ENDPOINT}}/v1'
-      ```
-      
-     ![](media/EX2-task1-step7.png) 
-      
-
 ### Task 2: Set up Local Infrastructure
 
 In this task, You will set up the local infrastructure using Dotnet . You'll be working with three docker images: fabrikam-init, fabrikam-api, and fabrikam-web.

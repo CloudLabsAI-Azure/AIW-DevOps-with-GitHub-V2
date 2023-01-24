@@ -10,17 +10,13 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to the public.
    
-1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under security side blade and then Click on **Set up**  ***(3)*** to enable code scanning. 
+1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under security side blade.
 
-   ![](media/2dg92.png)  
-
-1. Navigate to **Security** ***(1)*** tab, select **Code scanning** ***(2)*** from the side blade and click on **Configure scanning tool** ***(3)***.
-
-   ![](media/ex5-code-scanning.png)
+   ![](media/2dgn168.png)  
    
-1. In Choose a workflow pane, under categories select **Security** **(1)** and click on **Configure** **(2)** for creating a CodeQL Analysis workflow.
+1. Click on **Set up** **(1)** button to enable CodeQL analysis and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
-   ![](media/ex5-codeql-analysis.png)     
+   ![](media/2dgn169.png)      
 
 1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Start Commit** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit new file** ***(4)***.
   

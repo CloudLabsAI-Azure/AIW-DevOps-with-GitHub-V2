@@ -47,6 +47,6 @@
    
 1. Confirm that you have all resource group is present as shown below.
 
-   ![](https://github.com/anushabc/MCW-Continuous-delivery-in-Azure-DevOps/blob/prod/Hands-on%20lab/media/image03.png?raw=true "Resource groups")
+   ![](media/rgdn.png "Resource groups")
    
 1. Now, click on **Next** from the lower right corner to move on to the next page.

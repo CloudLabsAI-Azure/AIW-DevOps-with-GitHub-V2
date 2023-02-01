@@ -321,6 +321,8 @@ In this exercise, you will build automation in GitHub for updating and republish
    git push.
    ```
    
+   >**Note**: Incase, if you face an error with `nvm use 14` command. please run `nvm install 14` and re-run the commands again.
+   
 1. From your GitHub repository, select **Actions** ***(1)*** tab. You'll see an Action named **Updated node version** ***(2)*** executing. Please wait untill the execution completes
 
    ![](media/2dgn160.png)

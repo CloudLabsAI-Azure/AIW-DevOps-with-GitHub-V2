@@ -5,7 +5,7 @@ Duration: 40 minutes
 Microsoft Dev Box is a service that provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
 In the exercise, you'll configure a dev box environment and access the dev box and explore its features.
 
-## Task 1: Create Dev box definition![download](https://user-images.githubusercontent.com/104823243/216980808-8240257c-e59f-437e-9427-df231709ae03.jpg)
+## Task 1: Create Dev box definition
 
 In this task, you'll create a Dev box definition. Dev box definitions define the image and SKU (compute + storage) that will be used in the creation of the dev boxes.
 

@@ -13,9 +13,9 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dg4.png "New Repository Creation Form")
    
-1. In **Visual Studio Code**, click on **File** **(1)** at the left top and select **Open Folder** **(2)**.
+1. In **Visual Studio Code**, click on **menu (1)**, click on **File** **(2)** and select **Open Folder** **(3)**.
 
-   ![](media/2dg11.png)
+   ![](media/devops1.3.png)
 
 1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` to open your local GitHub repository and click on **Select Folder**.
 
@@ -27,15 +27,15 @@ In this task, you'll access and explore the code repository of the web app using
    
 1. You'll be to see the lab files in Visual Studio code and explore the code files.
 
-   ![](media/2dgn2.png)
+   ![](media/devops1.4.png)
 
 ### Task 2: Set up Local Infrastructure
 
 In this task, You will set up the local infrastructure using Dotnet . You'll be working with three docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
    
-1. Open a **New Terminal** in the Visual Studio Code by selecting **Terminal (1)** and then on **New Terminal (2)**.
+1. Open a **New Terminal** in the Visual Studio Code by selecting click on **menu (1)**, click on **Terminal (2)** and then on **New Terminal (3)**.
 
-   ![](media/2dgn44.png "New Repository Creation Form")
+   ![](media/devops1.5.png "New Repository Creation Form")
    
 1. Click on the **drop-down** **(1)** button next to PowerShell and select **Command Prompt** **(2)**  from the list. A new command Prompt terminal will be opened.   
 

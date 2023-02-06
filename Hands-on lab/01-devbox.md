@@ -7,7 +7,6 @@ In the exercise, you'll configure a dev box environment and access the dev box a
 
 ## Task 1: Create Dev box definition![download](https://user-images.githubusercontent.com/104823243/216980808-8240257c-e59f-437e-9427-df231709ae03.jpg)
 
-
 In this task, you'll create a Dev box definition. Dev box definitions define the image and SKU (compute + storage) that will be used in the creation of the dev boxes.
 
 1. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.

@@ -32,7 +32,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
   
 1. You will be navigated to **Code scanning** section. You'll be able visualize that the **No code scanning alerts here!**.
    
-   ![](media/ex5-codeql-noalerts.png)
+   ![](media/devops1.6.png)
     
 ## Task 2: Repository security advisories  
  

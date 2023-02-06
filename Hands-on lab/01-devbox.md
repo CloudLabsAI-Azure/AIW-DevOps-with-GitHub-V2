@@ -5,7 +5,8 @@ Duration: 40 minutes
 Microsoft Dev Box is a service that provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
 In the exercise, you'll configure a dev box environment and access the dev box and explore its features.
 
-## Task 1: Create Dev box definition
+## Task 1: Create Dev box definition![download](https://user-images.githubusercontent.com/104823243/216980808-8240257c-e59f-437e-9427-df231709ae03.jpg)
+
 
 In this task, you'll create a Dev box definition. Dev box definitions define the image and SKU (compute + storage) that will be used in the creation of the dev boxes.
 
@@ -15,7 +16,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
   
 1. Now on the left hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/2dgn83.png)
+   ![](media/devops1.1.png)
   
 1. On the left hand side pane, click on **Dev box definitions** **(1)**, and click on **+ Create** **(2)**.
 
@@ -43,15 +44,15 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
 1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/2dgn85.png)
+   ![](media/devops1.1.png)
 
 1. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 
    ![](media/e117.png)
   
-1. Now under *Add network connection*, select the **fabrikam-connection** for Network Connection from the drop-down and then click on **Add**.
+1. Now under *Add network connection*, select the **fabrikam-connection (1)** for Network Connection from the drop-down and then click on **Add (2)**.
 
-   ![](media/2dgn74.png)
+   ![](media/devops1.2.png)
     
 ## Task 3: Create dev box pool
 

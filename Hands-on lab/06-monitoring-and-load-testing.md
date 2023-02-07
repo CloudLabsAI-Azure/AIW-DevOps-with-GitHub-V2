@@ -34,13 +34,13 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
 In this task, you'll create Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** resource group and select the **Container App** resource with the name  **contoso-traders-carts<inject key="Deploymentid" />**.
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="Deploymentid" />**.
 
-   ![](media/2dgn93.png)
+   ![](media/dglt1.jpg)
 
-1. From the Overview of **contoso-traders-carts<inject key="Deploymentid" />** **(1)** Container App, copy the **Application Url** **(2)** and paste it in the notepad for later use in the task.
+1. From the Overview of **contoso-traders-ui2<inject key="Deploymentid" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it in the notepad for later use in the task.
 
-   ![](media/2dgn94.png)
+   ![](media/dglt2.jpg)
 
 1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
 
@@ -50,13 +50,13 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
    ![](media/2dgn96.png)
 
-1. On the **Create test** page, under basic tab paste the **AKS Application URL** as Test URL ***(1)*** and  leave everything as default, then click **Next: Test plan >** ***(2)***.
+1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Next: Test plan >** ***(2)***.
 
-   ![](media/2dgn118.png)
+   ![](media/dglt3.jpg)
 
 1. The test run will starting running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
-   ![](media/2dgn111.png)
+   ![](media/dglt4.jpg)
    
    **Note**: In case, the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with support` error. This is expected as sometimes the load on the application exceeds the defined throughput.
      

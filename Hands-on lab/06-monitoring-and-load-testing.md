@@ -38,7 +38,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
    ![](media/dglt1.jpg)
 
-1. From the Overview of **contoso-traders-ui2<inject key="Deploymentid" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it in the notepad for later use in the task.
+1. From the overview of **contoso-traders-ui2<inject key="Deploymentid" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it in the notepad for later use in the task.
 
    ![](media/dglt2.jpg)
 

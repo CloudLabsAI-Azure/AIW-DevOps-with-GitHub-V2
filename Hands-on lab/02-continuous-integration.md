@@ -318,7 +318,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    npm i
    git add . 
    git commit -m "updated node version"
-   git push.
+   git push
    ```
    
    >**Note**: Incase, if you face an error with `nvm use 14` command. please run `nvm install 14` and re-run the commands again.

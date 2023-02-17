@@ -179,7 +179,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/2dgn91.png "New Repository Creation Form")
    
-   >**Note**: Please make sure you delete the Repo and create a new one. 
+   >**Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. 
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository, and **save it** in a notepad for future use.
 

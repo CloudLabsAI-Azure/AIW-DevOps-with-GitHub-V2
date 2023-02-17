@@ -15,7 +15,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
   
 1. Now on the left hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/2dgn83.png)
+   ![](media/devops1.1.png)
   
 1. On the left hand side pane, click on **Dev box definitions** **(1)**, and click on **+ Create** **(2)**.
 
@@ -43,15 +43,15 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
 1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/2dgn85.png)
+   ![](media/devops1.1.png)
 
 1. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 
    ![](media/e117.png)
   
-1. Now under *Add network connection*, select the **fabrikam-connection** for Network Connection from the drop-down and then click on **Add**.
+1. Now under *Add network connection*, select the **fabrikam-connection (1)** for Network Connection from the drop-down and then click on **Add (2)**.
 
-   ![](media/2dgn74.png)
+   ![](media/devops1.2.png)
     
 ## Task 3: Create dev box pool
 

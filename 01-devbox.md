@@ -19,10 +19,10 @@
   - Name: **devboxdef-01**
   - Image: **Windows 11 Enterprise + Microsoft 365 Apps 21H2**
   - Image version: **Latest**
-  - Compute: **8vCPU, 32 GB RAM**
-  - Storage: **1024 GB SSD**
+  - Compute: **4vCPU, 16 GB RAM**
+  - Storage: **256 GB SSD**
 
-  ![](media/devbox.png)
+  ![](media/e112.png)
   
 5. Once the definition is created, In Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
 

@@ -47,6 +47,6 @@
    
 1. Confirm that you have all resource group is present as shown below.
 
-   ![](media/rgdn.jpg "Resource groups")
+   ![](media/rgdn-new.png "Resource groups")
    
 1. Now, click on **Next** from the lower right corner to move on to the next page.

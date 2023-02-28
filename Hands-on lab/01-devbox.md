@@ -67,7 +67,7 @@ In this task, you'll create a Dev pool using previously configured network conne
   
 1. Under *Create a dev box pool* window, enter the following details and click on **Create** **(7)**.
 
-   - Name: **devbox-pool** **(1)**
+   - Name: **devbox-pool-<inject key="DeploymentID" enableCopy="false" />** **(1)**
    - Dev box definition: **devboxdef-01** **(2)**
    - Network Connection: **fabrikam-connection** **(3)**
    - Dev box Creator Privileges: **Local Administrator** **(4)**

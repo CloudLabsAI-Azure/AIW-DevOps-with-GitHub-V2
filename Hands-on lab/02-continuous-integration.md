@@ -179,7 +179,27 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/2dgn91.png "New Repository Creation Form")
    
-   >**Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. 
+   >**Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
+
+1. In the upper-right corner, expand the user **drop-down menu** ***(1)*** and select **Your repositories** ***(2)***.
+
+   ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
+
+1. Using the search bar, search for ```aiw-devops-with-github-lab-files``` **(1)** and select to open it.
+
+   ![The `New Repository` creation form in GitHub.](media/2dg118.png "New Repository Creation Form")
+
+1. From the GitHub repository, click on the **Settings** tab.
+
+   ![The `New Repository` creation form in GitHub.](media/2dg119.png "New Repository Creation Form")
+
+1. In the settings page, scroll to the bottom of the page and select **Delete this repository**.
+
+   ![The `New Repository` creation form in GitHub.](media/2dg120.png "New Repository Creation Form")
+
+1. In the Are you absolutely sure? pop up window, Copy the **repository name** **(1)**, paste it in the **box** **(2)**, and cick on **I understand the consequences, delete this repository** **(3)**.
+
+   ![The `New Repository` creation form in GitHub.](media/2dg121.png "New Repository Creation Form")
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository, and **save it** in a notepad for future use.
 

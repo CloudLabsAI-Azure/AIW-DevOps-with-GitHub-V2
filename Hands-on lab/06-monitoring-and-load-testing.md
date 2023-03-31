@@ -50,7 +50,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
    ![](media/2dgn96.png)
 
-1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Next: Test plan >** ***(2)***.
+1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Run Test** ***(2)***.
 
    ![](media/dglt3.jpg)
 

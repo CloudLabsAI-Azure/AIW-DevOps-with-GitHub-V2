@@ -19,7 +19,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
   
 1. On the left hand side pane, click on **Dev box definitions** **(1)**, and click on **+ Create** **(2)**.
 
-   ![](media/2dgn84.png)
+   ![](media/dev-def.png)
   
 1. Now under Create dev box definition window, add the below details and then click on **Create** **(6)**.
 
@@ -105,7 +105,7 @@ In this task, you'll access a Dev Box and explore its features.
   
     ![](media/2dgn150.png)
 
-1. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
+7. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 
    ![](media/2dgn151.png)  
 

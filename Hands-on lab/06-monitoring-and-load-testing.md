@@ -50,7 +50,7 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
    ![](media/2dgn96.png)
 
-1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Next: Test plan >** ***(2)***.
+1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Run Test** ***(2)***.
 
    ![](media/dglt3.jpg)
 
@@ -74,12 +74,20 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
       
 1. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group.
  
-   ![](media/2dgn122.png)
+   ![](media/2dgn122.1.png)
      
 1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
 
    ![](media/2dgn99.png)
      
+1. Click on **Review + Enable**.
+
+   ![](media/reviewenable.png)
+
+1. Then click on **Enable** to Enable service direct targets . 
+   
+   ![](media/enable.png)
+
 1. Wait for the deployment to be completed.  
 
 1. In the Azure Portal search for **Azure Chaos Studio** ***(1)*** and then click on it from the search results ***(2)***.

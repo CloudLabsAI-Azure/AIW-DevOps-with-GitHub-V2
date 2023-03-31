@@ -19,7 +19,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
   
 1. On the left hand side pane, click on **Dev box definitions** **(1)**, and click on **+ Create** **(2)**.
 
-   ![](media/2dgn84.png)
+   ![](media/dev-def.png)
   
 1. Now under Create dev box definition window, add the below details and then click on **Create** **(6)**.
 

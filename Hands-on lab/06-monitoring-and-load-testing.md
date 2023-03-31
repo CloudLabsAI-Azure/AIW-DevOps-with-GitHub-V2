@@ -80,6 +80,14 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/2dgn99.png)
      
+1. Click on **Review + Enable**.
+
+   ![](media/reviewenable.png)
+
+1. Then click on **Enable** to Enable service direct targets . 
+   
+   ![](media/enable.png)
+
 1. Wait for the deployment to be completed.  
 
 1. In the Azure Portal search for **Azure Chaos Studio** ***(1)*** and then click on it from the search results ***(2)***.

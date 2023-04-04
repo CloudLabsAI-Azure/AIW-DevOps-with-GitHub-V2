@@ -123,14 +123,19 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    https://localhost:62400/swagger
    ```  
 
-   ![](media/upd-2dgn57.png)     
+   ![](media/upd-2dgn57.png)
+   
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.    
+   
+1. From the search bar, search for **Comand prompt** and open the application.
 
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `ContosoTraders.Ui.Website` folder. 
+   ![](media/dglt6.1.jpg)   
+   
+1.Run the below mentioned command to navigate to `ContosoTraders.Ui.Website` folder. 
   
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Ui.Website
    ```
-  
    ![](media/upd-2dgn54.png) 
    
 1. Run the below mentioned command to install npm.
@@ -143,7 +148,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
    >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. Incase the execution is stuck, Please use **ctrl + C** to stop the execution and retry step again.
    
-1. Run the below mentioned command to run ui of the application. This will automatically open a browser tab where you'll see the complete application running
+1. Navigate back to **VS Code**, Run the below mentioned command to run ui of the application. This will automatically open a browser tab where you'll see the complete application running
 
    ```pwsh
    npm run start

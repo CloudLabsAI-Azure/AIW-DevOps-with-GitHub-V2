@@ -136,7 +136,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 1. Run the below mentioned command to install npm.
 
    ```pwsh
-   npm install
+   npm ci
    ```    
   
    ![](media/upd-2dgn55.png) 

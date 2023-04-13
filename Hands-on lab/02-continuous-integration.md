@@ -70,10 +70,10 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 1. Run the below mentioned command to build and host the carts locally.
 
    ```pwsh
-   dotnet build && dotnet run
+   dotnet build && dotnet run --no-build
    ```  
 
-   ![](media/upd-2dgn50.png) 
+   ![](media/2dg122.jpg) 
    
    >**Note**: Please wait for 2 - 3 minutes for build to complete.
    
@@ -110,10 +110,10 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 1. Run the below mentioned command to build and host the carts locally.
 
    ```pwsh
-   dotnet build && dotnet run
+   dotnet build && dotnet run --no-build
    ```    
   
-   ![](media/upd-dotnet-build.png) 
+   ![](media/2dg123.jpg) 
    
    >**Note**: Please wait for 2 - 3 minutes for build to complete.
 

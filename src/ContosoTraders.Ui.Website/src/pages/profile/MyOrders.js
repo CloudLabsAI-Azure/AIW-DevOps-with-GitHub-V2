@@ -9,13 +9,12 @@ import {
   FormLabel,
   InputAdornment,
   FormControl,
-  makeStyles,
   TextField,
-} from "@material-ui/core";
-import DeleteOutline from "@material-ui/icons/DeleteOutline";
-import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import Visibility from "@material-ui/icons/Visibility";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+} from "@mui/material";
+import DeleteOutline from "@mui/icons-material/DeleteOutline";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import Visibility from "@mui/icons-material/Visibility";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
@@ -55,24 +54,9 @@ const validationSchema = yup.object({
     .positive("Invalid Number")
     .required("Mobile is required"),
 });
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    "& > *": {
-      margin: theme.spacing(1),
-    },
-  },
-  large: {
-    height: "80px",
-    width: "80px",
-  },
-  input: {
-    display: "none",
-  },
-}));
+
 
 const MyOrders = () => {
-  const classes = useStyles();
   const [values, setValues] = React.useState({
     password: "",
     showPassword: false,
@@ -135,13 +119,11 @@ const MyOrders = () => {
                 <Avatar
                   alt="Remy Sharp"
                   src={mydata.imagePreview}
-                  className={classes.large}
                 />
               </div>
               <div className="img-btn-div">
                 <input
                   accept="image/*"
-                  className={classes.input}
                   id="contained-button-file"
                   multiple
                   type="file"

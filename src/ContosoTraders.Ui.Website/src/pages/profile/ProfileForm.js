@@ -1,36 +1,48 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { connect } from 'react-redux';
 import {
   Button,
   Grid,
   Avatar,
-} from "@material-ui/core";
-import NavigateNext from "@material-ui/icons/NavigateNext";
-import PersonalInformation from "./PersonalInformation";
-import MyWishlist from "./MyWishlist";
-import MyOrders from "./MyOrders";
-import MyAddressBook from "./MyAddressBook";
+} from "@mui/material";
+import NavigateNext from "@mui/icons-material/NavigateNext";
+import PersonalInformation from "./personalInformation";
+// import MyWishlist from "./MyWishlist";
+// import MyOrders from "./MyOrders";
+// import MyAddressBook from "./MyAddressBook";
 import logout_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/logout_icon.svg";
 import personal_information_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/personal_information_icon.svg";
-import my_wishlist_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/my_wishlist_icon.svg";
-import my_address_book_icons from "../../assets/images/original/Contoso_Assets/profile_page_assets/my_address_book_icons.svg";
-import my_orders_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/my_orders_icon.svg";
-import Breadcrump from "../../components/breadcrumb";
+// import my_wishlist_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/my_wishlist_icon.svg";
+// import my_address_book_icons from "../../assets/images/original/Contoso_Assets/profile_page_assets/my_address_book_icons.svg";
+// import my_orders_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/my_orders_icon.svg";
+import Breadcrump from "../../components/breadcrumb/breadcrumb";
+import AuthB2CService from "../../services/authB2CService";
 
-const FormProfile = () => {
- 
+const FormProfile = (props) => {
+  const authService = new AuthB2CService();
   const { page } = useParams()
   const [activeState, setActiveState] = React.useState(page);
+  const onClickLogout = () => {
+    localStorage.clear();
 
+    if (props.userInfo.isB2c) {
+      authService.logout();
+    }
+    props.clickAction();
+    props.history.push('/');
+  }
   return (
+    <div className="profileMain">
+    <Breadcrump currentPath="My Profile"/>
     <div className="ProfileSection">
-      <Breadcrump currentPath="My Profile"/>
       <div className="topHeaderSection">
         <h2 className="myprofileHeader"> My Profile</h2>
         <Button
           className="logout-btn"
           variant="outlined"
           color="primary"
+          onClick={onClickLogout}
           startIcon={<Avatar src={logout_icon} className="deleteIconsvg"/>}
         >
           Logout
@@ -38,7 +50,7 @@ const FormProfile = () => {
       </div>
       <div>
         <Grid container>
-          <Grid item xs={3}>
+          <Grid item lg={3} md={4} xs={12}>
             <div className="sidebar-container">
               <div
                 className={`${
@@ -60,7 +72,7 @@ const FormProfile = () => {
                 </div>
               </div>
 
-              <div
+              {/* <div
                 className={`${
                   activeState === "orders"
                     ? "sidebar-item active"
@@ -77,9 +89,9 @@ const FormProfile = () => {
                 <div className="item-arrow">
                   <NavigateNext className="sidebarnavIcons" />
                 </div>
-              </div>
+              </div> */}
 
-              <div
+              {/* <div
                 className={`${
                   activeState === "wishlist"
                     ? "sidebar-item active"
@@ -96,9 +108,9 @@ const FormProfile = () => {
                 <div className="item-arrow">
                   <NavigateNext className="sidebarnavIcons" />
                 </div>
-              </div>
+              </div> */}
 
-              <div
+              {/* <div
                 className={`${
                   activeState === "address"
                     ? "sidebar-item active"
@@ -115,19 +127,25 @@ const FormProfile = () => {
                 <div className="item-arrow">
                   <NavigateNext className="sidebarnavIcons" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </Grid>
-          <Grid item xs={9} container>
+          <Grid item lg={9} md={8} xs={12} container>
             {activeState === "personal" ?  <PersonalInformation/> : null}
-            {activeState === "orders" ?  <MyOrders/> : null}
+            {/* {activeState === "orders" ?  <MyOrders/> : null}
             {activeState === "wishlist" ?  <MyWishlist/> : null}
-            {activeState === "address" ?  <MyAddressBook/> : null}
+            {activeState === "address" ?  <MyAddressBook/> : null} */}
           </Grid>
         </Grid>
       </div>
     </div>
+    </div>
   );
 };
-
-export default FormProfile;
+const mapStateToProps = (state) => { 
+  return { 
+    userInfo : state.login.userInfo,
+    theme :  state.login.theme
+  }
+};
+export default connect(mapStateToProps, null)(FormProfile);

@@ -8,22 +8,16 @@ import {
   Avatar,
   FormLabel,
   InputAdornment,
-  FormControl,
-  makeStyles,
   TextField,
-} from "@material-ui/core";
-import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import Visibility from "@material-ui/icons/Visibility";
-
+} from "@mui/material";
+import DeleteOutline from "@mui/icons-material/DeleteOutline";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import Visibility from "@mui/icons-material/Visibility";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import delete_icon from "../../assets/images/original/Contoso_Assets/profile_page_assets/delete_icon.svg";
-import ExpandMore from "@material-ui/icons/ExpandMore";
 
-// const phoneRegExp =
-//   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
- const SUPPORTED_FORMATS = ['png','jpg','bmp','tiff','gif']
 const validationSchema = yup.object({
   email: yup
     .string("Enter your email")
@@ -40,8 +34,7 @@ const validationSchema = yup.object({
   confirmpassword: yup
     .string("Enter your password")
     .min(8, "Password should be of minimum 8 characters length")
-    .required("Password is required")
-    .oneOf([yup.ref('newpassword')], 'Passwords does not match'),
+    .required("Password is required"),
   firstName: yup
     .string("Enter your first Name")
     .min(2, "Too Short!")
@@ -55,38 +48,14 @@ const validationSchema = yup.object({
   dob: yup
     .string("Enter your date of birth")
     .required("Date of Birth is required"),
-  avatarimage: yup
-  .mixed()
-  // .test("FILE_SIZE", "Uploaded file is too big.", 
-  // value => !value || (value && value.size <= FILE_SIZE))
-  .test("FILE_FORMAT", "Uploaded file has unsupported format.", 
-  value => !value || (value && SUPPORTED_FORMATS.includes(value.split('.').pop()))),
-
   mobile: yup
-    .number()
-    .typeError("That doesn't look like a phone number")
+    .number("Enter your mobile number")
     .positive("Invalid Number")
     .required("Mobile is required"),
 });
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    "& > *": {
-      margin: theme.spacing(1),
-    },
-  },
-  large: {
-    height: "80px",
-    width: "80px",
-  },
-  input: {
-    display: "none",
-  },
-}));
 
-const PersonalInformation = () => {
-  const classes = useStyles();
-  const validFieldsRef = React.useRef();
+
+const MyOrders = () => {
   const [values, setValues] = React.useState({
     password: "",
     showPassword: false,
@@ -100,11 +69,8 @@ const PersonalInformation = () => {
     });
   };
 
-
-  // const [image, setImage] = React.useState("");
   const [mydata, setData] = React.useState("");
   const onImageChange = (event) => {
-    formik.handleChange(event)
     if (event.target.files && event.target.files[0]) {
       let reader = new FileReader();
       let file = event.target.files[0];
@@ -128,26 +94,14 @@ const PersonalInformation = () => {
       currentpassword: "",
       confirmpassword: "",
       dob: "",
-      mobilecode:"+91",
       mobile: "",
-      avatarimage:"",
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-    values.mobile=values.mobilecode+values.mobile;
       alert(JSON.stringify(values, null, 2));
     },
   });
-const removeImage = () => {
-  setData('');
-  Object.keys(formik.errors).map(name => {
-    if(name === 'avatarimage'){
-      formik.values.avatarimage = ''
-      delete formik.errors.avatarimage;
-    }
-    return true;
-  });
-}
+
   return (
     <div className="PersonalSection">
       <form onSubmit={formik.handleSubmit} className="formsection">
@@ -162,31 +116,21 @@ const removeImage = () => {
             <div className="img-section">
               <div className="img-div">
                 <Avatar
-                id="avatar"
-                  alt=""
+                  alt="Remy Sharp"
                   src={mydata.imagePreview}
-                  className={classes.large}
+                  style={{height:'80px',width:'80px'}}
                 />
               </div>
               <div className="img-btn-div">
-                <TextField
-                  // accept="image/*"
-                  className={classes.input}
-                  id="avatarimage"
+                <input
+                  accept="image/*"
+                  style={{display:'none'}}
+                  id="contained-button-file"
                   multiple
                   type="file"
                   onChange={onImageChange}
-                  inputRef={validFieldsRef}
-                  value={formik.values.avatarimage}
-                  error={
-                    formik.touched.avatarimage &&
-                    Boolean(formik.errors.avatarimage)
-                  }
-                  helperText={
-                    formik.touched.avatarimage && formik.errors.avatarimage
-                  }
                 />
-                <label htmlFor="avatarimage">
+                <label htmlFor="contained-button-file">
                   <Button
                     variant="contained"
                     className="btn-upload"
@@ -196,24 +140,23 @@ const removeImage = () => {
                     Upload
                   </Button>
                 </label>
+
                 <Button
                   className="btn-delete"
                   variant="outlined"
-                  //   startIcon={delete_icon}
-                  startIcon={<Avatar src={delete_icon} className="deleteIconsvg"/>}
-                  onClick={() => removeImage() }
-                  >
+                  startIcon={<DeleteOutline />}
+                  onClick={() => setData("")}
+                >
                   Delete
                 </Button>
-                {formik.touched.avatarimage && formik.errors.avatarimage ? <p class="MuiFormHelperText-root Mui-error" id="avatarimage-helper-text">{formik.errors.avatarimage}</p> : null}
               </div>
             </div>
-            <Grid item xs={6} container>
-              <div className="field-container">
-                <FormControl>
-                  <Grid container>
-                    <Grid item xs={5}>
-                      <FormLabel htmlFor="first-name" className="form-labels">
+            <Grid container spacing={2}>
+              {/* <div className="field-container"> */}
+                {/* <FormControl className="d-flex flex-lg-row flex-xs-column flex-md-fill flex-xs-fill"> */}
+                  <Grid item lg={7} className="profile-div d-flex flex-lg-row flex-xs-column flex-xs-fill">
+                    <div className="mr-2 profile-name flex-fill">
+                      <FormLabel htmlFor="first-name" className="form-labels d-block">
                         First Name
                       </FormLabel>
                       <TextField
@@ -230,13 +173,12 @@ const removeImage = () => {
                         }
                         style={{
                           margin: "7px 0px 16px 0px",
-                          width: "286px",
                         }}
                       />
-                    </Grid>
-                    <Grid item xs={1}></Grid>
-                    <Grid item xs={5}>
-                      <FormLabel htmlFor="last-name" className="form-labels">
+                    </div>
+                    {/* <Grid item xs={1}></Grid> */}
+                    <div className="profile-name flex-fill">
+                      <FormLabel htmlFor="last-name" className="form-labels d-block">
                         Last Name
                       </FormLabel>
                       <TextField
@@ -253,19 +195,16 @@ const removeImage = () => {
                         }
                         style={{
                           margin: "7px 0px 16px 0px",
-                          width: "280px",
                         }}
                       />
-                    </Grid>
-                    <Grid item xs={2} />
+                    </div>
+                    {/* <Grid item xs={2} /> */}
                   </Grid>
-                  <Grid container className="email-container">
-                    <Grid item xs={12}>
-                      <FormLabel htmlFor="email" className="form-labels">
+                  {/* <Grid container className="email-container"> */}
+                    <Grid item lg={7} xs={12}>
+                      <FormLabel htmlFor="email" className="form-labels d-block">
                         Email
                       </FormLabel>
-                    </Grid>
-                    <Grid item xs={12}>
                       <TextField
                         id="email"
                         className="formtextfields"
@@ -277,40 +216,27 @@ const removeImage = () => {
                         helperText={formik.touched.email && formik.errors.email}
                       />
                     </Grid>
-                  </Grid>
-                  <Grid container className="mobile-container">
+                  {/* </Grid> */}
+                  {/* <Grid container className="mobile-container"> */}
                     <Grid item xs={12}>
                       <FormLabel htmlFor="mobile" className="form-labels">
                         Mobile Number
                       </FormLabel>
                     </Grid>
-                    <Grid item>
+                    <Grid item lg={1} sm={2} xs={3} className="pt-0">
                       <TextField
                         id="mobilecode"
-                        disabled
-                        className="formtextfields text-center"
-                        value={formik.values.mobilecode}
-                        onChange={formik.handleChange}
-                        error={
-                          formik.touched.mobilecode && Boolean(formik.errors.mobilecode)
-                        }
-                        helperText={formik.touched.mobilecode && formik.errors.mobilecode}
+                        className="formtextfields"
                         style={{
                           marginRight: "8px",
-                          width: "80px",
+                          // width: "80px",
                         }}
-                        inputProps={
-                          {
-                            className:"text-center"
-                          }
-                        }
                       />
                     </Grid>
-                    <Grid item>
+                    <Grid item lg={6} sm={10} xs={9} className="pt-0">
                       <TextField
                         id="mobile"
                         className="formtextfields"
-                        
                         value={formik.values.mobile}
                         onChange={formik.handleChange}
                         error={
@@ -320,19 +246,16 @@ const removeImage = () => {
                           formik.touched.mobile && formik.errors.mobile
                         }
                         style={{
-                          width: "502px",
+                          // width: "auto",
                         }}
                       />
                     </Grid>
-                  </Grid>
-                  <Grid container className="dob-container">
-                    <Grid item xs={5}>
+                  {/* </Grid> */}
+                  {/* <Grid container className="dob-container"> */}
+                    <Grid item lg={7} xs={12}>
                       <FormLabel htmlFor="dob" className="form-labels">
                         Date of birth
                       </FormLabel>
-                    </Grid>
-                    <Grid item xs={7} />
-                    <Grid item xs={12}>
                       <TextField
                         id="dob"
                         type="date"
@@ -342,29 +265,19 @@ const removeImage = () => {
                         onChange={formik.handleChange}
                         error={formik.touched.dob && Boolean(formik.errors.dob)}
                         helperText={formik.touched.dob && formik.errors.dob}
-                        InputProps={{
-                          endAdornment: (
-                            <InputAdornment position="start">
-                              <IconButton
-                                aria-label="toggle password visibility"
-                                onClick={handleClickShowPassword}
-                                // edge="end"
-                              
-                              >
-                                <ExpandMore/>
-                              </IconButton>
-                            </InputAdornment>
-                          ),
-                        }}
+                        endAdornment={
+                          <InputAdornment position="end">
+                            <ExpandMoreIcon />
+                          </InputAdornment>
+                        }
                         style={{
                           height: "55px",
-                          // width:"590px",
                         }}
                       ></TextField>
                     </Grid>
-                  </Grid>
-                </FormControl>
-              </div>
+                  {/* </Grid> */}
+                {/* </FormControl> */}
+              {/* </div> */}
             </Grid>
             <Grid item xs={6}></Grid>
             <Grid item xs={12} className="passworddiv">
@@ -373,19 +286,16 @@ const removeImage = () => {
               </Typography>
               <Divider style={{ marginTop: "8px", marginBottom: "30px" }} />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12}>
               <div className="passwd-section">
                 <Grid container className="currentpassword-container">
-                  <Grid item xs={5}>
+                  <Grid item lg={7} xs={12}>
                     <FormLabel
                       htmlFor="current-password"
                       className="form-labels"
                     >
                       Current Password
                     </FormLabel>
-                  </Grid>
-                  <Grid item xs={7} />
-                  <Grid item xs={12}>
                     <TextField
                       type="password"
                       id="currentpassword"
@@ -405,13 +315,10 @@ const removeImage = () => {
                 </Grid>
 
                 <Grid container className="newpassword-container">
-                  <Grid item xs={5}>
-                    <FormLabel htmlFor="new-password" className="form-labels">
+                  <Grid item lg={7} xs={12}>
+                    <FormLabel htmlFor="new-password" className="form-labels d-block">
                       New Password
                     </FormLabel>
-                  </Grid>
-                  <Grid item xs={7} />
-                  <Grid item xs={12}>
                     <TextField
                       type={values.showPassword ? "text" : "password"}
                       id="newpassword"
@@ -447,16 +354,13 @@ const removeImage = () => {
                 </Grid>
 
                 <Grid container className="confirmpassword-container">
-                  <Grid item xs={5}>
+                  <Grid item lg={7} xs={12}>
                     <FormLabel
                       htmlFor="confirm-password"
                       style={{ color: "#000" }}
                     >
                       Confirm Password
                     </FormLabel>
-                  </Grid>
-                  <Grid item xs={7} />
-                  <Grid item xs={12}>
                     <TextField
                       type="password"
                       id="confirmpassword"
@@ -497,4 +401,4 @@ const removeImage = () => {
   );
 };
 
-export default PersonalInformation;
+export default MyOrders;

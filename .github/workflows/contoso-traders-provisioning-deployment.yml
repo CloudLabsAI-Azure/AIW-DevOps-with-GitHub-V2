@@ -263,8 +263,8 @@ jobs:
       - name: install node v16
         uses: actions/setup-node@v3
         with:
-          node-version: 16          
-      - name: npm install      
+          node-version: 16
+      - name: npm install
         run: npm install
         working-directory: src/ContosoTraders.Ui.Website
       - name: npm run build

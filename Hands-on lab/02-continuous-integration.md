@@ -45,7 +45,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
    ![](media/ex2-t2-3.png)
    
-1. Update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the mentioned below. Run it in the terminal.
+1. Update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the command mentioned below. Run it in the terminal.
 
    ```pwsh
    az login --service-principal -u <clientId> -p <clientSecret> --tenant <tenantId>
@@ -144,7 +144,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    npm ci
    ```    
   
-   ![](media/upd-2dgn55.png) 
+   ![](media/2dg124.jpg) 
    
    >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. Incase the execution is stuck, Please use **ctrl + C** to stop the execution and retry step again.
    

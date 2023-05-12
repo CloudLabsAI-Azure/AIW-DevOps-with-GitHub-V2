@@ -146,7 +146,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    
    ![](media/2dgn144.png)   
    
-1. From fabrikam-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** ***(1)*** button, hover over **New Suite** ***(2)***, and select **Static suite** ***(3)***.
+1. From contosotraders-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** ***(1)*** button, hover over **New Suite** ***(2)***, and select **Static suite** ***(3)***.
 
    ![](media/2dg109.png)   
 

@@ -228,9 +228,9 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      
    ![](media/2dgn72.png) 
      
-    - Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch `main` in the lab files repository created in Step 1. Make sure to replace `<your_github_repository-url>` with the value you copied in step 6 and **Unique-ID** in step 7
+    Run the below mentioned command in the terminal. Make sure to replace <your_github_repository-url> with the value you copied in step 6 and Unique-ID in step 7
 
-      > **Note**: The URI of the lab files GitHub repository created in Step 1 will differ from that in the example below.
+    Note: This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files    repository created in Step 1. 
 
       ```pwsh
       git init

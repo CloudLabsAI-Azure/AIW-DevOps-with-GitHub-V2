@@ -131,6 +131,8 @@ In this task, you will use Dependabot to track the versions of the packages we u
 1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. After reviewing the alert, select **Review security update**.
 
    ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
+   
+   **Note:** If you see Create Security Update option, click on it. After it is created then select Review security update. 
 
 1. Navigate to **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)*** and merge it to your main branch.
 

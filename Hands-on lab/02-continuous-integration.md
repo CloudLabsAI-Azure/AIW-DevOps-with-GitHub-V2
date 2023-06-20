@@ -148,7 +148,13 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
    >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. Incase the execution is stuck, Please use **ctrl + C** to stop the execution and retry step again.
    
-1. Navigate back to **VS Code**, Run the below mentioned command to run ui of the application. This will automatically open a browser tab where you'll see the complete application running
+1. Navigate back to **VS Code**, Run the below mentioned command to navigate to `ContosoTraders.Ui.Website` folder. 
+  
+   ```pwsh
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Ui.Website
+   ```
+
+1. Now run the below mentioned command to run ui of the application. This will automatically open a browser tab where you'll see the complete application running
 
    ```pwsh
    npm run start
@@ -282,7 +288,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn123.png)
    
-   >**Note**: Replace `{your_password}` with Labvm Admin Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+   >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
    
    ![](media/2dgn155.png)   
    

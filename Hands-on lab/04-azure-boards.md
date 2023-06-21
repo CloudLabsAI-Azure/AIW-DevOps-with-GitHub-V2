@@ -91,12 +91,12 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/2dgn166.png)
    
-1. Click on **Start commit** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(5)***.
+1. Click on **Commit Changes** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(5)***.
 
    - Provide `workitem ID Updated` ***(2)*** as title. Make sure to provide the same **Work item ID** which was created in the earlier step in Azure DevOps.
    - Select **Create a new branch for this commit and start a pull request** ***(3)***  and name new branch as **update carts** ***(4)***.
 
-   ![](media/ex4-start-commit.png)
+   ![](media/E3T2S5.png)
    
 1. On Open a pull request tab, Click on **Create pull request** 
 

@@ -18,7 +18,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/2dgn169.png)      
 
-1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Start Commit** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit new file** ***(4)***.
+1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit new file** ***(4)***.
   
    ![](media/ex5-codeql-commit.png) 
   

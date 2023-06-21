@@ -49,10 +49,10 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
    ![](media/e117.png)
   
-1. Now under *Add network connection*, select the **fabrikam-connection (1)** for Network Connection from the drop-down and then click on **Add (2)**.
+1. Now under *Add network connection*, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** for Network Connection from the drop-down and then click on **Add**.
 
-   ![](media/devops1.2.png)
-    
+   ![](media/E1T2S3.png)
+
 ## Task 3: Create dev box pool
 
 In this task, you'll create a Dev pool using previously configured network connection and Dev Box definitions. A dev box pool is a collection of dev boxes that you manage together. 
@@ -69,12 +69,12 @@ In this task, you'll create a Dev pool using previously configured network conne
 
    - Name: **devbox-pool-<inject key="DeploymentID" enableCopy="false" />** **(1)**
    - Dev box definition: **devboxdef-01** **(2)**
-   - Network Connection: **fabrikam-connection** **(3)**
+   - Network Connection: **fabrikam-connection-<inject key="location" enableCopy="false" />** **(3)**
    - Dev box Creator Privileges: **Local Administrator** **(4)**
    - Auto-stop: Select **No** button **(5)**
    - Licensing: Check the checkbox **(6)**
   
-   ![](media/2dgn153.png)
+   ![](media/E1T3S3.png)
   
 ## Task 4: Launching Dev box
 

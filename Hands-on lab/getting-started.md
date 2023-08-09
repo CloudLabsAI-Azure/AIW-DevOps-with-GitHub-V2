@@ -9,7 +9,7 @@
    
 1. In the environment click on **OK** if you receive a prompt regarding windows deprecation.
 
-   ![](https://github.com/anushabc/MCW-Continuous-delivery-in-Azure-DevOps/blob/prod/Hands-on%20lab/media/imgdepre.png?raw=true "Lab Environment")     
+   ![](media/imgdepre.png "Lab Environment")     
 
 1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the lower right corner. Also, you can start, stop and restart virtual machines from the **Resources** tab.
 

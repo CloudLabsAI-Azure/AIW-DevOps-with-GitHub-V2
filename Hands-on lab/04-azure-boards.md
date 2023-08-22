@@ -35,6 +35,12 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    - Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
 
    ![](media/ex4-kc-install&auth.png)
+
+   - Select the cloudlabs **Email** <inject key="AzureAdUserEmail"></inject>
+     
+   - Now enter the password and **click** on **Sign in**.
+
+    ![](media/img10.png).
     
 1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders (2)** project then click on **Continue (3)**
 

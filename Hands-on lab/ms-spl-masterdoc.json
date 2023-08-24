@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "Be Scale Ready with Azure Load Testing",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/tree/prod/Hands-on%20lab",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/getting-started.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/MS-SPL-Continuous%20Integration%20and%20Continuous%20Deployment.md",
+        "Order": 2
+      },
+      
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/MS-SPL-Monitoring%20and%20Load%20Testing.md",
+        "Order": 3
+      }
+
+    ]
+  }
+]

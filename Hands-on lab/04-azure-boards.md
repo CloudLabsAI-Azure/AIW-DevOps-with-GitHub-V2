@@ -46,36 +46,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/azuredevops.png)
 
-1. When the integration succeeds, you will be taken to the Azure DevOps Board. In the onboarding tutorial click on **Create** to create an initial Issue in the `To Do` Column.
-
-    >**Note**: Make sure to reduce the screen resolution in your browser window if you are not able to view the **Create** and **Create and link a pull request** options in the onboarding tutorial page.
-
-   ![](media/2dg55.png)
-    
-1. Now click on **Create and link a pull request** to create a pull request associated with your Issue.
-
-   ![After completion of the onboarding tutorial. Two todo confirmation messages displayed.](media/image15.png "Get started and quick tip")
-
-1. Click on **View work item**.
-
-
-   ![](media/viewworkitem.png)
-   
-3. Open the new Issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board Issue.
-
-   ![Linked GitHub items in an Azure DevOps issue in Boards.](media/ex3-t1-8.png "GitHub Pull Request and Comment")
-
-1. In GitHub, browse to the `Pull Requests` tab of the lab files repository created in [Task 1 of the Before the HOL Instructions] and open the pull request that was created in the onboarding tutorial for the Azure Boards Integration App. Note the `AB#1` annotation in the pull request comments - this annotation signals to Azure DevOps that this pull request comment should be linked to Issue #1 in Azure Boards.
-
-   ![Pull request detail in GitHub created by onboarding tutorial in previous steps.](media/ex4-kc-merge.png "Pull Request detail")
-
-1. Select the `Files changed` tab within the pull request detail and observe the change to the README.md associated with this pull request. After reviewing the changes, go back to the `Conversation` tab and select the `Merge pull request` button and confirm the following prompt to merge the pull request into the `main` branch.
-
-   ![The file changes associated with the pull request.](media/upd-ex4-kc-reviewchanges.png "Pull Request Files Changed tab")
-
-1. In Azure DevOps Boards, find the work item and observe that the issue has been moved to the `Done` column on completion of the pull request.
-
-   ![A work item with a linked GitHub commit illustrating the link between Azure DevOps Boards and GitHub issues.](media/ex4-kc-devops-todo.png "Work Item with a Linked GitHub Commit")
+1. You have successfully linked the GitHub account.
    
 ### Task 2: Link GitHub Pull requests to Boards items
 

@@ -87,7 +87,7 @@ In this task, you'll access a Dev Box and explore its features.
 
 1. On a new browser tab, visit ```https://devbox.microsoft.com/```.
 
-1. Here, click on **Get started** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
+1. Here, click on **Add a dev box** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
 
    ![](media/e124.png)
    

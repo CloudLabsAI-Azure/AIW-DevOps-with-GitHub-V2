@@ -98,14 +98,18 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
  
    ![](media/Ex6-T2-S5.3.png)
  
-1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Experiment designer >** ***(5)***.
+1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Permissions >** ***(4)***.
 
     - Subscription: select the default subscription ***(1)***
     - Resource Group: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
     - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** ***(3)***
-    - Region: Leave it to default ***(4)***
+    - Region: Leave it to default 
  
-   ![](media/2dgn119.png)
+   ![](media/E5T1S10.png)
+   
+1. On the **Permissions** page, leave the default selection and select **Next: Experiment designer >**.
+
+   ![](media/E5T1S11.png)
  
 1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
@@ -135,11 +139,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
   
    ![](media/2dgn121.png)
   
-1. In the **Add role assignment** page, under **Role** tab select **Owner (1)** and select **Next (2)**.
+1. In the **Add role assignment** page, under **Role** tab select **Privileged administrator roles**. Select **Owner (1)** in it and then **Next (2)**.
   
-   ![](media/2dgn114.png)
+   ![](media/E5T1S17.png)
   
-1. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
+1. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Select members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **contoso-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
    
    ![](media/2dgn115.png)
   

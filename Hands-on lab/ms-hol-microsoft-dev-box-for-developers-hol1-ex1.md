@@ -53,10 +53,7 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
    ![](media/E1T2S3.png)
 
-     >**Note**: please select the network connection with respect to the resource group region, you can check the resource group location by navigating to **Resource groups** and check the region with respect to **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group.
-
-    ![](media/devops-ex1-t2.png)
-
+     >**Note**: Please select the network connection with which the Status is set **Passed**.
 
 ## Task 3: Create dev box pool
 

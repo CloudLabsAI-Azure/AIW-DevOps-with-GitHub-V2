@@ -24,12 +24,12 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 1. Now under Create dev box definition window, add the below details and then click on **Create** **(6)**.
 
    - Name: **devboxdef-01** **(1)**
-   - Image: **Windows 11 Enterprise + Microsoft 365 Apps 21H2** **(2)**
+   - Image: **Windows 11 Enterprise + Microsoft 365 Apps 21H2 | Hibernate Support** **(2)**
    - Image version: **Latest** **(3)**
    - Compute: **8vCPU, 32 GB RAM** **(4)**
    - Storage: **1024 GB SSD** **(5)**
 
-   ![](media/sdevbox2.jpg)
+   ![](media/devbox.png)
   
 1. Once the definition is created. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
 

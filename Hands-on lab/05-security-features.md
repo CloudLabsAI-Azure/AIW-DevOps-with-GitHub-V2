@@ -1,16 +1,16 @@
-# Exercise 4: Explore GitHub advance security features
+# Exercise 4: Explore GitHub's advanced security features
 
 Duration: 40 minutes
 
-In this exercise, you'll explore GitHub Enterprise features which is GitHub advance security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.  
+In this exercise, you'll explore GitHub Enterprise features which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.  
 
 ## Task 1: Enabling Code scanning and CodeQL alerts 
 
 In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
 
-**Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to the public.
+**Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
    
-1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under security side blade.
+1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under the security side blade.
 
    ![](media/2dgn168.png)  
    
@@ -20,7 +20,9 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit new file** ***(4)***.
   
-   ![](media/ex5-codeql-commit.png) 
+   ![](media/ex5-task1-step3a.png)
+
+   ![](media/ex5-task1-step3b.png) 
   
 1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
     
@@ -30,7 +32,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
    
    ![](media/ex5-codescanning-viewalerts.png)
   
-1. You will be navigated to **Code scanning** section. You'll be able visualize that the **No code scanning alerts here!**.
+1. You will be navigated to **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
    
    ![](media/devops1.6.png)
     
@@ -42,7 +44,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
    ![](media/ex5-t2-advisories.png)  
      
-1. In the Open a draft security advisory tab, under Advisory Details section provide the following details.
+1. In the Open a draft security advisory tab, under the Advisory Details section provide the following details.
 
    - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
@@ -52,7 +54,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    Impact
    What kind of vulnerability is it? Who is impacted?
 
-   HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command or interacting with a        database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker      can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
+   HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command, or interacting with a database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
 
    Patches
    Has the problem been patched? What versions should users upgrade to?
@@ -142,7 +144,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![The Pull Request Merge Button in the Pull Request detail.](media/ex5-t3-merge-pr.png "Pull Request Merge Button")
     
-   >**Note**: In case you see any errors with merge request. Retry step 4 to step 6 by selecting any other Dependabot alert.
+   >**Note**: In case you see any errors with the merge request. Retry steps 4 to 6 by selecting any other Dependabot alert.
 
 1. Pull the latest changes from your GitHub repository to your local GitHub folder.
 
@@ -154,7 +156,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
    
 ## Task 4: Explore Secret Scanning (READ-ONLY)   
 
-In this task, you'll explore about how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets, to prevent fraudulent use of secrets that were committed accidentally.
+In this task, you'll explore how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets, to prevent fraudulent use of secrets that were committed accidentally.
 
 **Note**: This is a **READ-ONLY** task. Please do not perform the steps in the lab environment.
 
@@ -189,7 +191,7 @@ In this task, you'll explore about how secret scanning works and see how it gene
    
    ![](media/2dg115.png)   
    
-1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated reffering to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how Secret scanning feature works and generates alerts to notify you.
+1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
 
    ![](media/2dg116.png) 
    

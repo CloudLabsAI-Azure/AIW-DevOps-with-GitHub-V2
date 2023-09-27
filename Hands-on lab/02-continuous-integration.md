@@ -257,7 +257,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
 
-1. From Azure Portal Dashboard, click on Resource groups from the Navigate panel to see the resource groups.
+1. From the Azure Portal Dashboard, click on Resource Groups from the Navigate panel to see the resource groups.
 
    ![](media/2dgn9.png) 
    
@@ -271,7 +271,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Under Settings side blade, select **Connection strings** ***(1)*** and copy the **ADO.NET (SQL authentication)** ***(2)*** connection string from ADO.NET tab. 
 
-   ![](media/upd-2dgn12.png)  
+   ![](media/ado-sql-database.png)  
  
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
@@ -279,7 +279,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository secret** ***(3)*** button.
 
-   ![](media/Ex2-task4-step6.png)
+   ![](media/Ex2-task4-step6a.png)
     
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 

@@ -6,11 +6,11 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
 
 ### Task 1: Monitoring using Application Insights
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" />** **(2)**.
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" />** **(2)**.
 
    ![](media/upd-ex6-t1-openai.png)
    
-1. From the Overview of **contoso-traders-ai<inject key="Deploymentid" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
+1. From the Overview of **contoso-traders-ai<inject key="Deploymentid"  enableCopy="false" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
 
    ![](media/upd-ex6-t1-set-showdata.png)
    
@@ -32,17 +32,17 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
    
 ## Task 2: Set up Load Testing
 
-In this task, you'll create Azure Load Testing instance and run a test using a JMeter file.
+In this task, you'll create an Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="Deploymentid" />**.
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="Deploymentid" />**.
 
    ![](media/dglt1.jpg)
 
-1. From the overview of **contoso-traders-ui2<inject key="Deploymentid" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it in the notepad for later use in the task.
+1. From the overview of **contoso-traders-ui2<inject key="Deploymentid" enableCopy="false" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it into the notepad for later use in the task.
 
    ![](media/dglt2.jpg)
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
 
    ![](media/upd-2dgn117.png)
    
@@ -52,13 +52,13 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
 1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Run Test** ***(2)***.
 
-   ![](media/dglt3.jpg)
+   ![](media/ex6-task2-step5.jpg)
 
-1. The test run will starting running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
+1. The test run will start running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
    ![](media/dglt4.jpg)
    
-   **Note**: In case, the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with support` error. This is expected as sometimes the load on the application exceeds the defined throughput.
+   **Note**: In case, the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with a support error. This is expected as sometimes the load on the application exceeds the defined throughput.
      
 ## Task 3: Explore Chaos Studio
 
@@ -84,7 +84,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/reviewenable.png)
 
-1. Then click on **Enable** to Enable service direct targets . 
+1. Then click on **Enable** to Enable service direct targets. 
    
    ![](media/enable.png)
 
@@ -94,13 +94,13 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
    
    ![](media/Ex6-T2-S1.1.png)
     
-1. Once the target is enabled, select **Experiments** ***(1)*** on the left and click **+ Create** ***(2)***.
+1. Once the target is enabled, select **Experiments** ***(1)*** on the left, click **+ Create** ***(2)*** drop-down, and select **New experiment** **(3)** .
  
-   ![](media/Ex6-T2-S5.3.png)
+   ![](media/ex6-task3-step9.png)
  
 1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Permissions >** ***(4)***.
 
-    - Subscription: select the default subscription ***(1)***
+    - Subscription: Select the default subscription ***(1)***
     - Resource Group: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
     - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** ***(3)***
     - Region: Leave it to default 
@@ -123,9 +123,9 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
      
    ![](media/2dgn61.png)
      
-1. On the **Target resources**, select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** ***(1)*** resource and **Add** ***(2)***.
+1. On the **Target resources**, select the **Manually select from a list** **(1)** under **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** ***(2)*** resource, and **Add** ***(3)***.
   
-   ![](media/2dgn112.png)
+   ![](media/ex6-task3-step14.png)
   
 1. Click on **Review + create**.
   
@@ -141,15 +141,19 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
   
 1. In the **Add role assignment** page, under **Role** tab select **Privileged administrator roles**. Select **Owner (1)** in it and then **Next (2)**.
   
-   ![](media/E5T1S17.png)
+   ![](media/ex6-task3-step18.png)
   
-1. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Select members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **contoso-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
+1. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Select members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **contoso-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)**, click on **Select (5)** and click on **Next** **(6)**.  
    
-   ![](media/2dgn115.png)
+   ![](media/ex6-task3-step19.png)
   
+1. Next on the **Conditions** tab select **Delegation type** as **Not constrained** **(1)** and click on **Review + assign** **(2)**.
+
+   ![](media/ex6-task3-step20.png)
+
 1. Click on **Review + assign**. 
    
-   ![](media/2dgn116.png)
+   ![](media/ex6-task3-step21.png)
       
 1. On the Azure portal navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
   

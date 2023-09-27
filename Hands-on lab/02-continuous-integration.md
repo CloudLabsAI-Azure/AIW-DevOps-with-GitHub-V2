@@ -172,7 +172,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. In a new browser tab open ```https://www.github.com/login```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the crentials. Use the same username and password to login into GitHub.
 
-   ![](media/2dgn90.png) 
+   ![](media/dev2.png) 
    
 1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 

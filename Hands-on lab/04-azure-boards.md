@@ -1,4 +1,4 @@
-# Exercise 3: Azure Boards and Test plans
+# Exercise 3: Azure Boards and Test Plans
 
 Duration: 60 minutes
 
@@ -50,11 +50,11 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    
 ### Task 2: Link GitHub Pull requests to Boards items
 
-In this task, you'll make changes in GitHub and link a PR to Azure boards using syntax and monitor the work item.
+In this task, you'll make changes in GitHub link a PR to Azure boards using syntax, and monitor the work item.
 
-1. In the Azure Boards tab, click on **New Item** ***(1)***, provide **Update carts** **(2)** as a description and create a new work item.
+1. In the Azure Boards tab, click on **New Item** ***(1)***, provide **Update carts** **(2)** as a description and create a new work item by hitting **enter**.
 
-   ![](media/ex4-kc-todonew.png)
+   ![](media/ex4-task2-step1.png)
    
 1. After creating a work item, Please note down the Work item ID which will be used in the further steps.
 
@@ -64,14 +64,14 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/2dgn140.png)
    
-1. Copy `#test azure boards` code and paste it in line number 1 of the file. Make sure there are no indentation errors.
+1. Copy `#test azure boards` code and paste it into line number 1 of the file. Make sure there are no indentation errors.
 
    ![](media/2dgn166.png)
    
 1. Click on **Commit Changes** ***(1)***, provide the details mentioned below and click on **Propose changes** ***(5)***.
 
-   - Provide `workitem ID Updated` ***(2)*** as title. Make sure to provide the same **Work item ID** which was created in the earlier step in Azure DevOps.
-   - Select **Create a new branch for this commit and start a pull request** ***(3)***  and name new branch as **update carts** ***(4)***.
+   - Provide `workitem ID Updated` ***(2)*** as title. Make sure to provide the same **Work item ID** that was created in the earlier step in Azure DevOps.
+   - Select **Create a new branch for this commit and start a pull request** ***(3)***  and name the new branch as **update carts** ***(4)***.
 
    ![](media/E3T2S5.png)
    
@@ -79,15 +79,15 @@ In this task, you'll make changes in GitHub and link a PR to Azure boards using 
 
    ![](media/ex4-create-pr.png)
    
-1. Navigate to **Azure Boards**. Open the **work item** ***(1)*** created in earlier step.
+1. Navigate to **Azure Boards**. Open the **work item** ***(1)*** created in the earlier step.
 
    ![](media/ex4-open-wi.png)
 
-1. Observe that the **Pull request** has been linked to the workitem.
+1. Observe that the **Pull request** has been linked to the work item.
 
    ![](media/ex4-observe-pr.png)
    
-1. Navigate back to GitHub browser tab and select **Pull requests** tab.
+1. Navigate back to the GitHub browser tab and select **Pull requests** tab.
 
    ![](media/ex4-github-pr.png)
    
@@ -154,7 +154,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/ex4-view-webapp.png)
    
-1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
+1. Navigate to Azure Portal, and click on Resource groups from the Navigate panel to see the resource groups.
 
    ![](media/2dgn9.png) 
    

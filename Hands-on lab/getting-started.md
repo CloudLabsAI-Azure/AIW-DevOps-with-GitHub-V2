@@ -7,7 +7,11 @@
    
    >Note: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
    
-1. In the environment click on **OK** if you receive a prompt regarding windows deprecation.
+1. On the JumpVM, click on **Decline and Close Application** on the Docker desktop when logging into the VM the first time. Don't follow the Docker Desktop tutorial.
+   
+   ![](media/docker.png)
+
+1. In the environment click on **OK** if you receive a prompt regarding Windows deprecation.
 
    ![](media/imgdepre.png "Lab Environment")     
 

@@ -11,7 +11,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
 1. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
 
-   ![](media/ex1-t1-1.png)
+   ![](media/ex1-t1.png)
   
 1. Now on the left-hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
@@ -24,7 +24,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 1. Now under the Create dev box definition window, add the below details and then click on **Create** **(6)**.
 
    - Name: **devboxdef-01** **(1)**
-   - Image: From the drop-dowm select **Windows 11 Enterprise + Microsoft 365 Apps 21H2 | Hibernate Support** **(2)**
+   - Image: From the drop-dowm select **Windows 11 Enterprise + Microsoft 365 Apps 21H2 | Hibernate Supported** **(2)**
    - Image version: **Latest** **(3)**
    - Compute: **8vCPU, 32 GB RAM** **(4)**
    - Storage: **1024 GB SSD** **(5)**
@@ -101,7 +101,7 @@ In this task, you'll access a Dev Box and explore its features.
 
 1. In Session settings, click on **Connect**.
 
-   ![](media/2dgn149.png)
+   ![](media/ex1-t4-1.png)
 
 1. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
 

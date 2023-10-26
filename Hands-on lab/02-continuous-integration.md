@@ -35,7 +35,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
 1. Open a **New Terminal** in the Visual Studio Code by selecting click on **menu (1)**, click on **Terminal (2)** and then on **New Terminal (3)**.
 
-   ![](media/devops1.5.png "New Repository Creation Form")
+   ![](media/ex2-t2.png "New Repository Creation Form")
    
 1. Click on the **drop-down** **(1)** button next to PowerShell and select **Command Prompt** **(2)**  from the list. A new command Prompt terminal will be opened.   
 
@@ -234,7 +234,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      
    ![](media/2dgn72.png) 
      
-    Run the below mentioned command in the terminal. Make sure to replace <your_github_repository-url> with the value you copied in step 6 and Unique-ID in step 7
+    Run the below mentioned command in the terminal. Make sure to replace <your_github_repository-url> with the value you copied in step 11 and Unique-ID in step 12
 
     Note: This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files    repository created in Step 1. 
 
@@ -247,9 +247,9 @@ In this task, you will create an account in [GitHub](https://github.com) and use
       git push -u origin<Unique-ID> main
       ```
      
-   - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access
+   - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access
 
-       ![](media/2dgn158.png)
+       ![](media/ex2-t3.png)
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
      
@@ -383,7 +383,7 @@ The last task automated building and updating only one of the Docker images. In 
 
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 
-   - click on **Code** ***(1)***, 
+   - Click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
    ![](media/ex2-kc-codespace.png)

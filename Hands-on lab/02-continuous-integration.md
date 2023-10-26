@@ -383,7 +383,7 @@ The last task automated building and updating only one of the Docker images. In 
 
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 
-   - click on **Code** ***(1)***, 
+   - Click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
    ![](media/ex2-kc-codespace.png)

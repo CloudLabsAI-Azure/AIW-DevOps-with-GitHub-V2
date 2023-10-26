@@ -101,7 +101,7 @@ In this task, you'll access a Dev Box and explore its features.
 
 1. In Session settings, click on **Connect**.
 
-   ![](media/2dgn149.png)
+   ![](media/ex1-t4-1.png)
 
 1. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
 

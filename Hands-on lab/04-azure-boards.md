@@ -56,7 +56,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
     ![](media/img10.png).
     
-1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders (2)** project then click on **Continue (3)**
+1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders-<inject key="DeploymentID" enableCopy="false"/> (2)** project then click on **Continue (3)**
 
    ![](media/azuredevops.png)
 

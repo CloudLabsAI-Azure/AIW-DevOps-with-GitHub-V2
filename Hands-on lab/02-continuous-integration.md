@@ -35,7 +35,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
 1. Open a **New Terminal** in the Visual Studio Code by selecting click on **menu (1)**, click on **Terminal (2)** and then on **New Terminal (3)**.
 
-   ![](media/devops1.5.png "New Repository Creation Form")
+   ![](media/ex2-t2.png "New Repository Creation Form")
    
 1. Click on the **drop-down** **(1)** button next to PowerShell and select **Command Prompt** **(2)**  from the list. A new command Prompt terminal will be opened.   
 

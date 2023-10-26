@@ -247,9 +247,9 @@ In this task, you will create an account in [GitHub](https://github.com) and use
       git push -u origin<Unique-ID> main
       ```
      
-   - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access
+   - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access
 
-       ![](media/2dgn158.png)
+       ![](media/ex2-t3.png)
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
      

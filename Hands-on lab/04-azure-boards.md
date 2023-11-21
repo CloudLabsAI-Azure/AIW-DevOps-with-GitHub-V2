@@ -162,7 +162,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    - Name: **TestPlan-<inject key="DeploymentID" enableCopy="false" />** ***(1)***
    - Area Path: **contosotraders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
-   - Iteration: Leave it to **deafault** ***(3)***
+   - Iteration: Leave it to **default** ***(3)***
    
    ![](media/2dgn144.png)   
    
@@ -193,7 +193,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dg78.png)
    
-1. A web-based runner will be opened. Manual testing of the web app can performed. Keep this page open, we will use the runner in upcoming steps.
+1. A web-based runner will be opened. Manual testing of the web app can be performed. Keep this page open, we will use the runner in upcoming steps.
 
    ![](media/ex4-view-webapp.png)
    

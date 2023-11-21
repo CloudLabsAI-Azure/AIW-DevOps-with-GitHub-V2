@@ -3,7 +3,7 @@
 
 Duration: 80 minutes
 
-In this exercise, you are going to set up the local infrastructure using dotnet. There are three parts of the application you will be working with: carts, products, and ui. You will deploy the infrastructure to cloud using GitHub Actions. you will also build automation in GitHub for updating and republishing our workflows when the code changes.
+In this exercise, you are going to set up the local infrastructure using dotnet. There are three parts of the application you will be working with: carts, products, and UI. You will deploy the infrastructure to cloud using GitHub Actions. you will also build automation in GitHub for updating and republishing our workflows when the code changes.
 
 ### Task 1: Access the lab files
 
@@ -31,7 +31,7 @@ In this task, you'll access and explore the code repository of the web app using
 
 ### Task 2: Set up Local Infrastructure
 
-In this task, You will set up the local infrastructure using Dotnet . You'll be working with three docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
+In this task, You will set up the local infrastructure using Dotnet. You'll be working with three docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
    
 1. Open a **New Terminal** in the Visual Studio Code by selecting click on **menu (1)**, click on **Terminal (2)** and then on **New Terminal (3)**.
 
@@ -146,7 +146,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
   
    ![](media/2dg124.jpg) 
    
-   >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. Incase the execution is stuck, Please use **ctrl + C** to stop the execution and retry step again.
+   >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. In case the execution is stuck, please use **ctrl + C** to stop the execution and retry step again.
    
 1. Navigate back to **VS Code**, Run the below mentioned command to navigate to `ContosoTraders.Ui.Website` folder. 
   
@@ -154,7 +154,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Ui.Website
    ```
 
-1. Now run the below mentioned command to run ui of the application. This will automatically open a browser tab where you'll see the complete application running
+1. Now run the below mentioned command to run UI of the application. This will automatically open a browser tab where you'll see the complete application running
 
    ```pwsh
    npm run start
@@ -170,11 +170,11 @@ In this task, you'll access the GitHub enterprise account and create a new repos
 
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
-1. In a new browser tab open ```https://www.github.com/login```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the crentials. Use the same username and password to login into GitHub.
+1. In a new browser tab open ```https://www.github.com/login```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the credentials. Use the same username and password to login into GitHub.
 
    ![](media/dev2.png) 
    
-1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
+1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window, and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 
    ![](media/2dgn154.png) 
     
@@ -208,7 +208,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/2dg120.png "New Repository Creation Form")
 
-1. In the Are you absolutely sure? pop up window, Copy the **repository name** **(1)**, paste it in the **box** **(2)**, and cick on **I understand the consequences, delete this repository** **(3)**.
+1. In the Are you absolutely sure? pop up window, Copy the **repository name** **(1)**, paste it in the **box** **(2)**, and click on **I understand the consequences, delete this repository** **(3)**.
 
    ![The `New Repository` creation form in GitHub.](media/2dg121.png "New Repository Creation Form")
 
@@ -353,7 +353,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    git push
    ```
     
-1. From your GitHub repository, select **Actions** ***(1)*** tab. You'll see an Action named **Updated node version** ***(2)*** executing. Please wait untill the execution completes
+1. From your GitHub repository, select **Actions** ***(1)*** tab. You'll see an Action named **Updated node version** ***(2)*** executing. Please wait until the execution completes
 
    ![](media/2dgn160.png)
    
@@ -388,7 +388,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/ex2-kc-codespace.png)
    
-   >**Note**: Incase you had created codespace in previous task. Click on **+** button to create new codespace.
+   >**Note**: In case you had created codespace in previous task. Click on **+** button to create new codespace.
    
 1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 

@@ -91,7 +91,7 @@ In this task, you'll access a Dev Box and explore its features.
 
    ![](media/e124.png)
    
-1. The Devbox creation will take around 60 - 90 minutes time. You can move to the next exercise and come back later to check on the devbox environment.
+1. The Devbox creation will take around 60 - 90 minutes time. You can move to the next exercise and come back later to check on the Devbox environment.
 
    ![](media/2dgn86.png)
 

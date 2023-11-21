@@ -24,7 +24,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 1. Now under the Create dev box definition window, add the below details and then click on **Create** **(6)**.
 
    - Name: **devboxdef-01** **(1)**
-   - Image: From the drop-dowm select **Windows 11 Enterprise + Microsoft 365 Apps 21H2 | Hibernate Supported** **(2)**
+   - Image: From the drop-down select **Windows 11 Enterprise + Microsoft 365 Apps 21H2 | Hibernate Supported** **(2)**
    - Image version: **Latest** **(3)**
    - Compute: **8vCPU, 32 GB RAM** **(4)**
    - Storage: **1024 GB SSD** **(5)**

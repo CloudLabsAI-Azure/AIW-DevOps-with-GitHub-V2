@@ -331,7 +331,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn165.png)
    
-   **Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
+   **Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 16. 
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 

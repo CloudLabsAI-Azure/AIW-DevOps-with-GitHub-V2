@@ -49,7 +49,7 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
    ![](media/e117.png)
   
-1. Now under *Add network connection*, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** for Network Connection from the drop-down and then click on **Add**.
+1. Now under *Add network connection*, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** **(1)** for Network Connection from the drop-down and then click on **Add** **(2)**.
 
    ![](media/E1T2S3.png)
 

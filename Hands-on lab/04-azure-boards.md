@@ -35,6 +35,8 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 1. Scroll to the bottom of the page and select `Install it for Free.`
 
    ![](media/2dg50.png)
+
+**> Note:** If the **Install it for free** button is greyed out, please proceed to next step.
    
 1. On the next page, select **Complete order and begin installation**.
 

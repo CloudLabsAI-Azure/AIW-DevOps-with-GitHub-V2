@@ -371,7 +371,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn127.png) 
    
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Contoso Traders app has been hosted successfully.
+1. Click on **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
 
    ![](media/2dgn128.png) 
     

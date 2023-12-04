@@ -234,9 +234,9 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      
    ![](media/2dgn72.png) 
      
-    Run the below mentioned command in the terminal. Make sure to replace your_github_repository-url with the value you copied in step 11 and Unique-ID in step 12
+    Run the below mentioned command in the terminal. Make sure to replace your_github_repository-url with the value you copied in step 11 and Unique-ID in step 12.
 
-    Note: This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files    repository created in Step 1. 
+    Note: This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1. 
 
       ```pwsh
       git init
@@ -247,7 +247,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
       git push -u origin<Unique-ID> main
       ```
      
-   - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access
+   - If you are asked authenticate your GitHub account. Select **Sign in with your browser** and you might be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
 
        ![](media/ex2-t3.png)
        

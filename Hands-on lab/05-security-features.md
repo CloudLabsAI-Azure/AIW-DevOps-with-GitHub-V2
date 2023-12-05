@@ -48,7 +48,7 @@ In this task, you'll enable repository security advisories. You can use GitHub S
 
    - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
-   - Description: **Add** ***(3)*** the below mentioned details in the description section.
+   - Description: **Add** ***(3)*** the below-mentioned details in the description section.
    
    ```
    Impact

@@ -10,7 +10,7 @@ In this task, you'll configure code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
    
-1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under the security side blade.
+1. Select the **Settings** ***(1)*** tab from the GitHub browser tab. Click on **Code security and analysis** ***(2)*** under the security side blade.
 
    ![](media/2dgn168.png)  
    
@@ -34,7 +34,7 @@ In this task, you'll configure code scanning and explore CodeQL alerts. Code sca
   
 1. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
    
-   ![](media/devops1.6.png)
+   ![](media/devOps2.png)
     
 ## Task 2: Repository security advisories  
  

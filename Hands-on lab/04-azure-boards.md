@@ -18,6 +18,8 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/preview-features.png)
 
+> **Note:** If you get a sign-in error, then click on **Sign out and sign with a different account** link and login with your ODL user's Azure credentials. In the next page, leave the details to default and proceed. You should be logged in to the Azure DevOps organization. 
+
 1. In the **Preview features** pop-up, ensure to set the toggle button to **off** for **New Boards Hubs** **(1)** and close the preview features by clicking on **X** **(2)**.
    
    ![](media/new-boards-hubs1.png)
@@ -33,6 +35,8 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 1. Scroll to the bottom of the page and select `Install it for Free.`
 
    ![](media/2dg50.png)
+
+**> Note:** If the **Install it for free** button is greyed out, please proceed to next step.
    
 1. On the next page, select **Complete order and begin installation**.
 

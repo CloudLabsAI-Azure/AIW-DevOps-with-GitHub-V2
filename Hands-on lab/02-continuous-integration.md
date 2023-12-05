@@ -3,7 +3,7 @@
 
 Duration: 80 minutes
 
-In this exercise, you are going to set up the local infrastructure using dotnet. There are three parts of the application you will be working with: carts, products, and UI. You will deploy the infrastructure to cloud using GitHub Actions. you will also build automation in GitHub for updating and republishing our workflows when the code changes.
+In this exercise, you are going to set up the local infrastructure using dotnet. There are three parts of the application you will be working with: carts, products, and UI. You will deploy the infrastructure to cloud using GitHub Actions. You will also build automation in GitHub for updating and republishing our workflows when the code changes.
 
 ### Task 1: Access the lab files
 
@@ -234,9 +234,9 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      
    ![](media/2dgn72.png) 
      
-    Run the below mentioned command in the terminal. Make sure to replace <your_github_repository-url> with the value you copied in step 11 and Unique-ID in step 12
+    Run the below mentioned command in the terminal. Make sure to replace your_github_repository-url with the value you copied in step 11 and Unique-ID in step 12.
 
-    Note: This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files    repository created in Step 1. 
+    Note: This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1. 
 
       ```pwsh
       git init
@@ -247,7 +247,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
       git push -u origin<Unique-ID> main
       ```
      
-   - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access
+   - If you are asked authenticate your GitHub account. Select **Sign in with your browser** and you might be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
 
        ![](media/ex2-t3.png)
        
@@ -279,7 +279,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository secret** ***(3)*** button.
 
-   ![](media/Ex2-task4-step6a.png)
+   ![](media/exe2-task4-step6-action-setup.png)
     
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
@@ -301,7 +301,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    ```json
    {
       "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-      "clientSecret": "client-secret",
+      "clientSecret": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
       "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
       "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
    }
@@ -331,7 +331,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn165.png)
    
-   **Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
+   **Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 15. Else, continue from step 16. 
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 
@@ -371,7 +371,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn127.png) 
    
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Contoso Traders app has been hosted successfully.
+1. Click on **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
 
    ![](media/2dgn128.png) 
     

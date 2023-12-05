@@ -49,7 +49,7 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
    ![](media/e117.png)
   
-1. Now under *Add network connection*, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** for Network Connection from the drop-down and then click on **Add**.
+1. Now under *Add network connection*, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** **(1)** for Network Connection from the drop-down and then click on **Add** **(2)**.
 
    ![](media/E1T2S3.png)
 
@@ -87,9 +87,9 @@ In this task, you'll access a Dev Box and explore its features.
 
 1. On a new browser tab, visit ```https://devbox.microsoft.com/```.
 
-1. Here, click on **Add a dev box** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
+1. Here, click on **+ New dev box** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
 
-   ![](media/e124.png)
+   ![](media/exe1-task4-step2-create-devbox.png)
    
 1. The Devbox creation will take around 60 - 90 minutes time. You can move to the next exercise and come back later to check on the Devbox environment.
 

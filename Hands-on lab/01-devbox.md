@@ -29,7 +29,7 @@ In this task, you'll create a dev box definition. Dev box definitions define the
    - Compute: **8vCPU, 32 GB RAM** **(4)**
    - Storage: **1024 GB SSD** **(5)**
 
-   ![](media/devbox.png)
+      ![](media/devbox.png)
   
 1. Once the definition is created. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
 
@@ -79,7 +79,7 @@ In this task, you'll create a Dev pool using a previously configured network con
    - Auto-stop: Select **No** button **(5)**
    - Licensing: Check the checkbox **(6)**
   
-   ![](media/E1T3S3.png)
+      ![](media/E1T3S3.png)
   
 ## Task 4: Launching Dev box
 

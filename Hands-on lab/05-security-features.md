@@ -2,11 +2,11 @@
 
 Duration: 40 minutes
 
-In this exercise, you'll explore GitHub Enterprise features, which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.
+In this exercise, you'll explore GitHub Enterprise features, which are GitHub's advanced security features. You'll configure and explore code scanning, CodeQL alerts, repository security advisories, and GitHub dependants.
 
 ## Task 1: Enabling Code scanning and CodeQL alerts 
 
-In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
+In this task, you'll configure code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
    

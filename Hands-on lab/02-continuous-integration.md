@@ -311,14 +311,14 @@ In this exercise, you will build automation in GitHub for updating and republish
    - **Name** : Enter **SERVICEPRINCIPAL** ***(1)***
    - **Value** : Paste the service principal details in JSON format ***(2)***
    
-   ![](media/2dgn36.png)    
+      ![](media/2dgn36.png)    
    
 1. Under **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
 
    - **Name** : Enter **ENVIRONMENT** ***(1)***
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** ***(2)***
    
-   ![](media/2dgn33.png)
+      ![](media/2dgn33.png)
    
 1. From your GitHub repository, select the **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, click on the **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 

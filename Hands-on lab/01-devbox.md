@@ -3,17 +3,17 @@
 Duration: 40 minutes
 
 Microsoft Dev Box is a service that provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
-In the exercise, you'll configure a dev box environment access the dev box, and explore its features.
+In the exercise, you'll configure a dev box environment, access the dev box, and explore its features.
 
 ## Task 1: Create Dev box definition
 
-In this task, you'll create a Dev box definition. Dev box definitions define the image and SKU (compute + storage) that will be used in the creation of the dev boxes.
+In this task, you'll create a dev box definition. Dev box definitions define the image and SKU (compute + storage) that will be used in the creation of the dev boxes.
 
 1. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
 
    ![](media/ex1-t1.png)
   
-1. Now on the left-hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Now on the left-hand side blade, click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/devops1.1.png)
   
@@ -21,7 +21,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
    ![](media/dev-def.png)
   
-1. Now under the Create dev box definition window, add the below details and then click on **Create** **(6)**.
+1. Now, under the Create dev box definition window, add the below details and then click on **Create** **(6)**.
 
    - Name: **devboxdef-01** **(1)**
    - Image: From the drop-down select **Windows 11 Enterprise + Microsoft 365 Apps 21H2 | Hibernate Supported** **(2)**
@@ -91,7 +91,7 @@ In this task, you'll access a Dev Box and explore its features.
 
    ![](media/exe1-task4-step2-create-devbox.png)
    
-1. The Devbox creation will take around 60 - 90 minutes time. You can move to the next exercise and come back later to check on the Devbox environment.
+1. The Devbox creation will take around 60 - 90 minutes. You can move to the next exercise and come back later to check on the Devbox environment.
 
    ![](media/2dgn86.png)
 

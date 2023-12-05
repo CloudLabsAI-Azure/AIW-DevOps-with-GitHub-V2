@@ -94,7 +94,7 @@ In this task, you'll enable repository security advisories. You can use GitHub S
    - Severity: **High** ***(5)***
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
   
-   ![](media/ex5-t2-securityadvisor2.png)
+      ![](media/ex5-t2-securityadvisor2.png)
    
  1. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
@@ -149,8 +149,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 1. Pull the latest changes from your GitHub repository to your local GitHub folder.
 
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files  # This path may vary depending on how
-                                                            # you set up your lab files repository
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
    git pull
    ```
    

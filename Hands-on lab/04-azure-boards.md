@@ -18,13 +18,13 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/preview-features.png)
 
-> **Note:** If you get a sign-in error, then click on the **Sign out and sign with a different account** link and log in with your ODL user's Azure credentials. On the next page, leave the details to default and proceed. You should be logged in to the Azure DevOps organization. 
+> **Note:** If you get a sign-in error, then click on the **Sign out and sign with a different account** link and log in with your ODL user's Azure credentials. On the next page, leave the details to default and proceed. You should be logged in to the Azure DevOps organization.
 
 1. In the **Preview features** pop-up, ensure to set the toggle button to **off** for **New Boards Hubs** **(1)** and close the preview features by clicking on **X** **(2)**.
    
    ![](media/new-boards-hubs1.png)
 
-1. In your browser open GitHub Marketplace by navigating to the below URL:
+1. In your browser, open GitHub Marketplace by navigating to the below URL:
 
     ``` 
     https://github.com/marketplace/azure-boards
@@ -65,7 +65,8 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    ![](media/azuredevops.png)
 
 1. When the integration succeeds, you will be taken to the Azure DevOps Board. In the onboarding tutorial click on **Create** to create an initial Issue in the `To Do` Column.
-    >**Note**: Make sure to reduce the screen resolution in your browser window if you are not able to view the **Create** and **Create and link a pull request** options in the onboarding tutorial page.
+   
+    >**Note**: Make sure to reduce the screen resolution in your browser window if you are not able to view the **Create** and **Create and link a pull request** options on the onboarding tutorial page.
 
    ![](media/2dg55.png)
     
@@ -111,7 +112,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/2dgn140.png)
    
-1. Copy `#test azure boards` code and paste it into line number 1 of the file. Make sure there are no indentation errors.
+1. Copy the `#test azure boards` code and paste it into line number 1 of the file. Make sure there are no indentation errors.
 
    ![](media/2dgn166.png)
    
@@ -122,7 +123,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/E3T2S5.png)
    
-1. On Open a pull request tab, Click on **Create pull request** 
+1. On Open a pull request tab, Click on **Create pull request**.
 
    ![](media/ex4-create-pr.png)
    
@@ -134,7 +135,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/ex4-observe-pr.png)
    
-1. Navigate back to the GitHub browser tab and select **Pull requests** tab.
+1. Navigate back to the GitHub browser tab and select the **Pull requests** tab.
 
    ![](media/ex4-github-pr.png)
    
@@ -158,7 +159,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dg71.png)
    
-1. From the Test plans tab, click on **+ New Test Plan**
+1. From the Test Plans tab, click on **+ New Test Plan**
 
    ![](media/2dg72.png)
    
@@ -213,17 +214,17 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dgn138.png)   
    
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the contoso traders app has been hosted successfully.
+1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Contoso trader's app has been hosted successfully.
 
    ![](media/2dgn128.png)   
 
-1. Verify the availability of the web app, Laptops page, Controllers page, and Desktops page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
+1. Verify the availability of the web app, Laptop page, Controllers page, and desktop page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
 
    ![](media/2dgn167.png)
    
    ![](media/ex4-save&close.png)   
    
-1. From the execute tab, Verify the **outcome** of the manual testing. The outcome will be in a passed state if the web app worked as expected and vice versa.
+1. From the execute tab, Verify the **outcome** of the manual testing. The outcome will be in a passed state if the web app works as expected and vice versa.
 
    ![](media/ex4-testsuite.png)
    

@@ -44,13 +44,13 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/ex4-kc-install&auth.png)
     
-   >**Note**: If you see the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account, follow the below steps.
+   >**Note**: If you see the message **You’ve already purchased this on all of your GitHub accounts**, this indicates Azure Boards integration is already used in your account. Follow the below steps.
    
    - Scroll to the top of the Azure Boards Marketplace page and select **grant this app access to your GitHub account**.
    
    ![](media/2dg51.png)
    
-   - Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
+   - Select the lab file repository `aiw-devops-with-github-lab-files` that you created earlier and click on **Install & Authorize**.
 
    ![](media/ex4-kc-install&auth.png)
 
@@ -60,17 +60,17 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
     ![](media/img10.png).
     
-1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders-<inject key="DeploymentID" enableCopy="false" /> (2)** project then click on **Continue (3)**
+1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders-<inject key="DeploymentID" enableCopy="false" /> (2)** project, then click on **Continue (3)**
 
    ![](media/azuredevops.png)
 
-1. When the integration succeeds, you will be taken to the Azure DevOps Board. In the onboarding tutorial click on **Create** to create an initial Issue in the `To Do` Column.
+1. When the integration succeeds, you will be taken to the Azure DevOps Board. In the onboarding tutorial, click on **Create** to create an initial issue in the `To Do` column.
    
     >**Note**: Make sure to reduce the screen resolution in your browser window if you are not able to view the **Create** and **Create and link a pull request** options on the onboarding tutorial page.
 
    ![](media/2dg55.png)
     
-1. Now click on **Create and link a pull request** to create a pull request associated with your Issue.
+1. Now click on **Create and link a pull request** to create a pull request associated with your issue.
 
    ![After completion of the onboarding tutorial. Two todo confirmation messages displayed.](media/image15.png "Get started and quick tip")
 
@@ -78,7 +78,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/viewworkitem.png)
    
-1. Open the new Issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board Issue.
+1. Open the new issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board issue.
 
    ![Linked GitHub items in an Azure DevOps issue in Boards.](media/ex3-t1-8.png "GitHub Pull Request and Comment")
 

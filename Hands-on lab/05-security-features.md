@@ -14,7 +14,7 @@ In this task, you'll configure code scanning and explore CodeQL alerts. Code sca
 
    ![](media/2dgn168.png)  
    
-1. Click on **Set up** **(1)** button to enable CodeQL analysis and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
+1. Click on the **Set up** **(1)** button to enable CodeQL analysis and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
    ![](media/2dgn169.png)      
 
@@ -24,11 +24,11 @@ In this task, you'll configure code scanning and explore CodeQL alerts. Code sca
 
    ![](media/ex5-task1-step3b.png) 
   
-1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
+1. Navigate to the **Actions** ***(1)*** tab. You can review the **workflow** ***(2)*** run.
     
    ![](media/ex5-codeql-actions.png) 
   
-1. Navigate to **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
+1. Navigate to the **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
    
    ![](media/ex5-codescanning-viewalerts.png)
   
@@ -38,9 +38,9 @@ In this task, you'll configure code scanning and explore CodeQL alerts. Code sca
     
 ## Task 2: Repository security advisories  
  
-In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
+In this task, you'll enable repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
  
-1. Navigate to **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade and click on **New draft security advisory** ***(3)***.
+1. Navigate to the **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade, and click on **New draft security advisory** ***(3)***.
 
    ![](media/ex5-t2-advisories.png)  
      

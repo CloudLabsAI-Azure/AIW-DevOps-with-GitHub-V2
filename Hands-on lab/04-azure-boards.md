@@ -40,7 +40,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    
 1. On the next page, select **Complete order and begin installation**.
 
-1. Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
+1. Select the lab files repository `aiw-devops-with-github-lab-files` that you created earlier and click on **Install & Authorize**.
 
    ![](media/ex4-kc-install&auth.png)
     

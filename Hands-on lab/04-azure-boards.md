@@ -2,23 +2,23 @@
 
 Duration: 60 minutes
 
-In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provides rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
+In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provide rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
 
 ### Task 1: Connect Azure Board with GitHub
 
-In this task, you will connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items. 
+In this task, you will connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items.
 
-1. In your browser open Azure DevOps by navigating to the below URL:
+1. In your browser, open Azure DevOps by navigating to the below URL:
 
     ``` 
     https://dev.azure.com/aiw-devops/
     ```
 
-1. In the Azure DevOps page click on the **User settings** **(1)** from the top right corner of the page and click on **Preview features** **(2)**.
+1. In the Azure DevOps page, click on the **User settings** **(1)** from the top right corner of the page and click on **Preview features** **(2)**.
 
    ![](media/preview-features.png)
 
-> **Note:** If you get a sign-in error, then click on **Sign out and sign with a different account** link and login with your ODL user's Azure credentials. In the next page, leave the details to default and proceed. You should be logged in to the Azure DevOps organization. 
+> **Note:** If you get a sign-in error, then click on the **Sign out and sign with a different account** link and log in with your ODL user's Azure credentials. On the next page, leave the details to default and proceed. You should be logged in to the Azure DevOps organization. 
 
 1. In the **Preview features** pop-up, ensure to set the toggle button to **off** for **New Boards Hubs** **(1)** and close the preview features by clicking on **X** **(2)**.
    
@@ -36,7 +36,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/2dg50.png)
 
-**> Note:** If the **Install it for free** button is greyed out, please proceed to next step.
+**> Note:** If the **Install it for free** button is greyed out, please proceed to the next step.
    
 1. On the next page, select **Complete order and begin installation**.
 

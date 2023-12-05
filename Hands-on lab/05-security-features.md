@@ -2,7 +2,7 @@
 
 Duration: 40 minutes
 
-In this exercise, you'll explore GitHub Enterprise features which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.  
+In this exercise, you'll explore GitHub Enterprise features, which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.
 
 ## Task 1: Enabling Code scanning and CodeQL alerts 
 
@@ -32,7 +32,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
    
    ![](media/ex5-codescanning-viewalerts.png)
   
-1. You will be navigated to **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
+1. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
    
    ![](media/devops1.6.png)
     
@@ -59,7 +59,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    Patches
    Has the problem been patched? What versions should users upgrade to?
 
-   It is patched and rectified the error. Please use 1.2 version
+   It is patched and rectified the error. Please use the 1.2 version
 
    Workarounds
    Is there a way for users to fix or remediate the vulnerability without upgrading?
@@ -96,7 +96,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
   
    ![](media/ex5-t2-securityadvisor2.png)
    
- 1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
+ 1. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
     ![](media/ex5-t2-securityadvisor3.png)
     
@@ -110,7 +110,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security and analysis** ***(2)*** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security and analysis** ***(2)*** under Security from the side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
@@ -134,7 +134,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
    
-   **Note:** If you see Create Security Update option, click on it. After it is created then select Review security update. 
+   **Note:** If you see the Create Security Update option, click on it. After it is created select Review security update. 
 
 1. Navigate to **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)*** and merge it to your main branch.
 

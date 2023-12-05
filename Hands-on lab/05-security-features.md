@@ -44,7 +44,7 @@ In this task, you'll enable repository security advisories. You can use GitHub S
 
    ![](media/ex5-t2-advisories.png)  
      
-1. In the Open a draft security advisory tab, under the Advisory Details section provide the following details.
+1. In the Open a draft security advisory tab, under the Advisory Details section, provide the following details:
 
    - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
@@ -64,14 +64,14 @@ In this task, you'll enable repository security advisories. You can use GitHub S
    Workarounds
    Is there a way for users to fix or remediate the vulnerability without upgrading?
 
-   // set up rate limiter: maximum of five requests per minute
+   //Set up rate limiter: maximum of five requests per minute
    var RateLimit = require('express-rate-limit');
    var limiter = new RateLimit({
    windowMs: 1601000, // 1 minute
    max: 5
    });
 
-   // apply rate limiter to all requests
+   //Apply rate limiter to all requests
    app.use(limiter);
 
    Added the above code in app.js

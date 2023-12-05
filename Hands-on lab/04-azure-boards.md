@@ -18,7 +18,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/preview-features.png)
 
-> **Note:** If you get a sign-in error, then click on the **Sign out and sign with a different account** link and log in with your ODL user's Azure credentials. On the next page, leave the details to default and proceed. You should be logged in to the Azure DevOps organization.
+   > **Note:** If you get a sign-in error, then click on the **Sign out and sign with a different account** link and log in with your ODL user's Azure credentials. On the next page, leave the details to default and proceed. You should be logged in to the Azure DevOps organization.
 
 1. In the **Preview features** pop-up, ensure to set the toggle button to **off** for **New Boards Hubs** **(1)** and close the preview features by clicking on **X** **(2)**.
    
@@ -48,17 +48,17 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    
    - Scroll to the top of the Azure Boards Marketplace page and select **grant this app access to your GitHub account**.
    
-   ![](media/2dg51.png)
+      ![](media/2dg51.png)
    
    - Select the lab file repository `aiw-devops-with-github-lab-files` that you created earlier and click on **Install & Authorize**.
 
-   ![](media/ex4-kc-install&auth.png)
+      ![](media/ex4-kc-install&auth.png)
 
    - Select the cloudlabs **Email** <inject key="AzureAdUserEmail"></inject>
      
    - Now enter the password and **click** on **Sign in**.
 
-    ![](media/img10.png).
+      ![](media/img10.png).
     
 1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders-<inject key="DeploymentID" enableCopy="false" /> (2)** project, then click on **Continue (3)**
 
@@ -121,7 +121,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
    - Provide `workitem ID Updated` ***(2)*** as title. Make sure to provide the same **Work item ID** that was created in the earlier step in Azure DevOps.
    - Select **Create a new branch for this commit and start a pull request** ***(3)***  and name the new branch as **update carts** ***(4)***.
 
-   ![](media/E3T2S5.png)
+      ![](media/E3T2S5.png)
    
 1. On Open a pull request tab, Click on **Create pull request**.
 
@@ -169,7 +169,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    - Area Path: **contosotraders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
    - Iteration: Leave it to **default** ***(3)***
    
-   ![](media/2dgn144.png)   
+      ![](media/2dgn144.png)   
    
 1. From contosotraders-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** ***(1)*** button, hover over **New Suite** ***(2)***, and select **Static suite** ***(3)***.
 
@@ -187,12 +187,12 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    - Name: **Validate the web app** ***(1)***
    - Steps:
-     - 1. Actions: **Access the Contoso Traders app** ***(2)*** Expected result: **Succeeded** ***(3)***          
-     - 2. Actions: **Access the Laptop page** ***(4)*** Expected result: **Succeeded** ***(5)***  
-     - 3. Actions: **Access the Controllers page** ***(6)*** Expected result: **Succeeded** ***(7)***
-     - 4. Actions: **Access the Desktop page** ***(8)*** Expected result: **Succeeded** ***(9)***
+     - Actions: **Access the Contoso Traders app** ***(2)*** Expected result: **Succeeded** ***(3)***          
+     - Actions: **Access the Laptop page** ***(4)*** Expected result: **Succeeded** ***(5)***  
+     - Actions: **Access the Controllers page** ***(6)*** Expected result: **Succeeded** ***(7)***
+     - Actions: **Access the Desktop page** ***(8)*** Expected result: **Succeeded** ***(9)***
 
-   ![](media/ex4-validate-webapp.png) 
+         ![](media/ex4-validate-webapp.png) 
 
 1. From the Test plans tab, navigate to **Execute** ***(1)*** tab, select the **validate the web app** ***(2)*** test point and click on **Run for web app** ***(3)***.
 

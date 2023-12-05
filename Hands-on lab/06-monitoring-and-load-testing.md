@@ -46,13 +46,17 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
    ![](media/upd-2dgn117.png)
    
-1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a quick test** ***(3)***.
+1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a URL-based test** ***(3)***.
 
-   ![](media/2dgn96.png)
+   ![](media/devOps3.png)
 
-1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Run Test** ***(2)***.
+1. On the **Create a URL-based test** page, under basic tab paste the **Endpoint URL** as Test URL and  leave everything as default, then click **Review + Create**.
 
-   ![](media/ex6-task2-step5.png)
+   ![](media/devOps4.png)
+
+1. Click on **Create**.
+
+   ![](media/devOps5.png)
 
 1. The test run will start running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 

@@ -2,19 +2,19 @@
 
 Duration: 40 minutes
 
-In this exercise, you'll explore GitHub Enterprise features which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.  
+In this exercise, you'll explore GitHub Enterprise features, which are GitHub's advanced security features. You'll configure and explore code scanning, CodeQL alerts, repository security advisories, and GitHub dependants.
 
 ## Task 1: Enabling Code scanning and CodeQL alerts 
 
-In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
+In this task, you'll configure code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
    
-1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under the security side blade.
+1. Select the **Settings** ***(1)*** tab from the GitHub browser tab. Click on **Code security and analysis** ***(2)*** under the security side blade.
 
    ![](media/2dgn168.png)  
    
-1. Click on **Set up** **(1)** button to enable CodeQL analysis and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
+1. Click on the **Set up** **(1)** button to enable CodeQL analysis and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
    ![](media/2dgn169.png)      
 
@@ -24,31 +24,31 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/ex5-task1-step3b.png) 
   
-1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
+1. Navigate to the **Actions** ***(1)*** tab. You can review the **workflow** ***(2)*** run.
     
    ![](media/ex5-codeql-actions.png) 
   
-1. Navigate to **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
+1. Navigate to the **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
    
    ![](media/ex5-codescanning-viewalerts.png)
   
-1. You will be navigated to **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
+1. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
    
-   ![](media/devops1.6.png)
+   ![](media/devOps2.png)
     
 ## Task 2: Repository security advisories  
  
-In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
+In this task, you'll enable repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
  
-1. Navigate to **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade and click on **New draft security advisory** ***(3)***.
+1. Navigate to the **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade, and click on **New draft security advisory** ***(3)***.
 
    ![](media/ex5-t2-advisories.png)  
      
-1. In the Open a draft security advisory tab, under the Advisory Details section provide the following details.
+1. In the Open a draft security advisory tab, under the Advisory Details section, provide the following details:
 
    - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
-   - Description: **Add** ***(3)*** the below mentioned details in the description section.
+   - Description: **Add** ***(3)*** the below-mentioned details in the description section.
    
    ```
    Impact
@@ -59,19 +59,19 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    Patches
    Has the problem been patched? What versions should users upgrade to?
 
-   It is patched and rectified the error. Please use 1.2 version
+   It is patched and rectified the error. Please use the 1.2 version
 
    Workarounds
    Is there a way for users to fix or remediate the vulnerability without upgrading?
 
-   // set up rate limiter: maximum of five requests per minute
+   //Set up rate limiter: maximum of five requests per minute
    var RateLimit = require('express-rate-limit');
    var limiter = new RateLimit({
    windowMs: 1601000, // 1 minute
    max: 5
    });
 
-   // apply rate limiter to all requests
+   //Apply rate limiter to all requests
    app.use(limiter);
 
    Added the above code in app.js
@@ -94,9 +94,9 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - Severity: **High** ***(5)***
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
   
-   ![](media/ex5-t2-securityadvisor2.png)
+      ![](media/ex5-t2-securityadvisor2.png)
    
- 1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
+ 1. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
     ![](media/ex5-t2-securityadvisor3.png)
     
@@ -110,7 +110,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security and analysis** ***(2)*** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security and analysis** ***(2)*** under Security from the side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
@@ -134,7 +134,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
    
-   **Note:** If you see Create Security Update option, click on it. After it is created then select Review security update. 
+   **Note:** If you see the Create Security Update option, click on it. After it is created select Review security update. 
 
 1. Navigate to **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)*** and merge it to your main branch.
 
@@ -149,8 +149,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 1. Pull the latest changes from your GitHub repository to your local GitHub folder.
 
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files  # This path may vary depending on how
-                                                            # you set up your lab files repository
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
    git pull
    ```
    

@@ -24,24 +24,28 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 1. Now under Create dev box definition window, add the below details and then click on **Create** **(6)**.
 
    - Name: **devboxdef-01** **(1)**
-   - Image: **Windows 11 Enterprise + Microsoft 365 Apps 21H2** **(2)**
+   
+   - Image: **Windows 11 Enterprise + Microsoft 365 Apps 21H2 | Hibernate supported** **(2)**
+   
    - Image version: **Latest** **(3)**
+   
    - Compute: **8vCPU, 32 GB RAM** **(4)**
+   
    - Storage: **1024 GB SSD** **(5)**
 
-   ![](media/sdevbox2.jpg)
+     ![](media/24-05-2024.png)
   
-1. Once the definition is created. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
-
-   ![](media/ex1-t1-5.png)
-  
-   >**Note:** Wait for the deployment to complete before proceeding with the lab.
+1. Wait for the deployment to complete before proceeding with the next task.
   
 ## Task 2: Create Network connection
 
 In this task, you'll configure the network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
 
-1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Once the definition is created. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
+
+   ![](media/ex1-t1-5.png)
+
+1. Click on **Dev centers** **(1)** under Configure section and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/devops1.1.png)
 
@@ -67,16 +71,21 @@ In this task, you'll create a Dev pool using previously configured network conne
 
    ![](media/2dgn76.png)
   
-1. Under *Create a dev box pool* window, enter the following details and click on **Create** **(7)**.
+1. Under *Create a dev box pool* window, enter the following details and click on **Create** **(8)**.
 
    - Name: **devbox-pool-<inject key="DeploymentID" enableCopy="false" />** **(1)**
    - Dev box definition: **devboxdef-01** **(2)**
    - Network Connection: **fabrikam-connection-<inject key="location" enableCopy="false" />** **(3)**
+
+      ![](media/24-05-2024(1).png)
+
    - Dev box Creator Privileges: **Local Administrator** **(4)**
+   
    - Auto-stop: Select **No** button **(5)**
+   
    - Licensing: Check the checkbox **(6)**
   
-   ![](media/E1T3S3.png)
+     ![](media/24-05-2024(4).png)
   
 ## Task 4: Launching Dev box
 
@@ -86,7 +95,7 @@ In this task, you'll access a Dev Box and explore its features.
 
 1. Here, click on **Get started** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
 
-   ![](media/e124.png)
+   ![](media/24-05-2024(3).png)
    
 1. The Devbox creation will take around 60 - 90 minutes time. You can move to the next exercise and come back later to check on the devbox environment.
 

@@ -2,29 +2,29 @@
 
 Duration: 60 minutes
 
-In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provides rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
+In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provide rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
 
 ### Task 1: Connect Azure Board with GitHub
 
-In this task, you will connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items. 
+In this task, you will connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items.
 
-1. In your browser open Azure DevOps by navigating to the below URL:
+1. In your browser, open Azure DevOps by navigating to the below URL:
 
     ``` 
     https://dev.azure.com/aiw-devops/
     ```
 
-1. In the Azure DevOps page click on the **User settings** **(1)** from the top right corner of the page and click on **Preview features** **(2)**.
+1. In the Azure DevOps page, click on the **User settings** **(1)** from the top right corner of the page and click on **Preview features** **(2)**.
 
    ![](media/preview-features.png)
 
-> **Note:** If you get a sign-in error, then click on **Sign out and sign with a different account** link and login with your ODL user's Azure credentials. In the next page, leave the details to default and proceed. You should be logged in to the Azure DevOps organization. 
+   > **Note:** If you get a sign-in error, then click on the **Sign out and sign with a different account** link and log in with your ODL user's Azure credentials. On the next page, leave the details to default and proceed. You should be logged in to the Azure DevOps organization.
 
 1. In the **Preview features** pop-up, ensure to set the toggle button to **off** for **New Boards Hubs** **(1)** and close the preview features by clicking on **X** **(2)**.
    
    ![](media/new-boards-hubs1.png)
 
-1. In your browser open GitHub Marketplace by navigating to the below URL:
+1. In your browser, open GitHub Marketplace by navigating to the below URL:
 
     ``` 
     https://github.com/marketplace/azure-boards
@@ -36,40 +36,41 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/2dg50.png)
 
-**> Note:** If the **Install it for free** button is greyed out, please proceed to next step.
+**> Note:** If the **Install it for free** button is greyed out, please proceed to the next step.
    
 1. On the next page, select **Complete order and begin installation**.
 
-1. Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
+1. Select the lab files repository `aiw-devops-with-github-lab-files` that you created earlier and click on **Install & Authorize**.
 
    ![](media/ex4-kc-install&auth.png)
     
-   >**Note**: If you see the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account, follow the below steps.
+   >**Note**: If you see the message **You’ve already purchased this on all of your GitHub accounts**, this indicates Azure Boards integration is already used in your account. Follow the below steps.
    
    - Scroll to the top of the Azure Boards Marketplace page and select **grant this app access to your GitHub account**.
    
-   ![](media/2dg51.png)
+      ![](media/2dg51.png)
    
-   - Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
+   - Select the lab file repository `aiw-devops-with-github-lab-files` that you created earlier and click on **Install & Authorize**.
 
-   ![](media/ex4-kc-install&auth.png)
+      ![](media/ex4-kc-install&auth.png)
 
    - Select the cloudlabs **Email** <inject key="AzureAdUserEmail"></inject>
      
    - Now enter the password and **click** on **Sign in**.
 
-    ![](media/img10.png).
+      ![](media/img10.png).
     
-1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders-<inject key="DeploymentID" enableCopy="false" /> (2)** project then click on **Continue (3)**
+1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders-<inject key="DeploymentID" enableCopy="false" /> (2)** project, then click on **Continue (3)**
 
    ![](media/azuredevops.png)
 
-1. When the integration succeeds, you will be taken to the Azure DevOps Board. In the onboarding tutorial click on **Create** to create an initial Issue in the `To Do` Column.
-    >**Note**: Make sure to reduce the screen resolution in your browser window if you are not able to view the **Create** and **Create and link a pull request** options in the onboarding tutorial page.
+1. When the integration succeeds, you will be taken to the Azure DevOps Board. In the onboarding tutorial, click on **Create** to create an initial issue in the `To Do` column.
+   
+    >**Note**: Make sure to reduce the screen resolution in your browser window if you are not able to view the **Create** and **Create and link a pull request** options on the onboarding tutorial page.
 
    ![](media/2dg55.png)
     
-1. Now click on **Create and link a pull request** to create a pull request associated with your Issue.
+1. Now click on **Create and link a pull request** to create a pull request associated with your issue.
 
    ![After completion of the onboarding tutorial. Two todo confirmation messages displayed.](media/image15.png "Get started and quick tip")
 
@@ -77,7 +78,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/viewworkitem.png)
    
-1. Open the new Issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board Issue.
+1. Open the new issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board issue.
 
    ![Linked GitHub items in an Azure DevOps issue in Boards.](media/ex3-t1-8.png "GitHub Pull Request and Comment")
 
@@ -111,7 +112,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/2dgn140.png)
    
-1. Copy `#test azure boards` code and paste it into line number 1 of the file. Make sure there are no indentation errors.
+1. Copy the `#test azure boards` code and paste it into line number 1 of the file. Make sure there are no indentation errors.
 
    ![](media/2dgn166.png)
    
@@ -120,9 +121,9 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
    - Provide `workitem ID Updated` ***(2)*** as title. Make sure to provide the same **Work item ID** that was created in the earlier step in Azure DevOps.
    - Select **Create a new branch for this commit and start a pull request** ***(3)***  and name the new branch as **update carts** ***(4)***.
 
-   ![](media/E3T2S5.png)
+      ![](media/E3T2S5.png)
    
-1. On Open a pull request tab, Click on **Create pull request** 
+1. On Open a pull request tab, Click on **Create pull request**.
 
    ![](media/ex4-create-pr.png)
    
@@ -134,7 +135,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/ex4-observe-pr.png)
    
-1. Navigate back to the GitHub browser tab and select **Pull requests** tab.
+1. Navigate back to the GitHub browser tab and select the **Pull requests** tab.
 
    ![](media/ex4-github-pr.png)
    
@@ -158,7 +159,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dg71.png)
    
-1. From the Test plans tab, click on **+ New Test Plan**
+1. From the Test Plans tab, click on **+ New Test Plan**
 
    ![](media/2dg72.png)
    
@@ -168,7 +169,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    - Area Path: **contosotraders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
    - Iteration: Leave it to **default** ***(3)***
    
-   ![](media/2dgn144.png)   
+      ![](media/2dgn144.png)   
    
 1. From contosotraders-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** ***(1)*** button, hover over **New Suite** ***(2)***, and select **Static suite** ***(3)***.
 
@@ -186,12 +187,12 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    - Name: **Validate the web app** ***(1)***
    - Steps:
-     - 1. Actions: **Access the Contoso Traders app** ***(2)*** Expected result: **Succeeded** ***(3)***          
-     - 2. Actions: **Access the Laptop page** ***(4)*** Expected result: **Succeeded** ***(5)***  
-     - 3. Actions: **Access the Controllers page** ***(6)*** Expected result: **Succeeded** ***(7)***
-     - 4. Actions: **Access the Desktop page** ***(8)*** Expected result: **Succeeded** ***(9)***
+     - Actions: **Access the Contoso Traders app** ***(2)*** Expected result: **Succeeded** ***(3)***          
+     - Actions: **Access the Laptop page** ***(4)*** Expected result: **Succeeded** ***(5)***  
+     - Actions: **Access the Controllers page** ***(6)*** Expected result: **Succeeded** ***(7)***
+     - Actions: **Access the Desktop page** ***(8)*** Expected result: **Succeeded** ***(9)***
 
-   ![](media/ex4-validate-webapp.png) 
+         ![](media/ex4-validate-webapp.png) 
 
 1. From the Test plans tab, navigate to **Execute** ***(1)*** tab, select the **validate the web app** ***(2)*** test point and click on **Run for web app** ***(3)***.
 
@@ -213,17 +214,17 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dgn138.png)   
    
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the contoso traders app has been hosted successfully.
+1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the Contoso trader's app has been hosted successfully.
 
    ![](media/2dgn128.png)   
 
-1. Verify the availability of the web app, Laptops page, Controllers page, and Desktops page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
+1. Verify the availability of the web app, Laptop page, Controllers page, and desktop page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** ***(1)***.
 
    ![](media/2dgn167.png)
    
    ![](media/ex4-save&close.png)   
    
-1. From the execute tab, Verify the **outcome** of the manual testing. The outcome will be in a passed state if the web app worked as expected and vice versa.
+1. From the execute tab, Verify the **outcome** of the manual testing. The outcome will be in a passed state if the web app works as expected and vice versa.
 
    ![](media/ex4-testsuite.png)
    

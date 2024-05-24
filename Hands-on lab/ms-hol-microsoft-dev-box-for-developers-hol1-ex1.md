@@ -3,7 +3,7 @@
 Duration: 40 minutes
 
 Microsoft Dev Box is a service that provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
-In the exercise, you'll configure a dev box environment and access the dev box and explore its features.
+In the exercise, you'll configure a dev box environment access the dev box and explore its features.
 
 ## Task 1: Create Dev box definition
 
@@ -13,15 +13,15 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
    ![](media/ex1-t1-1.png)
   
-1. Now on the left hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Now on the left-hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/devops1.1.png)
   
-1. On the left hand side pane, click on **Dev box definitions** **(1)**, and click on **+ Create** **(2)**.
+1. On the left-hand side pane, click on **Dev box definitions** **(1)**, and click on **+ Create** **(2)**.
 
    ![](media/dev-def.png)
   
-1. Now under Create dev box definition window, add the below details and then click on **Create** **(6)**.
+1. Now under the Create dev box definition window, add the below details and then click on **Create** **(6)**.
 
    - Name: **devboxdef-01** **(1)**
    
@@ -37,7 +37,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
   
 1. Wait for the deployment to complete before proceeding with the next task.
   
-## Task 2: Create Network connection
+## Task 2: Create a Network connection
 
 In this task, you'll configure the network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
 
@@ -59,11 +59,11 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
      >**Note**: Please select the network connection with which the Status is set **Passed**.
 
-## Task 3: Create dev box pool
+## Task 3: Create a dev box pool
 
-In this task, you'll create a Dev pool using previously configured network connection and Dev Box definitions. A dev box pool is a collection of dev boxes that you manage together. 
+In this task, you'll create a Dev pool using a previously configured network connection and Dev Box definitions. A dev box pool is a collection of dev boxes that you manage together. 
 
-1. Return to Microsoft dev box, and click on **Projects** **(1)** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Return to the Microsoft dev box, and click on **Projects** **(1)** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/2dgn75.png)
 
@@ -97,7 +97,7 @@ In this task, you'll access a Dev Box and explore its features.
 
    ![](media/24-05-2024(3).png)
    
-1. The Devbox creation will take around 60 - 90 minutes time. You can move to the next exercise and come back later to check on the devbox environment.
+1. The Devbox creation will take around 60 - 90 minutes. You can move to the next exercise and come back later to check on the devbox environment.
 
    ![](media/2dgn86.png)
 
@@ -122,4 +122,4 @@ In this task, you'll access a Dev Box and explore its features.
 
 ## Summary
 
-In this exercise, you have created Dev box definition, Network connection and Dev box pool in Microsoft Dev Box. Also you have accessed a Dev Box and explored its features.
+In this exercise, you have created a Dev box definition, Network connection and Dev box pool in Microsoft Dev Box. Also, you have accessed a Dev Box and explored its features.

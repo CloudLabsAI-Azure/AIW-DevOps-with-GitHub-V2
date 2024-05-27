@@ -5,7 +5,7 @@
 
    ![](media/2dgn921.png)
    
-   >Note: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
+   >**Note:** If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
    
 1. In the environment click on **OK** if you receive a prompt regarding Windows deprecation.
 
@@ -27,13 +27,13 @@
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
-   ![](media/imagesignin.png "Enter Email")
+      ![](media/imagesignin.png "Enter Email")
      
 1. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
-   ![](media/image8.png "Enter Password")
+      ![](media/image8.png "Enter Password")
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
@@ -41,11 +41,11 @@
 
 1. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
    
-1. Now you will see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
+1. Now you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](media/select-rg.png "Resource groups")
    
-1. Confirm that you have all resource group is present as shown below.
+1. Confirm that you have all resource groups present as shown below.
 
    ![](media/rgdn-new.png "Resource groups")
    

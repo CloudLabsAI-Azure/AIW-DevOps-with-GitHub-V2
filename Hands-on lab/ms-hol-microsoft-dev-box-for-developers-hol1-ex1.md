@@ -35,7 +35,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
       ![](media/24-05-2024.png)
   
-1. Wait for the deployment to complete before proceeding with the lab.
+1. Wait for the deployment to complete before proceeding with the next task.
   
 ## Task 2: Create a Network connection
 

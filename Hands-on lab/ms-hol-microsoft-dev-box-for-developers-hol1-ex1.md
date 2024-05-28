@@ -36,6 +36,8 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
       ![](media/24-05-2024.png)
   
 1. Wait for the deployment to complete before proceeding with the next task.
+
+   <validation step="38822c5f-cf39-4de9-b174-d40057508e09" />
   
 ## Task 2: Create a Network connection
 
@@ -88,6 +90,8 @@ In this task, you'll create a Dev pool using a previously configured network con
    - Licensing: Check the checkbox **(6)**
   
       ![](media/24-05-2024(4).png)
+
+      <validation step="4efc1567-6ea2-4d6d-82cc-19b9e495f429" />
   
 ## Task 4: Launching Dev box
 
@@ -121,7 +125,9 @@ In this task, you'll access a Dev Box and explore its features.
 
 7. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 
-   ![](media/2dgn151.png)  
+   ![](media/2dgn151.png)
+
+   <validation step="9c4d3be7-e79c-4f0d-9200-995105897fb3" />
 
 ## Summary
 

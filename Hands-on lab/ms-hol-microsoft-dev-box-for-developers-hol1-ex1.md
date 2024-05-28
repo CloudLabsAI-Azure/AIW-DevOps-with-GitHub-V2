@@ -37,7 +37,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
   
 1. Wait for the deployment to complete before proceeding with the next task.
 
-   <validation step="38822c5f-cf39-4de9-b174-d40057508e09" />
+    <validation step="38822c5f-cf39-4de9-b174-d40057508e09" />
   
 ## Task 2: Create a Network connection
 

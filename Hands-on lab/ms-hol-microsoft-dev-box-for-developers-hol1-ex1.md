@@ -91,7 +91,7 @@ In this task, you'll create a Dev pool using a previously configured network con
   
       ![](media/24-05-2024(4).png)
 
-      <validation step="4efc1567-6ea2-4d6d-82cc-19b9e495f429" />
+       <validation step="4efc1567-6ea2-4d6d-82cc-19b9e495f429" />
   
 ## Task 4: Launching Dev box
 
@@ -127,7 +127,7 @@ In this task, you'll access a Dev Box and explore its features.
 
    ![](media/2dgn151.png)
 
-   <validation step="9c4d3be7-e79c-4f0d-9200-995105897fb3" />
+    <validation step="9c4d3be7-e79c-4f0d-9200-995105897fb3" />
 
 ## Summary
 

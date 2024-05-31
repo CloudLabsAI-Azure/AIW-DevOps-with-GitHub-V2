@@ -117,7 +117,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
  
 1. On the **Add fault** page, select the following and select **Next: Target resources>** **(4)**.
    
-   - Faults: **AKS Chaos Mesh Pods Chaos** ***(1)***
+   - Faults: **AKS Chaos Mesh Pod Chaos** ***(1)***
    - Duration (minutes): **5** ***(2)***
    - jsonSpec: Leave it to default ***(3)***
      

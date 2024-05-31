@@ -45,7 +45,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
    
    ![](media/ex2-t2-3.png)
    
-1. Update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the command mentioned below. Run it in the terminal.
+1. Update the **Application Id(Client Id)**, **(Secret Key)client Secret**, and **tenant Id** in the command mentioned below. Run it in the terminal.
 
    ```pwsh
    az login --service-principal -u <clientId> -p <clientSecret> --tenant <tenantId>
@@ -61,7 +61,11 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
    
    ![](media/upd-2dgn48.png)   
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"` command to set secret path.
+1. Run the below mentioned command to set secret path.
+
+   ```
+   dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"
+   ```
 
    >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
 
@@ -101,12 +105,16 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
   
    ![](media/upd-2dgn52.png)     
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"` command to set secret path.
+1. Run the below mentioned command to set secret path.
 
-   ![](media/upd-2dgn53.png)
+   ```
+   dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"
+   ```
    
    >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
-   
+
+   ![](media/upd-2dgn53.png)   
+
 1. Run the below mentioned command to build and host the carts locally.
 
    ```pwsh
@@ -252,6 +260,22 @@ In this task, you will create an account in [GitHub](https://github.com) and use
        ![](media/ex2-t3.png)
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
+
+   >**Note:** If you get any error like push is blocked as secret is not allowed, do these steps.
+
+      ![](media/rulevoilation.png)
+
+1. Navigate up in the error message and click the given link to remove the secret from the commit.
+
+   ![](media/rulevoilation4.png)
+
+1. Select **It's used in test**, click on the **Allow me to expose this secret**.
+
+   ![](media/rulevoilation1.png)
+
+1. Navigate back to the **Visual Studio Code** application, run the command again.
+
+   ![](media/rulevoilation2.png)
      
 ### Task 4: Build and push using GitHub Actions
 

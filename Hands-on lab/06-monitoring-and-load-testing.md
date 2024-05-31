@@ -46,11 +46,11 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
    ![](media/upd-2dgn117.png)
    
-1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a quick test** ***(3)***.
+1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a URL-based test** ***(3)***.
 
    ![](media/2dgn96.png)
 
-1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Run Test** ***(2)***.
+1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Review + create** ***(2)*** and click on create.
 
    ![](media/ex6-task2-step5.png)
 
@@ -147,7 +147,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
    
    ![](media/ex6-task3-step19.png)
   
-1. Next on the **Conditions** tab select **Delegation type** as **Not constrained** **(1)** and click on **Review + assign** **(2)**.
+1. Next on the **Conditions** tab select **What user can do** as **Allow user to assign all roles (highly privileged)** **(1)** and click on **Review + assign** **(2)**.
 
    ![](media/ex6-task3-step20.png)
 

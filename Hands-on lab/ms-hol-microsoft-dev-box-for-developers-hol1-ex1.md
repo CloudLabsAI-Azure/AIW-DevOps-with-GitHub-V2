@@ -9,7 +9,7 @@ In the exercise, you'll configure a dev box environment access the dev box and e
 
 In this task, you'll create a Dev box definition. Dev box definitions define the image and SKU (compute + storage) that will be used in the creation of the dev boxes.
 
-1. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
+1. In the Azure portal, search for **Microsoft Dev Box** **(1)**, and then click on it from the search results **(2)**.
 
    ![](media/ex1-t1-1.png)
   
@@ -35,7 +35,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
       ![](media/24-05-2024.png)
   
-1. Wait for the deployment to complete before proceeding with the next task.
+1. Wait for the definition to get created before proceeding with the next task.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -47,14 +47,6 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 ## Task 2: Create a Network connection
 
 In this task, you'll configure the network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
-
-1. Once the definition is created. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
-
-   ![](media/ex1-t1-5.png)
-
-1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
-
-   ![](media/Implement-dev-b0x-hol1-4.png)
 
 1. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 
@@ -70,7 +62,7 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
 In this task, you'll create a Dev pool using a previously configured network connection and Dev Box definitions. A dev box pool is a collection of dev boxes that you manage together. 
 
-1. Return to the Microsoft dev box, and click on **Projects** **(1)** under **Configure** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Now, from the Microsoft Dev Box page, click on **Projects** **(1)** under **Configure** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
     ![](media/2dgn75.png)
 
@@ -92,7 +84,7 @@ In this task, you'll create a Dev pool using a previously configured network con
 
    - Auto-stop: Select **No** button **(5)**
    
-   - Licensing: Check the checkbox **(6)**
+   - Licensing: Check the checkbox **I confirm that my organization has Azure Hybrid Benefit licenses, which will apply to all dev boxes in this pool(6)**.
   
       ![](media/Implement-dev-b0x-hol1-2.png)
 

@@ -13,11 +13,11 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
    ![](media/ex1-t1-1.png)
   
-1. Now on the left-hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Now on the left-hand side blade click on **Dev Centers** **(1)** under configure and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/devops1.1.png)
   
-1. On the left-hand side pane, click on **Dev box definitions** **(1)**, and click on **+ Create** **(2)**.
+1. On the left-hand side pane, click on **Dev box definitions** **(1)** under dev box configuration, and click on **+ Create** **(2)**.
 
    ![](media/dev-def.png)
   
@@ -36,6 +36,13 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
       ![](media/24-05-2024.png)
   
 1. Wait for the deployment to complete before proceeding with the next task.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="7df6e281-5a25-416d-8ad3-7e0c8a9218d9" />
 
 <validation step="38822c5f-cf39-4de9-b174-d40057508e09" />
   
@@ -59,19 +66,19 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
    ![](media/E1T2S3.png)
 
-     >**Note**: Please select the network connection with which the Status is set **Passed**.
+   >**Note**: Please select the network connection with which the Status is set **Passed**.
 
 ## Task 3: Create a dev box pool
 
 In this task, you'll create a Dev pool using a previously configured network connection and Dev Box definitions. A dev box pool is a collection of dev boxes that you manage together. 
 
-1. Return to the Microsoft dev box, and click on **Projects** **(1)** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Return to the Microsoft dev box, and click on **Projects** **(1)** under **Configure** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/2dgn75.png)
+    ![](media/2dgn75.png)
 
-1. On the left hand side pane click on **Dev box pools** **(1)** and then click on **Create dev box pool** **(2)**.
+1. On the left hand side pane click on **Dev box pools** **(1)** under **Manage** and then click on **Create dev box pool** **(2)**.
 
-   ![](media/2dgn76.png)
+    ![](media/2dgn76.png)
   
 1. Under *Create a dev box pool* window, enter the following details and click on **Create** **(7)**.
 

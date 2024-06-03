@@ -15,7 +15,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
   
 1. Now on the left-hand side blade click on **Dev Centers** **(1)** under configure and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/devops1.1.png)
+   ![](media/Implement-dev-b0x-hol1-4.png)
   
 1. On the left-hand side pane, click on **Dev box definitions** **(1)** under dev box configuration, and click on **+ Create** **(2)**.
 
@@ -119,11 +119,11 @@ In this task, you'll access a Dev Box and explore its features.
 
 1. On **Your Dev box** page, click on the drop down button **(1)** and click on **Open in browser** **(2)**.
 
-   ![](media/2dgn147.png)
+   ![](media/Implement-dev-b0x-hol1-8.png)
 
 1. In Session settings, click on **Connect**.
 
-   ![](media/2dgn149.png)
+   ![](media/Implement-dev-b0x-hol1-9.png)
 
 1. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
 
@@ -131,7 +131,7 @@ In this task, you'll access a Dev Box and explore its features.
   
   - Password: <inject key="AzureAdUserPassword"></inject>
   
-      ![](media/2dgn150.png)
+      ![](media/Implement-dev-b0x-hol1-10.png)
 
 7. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 

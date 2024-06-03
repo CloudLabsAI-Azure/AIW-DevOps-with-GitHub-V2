@@ -1,9 +1,10 @@
 # HOL 1: Implement Dev Box
 
-Duration: 40 minutes
+Duration: 1 hour 30 minutes
 
 Microsoft Dev Box is a service that provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
 In the exercise, you'll configure a dev box environment access the dev box and explore its features.
+Dive deeper into Azure Dev Box using the [reference link](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-microsoft-dev-box).
 
 ## Task 1: Create Dev box definition
 
@@ -13,15 +14,15 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
    ![](media/ex1-t1-1.png)
   
-1. Now on the left-hand side blade click on **Dev Centers** **(1)** under configure and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+2. Now on the left-hand side blade click on **Dev Centers** **(1)** under _Configure_ and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/Implement-dev-b0x-hol1-4.png)
   
-1. On the left-hand side pane, click on **Dev box definitions** **(1)** under dev box configuration, and click on **+ Create** **(2)**.
+3. On the left-hand side pane, click on **Dev box definitions** **(1)** under _Dev box configuration_, and click on **+ Create** **(2)**.
 
    ![](media/dev-def.png)
   
-1. Now under the Create dev box definition window, add the below details and then click on **Create** **(6)**.
+4. Now under the _Create dev box definition_ window, add the below details and then click on **Create** **(6)**.
 
    - Name: **devboxdef-01** **(1)**
 
@@ -35,9 +36,10 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
       ![](media/24-05-2024.png)
   
-1. Wait for the definition to get created before proceeding with the next task.
+5. Wait for the definition to get created before proceeding with the next task.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Click on the Validate button.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -52,11 +54,11 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
    ![](media/e117.png)
   
-1. Now under *Add network connection*, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** for Network Connection from the drop-down and then click on **Add**.
+2. Now under _Add network connection_, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** for Network Connection from the drop-down and then click on **Add**.
 
    ![](media/Implement-dev-b0x-hol1-1.png)
 
-   >**Note**: Please select the network connection with which the Status is set **Passed**.
+>**Note**: Please select the network connection with which the Status is set **Passed**.
 
 ## Task 3: Create a dev box pool
 
@@ -66,11 +68,11 @@ In this task, you'll create a Dev pool using a previously configured network con
 
     ![](media/2dgn75.png)
 
-1. On the left hand side pane click on **Dev box pools** **(1)** under **Manage** and then click on **Create dev box pool** **(2)**.
+2. On the left hand side pane click on **Dev box pools** **(1)** under **Manage** and then click on **Create dev box pool** **(2)**.
 
     ![](media/2dgn76.png)
   
-1. Under *Create a dev box pool* window, enter the following details and click on **Create** **(7)**.
+3. Under *Create a dev box pool* window, enter the following details and click on **Create** **(7)**.
 
    - Name: **devbox-pool-<inject key="DeploymentID" enableCopy="false" />** **(1)**
 
@@ -89,35 +91,36 @@ In this task, you'll create a Dev pool using a previously configured network con
       ![](media/Implement-dev-b0x-hol1-3.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Click on the Validate button.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="4efc1567-6ea2-4d6d-82cc-19b9e495f429" />
   
-## Task 4: Launching Dev box
+## Task 4: Create and connect to a Dev Box via the Microsoft Dev Box portal
 
-In this task, you'll access a Dev Box and explore its features.
+In this task, you'll access a Dev Box using Developer and explore its features.
 
 1. On a new browser tab, visit ```https://devbox.microsoft.com/```.
 
-1. Here, click on **Get started** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
+2. Here, click on **Get started** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
 
    ![](media/24-05-2024(3).png)
    
-1. The Devbox creation will take around 60 - 90 minutes time. You can move to the next exercise and come back later to check on the devbox environment.
+3. The Devbox creation will take around 60 - 90 minutes time. After completing the Dev Box creation in the developer portal, please proceed to the next step.
 
    ![](media/2dgn86.png)
 
-1. On **Your Dev box** page, click on the drop down button **(1)** and click on **Open in browser** **(2)**.
+4. On **Your Dev box** page, click on the drop down button **(1)** and click on **Open in browser** **(2)**.
 
    ![](media/Implement-dev-b0x-hol1-8.png)
 
-1. In Session settings, click on **Connect**.
+5. In Session settings, click on **Connect**.
 
    ![](media/Implement-dev-b0x-hol1-9.png)
 
-1. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
+6. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
 
   - Username: <inject key="AzureAdUserEmail"></inject>
   
@@ -130,11 +133,14 @@ In this task, you'll access a Dev Box and explore its features.
    ![](media/2dgn151.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Click on the Validate button.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="9c4d3be7-e79c-4f0d-9200-995105897fb3" />
+
+8. Explore the additional features of Dev Box to enhance your development experience. Learn more [here](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dockerinc1694120899427.devbox_azuremachine?tab=overview)
 
 ## Summary
 

@@ -86,7 +86,7 @@ In this task, you'll create a Dev pool using a previously configured network con
    
    - Licensing: Check the checkbox **I confirm that my organization has Azure Hybrid Benefit licenses, which will apply to all dev boxes in this pool(6)**.
   
-      ![](media/Implement-dev-b0x-hol1-2.png)
+      ![](media/Implement-dev-b0x-hol1-3.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.

@@ -1,6 +1,6 @@
-# **Getting Started with Your AIW-DevOps-with-GitHub-V2 Workshop**
+# **Getting Started with Your Implement Dev Box Workshop**
  
-Welcome to your AIW-DevOps-with-GitHub-V2 workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Implement Dev Box workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
 ## **Accessing Your Lab Environment**
  
@@ -52,16 +52,10 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
-   
-1. Now you will see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
-
-   ![](media/select-rg.png "Resource groups")
-   
-1. Confirm that you have all resource group is present as shown below.
-
-   ![](media/rgdn-new.png "Resource groups")
+1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
    
 1. Now, click on **Next** from the lower right corner to move on to the next page.
+
+   ![](media/next.png "Resource groups")
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!

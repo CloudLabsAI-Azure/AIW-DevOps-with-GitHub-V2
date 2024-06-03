@@ -42,8 +42,6 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="7df6e281-5a25-416d-8ad3-7e0c8a9218d9" />
-
 <validation step="38822c5f-cf39-4de9-b174-d40057508e09" />
   
 ## Task 2: Create a Network connection
@@ -56,7 +54,7 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
 1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/devops1.1.png)
+   ![](media/Implement-dev-b0x-hol1-4.png)
 
 1. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 
@@ -64,7 +62,7 @@ In this task, you'll configure the network connection using Dev Center. Network 
   
 1. Now under *Add network connection*, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** for Network Connection from the drop-down and then click on **Add**.
 
-   ![](media/E1T2S3.png)
+   ![](media/Implement-dev-b0x-hol1-1.png)
 
    >**Note**: Please select the network connection with which the Status is set **Passed**.
 
@@ -88,7 +86,7 @@ In this task, you'll create a Dev pool using a previously configured network con
 
    - Network Connection: **fabrikam-connection-<inject key="location" enableCopy="false" />** **(3)**
 
-      ![](media/24-05-2024(1).png)
+      ![](media/Implement-dev-b0x-hol1-2.png)
 
    - Dev box Creator Privileges: **Local Administrator** **(4)**
 
@@ -96,7 +94,12 @@ In this task, you'll create a Dev pool using a previously configured network con
    
    - Licensing: Check the checkbox **(6)**
   
-      ![](media/24-05-2024(4).png)
+      ![](media/Implement-dev-b0x-hol1-2.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="4efc1567-6ea2-4d6d-82cc-19b9e495f429" />
   
@@ -133,6 +136,11 @@ In this task, you'll access a Dev Box and explore its features.
 7. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 
    ![](media/2dgn151.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="9c4d3be7-e79c-4f0d-9200-995105897fb3" />
 

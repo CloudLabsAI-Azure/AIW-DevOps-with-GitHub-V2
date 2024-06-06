@@ -1,4 +1,3 @@
-
 # Exercise 2: Continuous Integration and Continuous Deployment
 
 Duration: 80 minutes
@@ -265,7 +264,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
       ![](media/rulevoilation.png)
 
-1. Navigate up in the error message and click the given link to remove the secret from the commit.
+1. Navigate up in the error message and click on the given link for ( To Push, remove secret from commits(s) or follow this URL to allow the secret).
 
    ![](media/rulevoilation4.png)
 

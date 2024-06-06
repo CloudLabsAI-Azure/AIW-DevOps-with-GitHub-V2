@@ -7,27 +7,27 @@
       "Order": 1
     },
     {
-      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/abstract.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/abstract.md",
       "Order": 2
     },
      {
-      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/01-devbox.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/01-devbox.md",
       "Order": 3
     },
      {
-      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/02-continuous-integration.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/02-continuous-integration.md",
       "Order": 4
     },
     {
-      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/04-azure-boards.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/04-azure-boards.md",
       "Order": 6
     },
     {
-      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/05-security-features.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/05-security-features.md",
       "Order": 7
     },
     {
-      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/06-monitoring-and-load-testing.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/06-monitoring-and-load-testing.md",
       "Order": 8
     }    
   ]

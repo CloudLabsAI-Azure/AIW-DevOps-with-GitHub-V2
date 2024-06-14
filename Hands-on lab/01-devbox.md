@@ -89,6 +89,14 @@ In this task, you'll create a Dev pool using a previously configured network con
   
    ![](media/E1T3S3.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="8532054d-6bd4-41ae-a310-928c9ed41958" />
+
 ## Task 4: Create and connect to a Dev Box via the Microsoft Dev Box portal
 
 In this task, you'll access a Dev Box using Developer and explore its features.
@@ -121,14 +129,6 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 7. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 
    ![](media/2dgn151.png)  
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="8532054d-6bd4-41ae-a310-928c9ed41958" />
 
 ## Summary
 

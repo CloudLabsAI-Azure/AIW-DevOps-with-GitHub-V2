@@ -413,7 +413,7 @@ In this exercise, you will build automation in GitHub for updating and republish
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
-<validation step="48341224-6086-4ce1-a337-9ec19e1e9582" />
+<validation step="5ec6c860-8c11-4e67-bd4a-136794c0569c" />
 
     
 ### Task 5: Editing the GitHub Workflow File using Codespace

@@ -51,19 +51,19 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
 1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/devops1.1.png)
+      ![](media/devops1.1.png)
 
 1. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 
-   ![](media/e117.png)
+      ![](media/e117.png)
   
 1. Now under *Add network connection*, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** **(1)** for Network Connection from the drop-down and then click on **Add** **(2)**.
 
-   ![](media/E1T2S3.png)
+      ![](media/E1T2S3.png)
 
      >**Note**: Please select the network connection with respect to the resource group region, you can check the resource group location by navigating to **Resource groups** and check the region with respect to **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group.
 
-    ![](media/devops-ex1-t2.png)
+       ![](media/devops-ex1-t2.png)
 
 
 ## Task 3: Create a dev box pool

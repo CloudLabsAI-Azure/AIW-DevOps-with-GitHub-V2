@@ -59,6 +59,14 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
    ![](media/dglt4.jpg)
    
    **Note**: In case, the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with a support error. This is expected as sometimes the load on the application exceeds the defined throughput.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="1f1d2169-2995-41aa-a56e-bcc46e4dd1d0" />
      
 ## Task 3: Explore Chaos Studio
 
@@ -170,6 +178,14 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 1. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
  
    ![](media/2dgn110.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="1b6dbacd-1be8-459a-89f7-436848c7b9bc" />
 
 ## Summary
 

@@ -20,15 +20,15 @@
     },
     {
       "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/04-azure-boards.md",
-      "Order": 6
+      "Order": 5
     },
     {
       "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/05-security-features.md",
-      "Order": 7
+      "Order": 6
     },
     {
       "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/06-monitoring-and-load-testing.md",
-      "Order": 8
+      "Order": 7
     }    
   ]
 } ]

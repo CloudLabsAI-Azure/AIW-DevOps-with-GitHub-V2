@@ -404,9 +404,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
   - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-    >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **ghas-cloudlabsuser-xxxx**.
-
-    ![](media/continousintigrationusername.png)     
+    >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **ghas-cloudlabsuser-xxxx**.   
    
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.

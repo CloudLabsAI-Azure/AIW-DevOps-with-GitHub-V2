@@ -71,11 +71,11 @@ In this task, you'll create a Dev pool using a previously configured network con
 
 1. Return to the Microsoft dev box, and click on **Projects** **(1)** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/2dgn75.png)
+      ![](media/2dgn75.png)
 
 1. On the left hand side pane click on **Dev box pools** **(1)** and then click on **Create dev box pool** **(2)**.
 
-   ![](media/2dgn76.png)
+      ![](media/2dgn76.png)
   
 1. Under *Create a dev box pool* window, enter the following details and click on **Create** **(7)**.
 
@@ -86,7 +86,7 @@ In this task, you'll create a Dev pool using a previously configured network con
    - Auto-stop: Select **No** button **(5)**
    - Licensing: Check the checkbox **(6)**
   
-   ![](media/E1T3S3.png)
+      ![](media/E1T3S3.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.

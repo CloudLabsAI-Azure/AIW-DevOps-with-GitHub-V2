@@ -43,7 +43,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-     <validation step="37bc692b-33c9-4300-b8f7-6d8d12d44c96" />
+      <validation step="37bc692b-33c9-4300-b8f7-6d8d12d44c96" />
   
 ## Task 2: Create a Network connection
 
@@ -63,8 +63,7 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
      >**Note**: Please select the network connection with respect to the resource group region, you can check the resource group location by navigating to **Resource groups** and check the region with respect to **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group.
 
-       ![](media/devops-ex1-t2.png)
-
+     ![](media/devops-ex1-t2.png)
 
 ## Task 3: Create a dev box pool
 
@@ -95,7 +94,7 @@ In this task, you'll create a Dev pool using a previously configured network con
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
    
-     <validation step="8532054d-6bd4-41ae-a310-928c9ed41958" />
+      <validation step="8532054d-6bd4-41ae-a310-928c9ed41958" />
 
 ## Task 4: Create and connect to a Dev Box via the Microsoft Dev Box portal
 
@@ -122,6 +121,7 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 1. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
 
   - Username: <inject key="AzureAdUserEmail"></inject>
+
   - Password: <inject key="AzureAdUserPassword"></inject>
   
     ![](media/2dgn150.png)

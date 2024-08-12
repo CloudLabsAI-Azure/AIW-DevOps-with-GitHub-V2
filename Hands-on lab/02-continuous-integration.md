@@ -405,17 +405,14 @@ In this exercise, you will build automation in GitHub for updating and republish
   - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
     >**Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **ghas-cloudlabsuser-xxxx**.
-    
-    >**Note:** Make sure to update the name of your organization, **ghas-bootcamp-xxxx-xx-xx-cloudlabsxxx**.
 
     ![](media/continousintigrationusername.png)     
    
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
-<validation step="5ec6c860-8c11-4e67-bd4a-136794c0569c" />
+   <validation step="5ec6c860-8c11-4e67-bd4a-136794c0569c" />
 
-    
 ### Task 5: Editing the GitHub Workflow File using Codespace
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
@@ -465,5 +462,3 @@ The last task automated building and updating only one of the Docker images. In 
 ## Summary
 
 In this exercise, you hosted the application locally, deployed the application to Azure using GitHub Actions, and explored Codespace.
-   
-   

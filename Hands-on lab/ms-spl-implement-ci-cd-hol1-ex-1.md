@@ -400,7 +400,9 @@ The last task automated building and updating only one of the Docker images. In 
 1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
    ![](media/2dg33.png)
-   
+
+>**Note**: Click "Continue" in the browser, and then allow it to open Visual Studio Code.
+
 1. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
    ![](media/contosoprovision.png) 

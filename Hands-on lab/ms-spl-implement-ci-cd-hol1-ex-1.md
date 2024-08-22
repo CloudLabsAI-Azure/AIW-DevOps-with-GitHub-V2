@@ -393,7 +393,7 @@ The last task automated building and updating only one of the Docker images. In 
    - click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
-   ![](media/ex2-kc-codespace.png)
+   ![](media/codespaces_1.jpg)
    
    >**Note**: Incase you had created codespace in previous task. Click on **+** button to create new codespace.
    

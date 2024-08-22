@@ -200,6 +200,6 @@ In this task, you'll explore about how secret scanning works and see how it gene
 In this exercise, you explored and configured different GitHub Advance Security features.
 
 
-
+## You have successfully completed the Lab
     
 

@@ -14,7 +14,7 @@ In this task, you'll access and explore the code repository of the web app using
    
 1. In **Visual Studio Code**, click on **menu (1)**, click on **File** **(2)** and select **Open Folder** **(3)**.
 
-   ![](media/devops1.3.png)
+   ![](media/open_fold.jpg)
 
 1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` to open your local GitHub repository and click on **Select Folder**.
 
@@ -34,7 +34,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
 1. Open a **New Terminal** in the Visual Studio Code by selecting click on **menu (1)**, click on **Terminal (2)** and then on **New Terminal (3)**.
 
-   ![](media/devops1.5.png "New Repository Creation Form")
+   ![](media/terminal.jpg "New Repository Creation Form")
    
 1. Click on the **drop-down** **(1)** button next to PowerShell and select **Command Prompt** **(2)**  from the list. A new command Prompt terminal will be opened.   
 
@@ -397,7 +397,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/contosoprovision.png) 
    
-1. Remove the commands from line 7 to 14 from the workflow file.
+1. Remove the commands from line 7 to 14 from the workflow file and save the file.
 
    ![](media/2dgn163.png) 
    

@@ -14,7 +14,7 @@ In this task, you'll access and explore the code repository of the web app using
    
 1. In **Visual Studio Code**, click on **menu (1)**, click on **File** **(2)** and select **Open Folder** **(3)**.
 
-   ![](media/open_fold.jpg)
+    ![](media/openfold-1.jpg)
 
 1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` to open your local GitHub repository and click on **Select Folder**.
 

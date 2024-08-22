@@ -12,9 +12,9 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dg4.png "New Repository Creation Form")
    
-1. In **Visual Studio Code**, click on **menu (1)**, click on **File** **(2)** and select **Open Folder** **(3)**.
+1. In **Visual Studio Code**, click on , click on **File** **(1)** and select **Open Folder** **(2)**.
 
-    ![](media/openfold-1.jpg)
+    ![](media/open_fold-1.jpg)
 
 1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` to open your local GitHub repository and click on **Select Folder**.
 
@@ -249,9 +249,17 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access
 
        ![](media/2dgn158.png)
+
+ - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
+   
+>**Note**: If you encounter any errors as shown below, please follow the steps outlined below.
+
+   ![](media/error_1.jpg)
+
+- Click the link and select the option that is appropriate to unblock the secret.
+
+   ![](media/error_link-1.jpg)
        
-   - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
-     
 ### Task 4: Build and push using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.

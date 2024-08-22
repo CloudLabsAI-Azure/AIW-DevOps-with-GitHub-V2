@@ -256,7 +256,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/error_1.jpg)
 
-- Click the link and select the option that is appropriate to unblock the secret.
+(i). Click the link and select the option that is appropriate to unblock the secret.
 
    ![](media/error_link-1.jpg)
        

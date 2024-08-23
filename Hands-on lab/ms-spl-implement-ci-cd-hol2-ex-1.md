@@ -193,13 +193,13 @@ In this task, you'll explore about how secret scanning works and see how it gene
 
    ![](media/2dg116.png) 
    
-1. Click on the **Next** button present in the bottom-right corner of this lab guide.  
+ 
 
 ## Summary 
 
 In this exercise, you explored and configured different GitHub Advance Security features.
 
 
-
+## You have successfully completed the Lab
     
 

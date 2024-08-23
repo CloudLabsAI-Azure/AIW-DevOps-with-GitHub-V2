@@ -12,9 +12,9 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dg4.png "New Repository Creation Form")
    
-1. In **Visual Studio Code**, click on **menu (1)**, click on **File** **(2)** and select **Open Folder** **(3)**.
+1. In **Visual Studio Code**, click on , click on **File** **(1)** and select **Open Folder** **(2)**.
 
-   ![](media/devops1.3.png)
+    ![](media/open_fold-1.jpg)
 
 1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` to open your local GitHub repository and click on **Select Folder**.
 
@@ -34,7 +34,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
 1. Open a **New Terminal** in the Visual Studio Code by selecting click on **menu (1)**, click on **Terminal (2)** and then on **New Terminal (3)**.
 
-   ![](media/devops1.5.png "New Repository Creation Form")
+   ![](media/terminal.jpg "New Repository Creation Form")
    
 1. Click on the **drop-down** **(1)** button next to PowerShell and select **Command Prompt** **(2)**  from the list. A new command Prompt terminal will be opened.   
 
@@ -249,9 +249,17 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access
 
        ![](media/2dgn158.png)
+
+ - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
+   
+>**Note**: If you encounter any errors as shown below, please follow the steps outlined below.
+
+   ![](media/error_1.jpg)
+
+(i). Click the link and select the option that is appropriate to unblock the secret.
+
+   ![](media/error_link-1.jpg)
        
-   - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
-     
 ### Task 4: Build and push using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
@@ -385,19 +393,21 @@ The last task automated building and updating only one of the Docker images. In 
    - click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
-   ![](media/ex2-kc-codespace.png)
+   ![](media/codespaces_1.jpg)
    
    >**Note**: Incase you had created codespace in previous task. Click on **+** button to create new codespace.
    
 1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
    ![](media/2dg33.png)
-   
+
+>**Note**: Click "Continue" in the browser, and then allow it to open Visual Studio Code.
+
 1. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
    ![](media/contosoprovision.png) 
    
-1. Remove the commands from line 7 to 14 from the workflow file.
+1. Remove the commands from line 7 to 14 from the workflow file and save the file.
 
    ![](media/2dgn163.png) 
    

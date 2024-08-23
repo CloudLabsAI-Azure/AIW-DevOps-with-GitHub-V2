@@ -1,10 +1,17 @@
-# HOL 2: Explore GitHub advance security features
+# Lab 2: Explore GitHub advance security features
 
-Duration: 40 minutes
+## Estimated Duration: 40 minutes
 
 In this hands-on lab, you'll explore GitHub Enterprise features which is GitHub advance security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.  
 
-## Task 1: Enabling Code scanning and CodeQL alerts 
+## Lab Objectives
+
+You will be able to complete the following tasks:
+
+- Task 1: Enabling Code scanning and CodeQL alerts
+- Task 2: Repository security advisories  
+
+### Task 1: Enabling Code scanning and CodeQL alerts 
 
 In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
 
@@ -34,7 +41,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
    
    ![](media/devops1.6.png)
     
-## Task 2: Repository security advisories  
+### Task 2: Repository security advisories  
  
 In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
  
@@ -152,7 +159,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
    git pull
    ```
    
-## Task 4: Explore Secret Scanning (READ-ONLY)   
+### Task 4: Explore Secret Scanning (READ-ONLY)   
 
 In this task, you'll explore about how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets, to prevent fraudulent use of secrets that were committed accidentally.
 
@@ -193,13 +200,8 @@ In this task, you'll explore about how secret scanning works and see how it gene
 
    ![](media/2dg116.png) 
    
- 
-
 ## Summary 
 
-In this exercise, you explored and configured different GitHub Advance Security features.
+In this lab, you explored and configured different GitHub Advance Security features.
 
-
-## You have successfully completed the Lab
-    
-
+###  You have successfully completed the Lab

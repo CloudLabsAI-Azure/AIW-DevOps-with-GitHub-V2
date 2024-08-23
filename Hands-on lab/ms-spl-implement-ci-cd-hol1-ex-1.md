@@ -1,8 +1,18 @@
-# HOL 1: Continuous Integration and Continuous Deployment with GitHub Actions
+# Lab 1: Continuous Integration and Continuous Deployment with GitHub Actions
 
-Duration: 80 minutes
+### Estimated Duration: 80 minutes
 
 In this hands-on lab, you are going to set up the local infrastructure using dotnet. There are three parts of the application you will be working with: carts, products, and ui. You will deploy the infrastructure to cloud using GitHub Actions. you will also build automation in GitHub for updating and republishing our workflows when the code changes.
+
+## Lab Objectives
+
+You will be able to complete the following tasks:
+
+- Task 1: Access the lab files
+- Task 2: Set up Local Infrastructure
+- Task 3: Create the Project Repo
+- Task 4: Build and push using GitHub Actions
+- Task 5: Editing the GitHub Workflow File using Codespace
 
 ### Task 1: Access the lab files
 
@@ -430,6 +440,6 @@ The last task automated building and updating only one of the Docker images. In 
 
 ## Summary
 
-In this exercise, you hosted the application locally, deployed the application to Azure using GitHub Actions, and explored Codespace.
-   
-   
+In this lab, you hosted the application locally, deployed the application to Azure using GitHub Actions, and explored Codespace.
+
+### You have successfully completed the lab

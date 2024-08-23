@@ -9,7 +9,9 @@ In this hands-on lab, you'll explore GitHub Enterprise features which is GitHub 
 You will be able to complete the following tasks:
 
 - Task 1: Enabling Code scanning and CodeQL alerts
-- Task 2: Repository security advisories  
+- Task 2: Repository security advisories
+- Task 3: Using Dependabot
+- Task 4: Explore Secret Scanning (READ-ONLY)   
 
 ### Task 1: Enabling Code scanning and CodeQL alerts 
 

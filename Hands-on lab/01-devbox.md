@@ -37,14 +37,12 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
    > **Note:** Wait for the deployment to complete before proceeding with the lab.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   >
-   > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
       <validation step="37bc692b-33c9-4300-b8f7-6d8d12d44c96" />
+      
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+ > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+ > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
 ## Task 2: Create a Network connection
 
@@ -82,22 +80,19 @@ In this task, you'll create a Dev pool using a previously configured network con
 
    - Name: **devbox-pool-<inject key="DeploymentID" enableCopy="false" />** **(1)**
    - Dev box definition: **devboxdef-01** **(2)**
-   - Network Connection: **fabrikam-connection-<inject key="location" enableCopy="false" />** **(3)**
-   - Dev box Creator Privileges: **Local Administrator** **(4)**
-   - Auto-stop: Select **No** button **(5)**
+   - Network Connection: select **Deploy to the network connection in my organization** **(3)** and **fabrikam-connection-<inject key="location" enableCopy="false" />** **(4)**
+   - Dev box Creator Privileges: **Local Administrator** **(5)**
    - Licensing: Check the checkbox **(6)**
 
-     ![](media/E1T3S3.png)
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   >
-   > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+     ![](media/E1T3S3u.png)
 
       <validation step="8532054d-6bd4-41ae-a310-928c9ed41958" />
 
+   >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.   
+ 
 ## Task 4: Create and connect to a Dev Box via the Microsoft Dev Box portal
 
 In this task, you'll access a Dev Box using Developer and explore its features.

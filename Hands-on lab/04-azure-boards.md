@@ -241,14 +241,15 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
->
-> - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  <validation step="33638c78-3fac-4987-accd-3df1a2e578f2" />
 
-<validation step="33638c78-3fac-4987-accd-3df1a2e578f2" />
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+ 
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+
+
 
 ## Summary
 

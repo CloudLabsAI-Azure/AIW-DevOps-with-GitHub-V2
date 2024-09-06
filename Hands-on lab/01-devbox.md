@@ -80,12 +80,11 @@ In this task, you'll create a Dev pool using a previously configured network con
 
    - Name: **devbox-pool-<inject key="DeploymentID" enableCopy="false" />** **(1)**
    - Dev box definition: **devboxdef-01** **(2)**
-   - Network Connection: **fabrikam-connection-<inject key="location" enableCopy="false" />** **(3)**
-   - Dev box Creator Privileges: **Local Administrator** **(4)**
-   - Auto-stop: Select **No** button **(5)**
+   - Network Connection: select **Deploy to the network connection in my organization** **(3)** and **fabrikam-connection-<inject key="location" enableCopy="false" />** **(4)**
+   - Dev box Creator Privileges: **Local Administrator** **(5)**
    - Licensing: Check the checkbox **(6)**
 
-     ![](media/E1T3S3.png)
+     ![](media/E1T3S3u.png)
 
       <validation step="8532054d-6bd4-41ae-a310-928c9ed41958" />
 

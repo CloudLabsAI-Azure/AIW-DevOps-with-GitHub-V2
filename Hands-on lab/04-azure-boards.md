@@ -36,7 +36,24 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/2dg50.png)
 
-   > **Note:** If the **Install it for free** button is greyed out, please proceed to next step.
+   > **Note:** If the **Install it for free** button is greyed out  with the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account follow the below steps and please proceed from step number 8.
+
+     - Scroll to the top of the Azure Boards Marketplace page and click on the elipsis and choose configure account access.
+
+       ![](media/l1.png)
+
+   - In the next page, click on **Configure**.
+
+     ![](media/l2.png)
+
+   - Scroll down and select the lab files repository `aiw-devops-with-github-lab-files`which you created earlier from the dropdown  and click on **Save**.
+
+      ![](media/l3.png)
+
+   - Select the cloudlabs **Email** <inject key="AzureAdUserEmail"></inject>
+   - Now enter the password and **click** on **Sign in**.
+
+   ![](media/img10.png).
 
 1. On the next page, select **Complete order and begin installation**.
 
@@ -44,20 +61,6 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/ex4-kc-install&auth.png)
 
-   > **Note**: If you see the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account, follow the below steps.
-
-   - Scroll to the top of the Azure Boards Marketplace page and select **grant this app access to your GitHub account**.
-
-   ![](media/2dg51.png)
-
-   - Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
-
-   ![](media/ex4-kc-install&auth.png)
-
-   - Select the cloudlabs **Email** <inject key="AzureAdUserEmail"></inject>
-   - Now enter the password and **click** on **Sign in**.
-
-   ![](media/img10.png).
 
 1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders-<inject key="DeploymentID" enableCopy="false" /> (2)** project then click on **Continue (3)**
 

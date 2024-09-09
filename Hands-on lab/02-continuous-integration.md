@@ -284,27 +284,28 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn9.png)
 
-1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+2. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](media/2dgn135.png)
 
-1. Select **productsdb** SQL database from the list of resources.
+3. Select **productsdb** SQL database from the list of resources.
 
    ![](media/upd-2dgn11.png)
 
-1. Under Settings side blade, select **Connection strings** **_(1)_** under Setting and copy the **ADO.NET (SQL authentication)** **_(2)_** connection string from ADO.NET tab.
+4. Under Settings side blade, select **Connection strings** **_(1)_** under Setting and copy the **ADO.NET (SQL authentication)** **_(2)_** connection string from 
+   ADO.NET tab.
 
    ![](media/ado-sql-database.png)
 
-1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
+5. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
    ![](media/2dgn4.png)
 
-1. Under **Security**, expand **Secrets and variables** **_(1)_** by clicking the drop-down and select **Actions** **_(2)_** blade from the left navigation bar. Select the **New repository secret** **_(3)_** button.
+6. Under **Security**, expand **Secrets and variables** **_(1)_** by clicking the drop-down and select **Actions** **_(2)_** blade from the left navigation bar. Select the **New repository secret** **_(3)_** button.
 
    ![](media/exe2-task4-step6-action-setup.png)
 
-1. Under **Secrets and Variables/Actions** page, click on **New Repository Secret**and enter the below mentioned details and Click on **Add secret** **_(3)_**.
+7. Under **Secrets and Variables/Actions** page, click on **New Repository Secret**and enter the below mentioned details and Click on **Add secret** **_(3)_**.
 
    - **Name** : Enter **SQL_PASSWORD** **_(1)_**
    - **Value** : Paste the **ADO.NET (SQL authentication)** **_(2)_** which you copied in previous step.
@@ -315,7 +316,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn155.png)
 
-1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
+8. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
    ![](media/ex2-t4-8.png)
 
@@ -330,27 +331,29 @@ In this exercise, you will build automation in GitHub for updating and republish
    }
    ```
 
-1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
+9. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
 
    - **Name** : Enter **SERVICEPRINCIPAL** **_(1)_**
    - **Value** : Paste the service principal details in json format **_(2)_**
 
    ![](media/2dgn36.png)
 
-1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
+10. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
 
    - **Name** : Enter **ENVIRONMENT** **_(1)_**
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** **_(2)_**
 
    ![](media/2dgn33.png)
 
-1. From your GitHub repository, select **Actions** **_(1)_** tab. Select the **contoso-traders-app-deployment** **_(2)_** workflow from the side blade, Click on the **drop-down** **_(3)_** next Run workflow button, and select **Run workflow** **_(4)_**.
+11. From your GitHub repository, select **Actions** **_(1)_** tab. Select the **contoso-traders-app-deployment** **_(2)_** workflow from the side blade, Click on the 
+    **drop-down** **_(3)_** next Run workflow button, and select **Run workflow** **_(4)_**.
 
    ![](media/2dgn159.png)
 
  > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform the  step 14 of Task 3 again. 
 
-1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
+12. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container 
+    registry. The same image is pushed to Azure container application.
 
    ![](media/2dgn124.png)
 
@@ -358,14 +361,14 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    **Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 15. Else, continue from step 16.
 
-1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **_(3)_**.
+13. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **_(3)_**.
 
    - click on **Code** **_(1)_**,
    - Select the **Codespace** **_(2)_** tab
 
    ![](media/ex2-kc-codespace.png)
 
-1. Run the below mentioned commands in the **Terminal**. You'll set node version to node 14.
+14. Run the below mentioned commands in the **Terminal**. You'll set node version to node 14.
 
    ```pwsh
    cd src
@@ -378,25 +381,26 @@ In this exercise, you will build automation in GitHub for updating and republish
    git push
    ```
 
-1. From your GitHub repository, select **Actions** **_(1)_** tab. You'll see an Action named **Updated node version** **_(2)_** executing. Please wait until the execution completes
+15. From your GitHub repository, select **Actions** **_(1)_** tab. You'll see an Action named **Updated node version** **_(2)_** executing. Please wait until the 
+    execution completes
 
    ![](media/2dgn160.png)
 
    ![](media/2dgn161.png)
 
-1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
+16. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
 
    ![](media/2dgn9.png)
 
-1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+17. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](media/2dgn135.png)
 
-1. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+18. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
    ![](media/2dgn127.png)
 
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
+19. Click on **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
 
    ![](media/2dgn128.png)
 
@@ -426,25 +430,25 @@ The last task automated building and updating only one of the Docker images. In 
  
    > **Note**: In case you had created codespace in previous task. Click on **+** button to create new codespace.
 
-1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
+2. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
     ![](media/2dg33.png)
 
-1. In the Visual Studio Code tab, Select **Open** to allow Github codespaces extension to open the URL.
+3. In the Visual Studio Code tab, Select **Open** to allow Github codespaces extension to open the URL.
 
     ![](media/2dg33at.png)
 
     > **Note**: In case you recieve a pop-up, click on **Allow** then click on **Continue** and then **Open** to authorize Github login.
 
-1. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
+4. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
     ![](media/contosoprovision.png)
 
-1. Remove the commands from line 7 to 14 from the workflow file and save this file by using **Ctrl+S**.
+5. Remove the commands from line 7 to 14 from the workflow file and save this file by using **Ctrl+S**.
 
     ![](media/2dgn163.png)
 
-1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
+6. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
     ```pwsh
     git add .
@@ -456,11 +460,11 @@ The last task automated building and updating only one of the Docker images. In 
 
    > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
-1. Navigate back to the GitHub browser, select the **Actions** **_(1)_** tab and review the **workflow** **_(2)_** created automatically for the changes made.
+7. Navigate back to the GitHub browser, select the **Actions** **_(1)_** tab and review the **workflow** **_(2)_** created automatically for the changes made.
 
     ![](media/2dgn164.png)
 
-1. Click on the **Next** button present in the bottom-right corner of this lab guide.
+8. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
 ## Summary
 

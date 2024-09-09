@@ -348,6 +348,8 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn159.png)
 
+ > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform the  step 14 of Task 3 again. 
+
 1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
 
    ![](media/2dgn124.png)
@@ -408,7 +410,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 > - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** 
-     which looks like **ghas-cloudlabsuser-xxxx**.
+     which looks like **github-cloudlabsuser-xxxx**.
    
 
 ### Task 5: Editing the GitHub Workflow File using Codespace
@@ -417,46 +419,46 @@ The last task automated building and updating only one of the Docker images. In 
 
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **_(3)_**.
 
-   - Click on **Code** **_(1)_**,
-   - Select the **Codespace** **_(2)_** tab
+    - Click on **Code** **_(1)_**,
+    - Select the **Codespace** **_(2)_** tab
 
-   ![](media/ex2-kc-codespace.png)
-
+     ![](media/ex2-kc-codespace.png)
+ 
    > **Note**: In case you had created codespace in previous task. Click on **+** button to create new codespace.
 
 1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
-   ![](media/2dg33.png)
+    ![](media/2dg33.png)
 
 1. In the Visual Studio Code tab, Select **Open** to allow Github codespaces extension to open the URL.
 
-   ![](media/2dg33at.png)
+    ![](media/2dg33at.png)
 
-   > **Note**: In case you recieve a pop-up, click on **Allow** then click on **Continue** and then **Open** to authorize Github login.
+    > **Note**: In case you recieve a pop-up, click on **Allow** then click on **Continue** and then **Open** to authorize Github login.
 
 1. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
-   ![](media/contosoprovision.png)
+    ![](media/contosoprovision.png)
 
-1. Remove the commands from line 7 to 14 from the workflow file.
+1. Remove the commands from line 7 to 14 from the workflow file and save this file by using **Ctrl+S**.
 
-   ![](media/2dgn163.png)
+    ![](media/2dgn163.png)
 
 1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
-   ```pwsh
-   git add .
-   git commit -m "Updating app deployment"
-   git push
-   ```
+    ```pwsh
+    git add .
+    git commit -m "Updating app deployment"
+    git push
+    ```
 
-   ![](media/2dgn133.png)
+    ![](media/2dgn133.png)
 
    > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
 1. Navigate back to the GitHub browser, select the **Actions** **_(1)_** tab and review the **workflow** **_(2)_** created automatically for the changes made.
 
-   ![](media/2dgn164.png)
+    ![](media/2dgn164.png)
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
 

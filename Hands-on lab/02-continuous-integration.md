@@ -348,6 +348,8 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn159.png)
 
+ > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform the  step 14 of Task 3 again. 
+
 1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
 
    ![](media/2dgn124.png)
@@ -408,7 +410,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 > - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** 
-     which looks like **ghas-cloudlabsuser-xxxx**.
+     which looks like **github-cloudlabsuser-xxxx**.
    
 
 ### Task 5: Editing the GitHub Workflow File using Codespace
@@ -438,7 +440,7 @@ The last task automated building and updating only one of the Docker images. In 
 
     ![](media/contosoprovision.png)
 
-1. Remove the commands from line 7 to 14 from the workflow file and save this file by clicking on **Ctrl+S**.
+1. Remove the commands from line 7 to 14 from the workflow file and save this file by using **Ctrl+S**.
 
     ![](media/2dgn163.png)
 

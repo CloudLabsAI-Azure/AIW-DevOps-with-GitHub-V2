@@ -36,6 +36,8 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/2dg50.png)
 
+1. In review your order page enter the billing information and click on **save**
+
    > **Note:** If the **Install it for free** button is greyed out  with the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account follow the below steps and please proceed from step number 8.
 
      - Scroll to the top of the Azure Boards Marketplace page and click on the elipsis and choose configure account access.
@@ -62,13 +64,16 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    ![](media/ex4-kc-install&auth.png)
 
 
-1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders-<inject key="DeploymentID" enableCopy="false" /> (2)** project then click on **Continue (3)**
+1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders-<inject key="DeploymentID" enableCopy="false" /> (2)** project then click 
+   on **Continue (3)**
 
    ![](media/azuredevops.png)
 
-1. When the integration succeeds, you will be taken to the Azure DevOps Board. In the onboarding tutorial click on **Create** to create an initial Issue in the `To Do` Column.
+1. When the integration succeeds, you will be taken to the Azure DevOps Board. In the onboarding tutorial click on **Create** to create an initial Issue in the `To 
+   Do` Column.
 
-   > **Note**: Make sure to reduce the screen resolution in your browser window if you are not able to view the **Create** and **Create and link a pull request** options in the onboarding tutorial page.
+   > **Note**: Make sure to reduce the screen resolution in your browser window if you are not able to view the **Create** and **Create and link a pull request** 
+    options in the onboarding tutorial page.
 
    ![](media/2dg55.png)
 

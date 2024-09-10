@@ -27,9 +27,11 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/2dgn169.png)      
 
-1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit new file** ***(4)***.
+1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit changes** ***(4)***.
   
-   ![](media/ex5-codeql-commit.png) 
+   ![](media/code234.png) 
+
+   ![](media/code456.png) 
   
 1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
     
@@ -41,7 +43,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
   
 1. You will be navigated to **Code scanning** section. You'll be able visualize that the **No code scanning alerts here!**.
    
-   ![](media/devops1.6.png)
+   ![](media/scan12.png)
     
 ### Task 2: Repository security advisories  
  
@@ -111,6 +113,8 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
   
  1. After having the temporary fork you can request a CVE, it is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
+    ![](media/cve123.png)
+
     **Note**: This process may take up to 3 working days. Please do not close the security repository.
  
 ### Task 3: Using Dependabot
@@ -143,11 +147,9 @@ In this task, you will use Dependabot to track the versions of the packages we u
    
    **Note:** If you see Create Security Update option, click on it. After it is created then select Review security update. 
 
-1. Navigate to **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)*** and merge it to your main branch.
+1. Once **Review security update** is selected, it will redirect to the **Pull request** page.
 
-   ![List of Pull Requests.](media/ex5-t3-open-nfpr.png "Pull Requests")
-   
-1. Click on **Merge pull request** and followed by click on **Confirm merge**. 
+1. Once all the checks have been passed, click on **Merge pull request** and followed by click on **Confirm merge**. 
 
    ![The Pull Request Merge Button in the Pull Request detail.](media/ex5-t3-merge-pr.png "Pull Request Merge Button")
     

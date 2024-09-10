@@ -61,7 +61,9 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    ```
 
    ![](media/2dgn47.png)
-   
+
+   >**Note** : Open Notepad, make the necessary updates to the command, then copy and paste the updated command into the terminal for execution.
+
 1. Run the below mentioned command to navigate to `ContosoTraders.Api.Products` folder.
 
    ```pwsh
@@ -181,7 +183,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. In a new browser tab open ```https://www.github.com/login```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the crentials. Use the same username and password to login into GitHub.
 
-   ![](media/2dgn90.png) 
+   ![](media/credlo.png) 
    
 1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 
@@ -234,6 +236,8 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](media/2dg4.png "Quick setup screen")
 
 1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. Make sure to replace GitHub account email and username.
+
+   >**Note**: For the email format github_cloudlabsuser_xxx@xxx.com, the corresponding username will follow this format: github-cloudlabsuser-xxx
    
      ```pwsh
      cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
@@ -242,8 +246,8 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      ```
      
    ![](media/2dgn72.png) 
-     
-    Run the below mentioned command in the terminal. Make sure to replace <your_github_repository-url> with the value you copied in step 6 and Unique-ID in step 7
+   
+1.  Run the below mentioned command in the terminal. Make sure to replace <your_github_repository-url> with the value you copied in step 11 and Unique-ID in step 12
 
     Note: This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files    repository created in Step 1. 
 
@@ -258,6 +262,8 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      
    - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access
 
+       ![](media/ghlogin.png)
+
        ![](media/2dgn158.png)
 
  - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
@@ -266,10 +272,14 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/error_1.jpg)
 
-(i). Click the link and select the option that is appropriate to unblock the secret.
+(i). Scroll up within the terminal to locate the highlighted link. Click on the link and choose the It's used in test option. Then, select Allow me to expose secrets to proceed.
 
-   ![](media/error_link-1.jpg)
-       
+   ![](media/errorlo.jpg)
+
+   ![](media/error1lo.jpg)   
+
+(ii). After completing the previous step, navigate back to VS Code and rerun step-12 to finish the push process. 
+
 ### Task 4: Build and push using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
@@ -300,15 +310,15 @@ In this exercise, you will build automation in GitHub for updating and republish
     
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
+   >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+   
+   ![](media/2dgn155.png)   
+
    - **Name** : Enter **SQL_PASSWORD** ***(1)***
    - **Value** : Paste the **ADO.NET (SQL authentication)** ***(2)*** which you copied in previous step.
    
    ![](media/2dgn123.png)
-   
-   >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
-   
-   ![](media/2dgn155.png)   
-   
+      
 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
    ![](media/ex2-t4-8.png)
@@ -324,14 +334,14 @@ In this exercise, you will build automation in GitHub for updating and republish
    }
    ```
    
-1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+1. Select **New repository secret** and under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
    - **Name** : Enter **SERVICEPRINCIPAL** ***(1)***
    - **Value** : Paste the service principal details in json format ***(2)***
    
    ![](media/2dgn36.png)    
    
-1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+1. Select **New repository secret** and under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
    - **Name** : Enter **ENVIRONMENT** ***(1)***
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** ***(2)***
@@ -407,11 +417,9 @@ The last task automated building and updating only one of the Docker images. In 
    
    >**Note**: Incase you had created codespace in previous task. Click on **+** button to create new codespace.
    
-1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
+1. You will be redirected to a new Codespace tab in your browser. Click **Continue** then allow the pop-up windows to open Visual Studio Code and click **Install** to add the required extensions
 
-   ![](media/2dg33.png)
-
->**Note**: Click "Continue" in the browser, and then allow it to open Visual Studio Code.
+   ![](media/codespace1.png)
 
 1. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
@@ -421,6 +429,8 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/2dgn163.png) 
    
+   >**Note**: Press **CTRL + Shift + S**, then click **OK** to save the changes, if needed.
+
 1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
    ```pwsh

@@ -115,7 +115,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
     ![](media/cve123.png)
 
-    **Note**: This process may take up to 3 working days. Please do not close the security repository.
+    **Note**: This process may take up to 3 working days. 
  
 ### Task 3: Using Dependabot
 
@@ -127,7 +127,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![The GitHub Repository Security Overview tab.](media/ex5-t3-enabledb.png "GitHub Repository Security Overview")
 
-   > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present. You can continue with the next exercise as this is an independent task and doesn't affect the lab. Please visit this task later and complete the task.
+   > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present.
 
 1. To observe Dependabot issues, navigate to the **Security** ***(1)*** tab and select the **View Dependabot alerts** ***(2)*** link.
 

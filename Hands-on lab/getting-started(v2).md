@@ -73,6 +73,10 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 1. On your virtual machine, click on the Azure Portal icon as shown below:
  
     ![](media/dev(1).png)
+
+1. If the Docker Desktop service agreement pop-up appears, check the box to **accept the terms(1)** and click **Accept(2)**. Afterward, minimize any remaining Docker Desktop windows.
+
+    ![](media/ddpopup.png)
  
 1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**. 
 
@@ -85,7 +89,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
    ![](media/image8.png "Enter Password")
-     
+
+1. If Action required pop-up window appears, click on **Ask later**. 
+  
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.

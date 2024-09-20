@@ -2,7 +2,15 @@
 
 ## Overview
 
+In this lab, you'll explore Microsoft Dev Box, a service that provides self-service access to high-performance, preconfigured cloud-based workstations. You will configure a dev box environment, set up local infrastructure using .NET, and work with the application's carts, products, and UI components. The infrastructure will be deployed to the cloud using GitHub Actions, with automation for updating and republishing workflows. You’ll explore Azure Boards, Test Plans, and GitHub Enterprise security features such as Code scanning, CodeQL alerts, and Dependabots. Additionally, the lab covers implementing monitoring, logging, Azure load testing, and Azure Chaos Studio to improve application resilience and performance.
+
 ## Objective
+
+- Implement Dev Box
+- Continuous Integration and Continuous Deployment
+- Azure Boards and Test Plans
+- Explore GitHub's advanced security features
+- 
 
 ##
 # Getting Started with Lab

@@ -68,11 +68,14 @@ In this lab, the architecture flow begins with configuring a Microsoft Dev Box e
 
    ![](media/image8.png "Enter Password")
 
-1. If you see the pop-up **Stay Signed in?**, select **No**.
+1. If you see the pop-up **Action Required**, click **Ask Later**.
+   
+     ![](images/asklater.png)
 
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+1. First-time users are often prompted to Stay Signed In, if you see any such pop-up, click on **No**.
 
-1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+
 1. Now you will see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](media/select-rg.png "Resource groups")

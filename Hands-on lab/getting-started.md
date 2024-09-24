@@ -14,7 +14,7 @@ Set up Dev Box, CI/CD with GitHub, integrate Azure Boards, enable GitHub securit
 - **Continuous Integration and Continuous Deployment**: You will be able to access the lab files, set up the local infrastructure, create a project repository, build and push the code using GitHub Actions, and edit the GitHub workflow file within Codespaces.
 - **Azure Boards and Test Plans**: Connect Azure Boards with GitHub to enhance project tracking, and link GitHub pull requests to Boards items, enabling seamless integration between code development and project management workflows.
 - **Explore GitHub's advanced security features**: Enable code scanning with CodeQL alerts, configure repository security advisories, utilize Dependabot for dependency management, and explore secret scanning to enhance repository security.
-- **Monitoring and Load Testing (Optional)**: Monitor application performance using Application Insights, set up load testing to evaluate system scalability, and explore Chaos Studio to simulate real-world failures for improving system resilience.
+- **Monitoring and Load Testing**: Monitor application performance using Application Insights, set up load testing to evaluate system scalability, and explore Chaos Studio to simulate real-world failures for improving system resilience.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ In this lab, the architecture flow begins with configuring a Microsoft Dev Box e
 
 ## Architecture Diagram
 
-   ![](media/architecturediagram11.jpg)
+   ![](media/architecturediagram11-1.jpg)
 
 ## Explanation of the Components
 

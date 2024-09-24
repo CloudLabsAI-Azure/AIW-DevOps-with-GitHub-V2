@@ -1,8 +1,17 @@
 # Exercise 4: Explore GitHub's advanced security features
 
-Duration: 40 minutes
+### Estimted Duration: 40 minutes
 
 In this exercise, you'll explore GitHub Enterprise features which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.
+
+## Lab Objectives
+
+In this lab, you will perform:
+
+- Task 1: Enabling Code scanning and CodeQL alerts
+- Task 2: Repository security advisories
+- Task 3: Using Dependabot
+- Task 4: Explore Secret Scanning (READ-ONLY)
 
 ## Task 1: Enabling Code scanning and CodeQL alerts
 
@@ -106,7 +115,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
    **Note**: This process may take up to 3 working days. Please do not close the security repository.
 
-### Task 3: Using Dependabot
+## Task 3: Using Dependabot
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
@@ -200,3 +209,5 @@ In this task, you'll explore how secret scanning works and see how it generates 
 ## Summary
 
 In this exercise, you explored and configured different GitHub Advance Security features.
+
+### You have successfully completed the lab

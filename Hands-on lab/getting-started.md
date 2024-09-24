@@ -63,19 +63,19 @@ Welcome to your Devops-with-Github  Workshop! We've prepared a seamless environm
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![OpenAI](images/env.png)
+   ![](media/env.png)
 
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-  ![OpenAI](images/spl.png)
+   ![](media/spl.png)
 
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-  ![OpenAI](images/res.png)
+   ![](media/res.png)
 
 ## Let's Get Started with Azure Portal
 
@@ -87,13 +87,13 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    - **Email/Username**: <inject key="AzureAdUserEmail"></inject>
 
-   ![](media/imagesignin.png "Enter Email")
+        ![](media/sc900-image-1.png)
 
 1. Now enter the following password and click on **Sign in**.
 
    - **Password**: <inject key="AzureAdUserPassword"></inject>
 
-   ![](media/image8.png "Enter Password")
+       ![](media/sc900-image-2.png)
 
 1. If you see the pop-up **Action Required**, keep default and then click on **Ask later**. If you see the pop-up Help us protect your account, click on **Skip for now**(14 days until this is required), and then click on **Next**.
    

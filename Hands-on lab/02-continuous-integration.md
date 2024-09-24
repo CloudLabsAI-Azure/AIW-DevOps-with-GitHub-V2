@@ -14,7 +14,7 @@ In this lab, you will perform:
 - Task 4: Build and push using GitHub Actions
 - Task 5: Editing the GitHub Workflow File using Codespace
 
-### Task 1: Access the lab files
+## Task 1: Access the lab files
 
 In this task, you'll access and explore the code repository of the web app using Visual Studio Code. Visual Studio Code is a cross-platform, lightweight but powerful source code editor.
 
@@ -38,7 +38,7 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/devops1.4.png)
 
-### Task 2: Set up Local Infrastructure
+## Task 2: Set up Local Infrastructure
 
 In this task, You will set up the local infrastructure using Dotnet. You'll be working with three docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
 
@@ -142,7 +142,8 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/upd-2dgn57.png)
 
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
+1. Navigate back to **VS Code** and stop the terminal by typing **Ctrl + C**.
+   
 1. From the search bar, search for **Comand prompt** and open the application.
 
    ![](media/dglt6.1.jpg)
@@ -181,7 +182,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    > **Note**: It can take 5 - 10 minutes when you execute the command for the first time. You can continue with the next task and check on this step later.
 
-### Task 3: Create the Project Repo
+## Task 3: Create the Project Repo
 
 In this task, you'll access the GitHub enterprise account and create a new repository to store the infrastructure.
 
@@ -286,7 +287,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/rulevoilation2.png)
 
-### Task 4: Build and push using GitHub Actions
+## Task 4: Build and push using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
 
@@ -416,18 +417,16 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn162.png)
 
-    <validation step="5ec6c860-8c11-4e67-bd4a-136794c0569c" />
- 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
  
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-> - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** 
-     which looks like **github-cloudlabsuser-xxxx**.
-   
+> - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **github-cloudlabsuser-xxxx**.
 
-### Task 5: Editing the GitHub Workflow File using Codespace
+   <validation step="5ec6c860-8c11-4e67-bd4a-136794c0569c" />
+   
+## Task 5: Editing the GitHub Workflow File using Codespace
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
 

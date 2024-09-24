@@ -1,16 +1,27 @@
 # Devops with Github 
 
+### Overall Estimated Duration: 8 Hours
+
 ## Overview
 
 In this lab, you'll explore Microsoft Dev Box, a service that provides self-service access to high-performance, preconfigured cloud-based workstations. You will configure a dev box environment, set up local infrastructure using .NET, and work with the application's carts, products, and UI components. The infrastructure will be deployed to the cloud using GitHub Actions, with automation for updating and republishing workflows. You’ll explore Azure Boards, Test Plans, and GitHub Enterprise security features such as Code scanning, CodeQL alerts, and Dependabots. Additionally, the lab covers implementing monitoring, logging, Azure load testing, and Azure Chaos Studio to improve application resilience and performance.
 
-## Objective
+## Objectives
+
+Set up Dev Box, CI/CD with GitHub, integrate Azure Boards, enable GitHub security, run load tests, explore Chaos Studio and monitor performance.
 
 - **Implement Dev Box**: Configure a development environment by creating a Dev Box definition, establish a network connection, set up a Dev Box pool, and finally creating and connecting to a Dev Box using the Microsoft Dev Box portal.
 - **Continuous Integration and Continuous Deployment**: You will be able to access the lab files, set up the local infrastructure, create a project repository, build and push the code using GitHub Actions, and edit the GitHub workflow file within Codespaces.
 - **Azure Boards and Test Plans**: Connect Azure Boards with GitHub to enhance project tracking, and link GitHub pull requests to Boards items, enabling seamless integration between code development and project management workflows.
 - **Explore GitHub's advanced security features**: Enable code scanning with CodeQL alerts, configure repository security advisories, utilize Dependabot for dependency management, and explore secret scanning to enhance repository security.
 - **Monitoring and Load Testing (Optional)**: Monitor application performance using Application Insights, set up load testing to evaluate system scalability, and explore Chaos Studio to simulate real-world failures for improving system resilience.
+
+## Prerequisites
+
+Participants should have: Basic knowledge and understanding of the following:
+
+- Familiarity with Microsoft Dev Box
+- Basic Scripting and Automation
 
 ## Architecture
 
@@ -28,13 +39,17 @@ In this lab, the architecture flow begins with configuring a Microsoft Dev Box e
 - **Azure Cosmos DB**: A globally distributed, fully managed NoSQL database service designed for scalable, high-performance applications.
 - **GitHub**: A cloud-based platform for version control and collaboration, enabling developers to manage, share, and collaborate on code projects using Git.
 
-# Getting Started with Lab
+## Getting Started with Lab
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises of the lab guide.
+Welcome to your Devops-with-Github  Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
 
-   ![](media/2dgn92.png)
+## Accessing Your Lab Environment
+ 
+1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   > Note: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
+   ![](media/labguide.png)
+
+   > **Note**: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
 
 1. On the JumpVM, click on **Decline and Close Application** on the Docker desktop when logging into the VM the first time. Don't follow the Docker Desktop tutorial.
 
@@ -44,13 +59,25 @@ In this lab, the architecture flow begins with configuring a Microsoft Dev Box e
 
    ![](media/imgdepre.png "Lab Environment")
 
-1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the lower right corner. Also, you can start, stop and restart virtual machines from the **Resources** tab.
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+ 
+  ![OpenAI](images/env.png)
 
-   ![](media/2dgn139.png "Enter Email")
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+ 
+  ![OpenAI](images/spl.png)
 
-   > You will see the SUFFIX value on the **Environment Details** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-## Login to Azure Portal
+  ![OpenAI](images/res.png)
+
+## Let's Get Started with Azure Portal
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser which is created on the desktop.
 
@@ -68,9 +95,11 @@ In this lab, the architecture flow begins with configuring a Microsoft Dev Box e
 
    ![](media/image8.png "Enter Password")
 
-1. If you see the pop-up **Action Required**, click **Ask Later**.
+1. If you see the pop-up **Action Required**, keep default and then click on **Ask later**. If you see the pop-up Help us protect your account, click on **Skip for now**(14 days until this is required), and then click on **Next**.
    
-     ![](images/asklater.png)
+     ![](media/asklater.png)
+
+    >**Note:** Do not enable MFA, select **Ask Later**.
 
 1. First-time users are often prompted to Stay Signed In, if you see any such pop-up, click on **No**.
 
@@ -94,5 +123,7 @@ Learner Support Contacts:
    - Live Chat Support: https://cloudlabs.ai/labs-support
      
 Now, click on **Next** from the lower right corner to move on to the next page.
+
+   ![](media/num.png)
 
 ## Happy Learning!!

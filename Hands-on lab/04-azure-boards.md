@@ -1,10 +1,18 @@
 # Exercise 3: Azure Boards and Test Plans
 
-Duration: 60 minutes
+### Estimated Duration: 60 minutes
 
 In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provides rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
 
-### Task 1: Connect Azure Board with GitHub
+## Lab Objectives
+
+In this lab, you will perform:
+
+- Task 1: Connect Azure Board with GitHub
+- Task 2: Link GitHub Pull requests to Boards items
+- Task 3: Configure Azure Test plan
+
+## Task 1: Connect Azure Board with GitHub
 
 In this task, you will connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items.
 
@@ -108,7 +116,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
 17. You have successfully linked the GitHub account.
 
-### Task 2: Link GitHub Pull requests to Boards items
+## Task 2: Link GitHub Pull requests to Boards items
 
 In this task, you'll make changes in GitHub link a PR to Azure boards using syntax, and monitor the work item.
 
@@ -254,16 +262,16 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
-  <validation step="33638c78-3fac-4987-accd-3df1a2e578f2" />
-
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
  
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-
+  <validation step="33638c78-3fac-4987-accd-3df1a2e578f2" />
 
 ## Summary
 
 In this exercise, you explored the features of Azure boards and configured Azure Test plans for the application.
+
+### You have successfully completed the lab

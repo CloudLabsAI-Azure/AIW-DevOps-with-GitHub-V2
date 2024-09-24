@@ -18,7 +18,7 @@ Set up Dev Box, CI/CD with GitHub, integrate Azure Boards, enable GitHub securit
 
 ## Prerequisites
 
-Participants should have: Basic knowledge and understanding of the following:
+Participants should have basic knowledge and understanding of the following:
 
 - Familiarity with Microsoft Dev Box
 - Basic Scripting and Automation

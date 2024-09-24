@@ -45,19 +45,9 @@ Welcome to your Devops-with-Github  Workshop! We've prepared a seamless environm
 
 ## Accessing Your Lab Environment
  
-1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](media/labguide.png)
-
-   > **Note**: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
-
-1. On the JumpVM, click on **Decline and Close Application** on the Docker desktop when logging into the VM the first time. Don't follow the Docker Desktop tutorial.
-
-   ![](media/docker.png)
-
-1. In the environment click on **OK** if you receive a prompt regarding Windows deprecation.
-
-   ![](media/imgdepre.png "Lab Environment")
+   ![](media/dev(2).png)
 
 ## Exploring Your Lab Resources
  
@@ -81,7 +71,17 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser which is created on the desktop.
 
-   ![](media/page-01-3.png "Enter Email")
+      ![](media/dev(1).png)
+
+   > **Note**: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
+
+1. On the JumpVM, click on **Decline and Close Application** on the Docker desktop when logging into the VM the first time. Don't follow the Docker Desktop tutorial.
+
+      ![](media/docker.png)
+
+1. In the environment click on **OK** if you receive a prompt regarding Windows deprecation.
+
+     ![](media/imgdepre.png "Lab Environment")
 
 1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**.
 

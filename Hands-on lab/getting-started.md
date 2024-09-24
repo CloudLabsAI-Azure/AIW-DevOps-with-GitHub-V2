@@ -29,7 +29,7 @@ In this lab, the architecture flow begins with configuring a Microsoft Dev Box e
 
 ## Architecture Diagram
 
-   ![](media/architecturediagram11.jpg)
+   ![](media/architecturediagram11-1.jpg)
 
 ## Explanation of the Components
 

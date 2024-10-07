@@ -36,7 +36,11 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
     
    ![](media/ex5-codeql-actions.png) 
-  
+
+1. In code scanning alerts, click on **set up code scanning (1)**
+
+   ![](media/set_up_code_scanning.png) 
+   
 1. Navigate to **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
    
    ![](media/ex5-codescanning-viewalerts.png)
@@ -125,7 +129,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](media/ex5-t3-enabledb.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](media/deploy-01-1.png "GitHub Repository Security Overview")
 
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present.
 

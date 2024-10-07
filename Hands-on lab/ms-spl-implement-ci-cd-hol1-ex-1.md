@@ -274,9 +274,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 (i). Scroll up within the terminal to locate the highlighted link. Click on the link and choose the It's used in test option. Then, select Allow me to expose secrets to proceed.
 
-   ![](media/errorlo.jpg)
-
-   ![](media/error1lo.jpg)   
+   ![](media/link.jpg)   
 
 (ii). After completing the previous step, navigate back to VS Code and rerun step-12 to finish the push process. 
 

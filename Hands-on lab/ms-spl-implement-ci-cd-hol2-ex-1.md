@@ -19,13 +19,13 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to the public.
    
-1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under security side blade.
+1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security** ***(2)*** under security side blade.
 
-   ![](media/2dgn168.png)  
+   ![](media/settings.png)  
    
 1. Click on **Set up** **(1)** button to enable CodeQL analysis and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
-   ![](media/2dgn169.png)      
+   ![](media/set_up.png)      
 
 1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit changes** ***(4)***.
   
@@ -36,7 +36,11 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
     
    ![](media/ex5-codeql-actions.png) 
-  
+
+1. In code scanning alerts, click on **set up code scanning (1)**
+
+   ![](media/set_up_code_scanning.png) 
+   
 1. Navigate to **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
    
    ![](media/ex5-codescanning-viewalerts.png)
@@ -121,11 +125,11 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security and analysis** ***(2)*** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **code security** ***(2)*** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](media/ex5-t3-enabledb.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](media/deploy-01-1.png "GitHub Repository Security Overview")
 
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present.
 

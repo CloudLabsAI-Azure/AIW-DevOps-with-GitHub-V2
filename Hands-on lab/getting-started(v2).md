@@ -1,4 +1,4 @@
-# CICD with GitHub Actions and Explore GitHub Advanced Security Features
+# CI/CD with GitHub Actions and Explore GitHub Advanced Security Features
 ## Overall Estimated Duration: 4 Hours
 ## Overview
 In this comprehensive hands-on lab, you will delve into the essentials of Continuous Integration (CI), Continuous Deployment (CD), and advanced security practices using GitHub. You'll learn how to leverage GitHub Actions to automate your development workflows, including building, testing, and deploying your applications. Additionally, you'll explore GitHub's advanced security features, such as secret scanning, code scanning, and Dependabot, to safeguard your codebase against vulnerabilities.

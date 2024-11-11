@@ -276,7 +276,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/link.jpg)   
 
-(ii). After completing the previous step, navigate back to VS Code and rerun step-12 to finish the push process. 
+(ii). After completing the previous step, navigate back to VS Code and rerun step-15 to finish the push process. 
 
 ### Task 4: Build and push using GitHub Actions
 

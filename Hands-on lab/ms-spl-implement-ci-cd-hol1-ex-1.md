@@ -276,7 +276,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/link.jpg)   
 
-(ii). After completing the previous step, navigate back to VS Code and rerun step-12 to finish the push process. 
+(ii). After completing the previous step, navigate back to VS Code and rerun step-15 to finish the push process. 
 
 ### Task 4: Build and push using GitHub Actions
 
@@ -304,7 +304,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository secret** ***(3)*** button.
 
-   ![](media/Ex2-task4-step6.png)
+   ![](media/Ex2-task4-step6upd.png)
     
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 

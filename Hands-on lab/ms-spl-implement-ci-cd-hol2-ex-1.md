@@ -37,7 +37,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
     
    ![](media/ex5-codeql-actions.png) 
 
-1. In code scanning alerts, click on **set up code scanning (1)**
+1. In code scanning alerts, click on **set up code scanning (1)** if it is not enabled.
 
    ![](media/set_up_code_scanning.png) 
    

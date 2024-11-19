@@ -1,10 +1,21 @@
 # HOL 1: Implement Dev Box
 
-Duration: 1 hour 30 minutes
+### Estimated Duration: 2 hour 30 minutes
+
+## Overview
 
 Microsoft Dev Box is a service that provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
 In the exercise, you'll configure a dev box environment access the dev box and explore its features.
 Dive deeper into Azure Dev Box using the [reference link](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-microsoft-dev-box).
+
+## Lab Objectives
+
+You will be able to complete the following tasks:
+
+-   Task 1: Create Dev box definition
+-   Task 2: Create a Network connection
+-   Task 3: Create a dev box pool
+-   Task 4: Create and connect to a Dev Box via the Microsoft Dev Box portal
 
 ## Task 1: Create Dev box definition
 
@@ -12,7 +23,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
 1. In the Azure portal, search for **Microsoft Dev Box** **(1)**, and then click on it from the search results **(2)**.
 
-   ![](media/ex1-t1-1.png)
+   ![](./media/i1.jpg)
   
 2. Now on the left-hand side blade click on **Dev Centers** **(1)** under _Configure_ and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
@@ -42,7 +53,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 > - Click on the Validate button.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="38822c5f-cf39-4de9-b174-d40057508e09" />
   
@@ -50,15 +61,15 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
 In this task, you'll configure the network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
 
-1. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
+1. Now from left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 
-   ![](media/e117.png)
+      ![](media/e117.png)
   
 2. Now under _Add network connection_, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** for Network Connection from the drop-down and then click on **Add**.
 
-   ![](media/Implement-dev-b0x-hol1-1.png)
+      ![](media/Implement-dev-b0x-hol1-1.png)
 
->**Note**: Please select the network connection with which the Status is set **Passed**.
+      >**Note**: Please select the network connection with which the Status is set **Passed**.
 
 ## Task 3: Create a dev box pool
 
@@ -84,17 +95,17 @@ In this task, you'll create a Dev pool using a previously configured network con
 
    - Dev box Creator Privileges: **Local Administrator** **(4)**
 
-   - Auto-stop: Select **No** button **(5)**
+   - Auto-stop: **Unselected** **(5)**
    
    - Licensing: Check the checkbox **I confirm that my organization has Azure Hybrid Benefit licenses, which will apply to all dev boxes in this pool(6)**.
   
-      ![](media/Implement-dev-b0x-hol1-3.png)
+      ![](media/i2.jpg)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Click on the Validate button.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="4efc1567-6ea2-4d6d-82cc-19b9e495f429" />
   
@@ -104,29 +115,29 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
 1. On a new browser tab, visit ```https://devbox.microsoft.com/```.
 
-2. Here, click on **Get started** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
+2. Here, click on **New dev box** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
 
-   ![](media/24-05-2024(3).png)
+      ![](media/i3.jpg)
    
 3. The Devbox creation will take around 60 - 90 minutes time. After completing the Dev Box creation in the developer portal, please proceed to the next step.
 
-   ![](media/2dgn86.png)
+      ![](media/2dgn86.png)
 
 4. On **Your Dev box** page, click on the drop down button **(1)** and click on **Open in browser** **(2)**.
 
-   ![](media/Implement-dev-b0x-hol1-8.png)
+      ![](media/Implement-dev-b0x-hol1-8.png)
 
 5. In Session settings, click on **Connect**.
 
-   ![](media/Implement-dev-b0x-hol1-9.png)
+      ![](media/Implement-dev-b0x-hol1-9.png)
 
 6. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
 
-  - Username: <inject key="AzureAdUserEmail"></inject>
+     - Username: <inject key="AzureAdUserEmail"></inject>
   
-  - Password: <inject key="AzureAdUserPassword"></inject>
+     - Password: <inject key="AzureAdUserPassword"></inject>
   
-      ![](media/Implement-dev-b0x-hol1-10.png)
+          ![](media/Implement-dev-b0x-hol1-10.png)
 
 7. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 
@@ -136,7 +147,7 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 > - Click on the Validate button.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="9c4d3be7-e79c-4f0d-9200-995105897fb3" />
 
@@ -144,4 +155,12 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
 ## Summary
 
-In this exercise, you have created a Dev box definition, Network connection and Dev box pool in Microsoft Dev Box. Also, you have accessed a Dev Box and explored its features.
+In this lab, you have covered the following:
+
+- Created a Dev Box definition with specific compute and storage configurations.
+- Configured network connections for seamless integration with Azure virtual networks.
+- Set up a Dev Box pool to manage and deploy multiple Dev Boxes.
+- Accessed and explored the Dev Box environment for hands-on experience in cloud-based development.
+
+
+### You have successfully completed the lab

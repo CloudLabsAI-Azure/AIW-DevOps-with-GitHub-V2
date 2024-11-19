@@ -12,12 +12,21 @@ This lab is designed to equip participants with hands-on experience in configuri
 
 - **Implement Dev Box:** Configure and manage cloud-based development workstations using Microsoft Dev Box, including creating Dev Box definitions, setting up network connections, and accessing Dev Boxes through the portal.
 
+## Prerequisites
 
-## Architechture
+Participants should have the following prerequisites:
+
+- **Fundamental Knowledge of Azure:** Familiarity with Microsoft Azure's core services and resource management.  
+- **Experience with Cloud-Based Workstations:** Basic understanding of using and configuring virtual or cloud-based development environments.  
+- **Understanding of Networking Concepts:** Knowledge of how virtual networks operate and their role in connecting cloud resources.  
+- **Proficiency with Azure Management Tools:** Experience in navigating and managing resources through the Azure Portal.  
+- **Familiarity with Access Control:** Awareness of managing resource permissions using Azure RBAC.  
+
+## Architecture
 
 The architecture for **Implement Dev Box** integrates several components to deliver a cloud-based development environment. Central to this is the **Microsoft Dev Box**, a high-performance workstation configured with specific compute, storage, and image settings defined in the **Dev Box Definition**. **Network Connections** link the Dev Boxes to Azure virtual networks, ensuring seamless integration. The **Dev Box Pool** manages multiple Dev Boxes across projects, while the **Microsoft Dev Box Portal** serves as the interface for users to create, manage, and access their Dev Boxes. This setup provides an efficient, scalable, and secure development experience in the cloud.
 
-## Architechture Diagram
+## Architecture Diagram
 
 ![](./media/imag1.JPG) 
 

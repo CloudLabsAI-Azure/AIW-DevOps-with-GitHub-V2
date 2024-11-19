@@ -95,17 +95,17 @@ In this task, you'll create a Dev pool using a previously configured network con
 
    - Dev box Creator Privileges: **Local Administrator** **(4)**
 
-   - Auto-stop: Select **No** button **(5)**
+   - Auto-stop: **Unselected** **(5)**
    
    - Licensing: Check the checkbox **I confirm that my organization has Azure Hybrid Benefit licenses, which will apply to all dev boxes in this pool(6)**.
   
-      ![](media/Implement-dev-b0x-hol1-3.png)
+      ![](media/i2.jpg)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Click on the Validate button.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="4efc1567-6ea2-4d6d-82cc-19b9e495f429" />
   

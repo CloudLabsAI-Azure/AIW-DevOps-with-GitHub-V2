@@ -52,7 +52,7 @@ Once you're ready to dive in, your virtual machine and **Lab Guide** will be rig
 
    ![](./media/gspage01.png)  
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  

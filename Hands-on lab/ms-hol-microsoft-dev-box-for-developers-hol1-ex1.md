@@ -12,7 +12,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
 1. In the Azure portal, search for **Microsoft Dev Box** **(1)**, and then click on it from the search results **(2)**.
 
-   ![](media/ex1-t1-1.png)
+   ![](./media/i1.jpg)
   
 2. Now on the left-hand side blade click on **Dev Centers** **(1)** under _Configure_ and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
@@ -42,7 +42,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 > - Click on the Validate button.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="38822c5f-cf39-4de9-b174-d40057508e09" />
   
@@ -50,15 +50,15 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
 In this task, you'll configure the network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
 
-1. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
+1. Now from left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 
-   ![](media/e117.png)
+      ![](media/e117.png)
   
 2. Now under _Add network connection_, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** for Network Connection from the drop-down and then click on **Add**.
 
    ![](media/Implement-dev-b0x-hol1-1.png)
 
->**Note**: Please select the network connection with which the Status is set **Passed**.
+   >**Note**: Please select the network connection with which the Status is set **Passed**.
 
 ## Task 3: Create a dev box pool
 

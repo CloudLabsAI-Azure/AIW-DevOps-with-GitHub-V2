@@ -1,10 +1,21 @@
 # HOL 1: Implement Dev Box
 
-Duration: 1 hour 30 minutes
+### Estimated Duration: 1 hour 30 minutes
+
+## Overview
 
 Microsoft Dev Box is a service that provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
 In the exercise, you'll configure a dev box environment access the dev box and explore its features.
 Dive deeper into Azure Dev Box using the [reference link](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-microsoft-dev-box).
+
+## Lab Objectives
+
+You will be able to complete the following tasks:
+
+-   Task 1: Create Dev box definition
+-   Task 2: Create a Network connection
+-   Task 3: Create a dev box pool
+-   Task 4: Create and connect to a Dev Box via the Microsoft Dev Box portal
 
 ## Task 1: Create Dev box definition
 
@@ -136,7 +147,7 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 > - Click on the Validate button.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="9c4d3be7-e79c-4f0d-9200-995105897fb3" />
 
@@ -144,4 +155,12 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
 ## Summary
 
-In this exercise, you have created a Dev box definition, Network connection and Dev box pool in Microsoft Dev Box. Also, you have accessed a Dev Box and explored its features.
+In this lab, you have covered the following:
+
+- Created a Dev Box definition with specific compute and storage configurations.
+- Configured network connections for seamless integration with Azure virtual networks.
+- Set up a Dev Box pool to manage and deploy multiple Dev Boxes.
+- Accessed and explored the Dev Box environment for hands-on experience in cloud-based development.
+
+
+### You have successfully completed the lab

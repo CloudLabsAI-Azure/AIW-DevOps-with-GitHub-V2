@@ -8,10 +8,9 @@ Microsoft Dev Box provides high-performance, cloud-based development workstation
 
 ## Objective
 
-This lab is designed to equip participants with hands-on experience in exploring Azure AI services, such as Computer Vision and Cognitive Services, to enhance applications with capabilities like image recognition, text analysis, and speech processing.
+This lab is designed to equip participants with hands-on experience in configuring and managing Microsoft Dev Box environments to streamline development workflows.
 
--   **Explore Computer Vision :** Implement a Cognitive Services resource to analyze images using the Computer Vision service. Configure and run a client app to extract captions, objects, and tags for visual insights.
--   **Explore Cognitive Services :** Implement an Anomaly Detector resource to analyze time-series data and detect anomalies. Configure a client app to identify unusual patterns for real-world insights.
+- **Implement Dev Box:** Configure and manage cloud-based development workstations using Microsoft Dev Box, including creating Dev Box definitions, setting up network connections, and accessing Dev Boxes through the portal.
 
 ## Prerequisites
 
@@ -27,26 +26,25 @@ Participants should have the following prerequisites:
 
 ## Architechture
 
-The architecture for integrating Azure AI services into applications involves using **Azure Cognitive Services**, such as **Computer Vision** for image analysis and **Anomaly Detector** for time-series data analysis. A client application communicates with these services via REST APIs, sending data for processing (images or time-series). The services are provisioned within an **Azure Resource Group** and interact with **Azure Blob Storage** for data storage. Results are returned to the application for further use, such as generating insights or triggering notifications. This architecture leverages Azure's managed services to provide scalable, intelligent capabilities for real-world applications.
+The architecture for **Implement Dev Box** integrates several components to deliver a cloud-based development environment. Central to this is the **Microsoft Dev Box**, a high-performance workstation configured with specific compute, storage, and image settings defined in the **Dev Box Definition**. **Network Connections** link the Dev Boxes to Azure virtual networks, ensuring seamless integration. The **Dev Box Pool** manages multiple Dev Boxes across projects, while the **Microsoft Dev Box Portal** serves as the interface for users to create, manage, and access their Dev Boxes. This setup provides an efficient, scalable, and secure development experience in the cloud.
 
 ## Architechture Diagram
 
-![](../media/archdiagram.JPG)
+
 
 ## Explanation of Components
 
 The architecture for this lab involves several key components:
 
--   **Computer Vision :** Provides image analysis capabilities, including object detection, text extraction, and image tagging.
--   **Anomaly Detector :** Analyzes time-series data to identify unusual patterns or anomalies.
--   **Azure Resource Group :** A container that organizes and manages Azure resources, including Cognitive Services, for efficient deployment and scaling.
--   **Azure Blob Storage :** Stores images or time-series data, providing scalable storage for input data used by the AI services.
--   **Output Insights :** Processed results from the AI services are returned to the client application for further action, such as generating insights or triggering automated responses.
-
+- **Microsoft Dev Box:** A cloud-based, high-performance workstation preconfigured for development tasks.  
+- **Dev Box Definition:** A template defining the compute, storage, and image configuration for a Dev Box.  
+- **Network Connection:** Links Dev Boxes to Azure virtual networks for secure communication with other resources.  
+- **Dev Box Pool:** A collection of managed Dev Boxes, allowing for simplified scaling and deployment.  
+- **Microsoft Dev Box Portal:** A web interface for creating, managing, and accessing Dev Boxes remotely.
 
 ## Getting Started with Lab
 
-Welcome to your Getting started with Azure AI services Lab! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to **Microsoft Dev Box for Developers**! We've created a streamlined environment for you to explore and configure Azure Dev Box services. Let's begin by making the most of this experience:
 
 ## Accessing Your Lab Environment
  

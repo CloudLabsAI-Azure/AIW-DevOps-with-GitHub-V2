@@ -1,6 +1,6 @@
 # HOL 1: Implement Dev Box
 
-### Estimated Duration: 1 hour 30 minutes
+### Estimated Duration: 2 hour 30 minutes
 
 ## Overview
 
@@ -67,9 +67,9 @@ In this task, you'll configure the network connection using Dev Center. Network 
   
 2. Now under _Add network connection_, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** for Network Connection from the drop-down and then click on **Add**.
 
-   ![](media/Implement-dev-b0x-hol1-1.png)
+      ![](media/Implement-dev-b0x-hol1-1.png)
 
-   >**Note**: Please select the network connection with which the Status is set **Passed**.
+      >**Note**: Please select the network connection with which the Status is set **Passed**.
 
 ## Task 3: Create a dev box pool
 
@@ -117,27 +117,27 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
 2. Here, click on **New dev box** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
 
-   ![](media/i3.jpg)
+      ![](media/i3.jpg)
    
 3. The Devbox creation will take around 60 - 90 minutes time. After completing the Dev Box creation in the developer portal, please proceed to the next step.
 
-   ![](media/2dgn86.png)
+      ![](media/2dgn86.png)
 
 4. On **Your Dev box** page, click on the drop down button **(1)** and click on **Open in browser** **(2)**.
 
-   ![](media/Implement-dev-b0x-hol1-8.png)
+      ![](media/Implement-dev-b0x-hol1-8.png)
 
 5. In Session settings, click on **Connect**.
 
-   ![](media/Implement-dev-b0x-hol1-9.png)
+      ![](media/Implement-dev-b0x-hol1-9.png)
 
 6. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
 
-  - Username: <inject key="AzureAdUserEmail"></inject>
+     - Username: <inject key="AzureAdUserEmail"></inject>
   
-  - Password: <inject key="AzureAdUserPassword"></inject>
+     - Password: <inject key="AzureAdUserPassword"></inject>
   
-      ![](media/Implement-dev-b0x-hol1-10.png)
+          ![](media/Implement-dev-b0x-hol1-10.png)
 
 7. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 

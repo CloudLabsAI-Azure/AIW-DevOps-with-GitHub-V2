@@ -1,6 +1,6 @@
 # Microsoft Dev Box for Developers
 
-### Overall Estimated Duration: 2 hours
+### Overall Estimated Duration: 2 hours 30 minutes
 
 ## Overview
 
@@ -12,17 +12,6 @@ This lab is designed to equip participants with hands-on experience in configuri
 
 - **Implement Dev Box:** Configure and manage cloud-based development workstations using Microsoft Dev Box, including creating Dev Box definitions, setting up network connections, and accessing Dev Boxes through the portal.
 
-## Prerequisites
-
-Participants should have the following prerequisites:
-
--   **Basic Understanding of Cloud Computing :** Familiarity with fundamental cloud concepts and services, particularly in the context of Microsoft Azure.
--   **Knowledge of Azure Cognitive Services :** Understanding of the Azure Cognitive Services suite, including how to provision and use services like Computer Vision and Anomaly Detector.
--   **Experience with the Azure Portal**: Proficiency in navigating and using the Azure Portal to manage and configure cloud resources.
--   **Familiarity with PowerShell or Cloud Shell :** Basic knowledge of using PowerShell or Cloud Shell for running commands and scripts within Azure.
--   **Basic Programming Knowledge :** Understanding of scripting or programming languages like PowerShell, which are used for configuring and running client applications in Azure.
--   **Understanding of APIs and Endpoints :** Familiarity with how to interact with APIs and use endpoints for connecting to services in Azure.
--   **Knowledge of Security Best Practices :** Awareness of security principles related to cloud services, including handling keys, authentication, and securing resources.
 
 ## Architechture
 
@@ -44,7 +33,7 @@ The architecture for this lab involves several key components:
 
 ## Getting Started with Lab
 
-Welcome to **Microsoft Dev Box for Developers**! We've created a streamlined environment for you to explore and configure Azure Dev Box services. Let's begin by making the most of this experience:
+Welcome to **Microsoft Dev Box for Developers!** We've created a streamlined environment for you to explore and configure Azure Dev Box services. Let's begin by making the most of this experience:
 
 ## Accessing Your Lab Environment
  

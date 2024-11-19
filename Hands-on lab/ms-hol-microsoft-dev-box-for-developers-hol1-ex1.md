@@ -12,10 +12,10 @@ Dive deeper into Azure Dev Box using the [reference link](https://learn.microsof
 
 You will be able to complete the following tasks:
 
--   Task 1: Create Dev box definition
--   Task 2: Create a Network connection
--   Task 3: Create a dev box pool
--   Task 4: Create and connect to a Dev Box via the Microsoft Dev Box portal
+- Task 1: Create Dev box definition
+- Task 2: Create a Network connection
+- Task 3: Create a dev box pool
+- Task 4: Create and connect to a Dev Box via the Microsoft Dev Box portal
 
 ## Task 1: Create Dev box definition
 
@@ -65,7 +65,7 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
       ![](media/e117.png)
   
-2. Now under _Add network connection_, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** for Network Connection from the drop-down and then click on **Add**.
+2. Now under _Add network connection_, select the **fabrikam-connection-<inject key="location" enableCopy="false" /> (1)** for Network Connection from the drop-down and then click on **Add (2)**.
 
       ![](media/Implement-dev-b0x-hol1-1.png)
 
@@ -75,11 +75,11 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
 In this task, you'll create a Dev pool using a previously configured network connection and Dev Box definitions. A dev box pool is a collection of dev boxes that you manage together. 
 
-1. Now, from the Microsoft Dev Box page, click on **Projects** **(1)** under **Configure** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Now, from the Microsoft Dev Box page, click on **Projects** **(1)** under **Configure** section then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
     ![](media/2dgn75.png)
 
-2. On the left hand side pane click on **Dev box pools** **(1)** under **Manage** and then click on **Create dev box pool** **(2)**.
+2. On the left hand side pane click on **Dev box pools** **(1)** under **Manage** section and then click on **Create dev box pool** **(2)**.
 
     ![](media/2dgn76.png)
   

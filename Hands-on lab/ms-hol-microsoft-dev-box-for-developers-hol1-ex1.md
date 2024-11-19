@@ -99,7 +99,7 @@ In this task, you'll create a Dev pool using a previously configured network con
    
    - Licensing: Check the checkbox **I confirm that my organization has Azure Hybrid Benefit licenses, which will apply to all dev boxes in this pool(6)**.
   
-      ![](media/i2.jpg)
+      ![](media/i4.jpg)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Click on the Validate button.
@@ -141,7 +141,7 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
 7. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 
-   ![](media/2dgn151.png)
+      ![](media/2dgn151.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Click on the Validate button.

@@ -30,7 +30,7 @@ The architecture for **Implement Dev Box** integrates several components to deli
 
 ## Architechture Diagram
 
-
+![](./media/imag1.JPG) 
 
 ## Explanation of Components
 

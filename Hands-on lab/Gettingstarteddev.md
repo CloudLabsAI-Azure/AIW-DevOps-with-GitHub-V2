@@ -4,7 +4,7 @@
 
 ## Overview
 
-Azure AI services offer a comprehensive set of tools that allow you to integrate intelligent features into your applications, such as image recognition, text analysis, and language processing. With services like Azure Cognitive Services, Azure Machine Learning, and Azure OpenAI, you can leverage advanced AI capabilities to streamline workflows, solve complex problems, and enhance the functionality of your applications. These services enable you to build powerful AI-driven solutions, making it easier to address real-world challenges and drive innovation in the cloud.
+Microsoft Dev Box provides high-performance, cloud-based development workstations designed to streamline the developer experience. By leveraging preconfigured environments with customizable compute and storage options, Dev Box enables developers to quickly access ready-to-code workspaces. With integrated networking capabilities and centralized management of development pools, it simplifies configuration, enhances productivity, and accelerates the development lifecycle in the cloud.
 
 ## Objective
 

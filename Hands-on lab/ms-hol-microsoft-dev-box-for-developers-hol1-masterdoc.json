@@ -1,9 +1,9 @@
 [ {
-    "Name": "Implementing CI/CD with GitHub Actions",
+    "Name": "Microsoft Dev Box for Developers",
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/getting-started(v2).md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/getting-started-page.md",
         "Order": 1
       },
        {

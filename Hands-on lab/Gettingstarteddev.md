@@ -8,19 +8,7 @@ Microsoft Dev Box provides high-performance, cloud-based development workstation
 
 ## Objective
 
-This lab is designed to equip participants with hands-on experience in configuring and managing Microsoft Dev Box environments to streamline development workflows.
-
-- **Implement Dev Box:** Configure and manage cloud-based development workstations using Microsoft Dev Box, including creating Dev Box definitions, setting up network connections, and accessing Dev Boxes through the portal.
-
-## Prerequisites
-
-Participants should have the following prerequisites:
-
-- **Fundamental Knowledge of Azure:** Familiarity with Microsoft Azure's core services and resource management.  
-- **Experience with Cloud-Based Workstations:** Basic understanding of using and configuring virtual or cloud-based development environments.  
-- **Understanding of Networking Concepts:** Knowledge of how virtual networks operate and their role in connecting cloud resources.  
-- **Proficiency with Azure Management Tools:** Experience in navigating and managing resources through the Azure Portal.  
-- **Familiarity with Access Control:** Awareness of managing resource permissions using Azure RBAC.  
+This lab is designed to provide participants with practical experience in setting up and managing Microsoft Dev Box environments to enhance development workflows. Participants will learn how to configure cloud-based development workstations by creating and defining Dev Boxes, establishing network connections, and accessing them through the portal. This hands-on approach will help streamline development processes, making it easier to manage resources and collaborate on projects.
 
 ## Architecture
 
@@ -84,7 +72,6 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
- 
 ## Let's Get Started with Azure Portal
  
 1. On your virtual machine, click on the Azure Portal icon as shown below:
@@ -130,4 +117,3 @@ Now, click on **Next** from the lower right corner to move on to the next page.
 ![](./media/GS4.png)
 
 ### Happy Learning!!
-

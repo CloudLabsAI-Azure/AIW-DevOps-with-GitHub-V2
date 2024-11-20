@@ -97,7 +97,7 @@ In this task, you'll create a Dev pool using a previously configured network con
 
    - Auto-stop: **Unselected** **(5)**
    
-   - Licensing: Check the checkbox **I confirm that my organization has Azure Hybrid Benefit licenses, which will apply to all dev boxes in this pool(6)**.
+   - Licensing: Check the checkbox **I confirm that my organization has Azure Hybrid Benefit licenses, which will apply to all dev boxes in this pool (6)**.
   
       ![](media/i4.jpg)
 

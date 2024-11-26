@@ -125,7 +125,7 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
 4. On **Your Dev box** page, click on the drop down button **(1)** and click on **Open in browser** **(2)**.
 
-      ![](media/Implement-dev-b0x-hol1-8.png)
+      ![](media/ima1.png)
 
 5. In Session settings, click on **Connect**.
 

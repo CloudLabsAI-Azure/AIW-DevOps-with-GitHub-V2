@@ -21,7 +21,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 1. Select the **settings** **_(1)_** tab from the GitHub browser tab. Click on **code security and analysis** **_(2)_** under the security side blade.
 
-   ![](media/2dgn168.png)
+   ![](media/2dgn168-1.png)
 
 1. Click on **Set up** **(1)** button to enable **CodeQL analysis** and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 

@@ -109,7 +109,7 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
 1. On a new browser tab, visit `https://devbox.microsoft.com/`.
 
-2. Here, click on **Get started** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
+2. Here, click on **New dev box** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
 
    ![](<media/24-05-2024(3)-1.png>)
 

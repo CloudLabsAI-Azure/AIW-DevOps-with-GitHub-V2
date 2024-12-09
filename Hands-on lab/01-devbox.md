@@ -111,7 +111,7 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
 2. Here, click on **Get started** **(1)**, Name it as **devbox-01** **(2)** and then click on **Create** **(3)**.
 
-   ![](<media/24-05-2024(3).png>)
+   ![](<media/24-05-2024(3)-1.png>)
 
 3. The Devbox creation will take around 60 - 90 minutes time. You can move to the next exercise and come back later to check on the Devbox environment.
 

@@ -361,7 +361,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn159.png)
 
- > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform the  step 14 of Task 3 again. 
+   > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform the  step 14 of Task 3 again. 
 
 12. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container 
     registry. The same image is pushed to Azure container application.

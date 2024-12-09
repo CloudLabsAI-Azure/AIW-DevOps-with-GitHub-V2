@@ -316,7 +316,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/exe2-task4-step6-action-setup.png)
 
-7. Under **Secrets and Variables/Actions** page, click on **New Repository Secret**and enter the below mentioned details and Click on **Add secret** **_(3)_**.
+7. Under **Secrets and Variables/Actions** page, click on **New Repository Secret** and enter the below mentioned details and Click on **Add secret** **_(3)_**.
 
    - **Name** : Enter **SQL_PASSWORD** **_(1)_**
    - **Value** : Paste the **ADO.NET (SQL authentication)** **_(2)_** which you copied in previous step.

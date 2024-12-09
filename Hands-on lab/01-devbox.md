@@ -96,12 +96,12 @@ In this task, you'll create a Dev pool using a previously configured network con
 
      ![](media/E1T3S3u.png)
 
-   >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+ > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+ > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
    
-      <validation step="8532054d-6bd4-41ae-a310-928c9ed41958" />
+   <validation step="8532054d-6bd4-41ae-a310-928c9ed41958" />
  
 ## Task 4: Create and connect to a Dev Box via the Microsoft Dev Box portal
 

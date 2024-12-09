@@ -119,7 +119,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** **_(1)_** tab and select the **Code security and analysis** **_(2)_** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** **_(3)_**, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** **_(4)_** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** **_(1)_** tab and select the **Code security** **_(2)_** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** **_(3)_**, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** **_(4)_** to Enable Dependabot security updates.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 

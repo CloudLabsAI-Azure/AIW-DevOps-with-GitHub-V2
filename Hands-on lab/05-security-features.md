@@ -158,8 +158,9 @@ In this task, you will use Dependabot to track the versions of the packages we u
 1. Open **Command Promopt** and pull the latest changes from your GitHub repository to your local GitHub folder.
 
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files  # This path may vary depending on how
-                                                            # you set up your lab files repository
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files  
+   # This path may vary depending on how
+   # you set up your lab files repository
    git pull
    ```
 

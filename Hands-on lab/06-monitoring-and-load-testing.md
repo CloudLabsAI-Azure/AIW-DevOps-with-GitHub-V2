@@ -137,11 +137,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 1. On the **Add fault** page, select the following and select **Next: Target resources>** **(4)**.
 
-   - Faults: **AKS Chaos Mesh Pod Chaos** **_(1)_**
+   - Faults: **AKS Chaos Mesh Pod Chaos (deprecated)** **_(1)_**
    - Duration (minutes): **5** **_(2)_**
    - jsonSpec: Leave it to default **_(3)_**
 
-   ![](media/2dgn61-1.png)
+      ![](media/2dgn61-1.png)
 
 1. On the **Target resources**, select the **Manually select from a list** **(1)** under **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **_(2)_** resource, and **Add** **_(3)_**.
 

@@ -316,7 +316,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/exe2-task4-step6-action-setup.png)
 
-7. Under **Secrets and Variables/Actions** page, click on **New Repository Secret**and enter the below mentioned details and Click on **Add secret** **_(3)_**.
+7. Under **Secrets and Variables/Actions** page, click on **New Repository Secret** and enter the below mentioned details and Click on **Add secret** **_(3)_**.
 
    - **Name** : Enter **SQL_PASSWORD** **_(1)_**
    - **Value** : Paste the **ADO.NET (SQL authentication)** **_(2)_** which you copied in previous step.
@@ -361,7 +361,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn159.png)
 
- > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform the  step 14 of Task 3 again. 
+   > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform the  step 14 of Task 3 again. 
 
 12. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container 
     registry. The same image is pushed to Azure container application.
@@ -418,11 +418,10 @@ In this exercise, you will build automation in GitHub for updating and republish
    ![](media/2dgn162.png)
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
- 
-> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-> - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **github-cloudlabsuser-xxxx**.
+ > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab.
+ > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+ > - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **github-cloudlabsuser-xxxx**.
 
    <validation step="5ec6c860-8c11-4e67-bd4a-136794c0569c" />
    

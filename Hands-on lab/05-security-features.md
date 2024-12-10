@@ -19,9 +19,9 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
 
-1. Select the **settings** **_(1)_** tab from the GitHub browser tab. Click on **code security and analysis** **_(2)_** under the security side blade.
+1. Select the **settings** **_(1)_** tab from the GitHub browser tab. Click on **Code security** **_(2)_** under the security side blade.
 
-   ![](media/2dgn168.png)
+   ![](media/2dgn168-1.png)
 
 1. Click on **Set up** **(1)** button to enable **CodeQL analysis** and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
@@ -59,40 +59,40 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - CVE identifier: **Request CVE ID later** **_(2)_**
    - Description: **Add** **_(3)_** the below mentioned details in the description section.
 
-   ```
-   Impact
-   What kind of vulnerability is it? Who is impacted?
+      ```
+      Impact
+      What kind of vulnerability is it? Who is impacted?
 
-   HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command, or interacting with a database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
+      HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command, or interacting with a database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
 
-   Patches
-   Has the problem been patched? What versions should users upgrade to?
+      Patches
+      Has the problem been patched? What versions should users upgrade to?
 
-   It is patched and rectified the error. Please use 1.2 version
+      It is patched and rectified the error. Please use 1.2 version
 
-   Workarounds
-   Is there a way for users to fix or remediate the vulnerability without upgrading?
+      Workarounds
+      Is there a way for users to fix or remediate the vulnerability without upgrading?
 
-   // set up rate limiter: maximum of five requests per minute
-   var RateLimit = require('express-rate-limit');
-   var limiter = new RateLimit({
-   windowMs: 1601000, // 1 minute
-   max: 5
-   });
+      // set up rate limiter: maximum of five requests per minute
+      var RateLimit = require('express-rate-limit');
+      var limiter = new RateLimit({
+      windowMs: 1601000, // 1 minute
+      max: 5
+      });
 
-   // apply rate limiter to all requests
-   app.use(limiter);
+      // apply rate limiter to all requests
+      app.use(limiter);
 
-   Added the above code in app.js
+      Added the above code in app.js
 
-   References
-   Are there any links users can visit to find out more?
+      References
+      Are there any links users can visit to find out more?
 
-   https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md
-   https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
-   ```
+      https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md
+      https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
+      ```
 
-   ![](media/ex5-t2-securityadvisor1.png)
+      ![](media/ex5-t2-securityadvisor1.png)
 
 1. In the Affected products section, provide the following details and click on **Create draft security advisory** **_(7)_**
 
@@ -103,7 +103,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - Severity: **High** **_(5)_**
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** **_(6)_**
 
-   ![](media/ex5-t2-securityadvisor2.png)
+     ![](media/ex5-t2-securityadvisor2.png)
 
 1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
@@ -119,11 +119,11 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** **_(1)_** tab and select the **Code security and analysis** **_(2)_** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** **_(3)_**, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** **_(4)_** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** **_(1)_** tab and select the **Code security** **_(2)_** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** **_(3)_**, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** **_(4)_** to Enable Dependabot security updates.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](media/ex5-t3-enabledb.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](media/ex5-t3-enabledb-1.png "GitHub Repository Security Overview")
 
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present. You can continue with the next exercise as this is an independent task and doesn't affect the lab. Please visit this task later and complete the task.
 
@@ -158,8 +158,9 @@ In this task, you will use Dependabot to track the versions of the packages we u
 1. Open **Command Promopt** and pull the latest changes from your GitHub repository to your local GitHub folder.
 
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files  # This path may vary depending on how
-                                                            # you set up your lab files repository
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files  
+   # This path may vary depending on how
+   # you set up your lab files repository
    git pull
    ```
 

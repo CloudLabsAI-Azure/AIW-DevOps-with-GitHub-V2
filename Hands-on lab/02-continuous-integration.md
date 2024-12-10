@@ -321,11 +321,11 @@ In this exercise, you will build automation in GitHub for updating and republish
    - **Name** : Enter **SQL_PASSWORD** **_(1)_**
    - **Value** : Paste the **ADO.NET (SQL authentication)** **_(2)_** which you copied in previous step.
 
-   ![](media/2dgn123.png)
+     ![](media/2dgn123.png)
 
-   > **Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+     > **Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
 
-   ![](media/2dgn155.png)
+     ![](media/2dgn155.png)
 
 8. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
@@ -347,75 +347,70 @@ In this exercise, you will build automation in GitHub for updating and republish
    - **Name** : Enter **SERVICEPRINCIPAL** **_(1)_**
    - **Value** : Paste the service principal details in json format **_(2)_**
 
-   ![](media/2dgn36.png)
+     ![](media/2dgn36.png)
 
 10. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
 
    - **Name** : Enter **ENVIRONMENT** **_(1)_**
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** **_(2)_**
-
    ![](media/2dgn33.png)
 
-11. From your GitHub repository, select **Actions** **_(1)_** tab. Select the **contoso-traders-app-deployment** **_(2)_** workflow from the side blade, Click on the 
-    **drop-down** **_(3)_** next Run workflow button, and select **Run workflow** **_(4)_**.
+11. From your GitHub repository, select **Actions** **_(1)_** tab. Select the **contoso-traders-app-deployment** **_(2)_** workflow from the side blade, Click on the **drop-down** **_(3)_** next Run workflow button, and select **Run workflow** **_(4)_**.
 
-   ![](media/2dgn159.png)
+    ![](media/2dgn159.png)
 
    > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform the  step 14 of Task 3 again. 
 
-12. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container 
-    registry. The same image is pushed to Azure container application.
+12. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
 
-   ![](media/2dgn124.png)
+    ![](media/2dgn124.png)
 
-   ![](media/2dgn165.png)
+    ![](media/2dgn165.png)
 
-   **Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 15. Else, continue from step 16.
+    >**Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 15. Else, continue from step 16.
 
 13. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **_(3)_**.
 
    - click on **Code** **_(1)_**,
    - Select the **Codespace** **_(2)_** tab
-
    ![](media/ex2-kc-codespace.png)
 
 14. Run the below mentioned commands in the **Terminal**. You'll set node version to node 14.
 
-   ```pwsh
-   cd src
-   cd ContosoTraders.Ui.Website
-   nvm install 14
-   nvm use 14
-   npm i
-   git add .
-   git commit -m "updated node version"
-   git push
-   ```
+      ```pwsh
+      cd src
+      cd ContosoTraders.Ui.Website
+      nvm install 14
+      nvm use 14
+      npm i
+      git add .
+      git commit -m "updated node version"
+      git push
+      ```
 
-15. From your GitHub repository, select **Actions** **_(1)_** tab. You'll see an Action named **Updated node version** **_(2)_** executing. Please wait until the 
-    execution completes
+15. From your GitHub repository, select **Actions** **_(1)_** tab. You'll see an Action named **Updated node version** **_(2)_** executing. Please wait until the execution completes
 
-   ![](media/2dgn160.png)
+    ![](media/2dgn160.png)
 
-   ![](media/2dgn161.png)
+    ![](media/2dgn161.png)
 
 16. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
 
-   ![](media/2dgn9.png)
+    ![](media/2dgn9.png)
 
 17. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dgn135.png)
+    ![](media/2dgn135.png)
 
 18. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
-   ![](media/2dgn127.png)
+    ![](media/2dgn127.png)
 
 19. Click on **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
 
-   ![](media/2dgn128.png)
+    ![](media/2dgn128.png)
 
-   ![](media/2dgn162.png)
+    ![](media/2dgn162.png)
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab.
@@ -434,7 +429,7 @@ The last task automated building and updating only one of the Docker images. In 
     - Click on **Code** **_(1)_**,
     - Select the **Codespace** **_(2)_** tab
 
-     ![](media/ex2-kc-codespace.png)
+      ![](media/ex2-kc-codespace.png)
  
    > **Note**: In case you had created codespace in previous task. Click on **+** button to create new codespace.
 

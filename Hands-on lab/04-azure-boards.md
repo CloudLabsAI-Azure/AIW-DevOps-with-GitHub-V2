@@ -87,31 +87,27 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
 11. Now click on **Create and link a pull request** to create a pull request associated with your Issue.
 
-   ![After completion of the onboarding tutorial. Two todo confirmation messages displayed.](media/image15.png "Get started and quick tip")
+    ![After completion of the onboarding tutorial. Two todo confirmation messages displayed.](media/image15.png "Get started and quick tip")
 
 12. Click on **View work item**.
 
-   ![](media/viewworkitem.png)
+    ![](media/viewworkitem.png)
 
 13. Open the new Issue that the onboarding tutorial creates and observe the GitHub pull request and comments that are linked to the Azure DevOps board Issue.
 
-   ![Linked GitHub items in an Azure DevOps issue in Boards.](media/ex3-t1-8.png "GitHub Pull Request and Comment")
+    ![Linked GitHub items in an Azure DevOps issue in Boards.](media/ex3-t1-8.png "GitHub Pull Request and Comment")
 
-14. In GitHub, browse to the `Pull Requests` tab of the lab files repository created in [Task 1 of the Before the HOL Instructions] and open the pull request that 
-    was created in the onboarding tutorial for the Azure Boards Integration App. Note the `AB#1` annotation in the pull request comments - this annotation signals to 
-    Azure DevOps that this pull request comment should be linked to Issue #1 in Azure Boards.
+14. In GitHub, browse to the `Pull Requests` tab of the lab files repository created in [Task 1 of the Before the HOL Instructions] and open the pull request that was created in the onboarding tutorial for the Azure Boards Integration App. Note the `AB#1` annotation in the pull request comments - this annotation signals to Azure DevOps that this pull request comment should be linked to Issue #1 in Azure Boards.
 
-   ![Pull request detail in GitHub created by onboarding tutorial in previous steps.](media/ex4-kc-merge.png "Pull Request detail")
+    ![Pull request detail in GitHub created by onboarding tutorial in previous steps.](media/ex4-kc-merge.png "Pull Request detail")
 
-15. Select the `Files changed` tab within the pull request detail and observe the change to the README.md associated with this pull request. After reviewing the 
-    changes, go back to the `Conversation` tab, select the `Merge pull request` button, and confirm the following prompt to merge the pull request into the `main` 
-    branch.
+15. Select the `Files changed` tab within the pull request detail and observe the change to the README.md associated with this pull request. After reviewing the changes, go back to the `Conversation` tab, select the `Merge pull request` button, and confirm the following prompt to merge the pull request into the `main` branch.
 
-   ![The file changes associated with the pull request.](media/upd-ex4-kc-reviewchanges.png "Pull Request Files Changed tab")
+    ![The file changes associated with the pull request.](media/upd-ex4-kc-reviewchanges.png "Pull Request Files Changed tab")
 
 16. In Azure DevOps Boards, find the work item and observe that the issue has been moved to the `Done` column on completion of the pull request.
 
-   ![A work item with a linked GitHub commit illustrating the link between Azure DevOps Boards and GitHub issues.](media/ex4-kc-devops-todo.png "Work Item with a Linked GitHub Commit")
+    ![A work item with a linked GitHub commit illustrating the link between Azure DevOps Boards and GitHub issues.](media/ex4-kc-devops-todo.png "Work Item with a Linked GitHub Commit")
 
 17. You have successfully linked the GitHub account.
 
@@ -140,7 +136,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
    - Provide `workitem ID Updated` **_(2)_** as title. Make sure to provide the same **Work item ID** that was created in the earlier step in Azure DevOps.
    - Select **Create a new branch for this commit and start a pull request** **_(3)_** and name the new branch as **update carts** **_(4)_**.
 
-   ![](media/E3T2S5.png)
+     ![](media/E3T2S5.png)
 
 1. On Open a pull request tab, Click on **Create pull request**
 
@@ -188,7 +184,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    - Area Path: **contosotraders-<inject key="DeploymentID" enableCopy="false" />** **_(2)_**
    - Iteration: Leave it to **default** **_(3)_**
 
-   ![](media/2dgn144.png)
+     ![](media/2dgn144.png)
 
 1. From contosotraders-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** **_(1)_** button, hover over **New Suite** **_(2)_**, and select **Static suite** **_(3)_**.
 
@@ -211,7 +207,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
      - 3. Actions: **Access the Controllers page** **_(6)_** Expected result: **Succeeded** **_(7)_**
      - 4. Actions: **Access the Desktop page** **_(8)_** Expected result: **Succeeded** **_(9)_**
 
-   ![](media/ex4-validate-webapp.png)
+     ![](media/ex4-validate-webapp.png)
 
 1. From the Test plans tab, navigate to **Execute** **_(1)_** tab, select the **validate the web app** **_(2)_** test point and click on **Run for web application** **_(3)_**.
 

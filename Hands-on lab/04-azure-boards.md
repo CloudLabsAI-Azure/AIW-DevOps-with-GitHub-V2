@@ -64,7 +64,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    - Select the cloudlabs **Email** <inject key="AzureAdUserEmail"></inject>
    - Now enter the password and **click** on **Sign in**.
 
-   ![](media/img10.png).
+     ![](media/img10.png).
 
 7. On the next page, select **Complete order and begin installation**.
 

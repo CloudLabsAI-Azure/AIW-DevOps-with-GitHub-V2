@@ -141,7 +141,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
    - Duration (minutes): **5** **_(2)_**
    - jsonSpec: Leave it to default **_(3)_**
 
-   ![](media/2dgn61.png)
+   ![](media/2dgn61-1.png)
 
 1. On the **Target resources**, select the **Manually select from a list** **(1)** under **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **_(2)_** resource, and **Add** **_(3)_**.
 

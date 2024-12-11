@@ -1,4 +1,4 @@
-# Exercise 1: Implement Dev Box
+### Exercise 1: Implement Dev Box
 
 ### Estimated Duration: 40 minutes
 

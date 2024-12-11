@@ -73,7 +73,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
       ![](media/dev(1).png)
 
-   > **Warning**: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
+   > $${\color{red}Warning}$$: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
 
 1. In the environment click on **OK** if you receive a prompt regarding Windows deprecation.
 

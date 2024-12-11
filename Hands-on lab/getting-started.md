@@ -75,10 +75,6 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    > **Note**: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
 
-1. In the environment click on **OK** if you receive a prompt regarding Windows deprecation.
-
-     ![](media/imgdepre.png "Lab Environment")
-
 1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**.
 
    - **Email/Username**: <inject key="AzureAdUserEmail"></inject>
@@ -97,7 +93,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
     >**Note:** Do not enable MFA, select **Ask Later**.
 
-1. First-time users are often prompted to Stay Signed In, if you see any such pop-up, click on **No**.
+1. First-time users are often prompted to Stay Signed In, if you see any such pop-up, click on **Yes**.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 

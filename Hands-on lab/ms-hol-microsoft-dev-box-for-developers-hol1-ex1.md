@@ -53,7 +53,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="38822c5f-cf39-4de9-b174-d40057508e09" />
+<validation step="7fa1c284-067f-4916-b91e-ede52f39d9d6" />
   
 ## Task 2: Create a Network connection
 
@@ -105,7 +105,7 @@ In this task, you'll create a Dev pool using a previously configured network con
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="4efc1567-6ea2-4d6d-82cc-19b9e495f429" />
+<validation step="335e1c9f-88bb-4e21-a810-5782aed53275" />
   
 ## Task 4: Create and connect to a Dev Box via the Microsoft Dev Box portal
 
@@ -147,7 +147,7 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="9c4d3be7-e79c-4f0d-9200-995105897fb3" />
+<validation step="eda769d4-691f-4d32-a0c1-e6ea70e62ff4" />
 
 8. Explore the additional features of Dev Box to enhance your development experience. Learn more [here](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dockerinc1694120899427.devbox_azuremachine?tab=overview)
 

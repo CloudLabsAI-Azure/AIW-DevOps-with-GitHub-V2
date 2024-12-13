@@ -45,9 +45,9 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
    
    ![](media/ex5-codescanning-viewalerts.png)
   
-1. You will be navigated to **Code scanning** section. You'll be able visualize that the **No code scanning alerts here!**.
+1. You will be navigated to **Code scanning (1)** section. You'll be able visualize that the **No new code scanning alerts**.
    
-   ![](media/scan12.png)
+   ![](media/Dependabot.png)
     
 ### Task 2: Repository security advisories  
  
@@ -149,7 +149,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
    
-   **Note:** If you see Create Security Update option, click on it. After it is created then select Review security update. 
+   >**Note:** If you see Create Dependabot  Security Update option, click on it. After it is created then select Review security update. 
 
 1. Once **Review security update** is selected, it will redirect to the **Pull request** page.
 

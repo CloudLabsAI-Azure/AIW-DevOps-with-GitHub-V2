@@ -272,7 +272,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/error_1.jpg)
 
-(i). Scroll up within the terminal to locate the highlighted link. Click on the link and choose the It's used in test option. Then, select Allow me to expose secrets to proceed.
+(i). Scroll up within the terminal to locate the highlighted link. Click on the link and choose the **It's used in tests** option. Then, select **Allow me to expose this secret** to proceed.
 
    ![](media/link.jpg)   
 
@@ -296,7 +296,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Under Settings side blade, select **Connection strings** ***(1)*** and copy the **ADO.NET (SQL authentication)** ***(2)*** connection string from ADO.NET tab. 
 
-   ![](media/upd-2dgn12.png)  
+   ![](media/connectionstring.png)  
  
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
@@ -356,7 +356,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn165.png)
    
-   **Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
+   >**Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 

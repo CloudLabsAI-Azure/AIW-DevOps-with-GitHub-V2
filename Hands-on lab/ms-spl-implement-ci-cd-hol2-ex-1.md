@@ -47,7 +47,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
   
 1. You will be navigated to **Code scanning (1)** section. You'll be able visualize that the **No new code scanning alerts**.
    
-   ![](media/Dependabot.png)
+   ![](media/codescanning.png)
     
 ### Task 2: Repository security advisories  
  
@@ -63,40 +63,40 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - CVE identifier: **Request CVE ID later** ***(2)***
    - Description: **Add** ***(3)*** the below mentioned details in the description section.
    
-   ```
-   Impact
-   What kind of vulnerability is it? Who is impacted?
+      ```
+      Impact
+      What kind of vulnerability is it? Who is impacted?
 
-   HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command or interacting with a        database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker      can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
+      HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command or interacting with a        database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker      can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
 
-   Patches
-   Has the problem been patched? What versions should users upgrade to?
+      Patches
+      Has the problem been patched? What versions should users upgrade to?
 
-   It is patched and rectified the error. Please use 1.2 version
+      It is patched and rectified the error. Please use 1.2 version
 
-   Workarounds
-   Is there a way for users to fix or remediate the vulnerability without upgrading?
+      Workarounds
+      Is there a way for users to fix or remediate the vulnerability without upgrading?
 
-   // set up rate limiter: maximum of five requests per minute
-   var RateLimit = require('express-rate-limit');
-   var limiter = new RateLimit({
-   windowMs: 1601000, // 1 minute
-   max: 5
-   });
+      // set up rate limiter: maximum of five requests per minute
+      var RateLimit = require('express-rate-limit');
+      var limiter = new RateLimit({
+      windowMs: 1601000, // 1 minute
+      max: 5
+      });
 
-   // apply rate limiter to all requests
-   app.use(limiter);
+      // apply rate limiter to all requests
+      app.use(limiter);
 
-   Added the above code in app.js
+      Added the above code in app.js
 
-   References
-   Are there any links users can visit to find out more?
+      References
+      Are there any links users can visit to find out more?
 
-   https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md
-   https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
-   ```
+      https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md
+      https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
+      ```
     
-   ![](media/ex5-t2-securityadvisor1.png)
+      ![](media/ex5-t2-securityadvisor1.png)
    
 1. In the Affected products section, provide the following details and click on **Create draft security advisory** ***(7)***   
  
@@ -107,7 +107,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - Severity: **High** ***(5)***
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
   
-   ![](media/ex5-t2-securityadvisor2.png)
+      ![](media/ex5-t2-securityadvisor2.png)
    
  1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
@@ -115,11 +115,13 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
     
     ![](media/ex5-t2-securityadvisor4.png)
   
- 1. After having the temporary fork you can request a CVE, it is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
+ 1. After having the temporary fork you can **Request CVE**, it is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
     ![](media/cve123.png)
 
-    **Note**: This process may take up to 3 working days. 
+      >**Note:** Select **Request CVE** again, on the pop-up.
+
+      >**Note**: This process may take up to 3 working days. 
  
 ### Task 3: Using Dependabot
 
@@ -149,7 +151,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
    
-   >**Note:** If you see Create Dependabot  Security Update option, click on it. After it is created then select Review security update. 
+   >**Note:** If you see **Create Dependabot security update** option, click on it. After it is created then select **Review security update**. 
 
 1. Once **Review security update** is selected, it will redirect to the **Pull request** page.
 
@@ -159,7 +161,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
     
    >**Note**: In case you see any errors with merge request. Retry step 4 to step 6 by selecting any other Dependabot alert.
 
-1. Pull the latest changes from your GitHub repository to your local GitHub folder.
+1. Pull the latest changes from your GitHub repository to your local GitHub folder. Navigate back to the visual studio code, and in the terminal run the below commands:
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files  # This path may vary depending on how

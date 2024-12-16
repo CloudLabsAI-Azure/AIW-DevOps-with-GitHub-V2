@@ -315,7 +315,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    - **Name** : Enter **SQL_PASSWORD** ***(1)***
    - **Value** : Paste the **ADO.NET (SQL authentication)** ***(2)*** which you copied in previous step.
    
-   ![](media/2dgn123.png)
+      ![](media/2dgn123.png)
       
 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
@@ -323,28 +323,28 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    - Replace the values that you copied in below Json. You will be using them in this step.
    
-   ```json
-   {
-      "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-      "clientSecret": "client-secret",
-      "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-      "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
-   }
-   ```
+      ```json
+      {
+         "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+         "clientSecret": "client-secret",
+         "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+         "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
+      }
+      ```
    
 1. Select **New repository secret** and under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
    - **Name** : Enter **SERVICEPRINCIPAL** ***(1)***
    - **Value** : Paste the service principal details in json format ***(2)***
    
-   ![](media/2dgn36.png)    
+      ![](media/2dgn36.png)    
    
 1. Select **New repository secret** and under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
    - **Name** : Enter **ENVIRONMENT** ***(1)***
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** ***(2)***
    
-   ![](media/2dgn33.png)
+      ![](media/2dgn33.png)
    
 1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
@@ -363,7 +363,11 @@ In this exercise, you will build automation in GitHub for updating and republish
    - click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
-   ![](media/ex2-kc-codespace.png)
+      ![](media/ex2-kc-codespace.png)
+
+      >**Note:** Select **Allow**, on the **Visual studio** pop-up.
+
+      > It will redirect you to the new tab of the browser. On the **Select user to authorize Visual Studio Code** page select **Continue**. On the pop-up select **Open**.
    
 1. Run the below mentioned commands in the **Terminal**. You'll set node version to node 14.
 
@@ -427,7 +431,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/2dgn163.png) 
    
-   >**Note**: Press **CTRL + Shift + S**, then click **OK** to save the changes, if needed.
+   >**Note**: Press **CTRL + S**, to save the changes, if needed.
 
 1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 

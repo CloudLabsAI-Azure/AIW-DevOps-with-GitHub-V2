@@ -22,7 +22,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
    ![](media/ex1-t1.png)
 
-1. Now on the left-hand side blade click on **Dev Centers** **(1)** and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Now on the left-hand side blade click on **Dev Centers** **(1)** under Configure and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/devops1.1.png)
 
@@ -40,9 +40,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
        ![](media/devbox.png)
 
-1. Once the definition is created. In the Azure portal, search for **Microsoft dev box** **(1)**, and then click on it from the search results **(2)**.
-
-   ![](media/ex1-t1-5.png)
+1. Click on refresh to verify if the definition has been created.
 
    > **Note:** Wait for the deployment to complete before proceeding with the lab.
 

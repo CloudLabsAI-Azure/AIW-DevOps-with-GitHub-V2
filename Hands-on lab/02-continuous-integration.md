@@ -22,7 +22,7 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dg4.png "New Repository Creation Form")
 
-1. In **Visual Studio Code**, click on **menu (1)**, click on **File** **(2)** and select **Open Folder** **(3)**.
+1. In **Visual Studio Code**, click on **File** **(1)** and select **Open Folder** **(2)**.
 
    ![](media/devops1.3.png)
 
@@ -50,7 +50,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/2dgn45.png)
 
-1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Application Id(Client Id)**, **Secret Key (Client Secret)**, and **Tenant Id (Directory ID)**.
+1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** and copy the **Application Id(Client Id)**, **Secret Key (Client Secret)**, and **Tenant Id (Directory ID)**.
 
    ![](media/ex2-t2-3.png)
 
@@ -144,7 +144,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
 1. Navigate back to **VS Code** and stop the terminal by typing **Ctrl + C**.
    
-1. From the search bar, search for **Comand prompt** and open the application.
+1. From the search bar, search for **Command Prompt** and open the application.
 
    ![](media/dglt6.1.jpg)
 
@@ -166,12 +166,6 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    > **Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. In case the execution is stuck, please use **ctrl + C** to stop the execution and retry step again.
 
-1. Navigate back to **VS Code**, Run the below mentioned command to navigate to `ContosoTraders.Ui.Website` folder.
-
-   ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Ui.Website
-   ```
-
 1. Now run the below mentioned command to run UI of the application. This will automatically open a browser tab where you'll see the complete application running
 
    ```pwsh
@@ -188,9 +182,9 @@ In this task, you'll access the GitHub enterprise account and create a new repos
 
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
-1. In a new browser tab open `https://www.github.com/login`. From Environment details page **_(1)_**, navigate to **License** **_(2)_** tab and **copy** **_(3)_** the credentials. Use the same username and password to login into GitHub.
+1. In a new browser tab open `https://www.github.com/login`. From **Environment** page **_(1)_**, navigate to **License** **_(2)_** tab and **copy** **_(3)_** the credentials. Use the same username and password to login into GitHub.
 
-   ![](media/dev2.png)
+   ![](media/new-devops-github-lab02-4.png)
 
 1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window, and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 
@@ -206,7 +200,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. On the **Create a new repository** screen, name the repository `aiw-devops-with-github-lab-files` **_(1)_**, select **Public** **_(2)_** and click on **Create repository** **_(3)_** button.
 
-   ![The `New Repository` creation form in GitHub.](media/2dgn91.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
 
    > **Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
 
@@ -279,7 +273,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/rulevoilation4.png)
 
-1. Select **It's used in test**, click on the **Allow me to expose this secret**.
+1. Select **It's used in tests**, click on the **Allow me to expose this secret**.
 
    ![](media/rulevoilation1.png)
 
@@ -291,45 +285,45 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
 
-1. From the Azure Portal Dashboard, click on Resource Groups from the Navigate panel to see the resource groups.
+1. From the Azure Portal Dashboard, click on Resource Groups from the navigate panel to see the resource groups.
 
    ![](media/2dgn9.png)
 
-2. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](media/2dgn135.png)
 
-3. Select **productsdb** SQL database from the list of resources.
+1. Select **productsdb** SQL database from the list of resources.
 
    ![](media/upd-2dgn11.png)
 
-4. Under Settings side blade, select **Connection strings** **_(1)_** under Setting and copy the **ADO.NET (SQL authentication)** **_(2)_** connection string from 
+1. Under Settings side blade, select **Connection strings** **_(1)_** under Setting and copy the **ADO.NET (SQL authentication)** **_(2)_** connection string from 
    ADO.NET tab.
 
    ![](media/ado-sql-database.png)
 
-5. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
+1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
    ![](media/2dgn4.png)
 
-6. Under **Security**, expand **Secrets and variables** **_(1)_** by clicking the drop-down and select **Actions** **_(2)_** blade from the left navigation bar. Select the **New repository secret** **_(3)_** button.
+1. Under **Security**, expand **Secrets and variables** **_(1)_** by clicking the drop-down and select **Actions** **_(2)_** blade from the left navigation bar. Select the **New repository secret** **_(3)_** button.
 
    ![](media/exe2-task4-step6-action-setup.png)
 
-7. Under **Secrets and Variables/Actions** page, click on **New Repository Secret** and enter the below mentioned details and Click on **Add secret** **_(3)_**.
+1. Under **Secrets and Variables/Actions** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
 
    - **Name** : Enter **SQL_PASSWORD** **_(1)_**
    - **Value** : Paste the **ADO.NET (SQL authentication)** **_(2)_** which you copied in previous step.
 
      ![](media/2dgn123.png)
 
-     > **Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+     > **Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
 
-     ![](media/2dgn155.png)
+     ![](media/new-devops-github-lab02-8.png)
 
-8. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
+1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
-   ![](media/ex2-t4-8.png)
+   ![](media/new-devops-github-lab02-9.png)
 
    - Replace the values that you copied in below Json. You will be using them in this step.
 
@@ -342,26 +336,27 @@ In this exercise, you will build automation in GitHub for updating and republish
    }
    ```
 
-9. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
+1. Select the **New repository secret** button. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
 
    - **Name** : Enter **SERVICEPRINCIPAL** **_(1)_**
    - **Value** : Paste the service principal details in json format **_(2)_**
 
      ![](media/2dgn36.png)
 
-10. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
+1. Select the **New repository secret** button. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
 
    - **Name** : Enter **ENVIRONMENT** **_(1)_**
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** **_(2)_**
-   ![](media/2dgn33.png)
 
-11. From your GitHub repository, select **Actions** **_(1)_** tab. Select the **contoso-traders-app-deployment** **_(2)_** workflow from the side blade, Click on the **drop-down** **_(3)_** next Run workflow button, and select **Run workflow** **_(4)_**.
+     ![](media/2dgn33.png)
+
+1. From your GitHub repository, select **Actions** **_(1)_** tab. Select the **contoso-traders-app-deployment** **_(2)_** workflow from the side blade, Click on the **drop-down** **_(3)_** next to **Run workflow** button, and select **Run workflow** **_(4)_**.
 
     ![](media/2dgn159.png)
 
    > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform the  step 14 of Task 3 again. 
 
-12. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
+1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
 
     ![](media/2dgn124.png)
 
@@ -369,13 +364,13 @@ In this exercise, you will build automation in GitHub for updating and republish
 
     >**Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 15. Else, continue from step 16.
 
-13. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **_(3)_**.
+1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **_(3)_**.
 
    - click on **Code** **_(1)_**,
    - Select the **Codespace** **_(2)_** tab
    ![](media/ex2-kc-codespace.png)
 
-14. Run the below mentioned commands in the **Terminal**. You'll set node version to node 14.
+1. Run the below mentioned commands in the **Terminal**. You'll set node version to node 14.
 
       ```pwsh
       cd src
@@ -388,25 +383,25 @@ In this exercise, you will build automation in GitHub for updating and republish
       git push
       ```
 
-15. From your GitHub repository, select **Actions** **_(1)_** tab. You'll see an Action named **Updated node version** **_(2)_** executing. Please wait until the execution completes
+1. From your GitHub repository, select **Actions** **_(1)_** tab. You'll see an Action named **Updated node version** **_(2)_** executing. Please wait until the execution completes
 
     ![](media/2dgn160.png)
 
     ![](media/2dgn161.png)
 
-16. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
+1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
 
     ![](media/2dgn9.png)
 
-17. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
     ![](media/2dgn135.png)
 
-18. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+1. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
     ![](media/2dgn127.png)
 
-19. Click on **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
+1. Click on **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
 
     ![](media/2dgn128.png)
 

@@ -90,11 +90,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 1. In the **Azure Chaos Studio**, select **Targets (1)** in the left menu from the Experiements management dropdown. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)** resource group.
 
-   ![](media/Ex6-T2-S2.png)
+   ![](media/giub3.png)
 
 1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
 
-   ![](media/2dgn99.png)
+   ![](media/giub.png)
 
 1. Click on **Review + Enable**.
 
@@ -112,7 +112,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 1. Once the target is enabled, select **Experiments** **_(1)_** from the Experiements management dropdown on the left, click **+ Create** **_(2)_** drop-down, and select **New experiment** **(3)** .
 
-   ![](media/ex6-task3-step9.png)
+   ![](media/giub10.png)
 
 1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Permissions >** **_(4)_**.
 
@@ -153,27 +153,27 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)** from the left navigation pane, click on **+ Add (2)** and select **Add role assignment (3)**.
 
-   ![](media/2dgn121.png)
+   ![](media/giub9.png)
 
 1. In the **Add role assignment** page, under **Role** tab select **Privileged administrator roles**. Select **Owner (1)** in it and then **Next (2)**.
 
-   ![](media/ex6-task3-step18.png)
+   ![](media/giub8.png)
 
 1. Next on the **Members** tab select **Managed identity (1)** for **Assign access to** , click on **+ Select members (2)** on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **contoso-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)**, click on **Select (5)** and click on **Next** **(6)**.
 
-   ![](media/ex6-task3-step19.png)
+   ![](media/giub7.png)
 
 1. Next on the **Conditions** tab select **What user can do** as **Allow user to assign all roles (highly privileged)** **(1)** and click on **Review + assign** **(2)**.
 
-   ![](media/ex6-task3-step20.png)
+   ![](media/giub4.png)
 
 1. Click on **Review + assign**.
 
-   ![](media/ex6-task3-step21.png)
+   ![](media/giub5.png)
 
 1. On the Azure portal navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
 
-   ![](media/2dgn108.png)
+   ![](media/giub6.png)
 
 1. Select **Ok** for **Start this experiment** pop-up.
 
@@ -185,7 +185,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 1. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
 
-   ![](media/2dgn110.png)
+   ![](media/giub11.png)
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
  

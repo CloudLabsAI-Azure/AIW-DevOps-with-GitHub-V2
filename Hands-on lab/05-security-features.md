@@ -43,7 +43,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 1. You will be navigated to **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
 
-   ![](media/devops1.6.png)
+   ![](media/giub1.png)
 
 ## Task 2: Repository security advisories
 
@@ -174,7 +174,7 @@ In this task, you'll explore how secret scanning works and see how it generates 
 
 1. Select **Code Security** from the sidebar and make sure **Secret scanning is enabled (2)**.
 
-   ![](media/2dg111.png)
+   ![](media/giub2.png)
 
 1. Navigate back to **Code (1)** and click on **src (2)** folder.
 

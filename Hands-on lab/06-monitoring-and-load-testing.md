@@ -88,7 +88,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/Ex6-T2-S1.1.png)
 
-1. In the **Azure Chaos Studio**, select **Targets (1)** in the left menu from the Experiements management dropdown. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)** resource group.
+1. In the **Azure Chaos Studio**, select **Targets (1)** in the left menu from the Experiments management dropdown. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)** resource group.
 
    ![](media/giub3.png)
 
@@ -110,7 +110,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/Ex6-T2-S1.1.png)
 
-1. Once the target is enabled, select **Experiments** **_(1)_** from the Experiements management dropdown on the left, click **+ Create** **_(2)_** drop-down, and select **New experiment** **(3)** .
+1. Once the target is enabled, select **Experiments** **_(1)_** from the Experiments management dropdown on the left, click **+ Create** **_(2)_** drop-down, and select **New experiment** **(3)** .
 
    ![](media/giub10.png)
 

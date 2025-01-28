@@ -24,15 +24,15 @@ In this task, you'll access and explore the code repository of the web app using
 
 1. In **Visual Studio Code**, click on **File** **(1)** and select **Open Folder** **(2)**.
 
-   ![](media/devops1.3.png)
+   ![](media/new-devops-github-lab02-1.png)
 
 1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` to open your local GitHub repository and click on **Select Folder**.
 
    ![](media/2dgn1.png)
 
-1. You may receive a prompt: Do you trust the authors of the files in this folder? select the **checkbox** **(1)** the box and click on **Yes, I trust the authors** **(2)**.
+1. You may receive a prompt: Do you trust the authors of the files in this folder? select the **checkbox** the box and click on **Yes, I trust the authors**.
 
-   ![](media/2dg13.png)
+   ![](media/new-devops-github-lab02-2.png)
 
 1. You'll be to see the lab files in Visual Studio code and explore the code files.
 
@@ -198,7 +198,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. On the **Create a new repository** screen, name the repository `aiw-devops-with-github-lab-files` **_(1)_**, select **Public** **_(2)_** and click on **Create repository** **_(3)_** button.
 
-      ![The `New Repository` creation form in GitHub.](media/giub16.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
 
    > **Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
 
@@ -258,6 +258,8 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    ```
 
    - If you are asked authenticate your GitHub account. Select **Sign in with your browser** and you might be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
+   
+     ![](media/new-devops-github-lab02-6.png)
 
      ![](media/ex2-t3.png)
 
@@ -298,7 +300,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 1. Under Settings side blade, select **Connection strings** **_(1)_** under Setting and copy the **ADO.NET (SQL authentication)** **_(2)_** connection string from 
    ADO.NET tab.
 
-   ![](media/ado-sql-database.png)
+   ![](media/new-devops-github-lab02-7.png)
 
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
@@ -317,11 +319,11 @@ In this exercise, you will build automation in GitHub for updating and republish
 
      > **Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
 
-     ![](media/giub12.png)
+     ![](media/new-devops-github-lab02-8.png)
 
 1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
-   ![](media/giub13.png)
+   ![](media/new-devops-github-lab02-9.png)
 
    - Replace the values that you copied in below Json. You will be using them in this step.
 
@@ -466,4 +468,4 @@ The last task automated building and updating only one of the Docker images. In 
 
 In this exercise, you hosted the application locally, deployed the application to Azure using GitHub Actions, and explored Codespace.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.

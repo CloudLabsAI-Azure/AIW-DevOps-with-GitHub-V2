@@ -68,7 +68,8 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
    ![](media/new-devops-github-lab01-4.png)
 
-   > **Note**: Please select the network connection with respect to the resource group region, you can check the resource group location by navigating to **Resource groups** and check the region with respect to **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group.
+   > **Note**: Please select the network connection with respect to the resource group region, you can check the resource group location by navigating to **Resource groups** and check the region with respect to **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group. <br>
+   > **Note**: If there's an error with the network connection in the resource group's region, choose a different network connection that is available .
 
    ![](media/devops-ex1-t2.png)
 

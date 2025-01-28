@@ -198,7 +198,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. On the **Create a new repository** screen, name the repository `aiw-devops-with-github-lab-files` **_(1)_**, select **Public** **_(2)_** and click on **Create repository** **_(3)_** button.
 
-      ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](media/giub16.png "New Repository Creation Form")
 
    > **Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
 
@@ -317,11 +317,11 @@ In this exercise, you will build automation in GitHub for updating and republish
 
      > **Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
 
-     ![](media/new-devops-github-lab02-8.png)
+     ![](media/giub12.png)
 
 1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
-   ![](media/new-devops-github-lab02-9.png)
+   ![](media/giub13.png)
 
    - Replace the values that you copied in below Json. You will be using them in this step.
 

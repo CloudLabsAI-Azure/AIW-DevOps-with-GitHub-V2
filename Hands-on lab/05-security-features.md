@@ -43,7 +43,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 1. You will be navigated to **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
 
-   ![](media/devops1.6.png)
+   ![](media/giub1.png)
 
 ## Task 2: Repository security advisories
 
@@ -139,13 +139,11 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](media/ex5-t3-node-forge.png "`handlebars` Dependabot alert")
 
-1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. After reviewing the alert, select **Review security update**.
+1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. Click on **Create Dependabot Security Update** After the creation, click on **Review security update** to review.
 
    ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
 
-   **Note:** If you see Create Security Update option, click on it. After it is created then select Review security update.
-
-1. Navigate to **Pull Requests** **_(1)_** tab, find the Dependabot security patch pull request **_(2)_** and merge it to your main branch.
+1. You will be navigate to the **Pull Requests** **_(1)_** tab, find the Dependabot security patch pull request **_(2)_** and merge it to your main branch.
 
    ![List of Pull Requests.](media/ex5-t3-open-nfpr.png "Pull Requests")
 
@@ -174,9 +172,9 @@ In this task, you'll explore how secret scanning works and see how it generates 
 
    ![](media/2dg110.png)
 
-1. Select **Code security and analysis (1)** from the sidebar and make sure **Secret scanning is enabled (2)**.
+1. Select **Code Security** from the sidebar and make sure **Secret scanning is enabled (2)**.
 
-   ![](media/2dg111.png)
+   ![](media/giub2.png)
 
 1. Navigate back to **Code (1)** and click on **src (2)** folder.
 
@@ -204,8 +202,6 @@ In this task, you'll explore how secret scanning works and see how it generates 
 1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
 
    ![](media/2dg116.png)
-
-1. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
 ## Summary
 

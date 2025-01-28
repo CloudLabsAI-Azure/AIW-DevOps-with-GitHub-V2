@@ -57,7 +57,9 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
      ![](media/l2.png)
 
-   - Scroll down and select the lab files repository `aiw-devops-with-github-lab-files`which you created earlier from the dropdown  and click on **Save**.
+      > **Note:** Provide the password when prompted.
+
+   - Scroll down, check the box for **Only select repositories**  and select the lab files repository `aiw-devops-with-github-lab-files`which you created earlier from the dropdown  and click on **Save**.
 
       ![](media/l3.png)
 

@@ -98,7 +98,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/upd-2dgn51.png)
 
-   > **Note:** \* If you are not able to access the application, click on **Advanced** under Your connection isn't private.
+   > **Note:** If you are not able to access the application, click on **Advanced** under Your connection isn't private.
 
    ![](media/localhost1.png)
 
@@ -184,8 +184,6 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. In a new browser tab open `https://www.github.com/login`. From **Environment** page **_(1)_**, navigate to **License** **_(2)_** tab and **copy** **_(3)_** the credentials. Use the same username and password to login into GitHub.
 
-   ![](media/new-devops-github-lab02-4.png)
-
 1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window, and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 
    ![](media/2dgn154.png)
@@ -200,7 +198,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. On the **Create a new repository** screen, name the repository `aiw-devops-with-github-lab-files` **_(1)_**, select **Public** **_(2)_** and click on **Create repository** **_(3)_** button.
 
-   ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
 
    > **Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
 

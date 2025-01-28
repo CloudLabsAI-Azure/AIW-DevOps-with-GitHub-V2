@@ -215,4 +215,4 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
 In this exercise, you explored the features of Azure boards and configured Azure Test plans for the application.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.

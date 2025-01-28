@@ -24,11 +24,11 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
 1. Now on the left-hand side blade click on **Dev Centers** **(1)** under Configure and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/devops1.1.png)
+   ![](media/new-devops-github-lab01-1.png)
 
 1. On the left-hand side pane, click on **Dev box definitions** **(1)** under Dev box configuration, and click on **+ Create** **(2)**.
 
-   ![](media/dev-def.png)
+   ![](media/new-devops-github-lab01-2.png)
 
 1. Now under the Create dev box definition window, add the below details and then click on **Create** **(6)**.
 
@@ -57,16 +57,16 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
 1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/devops1.1.png)
+   ![](media/new-devops-github-lab01-1.png)
 
 2. Now under left-hand side pane, click on **Networking** under Dev box configuration, and then click on **+ Add**.
 
-   ![](media/e117.png)
+   ![](media/new-devops-github-lab01-3.png)
 
 3. Now under _Add network connection_, select the **fabrikam-connection-<inject key="location" enableCopy="false" />** **(1)** for Network Connection from the drop- 
    down and then click on **Add** **(2)**.
 
-   ![](media/E1T2S3.png)
+   ![](media/new-devops-github-lab01-4.png)
 
    > **Note**: Please select the network connection with respect to the resource group region, you can check the resource group location by navigating to **Resource groups** and check the region with respect to **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group.
 
@@ -76,13 +76,13 @@ In this task, you'll configure the network connection using Dev Center. Network 
 
 In this task, you'll create a Dev pool using a previously configured network connection and Dev Box definitions. A dev box pool is a collection of dev boxes that you manage together.
 
-1. Return to the Microsoft dev box, and click on **Projects** **(1)** then click on the **devproject<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Return to the Microsoft dev box, and click on **Projects** **(1)** then click on the **devproject-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
-   ![](media/2dgn75.png)
+   ![](media/new-devops-github-lab01-5.png)
 
 2. On the left hand side pane click on **Dev box pools** **(1)** under Manage and then click on **Create dev box pool** **(2)**.
 
-   ![](media/2dgn76.png)
+   ![](media/new-devops-github-lab01-6.png)
 
 3. Under _Create a dev box pool_ window, enter the following details and click on **Create** **(7)**.
 
@@ -92,7 +92,9 @@ In this task, you'll create a Dev pool using a previously configured network con
    - Dev box Creator Privileges: **Local Administrator** **(5)**
    - Licensing: Check the checkbox **(6)**
 
-     ![](media/E1T3S3u.png)
+     ![](media/new-devops-github-lab01-7.png)
+
+     ![](media/new-devops-github-lab01-8.png)
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -111,17 +113,21 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
    ![](<media/24-05-2024(3)-1.png>)
 
+   > **Note:** If you see **Welcome to the Microsoft Developer Portal** tab for quick tour, select **Skip** button for now.
+
+      ![](media/new-devops-github-lab01-9.png)
+
 3. The Devbox creation will take around 60 - 90 minutes time. You can move to the next exercise and come back later to check on the Devbox environment.
 
    ![](media/2dgn86.png)
 
 4. On **Your Dev box** page, click on the drop down button **(1)** and click on **Open in browser** **(2)**.
 
-   ![](media/2dgn147.png)
+   ![](media/new-devops-github-lab01-10.png)
 
 5. In Session settings, click on **Connect**.
 
-   ![](media/ex1-t4-1.png)
+   ![](media/new-devops-github-lab01-11.png)
 
 6. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
 
@@ -129,14 +135,14 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
 - Password: <inject key="AzureAdUserPassword"></inject>
 
-  ![](media/2dgn150.png)
+  ![](media/new-devops-github-lab01-12.png)
 
 7. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 
-   ![](media/2dgn151.png)
+   ![](media/new-devops-github-lab01-13.png)
 
 ## Summary
 
 In this exercise, you have created a Dev box definition, Network connection, and Dev box pool in Microsoft Dev Box. Also, you have accessed a Dev Box and explored its features.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.

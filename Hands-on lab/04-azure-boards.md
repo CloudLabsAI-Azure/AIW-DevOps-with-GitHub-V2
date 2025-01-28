@@ -34,11 +34,11 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
      - Scroll to the top of the Azure Boards Marketplace page and click on the elipsis and select the github user.
 
-         ![](media/giud14.png)
+         ![](media/giub14.png)
 
      - Click on **grant this app access**.
 
-         ![](media/giud15.png)
+         ![](media/giub15.png)
 
      - Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
 

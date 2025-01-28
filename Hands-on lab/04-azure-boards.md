@@ -34,16 +34,22 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
      - Scroll to the top of the Azure Boards Marketplace page and click on the elipsis and select the github user.
 
-     - Click on **grant this app access**
+         ![](media/guid14.png)
+
+     - Click on **grant this app access**.
+
+         ![](media/guid15.png)
 
      - Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
+
+         ![](media/ex4-kc-install&auth.png)
 
      - Copy the URL of the Azure Devops URL and navigate to the **IN-PRIVATE** window.
 
    - Select the cloudlabs **Email** <inject key="AzureAdUserEmail"></inject>
    - Now enter the password and **click** on **Sign in**.
 
-     ![](media/img10.png).
+        ![](media/img10.png).
 
 1. On the next page, select **Complete order and begin installation**.
 

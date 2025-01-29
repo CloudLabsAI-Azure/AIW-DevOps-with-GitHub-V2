@@ -104,7 +104,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/ex4-mergepr.png)
 
-1. Update the description as **fixed AB#{workitemID} updated** and select **confirm merge**.
+1. Update the description as **AB#{workitemID} updated** and select **confirm merge**.
 
    ![](media/ex4-confirm-merge.png)
 

@@ -27,7 +27,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/2dgn169.png)
 
-1. Update the workflow name to **codeql-analysis.yml** **_(1)_** and review the yaml file. Select **Commit changes** **_(2)_**, then select **Commit directly to the main branch** **_(3)_** and click on **Commit new file** **_(4)_**.
+1. Update the workflow name to **codeql-analysis.yml** **_(1)_** and review the yaml file. Select **Commit changes** **_(2)_**, then select **Commit directly to the main branch** **_(3)_** and click on **Commit changes** **_(4)_**.
 
    ![](media/ex5-task1-step3a.png)
 
@@ -184,7 +184,7 @@ In this task, you'll explore how secret scanning works and see how it generates 
 
    ![](media/2dg113.png)
 
-1. Add new file with name **build.docker-compose.yml (1)** name, add the code mentioned below **commit** the file. Here, you'll expose the **application ID** of a service principal.
+1. Add new file with name **build.docker-compose.yml (1)** name, add the code mentioned below, and click on **commit changes** to commit the file. Here, you'll expose the **application ID** of a service principal.
 
    ```
    version: "3.4"
@@ -197,7 +197,7 @@ In this task, you'll explore how secret scanning works and see how it generates 
       build: ./ContosoTraders.Api.Products
    ```
 
-   ![](media/2dg115.png)
+   ![](media/E4T4S5-2901.png)
 
 1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
 

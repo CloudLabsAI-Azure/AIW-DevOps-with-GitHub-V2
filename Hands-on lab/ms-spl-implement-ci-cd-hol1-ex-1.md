@@ -52,7 +52,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Application Id(Client Id)**, **Secret Key (Client Secret)**, and **Tenant Id (Directory ID)**.   
    
-   ![](media/ex2-t2-3.png)
+   ![](media/ex2-t2-3upd.png)
    
 1. Update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the command mentioned below. Run it in the terminal.
 
@@ -74,7 +74,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
 1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"` command to set secret path.
 
-   >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
+   >**Note**: Replace `<SUFFIX>` with **<inject key="DeploymentID" />** before running the command.
 
    ![](media/upd-2dgn49.png)
    

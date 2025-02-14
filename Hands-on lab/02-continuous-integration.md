@@ -26,9 +26,9 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/new-devops-github-lab02-1.png)
 
-1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` to open your local GitHub repository and click on **Select Folder**.
+1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` **(1)** to open your local GitHub repository and click on **Select Folder (2)**.
 
-   ![](media/2dgn1.png)
+   ![](media/d1.png)
 
 1. You may receive a prompt: Do you trust the authors of the files in this folder? select the **checkbox** the box and click on **Yes, I trust the authors**.
 
@@ -182,13 +182,13 @@ In this task, you'll access the GitHub enterprise account and create a new repos
 
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
-1. In a new browser tab open `https://www.github.com/login`. From **Environment** page **_(1)_**, navigate to **License** **_(2)_** tab and **copy** **_(3)_** the credentials. Use the same username and password to login into GitHub.
+1. In a new browser tab open `https://www.github.com/login`. From **Environment** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to login into GitHub.
 
 1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window, and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 
    ![](media/2dgn154.png)
 
-1. In the upper-right corner, expand the user **drop-down menu** **_(1)_** and select **Your repositories** **_(2)_**.
+1. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
 
    ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
 
@@ -196,13 +196,13 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/ex2-t3-3-git.png "New Repository Creation Form")
 
-1. On the **Create a new repository** screen, name the repository `aiw-devops-with-github-lab-files` **_(1)_**, select **Public** **_(2)_** and click on **Create repository** **_(3)_** button.
+1. On the **Create a new repository** screen, name the repository `aiw-devops-with-github-lab-files` **(1)**, select **Public** **(2)** and click on **Create repository** **(3)** button.
 
       ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
 
    > **Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
 
-1. In the upper-right corner, expand the user **drop-down menu** **_(1)_** and select **Your repositories** **_(2)_**.
+1. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
 
    ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
 
@@ -246,7 +246,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    Run the below mentioned command in the terminal. Make sure to replace your_github_repository-url with the value you copied in step 11 and Unique-ID in step 12.
 
-   Note: This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1.
+   **Note:** This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1.
 
    ```pwsh
    git init
@@ -306,14 +306,14 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn4.png)
 
-1. Under **Security**, expand **Secrets and variables** **_(1)_** by clicking the drop-down and select **Actions** **_(2)_** blade from the left navigation bar. Select the **New repository secret** **_(3)_** button.
+1. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
 
    ![](media/exe2-task4-step6-action-setup.png)
 
-1. Under **Secrets and Variables/Actions** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
+1. Under **Secrets and Variables/Actions** page, enter the below mentioned details and Click on **Add secret** **(3)**.
 
-   - **Name** : Enter **SQL_PASSWORD** **_(1)_**
-   - **Value** : Paste the **ADO.NET (SQL authentication)** **_(2)_** which you copied in previous step.
+   - **Name** : Enter **SQL_PASSWORD** **(1)**
+   - **Value** : Paste the **ADO.NET (SQL authentication)** **(2)** which you copied in previous step.
 
      ![](media/2dgn123.png)
 
@@ -327,30 +327,30 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    - Replace the values that you copied in below Json. You will be using them in this step.
 
-   ```json
-   {
-     "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-     "clientSecret": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-     "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-     "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
-   }
-   ```
+      ```json
+      {
+      "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+      "clientSecret": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+      "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
+      }
+      ```
 
-1. Select the **New repository secret** button. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
+1. Select the **New repository secret** button. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **(3)**.
 
-   - **Name** : Enter **SERVICEPRINCIPAL** **_(1)_**
-   - **Value** : Paste the service principal details in json format **_(2)_**
+   - **Name** : Enter **SERVICEPRINCIPAL** **(1)**
+   - **Value** : Paste the service principal details in json format **(2)**
 
      ![](media/2dgn36.png)
 
-1. Select the **New repository secret** button. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **_(3)_**.
+1. Select the **New repository secret** button. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **(3)**.
 
-   - **Name** : Enter **ENVIRONMENT** **_(1)_**
-   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** **_(2)_**
+   - **Name** : Enter **ENVIRONMENT** **(1)**
+   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** **(2)**
 
      ![](media/2dgn33.png)
 
-1. From your GitHub repository, select **Actions** **_(1)_** tab. Select the **contoso-traders-app-deployment** **_(2)_** workflow from the side blade, Click on the **drop-down** **_(3)_** next to **Run workflow** button, and select **Run workflow** **_(4)_**.
+1. From your GitHub repository, select **Actions** **(1)** tab. Select the **contoso-traders-app-deployment** **(2)** workflow from the side blade, Click on the **drop-down** **(3)** next to **Run workflow** button, and select **Run workflow** **(4)**.
 
     ![](media/2dgn159.png)
 
@@ -364,11 +364,12 @@ In this exercise, you will build automation in GitHub for updating and republish
 
     >**Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 15. Else, continue from step 16.
 
-1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **_(3)_**.
+1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **(3)**.
 
-   - click on **Code** **_(1)_**,
-   - Select the **Codespace** **_(2)_** tab
-   ![](media/ex2-kc-codespace.png)
+   - click on **Code** **(1)**,
+   - Select the **Codespace** **(2)** tab
+
+     ![](media/ex2-kc-codespace.png)
 
 1. Run the below mentioned commands in the **Terminal**. You'll set node version to node 14.
 
@@ -383,7 +384,7 @@ In this exercise, you will build automation in GitHub for updating and republish
       git push
       ```
 
-1. From your GitHub repository, select **Actions** **_(1)_** tab. You'll see an Action named **Updated node version** **_(2)_** executing. Please wait until the execution completes
+1. From your GitHub repository, select **Actions** **(1)** tab. You'll see an Action named **Updated node version** **(2)** executing. Please wait until the execution completes
 
     ![](media/2dgn160.png)
 
@@ -419,24 +420,24 @@ In this exercise, you will build automation in GitHub for updating and republish
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
 
-1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **_(3)_**.
+1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **(3)**.
 
-    - Click on **Code** **_(1)_**,
-    - Select the **Codespace** **_(2)_** tab
+   - Click on **Code** **(1)**,
+   - Select the **Codespace** **(2)** tab
 
-      ![](media/ex2-kc-codespace.png)
+     ![](media/ex2-kc-codespace.png)
  
-   > **Note**: In case you had created codespace in previous task. Click on **+** button to create new codespace.
+     > **Note**: In case you had created codespace in previous task. Click on **+** button to create new codespace.
 
 2. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
-    ![](media/2dg33.png)
+   ![](media/2dg33.png)
 
 3. In the Visual Studio Code tab, Select **Open** to allow Github codespaces extension to open the URL.
 
-    ![](media/2dg33at.png)
+   ![](media/2dg33at.png)
 
-    > **Note**: In case you recieve a pop-up, click on **Allow** then click on **Continue** and then **Open** to authorize Github login.
+   > **Note**: In case you recieve a pop-up, click on **Allow** then click on **Continue** and then **Open** to authorize Github login.
 
 4. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
@@ -458,7 +459,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
-7. Navigate back to the GitHub browser, select the **Actions** **_(1)_** tab and review the **workflow** **_(2)_** created automatically for the changes made.
+7. Navigate back to the GitHub browser, select the **Actions** **(1)** tab and review the **workflow** **(2)** created automatically for the changes made.
 
     ![](media/2dgn164.png)
 

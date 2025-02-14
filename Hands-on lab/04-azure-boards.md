@@ -30,7 +30,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
 1. In review your order page enter the billing information and click on **save**
 
-   > **Note:** If the **Install it for free** button is greyed out  with the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account follow the below steps and please proceed from step number 4.
+   > **Note:** If the **Install it for free** button is greyed out  with the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account, follow the below steps and please proceed from step number 4.
 
      - Scroll to the top of the Azure Boards Marketplace page and click on the elipsis and select the github user.
 
@@ -49,9 +49,29 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
    - Select the cloudlabs **Email** <inject key="AzureAdUserEmail"></inject>
    - Now enter the password and **click** on **Sign in**.
 
-        ![](media/img10.png).
+        ![](media/img10.png)
 
 1. On the next page, select **Complete order and begin installation**.
+
+   >**Note :** If Azure Boards is already installed, follow the below steps to uninstall it.
+
+   - Click on the **... (ellipse) (1)** from top right corner and select **Configure account access (2)**
+
+     ![](media/d3.png)
+   
+   - On the Applications pane in the Installed Github Apps tab click on **Configure** for Azure Boards.
+
+     ![](media/d4.png)
+
+   - Scroll down and click on **Uninstall** for **Uninstall 'Azure Boards'** under Danger zone.
+
+     ![](media/d5.png)
+
+   - On the github.com says pop-up click on **OK**
+
+     ![](media/d6.png)
+
+   - Now navigate back to `https://github.com/marketplace/azure-boards` and click on **Install** under **Plans and pricing**
 
 1. Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
 
@@ -73,7 +93,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/ex4-kc-todo-new1.png)
 
-1. Select the **Code** **_(1)_** tab in your GitHub repository, navigate to **aiw-devops-with-github-lab-files/.github/workflows/** **_(2)_** and select **contoso-traders-provisioning-deployment.yml** **_(3)_** file.
+1. Select the **Code** **(1)** tab in your GitHub repository, navigate to **aiw-devops-with-github-lab-files/.github/workflows/** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
    ![](media/2dgn140.png)
 
@@ -81,10 +101,10 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/2dgn166.png)
 
-1. Click on **Commit Changes** **_(1)_**, provide the details mentioned below and click on **Propose changes** **_(5)_**.
+1. Click on **Commit Changes** **(1)**, provide the details mentioned below and click on **Propose changes** **(5)**.
 
-   - Provide `workitem ID Updated` **_(2)_** as title. Make sure to provide the same **Work item ID** that was created in the earlier step in Azure DevOps.
-   - Select **Create a new branch for this commit and start a pull request** **_(3)_** and name the new branch as **update carts** **_(4)_**.
+   - Provide `workitem ID Updated` **(2)** as title. Make sure to provide the same **Work item ID** that was created in the earlier step in Azure DevOps.
+   - Select **Create a new branch for this commit and start a pull request** **(3)** and name the new branch as **update carts** **(4)**.
 
      ![](media/E3T2S5.png)
 
@@ -92,7 +112,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/ex4-create-pr.png)
 
-1. Navigate to **Azure Boards**. Open the **work item** **_(1)_** created in the earlier step.
+1. Navigate to **Azure Boards**. Open the **work item** **(1)** created in the earlier step.
 
    ![](media/ex4-open-wi.png)
 
@@ -124,15 +144,15 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dg72.png)
 
-1. In the New Test Plan tab, provide the following details and click on **Create** **_(4)_**.
+1. In the New Test Plan tab, provide the following details and click on **Create** **(4)**.
 
-   - Name: **TestPlan-<inject key="DeploymentID" enableCopy="false" />** **_(1)_**
-   - Area Path: **contosotraders-<inject key="DeploymentID" enableCopy="false" />** **_(2)_**
-   - Iteration: Leave it to **default** **_(3)_**
+   - Name: **TestPlan-<inject key="DeploymentID" enableCopy="false" />** **(1)**
+   - Area Path: **contosotraders-<inject key="DeploymentID" enableCopy="false" />** **(2)**
+   - Iteration: Leave it to **default** **(3)**
 
      ![](media/2dgn144.png)
 
-1. From contosotraders-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** **_(1)_** button, hover over **New Suite** **_(2)_**, and select **Static suite** **_(3)_**.
+1. From contosotraders-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** **(1)** button, hover over **New Suite** **(2)**, and select **Static suite** **(3)**.
 
    ![](media/2dg109.png)
 
@@ -144,18 +164,18 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dg76.png)
 
-1. In the New Test Case pop-up, provide the following details and click on **Save & Close** **_(10)_**
+1. In the New Test Case pop-up, provide the following details and click on **Save & Close** **(10)**
 
-   - Name: **Validate the web app** **_(1)_**
+   - Name: **Validate the web app** **(1)**
    - Steps:
-     - 1. Actions: **Access the Contoso Traders app** **_(2)_** Expected result: **Succeeded** **_(3)_**
-     - 2. Actions: **Access the Laptop page** **_(4)_** Expected result: **Succeeded** **_(5)_**
-     - 3. Actions: **Access the Controllers page** **_(6)_** Expected result: **Succeeded** **_(7)_**
-     - 4. Actions: **Access the Desktop page** **_(8)_** Expected result: **Succeeded** **_(9)_**
+     - 1. Actions: **Access the Contoso Traders app** **(2)** Expected result: **Succeeded** **(3)**
+     - 2. Actions: **Access the Laptop page** **(4)** Expected result: **Succeeded** **(5)**
+     - 3. Actions: **Access the Controllers page** **(6)** Expected result: **Succeeded** **(7)**
+     - 4. Actions: **Access the Desktop page** **(8)** Expected result: **Succeeded** **(9)**
 
      ![](media/ex4-validate-webapp.png)
 
-1. From the Test plans tab, navigate to **Execute** **_(1)_** tab, select the **validate the web app** **_(2)_** test point and click on **Run for web application** **_(3)_**.
+1. From the Test plans tab, navigate to **Execute** **(1)** tab, select the **validate the web app** **(2)** test point and click on **Run for web application** **(3)**.
 
    ![](media/2dg78.png)
 
@@ -179,7 +199,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dgn128.png)
 
-1. Verify the availability of the web app, Laptops page, Controllers page, and Desktops page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** **_(1)_**.
+1. Verify the availability of the web app, Laptops page, Controllers page, and Desktops page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** **(1)**.
 
    ![](media/2dgn167.png)
 
@@ -189,11 +209,11 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/ex4-testsuite.png)
 
-1. Navigate to **chart** **_(1)_**, click on **+ New** **_(2)_** and select **+ New test case chart** **_(3)_**.
+1. Navigate to **chart** **(1)**, click on **+ New** **(2)** and select **+ New test case chart** **(3)**.
 
    ![](media/2dg87.png)
 
-1. In the Configure chart pop up, select **Bar** **_(1)_** as chart type, **Activated By** **_(2)_** for Group by option, and click on **OK** **_(3)_**.
+1. In the Configure chart pop up, select **Bar** **(1)** as chart type, **Activated By** **(2)** for Group by option, and click on **OK** **(3)**.
 
    ![](media/2dg88.png)
 

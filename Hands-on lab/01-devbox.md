@@ -132,11 +132,11 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
 6. Under **Sign in to Cloud PC** page, enter your credentials and click on **Sign In**.
 
-- Username: <inject key="AzureAdUserEmail"></inject>
+   - Username: <inject key="AzureAdUserEmail"></inject>
 
-- Password: <inject key="AzureAdUserPassword"></inject>
+   - Password: <inject key="AzureAdUserPassword"></inject>
 
-  ![](media/new-devops-github-lab01-12.png)
+     ![](media/new-devops-github-lab01-12.png)
 
 7. Now the Dev box will start configuring your account and a remote session of your Dev box will launch.
 

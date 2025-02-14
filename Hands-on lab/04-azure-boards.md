@@ -57,7 +57,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    - Click on the **... (ellipse) (1)** from top right corner and select **Configure account access (2)**
 
-     ![](media/d3.png)
+     ![](media/ap1.png)
    
    - On the Applications pane in the Installed Github Apps tab click on **Configure** for Azure Boards.
 
@@ -69,7 +69,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    - On the github.com says pop-up click on **OK**
 
-     ![](media/d6.png)
+     ![](media/ap2.png)
 
    - Now navigate back to `https://github.com/marketplace/azure-boards` and click on **Install** under **Plans and pricing**
 

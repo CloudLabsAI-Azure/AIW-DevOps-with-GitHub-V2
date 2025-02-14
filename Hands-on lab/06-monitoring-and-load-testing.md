@@ -46,7 +46,7 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
    ![](media/dglt1.jpg)
 
-1. From the overview of **contoso-traders-ui2<inject key="Deploymentid" enableCopy="false" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it into the notepad for later use in the task.
+1. From the overview of **contoso-traders-ui2<inject key="Deploymentid" enableCopy="false" />** endpoint, copy the **Endpoint hostname** and paste it into the notepad for later use in the task.
 
    ![](media/dglt2.jpg)
 
@@ -54,13 +54,13 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
    ![](media/upd-2dgn117.png)
 
-1. On the left hand side pane, select **Tests** **_(1)_** and click on **+ Create** **_(2)_** and select **Create a URL-based test** **_(3)_**.
+1. On the left hand side pane, select **Tests** **(1)** and click on **+ Create** **(2)** and select **Create a URL-based test** **(3)**.
 
    ![](media/2dgn96.png)
 
 1. On the **Create a URL-based test** page, under basic tab, click on **Next**.
 
-1. On the **Test plan** page, click on **+ Add request**, and paste the **Endpoint URL** as URL **_(1)_** and leave everything as default, then click **Add**.
+1. On the **Test plan** page, click on **+ Add request**, and paste the **Endpoint URL** as URL **(1)** and leave everything as default, then click **Add**.
 
    ![](media/ex6-task2-step5-1.png)
 
@@ -114,14 +114,14 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/giub10.png)
 
-1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Permissions >** **_(4)_**.
+1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Permissions >** **(4)**.
 
-   - Subscription: Select the default subscription **_(1)_**
-   - Resource Group: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **_(2)_**
-   - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** **_(3)_**
+   - Subscription: Select the default subscription **(1)**
+   - Resource Group: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)**
+   - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** **(3)**
    - Region: Leave it to default
 
-   ![](media/E5T1S10.png)
+     ![](media/E5T1S10.png)
 
 1. On the **Permissions** page, leave the default selection and select **Next: Experiment designer >**.
 
@@ -131,15 +131,15 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/Ex6-T2-S7.3.png)
 
-1. On the **Add fault** page, select the following and select **Next: Target resources>** **(4)**.
+1. On the **Add fault** page, select the following and select **Next: Target resources>**.
 
-   - Faults: **AKS Chaos Mesh Pod Chaos (deprecated)** **_(1)_**
-   - Duration (minutes): **5** **_(2)_**
-   - jsonSpec: Leave it to default **_(3)_**
+   - Faults: **AKS Chaos Mesh Pod Chaos (deprecated)** **(1)**
+   - Duration (minutes): **5** **(2)**
+   - jsonSpec: Leave it to default **(3)**
 
       ![](media/2dgn61-1.png)
 
-1. On the **Target resources**, select the **Manually select from a list** **(1)** under **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **_(2)_** resource, and **Add** **_(3)_**.
+1. On the **Target resources**, select the **Manually select from a list** **(1)** under **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(2)** resource, and **Add** **(3)**.
 
    ![](media/ex6-task3-step14.png)
 
@@ -155,7 +155,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/giub9.png)
 
-1. In the **Add role assignment** page, under **Role** tab select **Privileged administrator roles**. Select **Owner (1)** in it and then **Next (2)**.
+1. In the **Add role assignment** page, under **Role** tab select **Privileged administrator roles (1)**. Select **Owner (2)** in it and then **Next (3)**.
 
    ![](media/giub8.png)
 

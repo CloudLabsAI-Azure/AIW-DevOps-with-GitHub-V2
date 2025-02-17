@@ -221,6 +221,12 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/ex4-testsuite1.png)
 
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+ > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+ > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="33638c78-3fac-4987-accd-3df1a2e578f2" />
 
 ## Summary
 

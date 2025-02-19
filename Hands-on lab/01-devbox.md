@@ -114,9 +114,9 @@ In this task, you'll access a Dev Box using Developer and explore its features.
 
       ![](<media/24-05-2024(3)-1.png>)
 
-   > **Note:** If you see **Welcome to the Microsoft Developer Portal** tab for quick tour, select **Skip** button for now.
+      >**Note:** If you see **Welcome to the Microsoft Developer Portal** tab for quick tour, select **Skip** button for now.
    
-     ![](media/new-devops-github-lab01-9.png)
+      ![](media/new-devops-github-lab01-9.png)
 
 3. The Devbox creation will take around 60 - 90 minutes time. You can move to the next exercise and come back later to check on the Devbox environment.
 

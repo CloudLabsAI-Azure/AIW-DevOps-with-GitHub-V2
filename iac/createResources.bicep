@@ -1138,7 +1138,7 @@ resource dashboard 'Microsoft.Portal/dashboards@2020-09-01-preview' = {
 // aks cluster
 //
 
-resource aks 'Microsoft.ContainerService/managedClusters@2022-09-02-preview' = {
+resource aks 'Microsoft.ContainerService/managedClusters@2024-10-02-preview' = {
   name: aksClusterName
   location: resourceLocation
   tags: resourceTags

@@ -272,11 +272,15 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/error_1.jpg)
 
-(i). Scroll up within the terminal to locate the highlighted link. Click on the link and choose the **It's used in tests** option. Then, select **Allow me to expose this secret** to proceed.
+(i). Scroll up within the terminal to locate the highlighted link. Click on the link.
 
-   ![](media/link.jpg)   
+   ![](media/errorlo.png)
 
-(ii). After completing the previous step, navigate back to VS Code and rerun step-15 to finish the push process. 
+(ii)choose the **It's used in tests**(1) option. Then, select **Allow me to expose this secret**(2) to proceed.
+
+   ![](media/error1lo.png)   
+
+(iii). After completing the previous step, navigate back to VS Code and rerun step-15 to finish the push process. 
 
 ### Task 4: Build and push using GitHub Actions
 

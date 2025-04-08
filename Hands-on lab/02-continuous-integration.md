@@ -1,6 +1,6 @@
 # Exercise 2: Continuous Integration and Continuous Deployment
 
-### Estimated Duration: 80 minutes
+### Estimated Duration: 120 minutes
 
 In this exercise, you are going to set up the local infrastructure using dotnet. There are three parts of the application you will be working with: carts, products, and UI. You will deploy the infrastructure to cloud using GitHub Actions. You will also build automation in GitHub for updating and republishing our workflows when the code changes.
 

@@ -1,5 +1,7 @@
 # HOL 1: Implement Dev Box
 
+### Estimated Duration: 240 minutes
+
 ## Overview
 
 Microsoft Dev Box is a service that provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.

@@ -1,6 +1,6 @@
 # Lab 2: Explore GitHub advance security features
 
-## Estimated Duration: 100 minutes
+### Estimated Duration: 100 minutes
 
 In this hands-on lab, you'll explore GitHub Enterprise features which is GitHub advance security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.  
 

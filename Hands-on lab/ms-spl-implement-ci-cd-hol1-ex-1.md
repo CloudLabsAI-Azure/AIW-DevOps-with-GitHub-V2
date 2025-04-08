@@ -1,6 +1,6 @@
 # Lab 1: Continuous Integration and Continuous Deployment with GitHub Actions
 
-### Estimated Duration: 80 minutes
+### Estimated Duration: 140 minutes
 
 In this hands-on lab, you are going to set up the local infrastructure using dotnet. There are three parts of the application you will be working with: carts, products, and ui. You will deploy the infrastructure to cloud using GitHub Actions. you will also build automation in GitHub for updating and republishing our workflows when the code changes.
 

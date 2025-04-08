@@ -1,6 +1,6 @@
 # Devops with Github 
 
-### Overall Estimated Duration: 8 Hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -53,19 +53,19 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![](media/env.png)
+   ![](media/environment.png)
 
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](media/spl.png)
+   ![](media/GS8.png)
 
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![](media/res.png)
+   ![](media/resources-vm-manage.png)
 
 ## Lab Validation
 
@@ -83,7 +83,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser which is created on the desktop.
 
-      ![](media/dev(1).png)
+      ![](media/GS1.png)
 
    > **Note**: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
 

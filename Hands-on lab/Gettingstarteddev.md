@@ -1,6 +1,6 @@
 # Microsoft Dev Box for Developers
 
-### Overall Estimated Duration: 120 Minutes
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -46,7 +46,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
-   ![](./media/ai-900-gettingstarted-04.png)
+   ![](./media/environment.png)
  
 ## Utilizing the Split Window Feature
  
@@ -58,7 +58,13 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-  ![](./media/GS5.png)
+  ![](./media/resources-vm-manage.png)
+
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+![](./media/labzoom-1.png)
 
 ## Lab Validation
 

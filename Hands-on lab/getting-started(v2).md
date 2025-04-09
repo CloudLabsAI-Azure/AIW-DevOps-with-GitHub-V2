@@ -1,5 +1,7 @@
-# CI/CD with GitHub Actions and Explore GitHub Advanced Security Features
+# Implement CI/CD with GitHub Actions
+
 ## Overall Estimated Duration: 4 Hours
+
 ## Overview
 In this comprehensive hands-on lab, you will delve into the essentials of Continuous Integration (CI), Continuous Deployment (CD), and advanced security practices using GitHub. You'll learn how to leverage GitHub Actions to automate your development workflows, including building, testing, and deploying your applications. Additionally, you'll explore GitHub's advanced security features, such as secret scanning, code scanning, and Dependabot, to safeguard your codebase against vulnerabilities.
 
@@ -36,43 +38,49 @@ In this hands-on lab, you'll explore the integration of Continuous Integration (
 - **Secret Scanning:** A feature that scans your codebase for sensitive information (e.g., API keys, passwords) and alerts you if any secrets are detected.
 - **Code Scanning:** A feature that automatically analyzes your code for security vulnerabilities and provides actionable feedback.
 
-## **Getting Started with Your Implement Dev Box Workshop**
+## Getting Started with the Lab
  
 Welcome to your Implement Dev Box workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
-## **Accessing Your Lab Environment**
+## Accessing Your Lab Environment
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
    ![](media/dev(2).png)
 
-### **Virtual Machine & Lab Guide**
+### Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
-## **Exploring Your Lab Resources**
+## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-   ![](media/miw(3).png) 
+   ![](media/environment.png) 
  
-## **Utilizing the Split Window Feature**
+## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
    ![](media/POWER(1).png) 
    
-## **Managing Your Virtual Machine**
+## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![](media/res.png) 
- 
-## **Let's Get Started with Azure Portal**
+   ![](media/resources-vm-manage.png) 
+
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+   ![](media/labzoom-1.png)
+
+## Let's Get Started with Azure Portal
  
 1. On your virtual machine, click on the Azure Portal icon as shown below:
  
-    ![](media/dev(1).png)
+    ![](media/GS1.png)
 
 1. If the Docker Desktop service agreement pop-up appears, check the box to **accept the terms(1)** and click **Accept(2)**. Afterward, minimize any remaining Docker Desktop windows.
 
@@ -90,21 +98,21 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
    
    ![](media/image8.png "Enter Password")
 
-1. If Action required pop-up window appears, click on **Ask later**. 
+1. If Action required pop-up window appears, click on **Ask later**.
+
+   ![](media/asklater.png)
   
 1. If you see the pop-up **Stay Signed in?**, select **No**.
+
+   ![](media/GS9.png)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
    
-1. Now, click on **Next** from the lower right corner to move on to the next page.
-
-   ![](media/next.png "Resource groups")
-
 This hands-on lab will help you master the implementation of Continuous Integration and Continuous Deployment (CI/CD) processes using GitHub Actions, along with exploring advanced security features. You'll learn how to automate building, testing, and deploying applications, and implement security measures like secret scanning, code scanning, and dependency monitoring.
 
-# Support Contact
+## Support Contact
 
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
@@ -114,4 +122,6 @@ Learner Support Contacts:
 
 Now, click on Next from the lower right corner to move on to the next page.
 
-# Happy Learning!!
+   ![](media/GS4.png)
+
+### Happy Learning!!

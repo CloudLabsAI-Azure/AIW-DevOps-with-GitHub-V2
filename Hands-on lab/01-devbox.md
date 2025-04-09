@@ -1,6 +1,6 @@
 # Exercise 1: Implement Dev Box
 
-### Estimated Duration: 40 minutes
+### Estimated Duration: 80 minutes
 
 Microsoft Dev Box is a service that provides self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes.
 In the exercise, you'll configure a dev box environment access the dev box, and explore its features.

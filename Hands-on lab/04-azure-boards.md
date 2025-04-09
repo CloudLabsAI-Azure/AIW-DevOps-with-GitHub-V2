@@ -1,6 +1,6 @@
 # Exercise 3: Azure Boards and Test Plans
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 100 minutes
 
 In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provides rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
 

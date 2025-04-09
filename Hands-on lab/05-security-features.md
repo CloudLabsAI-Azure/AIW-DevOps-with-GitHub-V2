@@ -1,6 +1,6 @@
 # Exercise 4: Explore GitHub's advanced security features
 
-### Estimted Duration: 40 minutes
+### Estimted Duration: 80 minutes
 
 In this exercise, you'll explore GitHub Enterprise features which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.
 

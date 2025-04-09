@@ -3,15 +3,15 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/getting-started(v2).md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/getting-started(v2).md",
         "Order": 1
       },
        {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/ms-spl-implement-ci-cd-hol1-ex-1.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/ms-spl-implement-ci-cd-hol1-ex-1.md",
         "Order": 2
       } ,        
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/ms-spl-implement-ci-cd-hol2-ex-1.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/prod/Hands-on%20lab/ms-spl-implement-ci-cd-hol2-ex-1.md",
         "Order": 3
       }
     ]

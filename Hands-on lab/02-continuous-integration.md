@@ -76,7 +76,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
    dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"
    ```
 
-   > **Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
+   > **Note**: Replace `<SUFFIX>` with **<inject key="DeploymentID" />** before running the command.
 
    ![](media/upd-2dgn49.png)
 
